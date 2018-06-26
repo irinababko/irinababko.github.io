@@ -991,6 +991,27 @@ input:checked + .slider:before {
 .btn-block.btn-block-2{
     margin-top: 30px;
 }
+/*CART*/
+.cart-block{
+    text-align: center;
+    margin-top: 50px;
+}
+.cart-block h1{
+    font-size: 24px;
+    color: #666666;
+    text-align: center;
+}
+h1.cart-promo{
+    color: #0075c0;
+    text-align: left;
+    margin-top: 250px;
+}
+img.cart-promo{
+    text-align: left;
+}
+.cart-block input{
+    margin: 0 auto;
+}
 /*CREDIT*/
 .credit-block{
     margin: 0 20px;

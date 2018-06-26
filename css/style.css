@@ -197,13 +197,14 @@ li.page-list_progress{
     margin: 0 50px;
 }
 .article-main h1{
-    font-size: 41px;
+    font-size: 36px;
     margin: 25px 0 25px;
 }
 .bonus-block{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
 }
 .bonus-block_item{
     display: flex;
@@ -225,7 +226,8 @@ li.page-list_progress{
     transform: rotate(-90deg);
     position: absolute;
     top: 83px;
-    left: -41px;
+    left: -35px;
+    /*font-family: 'Montserrat Alternates', sans-serif;*/
 }
 .bonus-block-r{
     border: 1px solid #7ac943;
@@ -236,8 +238,9 @@ li.page-list_progress{
     display: inline-block;
 }
 .bonus-block-r h1{
-    font-family: 'Poiret One', cursive;
-    font-weight: bold;
+    /*font-family: 'Poiret One', cursive;*/
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
     color: #7ac943;
     display: inline-block;
     text-transform: none;
@@ -414,12 +417,15 @@ button:active {
 /*}*/
 .profile-form{
     /*margin: 40px 0 0 400px;*/
-    margin: 40px 0 0 60px;
+    margin: 40px 0 0 0px;
     width: 80%;
     padding: 20px;
 }
 .profile-form h6{
     padding: 20px 0;
+    color: #666666;
+    font-size: 24px;
+    font-weight: bold;
 }
 .profile-form input{
     width: 40%;
@@ -468,6 +474,11 @@ input.req:invalid{
     font-size: 16px;
     margin-left: 30px;
     cursor: pointer;
+    line-height: 1;
+}
+.phone-block p:hover,
+.email-block p:hover{
+    text-decoration: underline;
 }
 .profile-info{
     color: #666666;
@@ -482,6 +493,7 @@ input.req:invalid{
 }
 a.profile-info-edit{
     color: #7ac943;
+    font-weight: bold;
 }
 .profile-info-edit:hover{
     border-bottom: 1px solid #7ac943;
@@ -993,6 +1005,7 @@ input:checked + .slider:before {
 .credit-block p{
     padding-right: 200px;
     /*font-weight: bold;*/
+    line-height: 1.2;
 }
 .futures-block{
     display: flex;

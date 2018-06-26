@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <script src="https://use.fontawesome.com/520f201fd1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/full.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src='js/jquery.3.3.1.js'></script>
+    <script src='js/LivIconsEvo.defaults.js'></script>
+    <script src='js/main.js'></script>
+</head>
+<body>
+<div class="main">
+    <div class="container">
+        <div class="content">
+            <div class="content">
+                <div class="column main-inh panel-search">
+                    <div class="search-result">
+                        <div class="column clearfix second">
+                            <div class="col-left fl-1">
+                                <ul class="page-list">
+                                    <li class="tmenu1"><a class="active" href="#">мой профиль</a></li>
+                                    <li class="tmenu2"><a href="#">корзина</a></li>
+                                    <li class="tmenu3"><a href="bonus.html">бонусы</a></li>
+                                    <li class="tmenu4"><a href="history.html">история заказов</a></li>
+                                    <li class="tmenu5"><a href="mylist-zero.html">избранное</a></li>
+                                    <li class="tmenu6"><a href="dispatch.html">рассылка</a></li>
+                                    <li class="tmenu7"><a href="credit.html">кредитная линия Palladium</a></li>
+                                    <li class="tmenu8"><a href="#">всё о бонусах</a></li>
+                                    <li class="page-list_photo"><img src="img/photo.png" alt=""></li>
+                                    <li class="page-list_progress">
+                                        <div id="myProgress">
+                                            <!--<div id="myBar">30%</div>-->
+                                            <div id="myBar">
+                                                <span>33%</span><i class="fa fa-caret-down" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <button onclick="move()" style="display: none">временная</button>
+                                        <p>Заполните профиль на 100% и получите 100грн на бонусный счет</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-right fl-1">
+                                <div class="content-main second">
+                                    <div class="cab-overly">
+                                        <div class="article-main coID1">
+                                            <div class="bonus-block">
+                                                <div class="bonus-block_item">
+                                                    <div class="bonus-block-l">
+                                                        <h1>бонусы</h1>
+                                                    </div>
+                                                    <div class="bonus-block-r">
+                                                        <h1>Всего: <span>0</span>грн</h1>
+                                                        <br>
+                                                        <h1>Доступно: <span>100.50</span>грн</h1>
+                                                        <br>
+                                                        <button class="blue">потратить</button>
+                                                    </div>
+                                                </div>
+                                                <img src="img/q.png" alt="">
+                                                <div class="question">
+                                                    <div class="question-1">
+                                                        <p class="question-11"><a href="#">Как накопить бонусы?</a></p>
+                                                        <div class="accumulate-bonus">
+                                                            <p><span>Как происходит накопление бонусов?</span></p>
+                                                            <p>Программа позволяет участникам Клуба накапливать бонусы за каждую покупку в магазине или на comfy.ua и использовать их при оплате новых покупок, а также получать дополнительные привилегии (бонусы за покупку акционных товаров, индивидуальные предложения, приглашения на специальные мероприятия и т.д.).
+                                                                За каждую покупку* на бонусный счет зачисляется 1% от суммы.
+                                                                На ряд специальных предложений начисляются акционные бонусы (до 25% от стоимости), такие товары отмечены специальными ценниками в магазине и на сайте.</p>
+                                                            <p>* - кроме исключений (при покупке сервисов, подарочной карты, при оплате части стоимости подарочной картой или в других, специально оговоренных случаях).</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="question-2">
+                                                        <p class="question-22"><a href="#">Как потратить бонусы?</a></p>
+                                                        <div class="spend-bonus">
+                                                            <p><span>Как потратить накопленные бонусы?</span></p>
+                                                            <p>Списывать накопленные бонусы на новые покупки можно в интернет-магазине Palladium.</p>
+                                                            <p>Вы можете использовать их при оплате до 100% стоимости новых покупок. Начисленные бонусы доступны к использованию через 14 дней после начисления на счет и только с активированной карты.
+                                                                Срок действия бонусов – 1 год. Когда срок действия бонусов будет истекать, мы пришлем Вам смс-напоминание. После 1 года бонусы аннулируются.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="time-btn">
+                                            <button type="button"><a href="index.html">профиль ДО заполнения</a></button>
+                                            <button type="button"><a href="profile-finish.html">профиль ПОСЛЕ заполнения</a></button>
+                                        </div>
+
+                                        <div class="profile-form">
+
+                                            <form class="input-main_1">
+                                                <div class="profile-info">
+                                                    <h5>Имя</h5>
+                                                    <p>Иван</p>
+                                                    <h5>Фамилия</h5>
+                                                    <p>Иванов</p>
+                                                    <h5>Телефон</h5>
+                                                    <p>093 ХХХ ХХ ХХ</p>
+                                                    <p>096 ХХХ ХХ ХХ</p>
+                                                    <h5>Адрес доставки</h5>
+                                                    <p>ул.Сырецкая 9 кв.119</p>
+                                                    <h5>E-mail</h5>
+                                                    <p>palladium@gmail.com</p>
+                                                    <p>palladium1@gmail.com</p>
+                                                </div>
+
+                                                <a href="#" class="profile-info-edit">Редакировать информацию</a>
+
+                                                <div class="birth-block birth-block-edit">
+                                                    <label for="profile-birth">Дата рождения </label>
+                                                    <input class="placeholder" id="profile-birth" type="date" name="date" placeholder="">
+                                                    <img src="img/gift.png" alt="">
+                                                    <div class="livicon-evo" data-options="
+                                                              name: gift.svg;
+                                                              size: 120px
+                                                            "></div>
+                                                    <div class="livicon-evo" data-options=" name: gift.svg; style: original; size: 120px; strokeStyle: original; strokeWidth: original; tryToSharpen: true; rotate: none; flipHorizontal: false; flipVertical: false; strokeColor: #22A7F0; strokeColorAction: #b3421b; strokeColorAlt: #F9B32F; strokeColorAltAction: #ab69c6; fillColor: #91e9ff; fillColorAction: #ff926b; solidColor: #6C7A89; solidColorAction: #4C5A69; solidColorBgAction: #ffffff; solidColorBg: #ffffff; colorsOnHover: none; colorsHoverTime: 0.3; colorsWhenMorph: none; brightness: 0.1; saturation: 0.07; morphState: start; morphImage: none; allowMorphImageTransform: false; strokeWidthFactorOnHover: none; strokeWidthOnHoverTime: 0.3; keepStrokeWidthOnResize: false; animated: true; eventType: hover; eventOn: self; autoPlay: false; delay: 0; duration: default; repeat: default; repeatDelay: default; drawOnViewport: false; viewportShift: oneHalf; drawDelay: 0; drawTime: 1; drawStagger: 0.1; drawStartPoint: middle; drawColor: same; drawColorTime: 1; drawReversed: false; drawEase: Power1.easeOut; eraseDelay: 0; eraseTime: 1; eraseStagger: 0.1; eraseStartPoint: middle; eraseReversed: true; eraseEase: Power1.easeOut; touchEvents: false "></div>
+
+                                                </div>
+                                                <div class="switch-block">
+                                                    <label class="switch-item">
+                                                        <input type="checkbox">
+                                                        <span class="slider round"></span>
+                                                        <p>Авто</p>
+                                                    </label>
+
+                                                    <label class="switch-item">
+                                                        <input type="checkbox" checked>
+                                                        <span class="slider round"></span>
+                                                        <p>Дети</p>
+                                                    </label>
+
+                                                </div>
+                                                <div class="sex-block">
+                                                    <h6>Пол</h6>
+                                                    <div class="switch-block">
+                                                        <label class="switch-item">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                            <p>Мужчина</p>
+                                                        </label>
+
+                                                        <label class="switch-item">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                            <p>Женщина</p>
+                                                        </label>
+
+                                                    </div>
+                                                </div>
+                                                <div class="hobby-block">
+                                                    <h6>Увлечения:</h6>
+                                                    <div class="switch-block">
+                                                        <label class="switch-item">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                            <p>Велоспорт</p>
+                                                        </label>
+
+                                                        <label class="switch-item">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                            <p>Садоводство</p>
+                                                        </label>
+
+                                                    </div>
+                                                    <div class="switch-block">
+                                                        <label class="switch-item">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                            <p>Туризм</p>
+                                                        </label>
+
+                                                        <label class="switch-item">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                            <p>Спорт</p>
+                                                        </label>
+
+                                                    </div>
+                                                    <div class="switch-block">
+                                                        <label class="switch-item">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                            <p>Рыбалка</p>
+                                                        </label>
+
+                                                        <label class="switch-item">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                            <p>Фитнес</p>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <input type="submit" id="btn-save" class="btn-more white" value="сохранить">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

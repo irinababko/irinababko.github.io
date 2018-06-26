@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://use.fontawesome.com/520f201fd1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/full.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://apimgmtstorelinmtekiynqw.blob.core.windows.net/content/MediaLibrary/Widget/Tracking/styles/tracking.css' />
+    <script src='js/main.js'></script>
+    <script src="js/tab.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="container">
+        <div class="content">
+            <div class="content">
+                <div class="column main-inh panel-search">
+                    <div class="search-result">
+                        <div class="column clearfix second">
+                            <div class="col-left fl-1">
+                                <ul class="page-list">
+                                    <li class="tmenu1"><a href="index.html">мой профиль</a></li>
+                                    <li class="tmenu2"><a href="#">корзина</a></li>
+                                    <li class="tmenu3"><a href="bonus.html">бонусы</a></li>
+                                    <li class="tmenu4"><a class="active" href="history.html">история заказов</a></li>
+                                    <li class="tmenu5"><a href="mylist.html">избранное</a></li>
+                                    <li class="tmenu6"><a href="dispatch.html">рассылка</a></li>
+                                    <li class="tmenu7"><a href="credit.html">кредитная линия Palladium</a></li>
+                                    <li class="tmenu8"><a href="#">всё о бонусах</a></li>
+                                    <li class="page-list_photo"><img src="img/photo.png" alt=""></li>
+                                    <li class="page-list_progress">
+                                        <div id="myProgress">
+                                            <!--<div id="myBar">30%</div>-->
+                                            <div id="myBar">
+                                                <span>33%</span><i class="fa fa-caret-down" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <button onclick="move()" style="display: none">временная</button>
+                                        <p>Заполните профиль на 100% и получите 100грн на бонусный счет</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-right fl-1">
+                                <div class="content-main second">
+                                    <div class="cab-overly">
+                                        <div class="article-main coID1">
+                                            <div class="bonus-block">
+                                                <div class="bonus-block_item">
+                                                    <div class="bonus-block-l">
+                                                        <h1>бонусы</h1>
+                                                    </div>
+                                                    <div class="bonus-block-r">
+                                                        <h1>Всего: <span>0</span>грн</h1>
+                                                        <br>
+                                                        <h1>Доступно: <span>100.50</span>грн</h1>
+                                                        <br>
+                                                        <button class="blue">потратить</button>
+                                                    </div>
+                                                </div>
+                                                <img src="img/q.png" alt="">
+                                                <div class="question">
+                                                    <div class="question-1">
+                                                        <p class="question-11"><a href="#">Как накопить бонусы?</a></p>
+                                                        <div class="accumulate-bonus">
+                                                            <p><span>Как происходит накопление бонусов?</span></p>
+                                                            <p>Программа позволяет участникам Клуба накапливать бонусы за каждую покупку в магазине или на comfy.ua и использовать их при оплате новых покупок, а также получать дополнительные привилегии (бонусы за покупку акционных товаров, индивидуальные предложения, приглашения на специальные мероприятия и т.д.).
+                                                                За каждую покупку* на бонусный счет зачисляется 1% от суммы.
+                                                                На ряд специальных предложений начисляются акционные бонусы (до 25% от стоимости), такие товары отмечены специальными ценниками в магазине и на сайте.</p>
+                                                            <p>* - кроме исключений (при покупке сервисов, подарочной карты, при оплате части стоимости подарочной картой или в других, специально оговоренных случаях).</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="question-2">
+                                                        <p class="question-22"><a href="#">Как потратить бонусы?</a></p>
+                                                        <div class="spend-bonus">
+                                                            <p><span>Как потратить накопленные бонусы?</span></p>
+                                                            <p>Списывать накопленные бонусы на новые покупки можно в интернет-магазине Palladium.</p>
+                                                            <p>Вы можете использовать их при оплате до 100% стоимости новых покупок. Начисленные бонусы доступны к использованию через 14 дней после начисления на счет и только с активированной карты.
+                                                                Срок действия бонусов – 1 год. Когда срок действия бонусов будет истекать, мы пришлем Вам смс-напоминание. После 1 года бонусы аннулируются.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="account-bonus history-block">
+                                            <div class="panel">
+                                                <div class="panel-heading">
+                                                    <a href="#" class="panel-heading-title">
+                                                        <div class="panel-heading-1">Дата покупки</div>
+                                                        <div class="panel-heading-1">Номер заказа</div>
+                                                        <div class="panel-heading-1">Сумма</div>
+                                                        <div class="panel-heading-1">Статус</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="panel">
+                                                <div class="panel-heading">
+                                                    <a href="#">
+                                                        <div class="panel-heading-1">18.05.2018</div>
+                                                        <div class="panel-heading-1">№1234567</div>
+                                                        <div class="panel-heading-1">900грн</div>
+                                                        <div class="panel-heading-1 panel-heading-name">Ваш заказ выполнен. Спасибо за покупку! Мы очень рады, что Вы выбрали palladium.ua</div>
+
+                                                    </a>
+                                                </div>
+                                                <div class="panel-collapse">
+                                                    <div class="panel-body">
+                                                        <div class="panel-heading-1"></div>
+                                                        <div class="panel-heading-1 panel-heading-name">Клавиатура беспроводная Logitech Wireless Combo MK240 (920-008213)</div>
+                                                        <div class="panel-heading-1"><img src="img/delivered.png" alt=""></div>
+                                                        <div class="panel-heading-1"><a href="#" class="review-link"> Оставить отзыв</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel">
+                                                <div class="panel-heading">
+                                                    <a href="#">
+                                                        <div class="panel-heading-1">18.05.2018</div>
+                                                        <div class="panel-heading-1">№1234567</div>
+                                                        <div class="panel-heading-1">900грн</div>
+                                                        <div class="panel-heading-1 panel-heading-name">Ваш заказ отменен. Если Вы не отменяли заказ, пожалуйста, свяжитесь c нами 0-800-XXX-XXX</div>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-collapse">
+                                                    <div class="panel-body">
+                                                        <div class="panel-heading-1"></div>
+                                                        <div class="panel-heading-1 panel-heading-name">Клавиатура беспроводная Logitech Wireless Combo MK240 (920-008213)</div>
+                                                        <div class="panel-heading-1"><img src="img/canceled.png" alt=""></div>
+                                                        <div class="panel-heading-1"><a href="#" class="review-link"> Оставить отзыв</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel">
+                                                <div class="panel-heading">
+                                                    <a href="#">
+                                                        <div class="panel-heading-1">18.05.2018</div>
+                                                        <div class="panel-heading-1">№1234567</div>
+                                                        <div class="panel-heading-1">900грн</div>
+                                                        <div class="panel-heading-1 panel-heading-name">Ваш заказ выполнен. Спасибо за покупку! Мы очень рады, что Вы выбрали palladium.ua</div>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-collapse">
+                                                    <div class="panel-body">
+                                                        <div class="panel-heading-1"></div>
+                                                        <div class="panel-heading-1 panel-heading-name">Клавиатура беспроводная Logitech Wireless Combo MK240 (920-008213)</div>
+                                                        <div class="panel-heading-1"><img src="img/delivered.png" alt=""></div>
+                                                        <div class="panel-heading-1"><a href="#" class="review-link"> Оставить отзыв</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btn-block">
+                                                <button type="button" class="soc-btn soc-btn_promo">Все акции</button>
+                                                <button type="button" class="soc-btn soc-btn_insta"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</button>
+                                                <button type="button" class="soc-btn soc-btn_fb"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</button>
+                                                <button type="button" class="soc-btn soc-btn_youtube"><i class="fa fa-youtube-square" aria-hidden="true"></i>YouTube</button>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="novaposhta">
+                                            <h1>Отследить заказ "новая почта"</h1>
+                                            <div class="widget-block">
+                                                <img src="img/np.png" alt="">
+                                                <div id="np-tracking" class="np-widget-hz np-w-br-5" style="width: 480px;"> <div id="np-first-state"> <div id="np-tracking-logo"></div> <div id="np-title"> <div class="np-h1"> <span class="np-h1-span1">ВІДСТЕЖЕННЯ</span> <br> <span class="np-h1-span2">ПОСИЛОК</span> </div> </div> <div id="np-input-container"> <div id="np-clear-input"></div> <input id="np-user-input" type="text" name="number" placeholder="Номер посилки"> </div> <div id="np-warning-message"></div> <button id="np-submit-tracking" type="button" disabled="" style="background-color: rgb(209, 213, 218); border: 1px solid rgb(196, 196, 196);"> <span id="np-text-button-tracking">ВІДСТЕЖИТИ</span> <div id="np-load-image-tracking"></div> </button> <div id="np-error-status"></div> </div> <div id="np-second-state"> <div id="np-status-icon"></div> <div id="np-status-message"></div> <div class="np-track-mini-logo"> <div class="np-line-right"></div> <div class="np-line-left"></div> </div> <a href="#" id="np-more">Детальніше на сайті</a> <div id="np-return-button"> <span id="np-return-button-span">Інша посилка</span> </div> </div> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type='text/javascript' id='track' charset='utf-8' data-lang='ua' apiKey='40640775aa56f2c418da184522e6da4b' data-town='city-not-default' data-town-name='undefined' data-town-id='undefined' src='https://apimgmtstorelinmtekiynqw.blob.core.windows.net/content/MediaLibrary/Widget/Tracking/dist/track.min.js'></script>
+</body>
+</html>

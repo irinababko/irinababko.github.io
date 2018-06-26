@@ -46,8 +46,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="1008" column="0" lean-forward="false" selection-start-line="1008" selection-start-column="0" selection-end-line="1008" selection-end-column="0" />
+            <state relative-caret-position="375">
+              <caret line="1002" column="1" lean-forward="true" selection-start-line="1002" selection-start-column="1" selection-end-line="1002" selection-end-column="1" />
               <folding>
                 <marker date="1530023201492" expanded="true" signature="1000:1642" ph="..." />
               </folding>
@@ -248,6 +248,11 @@
             <path>
               <item name="Pall-cab" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pall-cab" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Pall-cab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pall-cab" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -299,7 +304,7 @@
       <workItem from="1529648943451" duration="25268000" />
       <workItem from="1529734930149" duration="14039000" />
       <workItem from="1529908030885" duration="30207000" />
-      <workItem from="1529993409309" duration="25983000" />
+      <workItem from="1529993409309" duration="26028000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1530016721456</created>
@@ -350,11 +355,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530023247082</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1">
+      <created>1530023297655</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1530023297655</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153932000" />
+    <option name="totallyTimeSpent" value="153977000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -916,8 +928,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="1008" column="0" lean-forward="false" selection-start-line="1008" selection-start-column="0" selection-end-line="1008" selection-end-column="0" />
+        <state relative-caret-position="375">
+          <caret line="1002" column="1" lean-forward="true" selection-start-line="1002" selection-start-column="1" selection-end-line="1002" selection-end-column="1" />
           <folding>
             <marker date="1530023201492" expanded="true" signature="1000:1642" ph="..." />
           </folding>

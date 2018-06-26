@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55b4b389-1eac-45c1-99aa-53f9a1980fd7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/cart-zero.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bonus-zero.html" afterPath="$PROJECT_DIR$/bonus-zero.html" />
-      <change beforePath="$PROJECT_DIR$/bonus.html" afterPath="$PROJECT_DIR$/bonus.html" />
-      <change beforePath="$PROJECT_DIR$/credit.html" afterPath="$PROJECT_DIR$/credit.html" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/dispatch.html" afterPath="$PROJECT_DIR$/dispatch.html" />
-      <change beforePath="$PROJECT_DIR$/dispath-new.html" afterPath="$PROJECT_DIR$/dispath-new.html" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/mylist.html" afterPath="$PROJECT_DIR$/mylist.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -308,7 +299,7 @@
       <workItem from="1529648943451" duration="25268000" />
       <workItem from="1529734930149" duration="14039000" />
       <workItem from="1529908030885" duration="30207000" />
-      <workItem from="1529993409309" duration="25928000" />
+      <workItem from="1529993409309" duration="25983000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1530016721456</created>
@@ -352,17 +343,23 @@
       <option name="project" value="LOCAL" />
       <updated>1530019705526</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1">
+      <created>1530023247082</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1530023247082</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153877000" />
+    <option name="totallyTimeSpent" value="153932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11513859" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11513859" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />

@@ -1030,6 +1030,11 @@ input:checked + .slider:before {
     border-bottom: 1px solid orange;
     margin: 0 30px;
 }
+.futures-img i{
+    font-size: 83px;
+    margin-bottom: 5px;
+    color: #0075c0;
+}
 .futures-img img{
     margin: 5px 0;
     height: 74px;

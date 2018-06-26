@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55b4b389-1eac-45c1-99aa-53f9a1980fd7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bonus-zero.html" afterPath="$PROJECT_DIR$/bonus-zero.html" />
-      <change beforePath="$PROJECT_DIR$/bonus.html" afterPath="$PROJECT_DIR$/bonus.html" />
       <change beforePath="$PROJECT_DIR$/credit.html" afterPath="$PROJECT_DIR$/credit.html" />
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/dispatch.html" afterPath="$PROJECT_DIR$/dispatch.html" />
-      <change beforePath="$PROJECT_DIR$/dispath-new.html" afterPath="$PROJECT_DIR$/dispath-new.html" />
-      <change beforePath="$PROJECT_DIR$/history.html" afterPath="$PROJECT_DIR$/history.html" />
-      <change beforePath="$PROJECT_DIR$/mylist-zero.html" afterPath="$PROJECT_DIR$/mylist-zero.html" />
-      <change beforePath="$PROJECT_DIR$/mylist.html" afterPath="$PROJECT_DIR$/mylist.html" />
-      <change beforePath="$PROJECT_DIR$/profile-finish.html" afterPath="$PROJECT_DIR$/profile-finish.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,34 +15,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+            <state relative-caret-position="391">
+              <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mylist-zero.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mylist-zero.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="117" column="105" lean-forward="false" selection-start-line="117" selection-start-column="105" selection-end-line="117" selection-end-column="127" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#li#9;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="credit.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="credit.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/credit.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
-              <caret line="118" column="108" lean-forward="false" selection-start-line="118" selection-start-column="108" selection-end-line="118" selection-end-column="108" />
+              <caret line="118" column="111" lean-forward="false" selection-start-line="118" selection-start-column="111" selection-end-line="118" selection-end-column="111" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="1035" column="19" lean-forward="false" selection-start-line="1035" selection-start-column="19" selection-end-line="1035" selection-end-column="19" />
+              <folding>
+                <marker date="1530017137313" expanded="true" signature="1000:1642" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,6 +167,7 @@
       <find>bonus-block-1</find>
       <find>rof</find>
       <find>pho</find>
+      <find>futures</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,7 +182,6 @@
         <option value="$PROJECT_DIR$/js/tab.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/mylist-zero1.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/profile-finish.html" />
         <option value="$PROJECT_DIR$/dispatch.html" />
@@ -200,6 +191,7 @@
         <option value="$PROJECT_DIR$/bonus.html" />
         <option value="$PROJECT_DIR$/bonus-zero.html" />
         <option value="$PROJECT_DIR$/mylist.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/credit.html" />
       </list>
     </option>
@@ -306,7 +298,7 @@
       <workItem from="1529648943451" duration="25268000" />
       <workItem from="1529734930149" duration="14039000" />
       <workItem from="1529908030885" duration="30207000" />
-      <workItem from="1529993409309" duration="19614000" />
+      <workItem from="1529993409309" duration="21062000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1530016721456</created>
@@ -322,11 +314,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530016799294</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1">
+      <created>1530016822172</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1530016822172</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147563000" />
+    <option name="totallyTimeSpent" value="149011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -371,7 +370,7 @@
         <state relative-caret-position="13923">
           <caret line="819" column="14" lean-forward="false" selection-start-line="819" selection-start-column="14" selection-end-line="819" selection-end-column="14" />
           <folding>
-            <marker date="1530015389747" expanded="true" signature="1000:1642" ph="..." />
+            <marker date="1530017137313" expanded="true" signature="1000:1642" ph="..." />
           </folding>
         </state>
       </provider>
@@ -461,7 +460,7 @@
         <state relative-caret-position="16082">
           <caret line="946" column="17" lean-forward="false" selection-start-line="946" selection-start-column="17" selection-end-line="946" selection-end-column="17" />
           <folding>
-            <marker date="1530015389747" expanded="true" signature="1000:1642" ph="..." />
+            <marker date="1530017137313" expanded="true" signature="1000:1642" ph="..." />
           </folding>
         </state>
       </provider>
@@ -555,7 +554,7 @@
         <state relative-caret-position="14790">
           <caret line="870" column="20" lean-forward="false" selection-start-line="870" selection-start-column="20" selection-end-line="870" selection-end-column="20" />
           <folding>
-            <marker date="1530015389747" expanded="true" signature="1000:1642" ph="..." />
+            <marker date="1530017137313" expanded="true" signature="1000:1642" ph="..." />
           </folding>
         </state>
       </provider>
@@ -575,7 +574,7 @@
         <state relative-caret-position="11288">
           <caret line="664" column="32" lean-forward="false" selection-start-line="664" selection-start-column="32" selection-end-line="664" selection-end-column="32" />
           <folding>
-            <marker date="1530015389747" expanded="true" signature="1000:1642" ph="..." />
+            <marker date="1530017137313" expanded="true" signature="1000:1642" ph="..." />
           </folding>
         </state>
       </provider>
@@ -685,7 +684,7 @@
         <state relative-caret-position="3536">
           <caret line="208" column="1" lean-forward="true" selection-start-line="208" selection-start-column="1" selection-end-line="208" selection-end-column="1" />
           <folding>
-            <marker date="1530015389747" expanded="true" signature="1000:1642" ph="..." />
+            <marker date="1530017137313" expanded="true" signature="1000:1642" ph="..." />
           </folding>
         </state>
       </provider>
@@ -705,7 +704,7 @@
         <state relative-caret-position="1122">
           <caret line="66" column="4" lean-forward="true" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="18" />
           <folding>
-            <marker date="1530015389747" expanded="true" signature="1000:1642" ph="..." />
+            <marker date="1530017137313" expanded="true" signature="1000:1642" ph="..." />
           </folding>
         </state>
       </provider>
@@ -785,16 +784,6 @@
         <state relative-caret-position="-1004">
           <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1429">
-          <caret line="476" column="18" lean-forward="false" selection-start-line="476" selection-start-column="18" selection-end-line="476" selection-end-column="18" />
-          <folding>
-            <marker date="1530015389747" expanded="true" signature="1000:1642" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -882,18 +871,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/credit.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="118" column="108" lean-forward="false" selection-start-line="118" selection-start-column="108" selection-end-line="118" selection-end-column="108" />
+        <state relative-caret-position="391">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        <state relative-caret-position="511">
+          <caret line="1035" column="19" lean-forward="false" selection-start-line="1035" selection-start-column="19" selection-end-line="1035" selection-end-column="19" />
+          <folding>
+            <marker date="1530017137313" expanded="true" signature="1000:1642" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/credit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="118" column="111" lean-forward="false" selection-start-line="118" selection-start-column="111" selection-end-line="118" selection-end-column="111" />
           <folding />
         </state>
       </provider>

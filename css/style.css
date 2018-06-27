@@ -664,6 +664,9 @@ input:checked + .slider:before {
     position: relative;
     transition: 0.3s;
 }
+.panel-body{
+    height: 80px;
+}
 .panel-heading-1{
     width: 240px;
     /*height: 120px;*/
@@ -680,10 +683,11 @@ input:checked + .slider:before {
 .panel-body .panel-heading-1 img{
     width: 120px;
     height: 100px;
+    padding-top: 25px;
 }
-.panel-body .panel-heading-1{
-    height: 100px;
-    line-height: 100px;
+.panel-body.panel-heading-1{
+    height: 100px !important;
+    /*line-height: 100px;*/
 }
 .panel-body .panel-heading-1 a.review-link{
     margin: 0;

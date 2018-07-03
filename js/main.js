@@ -61,7 +61,11 @@ $(document).ready(function() {
     });
 });
 
-
+$(document).ready(function() {
+    $('.culc-btn').click( function() {
+        $('a span').toggleClass('active');
+    });
+});
 
 
 $(document).ready(function() {
@@ -94,33 +98,33 @@ $(document).ready(function() {
     // });
 
 $(document).ready(function() {
-    $('.dispath-block .switch-item-1 input').click( function() {
-        $('.title-1').toggleClass('title-color');
-    });
-    $('.dispath-block .switch-item-2 input').click( function() {
-        $('.title-2').toggleClass('title-color');
-    });
-    $('.dispath-block .switch-item-3 input').click( function() {
-        $('.title-3').toggleClass('title-color');
-    });
-    $('.dispath-block .switch-item-4 input').click( function() {
-        $('.title-4').toggleClass('title-color');
-    });
+    // $('.dispath-block .switch-item-1 input').click( function() {
+    //     $('.title-1').toggleClass('title-color');
+    // });
+    // $('.dispath-block .switch-item-2 input').click( function() {
+    //     $('.title-2').toggleClass('title-color');
+    // });
+    // $('.dispath-block .switch-item-3 input').click( function() {
+    //     $('.title-3').toggleClass('title-color');
+    // });
+    // $('.dispath-block .switch-item-4 input').click( function() {
+    //     $('.title-4').toggleClass('title-color');
+    // });
     $('.dispath-block .switch-item-5 input').click( function() {
         $('.title-5').toggleClass('title-color');
     });
-    $('.dispath-block .switch-item-6 input').click( function() {
-        $('.title-6').toggleClass('title-color');
-    });
-    $('.dispath-block .switch-item-7 input').click( function() {
-        $('.title-7').toggleClass('title-color');
-    });
-    $('.dispath-block .switch-item-8 input').click( function() {
-        $('.title-8').toggleClass('title-color');
-    });
-    $('.dispath-block .switch-item-9 input').click( function() {
-        $('.title-9').toggleClass('title-color');
-    });
+    // $('.dispath-block .switch-item-6 input').click( function() {
+    //     $('.title-6').toggleClass('title-color');
+    // });
+    // $('.dispath-block .switch-item-7 input').click( function() {
+    //     $('.title-7').toggleClass('title-color');
+    // });
+    // $('.dispath-block .switch-item-8 input').click( function() {
+    //     $('.title-8').toggleClass('title-color');
+    // });
+    // $('.dispath-block .switch-item-9 input').click( function() {
+    //     $('.title-9').toggleClass('title-color');
+    // });
 
 });
 

@@ -1517,17 +1517,11 @@ div.icon-3{
 }
 div.icon-3:hover .enter-block{
     display: block;
-    top: 10%;
+    top: 70px;
     /*opacity: 1;*/
     visibility: visible;
     height: 430px;
     transition: 0.8s;
-}
-div.icon-3:hover form{
-    height: 300px;
-}
-div.icon-3:hover form{
-    height: 300px;
 }
 .enter-block .enter-block-title{
     background-color: #666666;

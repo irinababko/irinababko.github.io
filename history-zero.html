@@ -7,22 +7,18 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://use.fontawesome.com/520f201fd1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/full.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src='js/jquery.3.3.1.js'></script>
     <script src='js/main.js'></script>
-    <link rel="stylesheet" href="rangeslider.css">
-    <script src="rangeslider.js"></script>
-    <script src="rangeslider.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-
+    <script src="js/tab.js"></script>
 </head>
 <body>
 <div class="main">
@@ -36,11 +32,11 @@
                                 <ul class="page-list">
                                     <li class="tmenu1"><a href="index.html">мой профиль</a></li>
                                     <li class="tmenu2"><a href="cart-zero.html">корзина</a></li>
-                                    <li class="tmenu3"><a href="bonus.html">бонусы</a></li>
+                                    <li class="tmenu3"><a class="active" href="bonus.html">бонусы</a></li>
                                     <li class="tmenu4"><a href="history.html">история заказов</a></li>
-                                    <li class="tmenu5"><a href="mylist-zero.html">избранное</a></li>
+                                    <li class="tmenu5"><a href="mylist.html">избранное</a></li>
                                     <li class="tmenu6"><a href="dispatch.html">рассылка</a></li>
-                                    <li class="tmenu7"><a class="active" href="credit.html">кредитная линия Palladium</a></li>
+                                    <li class="tmenu7"><a href="credit.html">кредитная линия Palladium</a></li>
                                     <li class="tmenu8"><a href="#">всё о бонусах</a></li>
                                     <li class="page-list_photo"><img src="img/photo.png" alt=""></li>
                                     <li class="page-list_progress">
@@ -68,9 +64,9 @@
                                                     <div class="bonus-block-r">
                                                         <h1>Всего: <span>0</span>грн</h1>
                                                         <br>
-                                                        <h1>Доступно: <span>100.50</span>грн</h1>
+                                                        <h1>Доступно: <span>0</span>грн</h1>
                                                         <br>
-                                                        <a href="spend.html"><button class="blue">потратить</button></a>
+                                                        <a href="https://palladium.ua/"><button class="blue">накопить</button></a>
                                                     </div>
                                                 </div>
                                                 <img src="img/q.png" alt="">
@@ -107,80 +103,23 @@
                                             </div>
                                         </div>
 
-                                        <div class="credit-block">
-                                            <h1>кредитная линия palladium</h1>
-                                            <p>Кредитная линия от <span>Palladium</span> - это удобно, прозрачно и быстро. Достаточно один раз активировать кредитную линию магазина, чтобы иметь доступ <br>к кредитным средствам и осуществлять покупки онлайн в пределах своего лимита без классической процедуры оформления кредита в банке.</p>
+                                        <div class="time-btn">
+                                            <button type="button"><a href="history-zero.html">Если НЕТ заказов</a></button>
+                                            <button type="button"><a href="history.html">Если ЕСТЬ заказы</a></button>
+                                        </div>
 
-                                            <div class="credit-block_futures">
-                                                <h1>преимущества:</h1>
-                                                <div class="futures-block">
-                                                    <div class="futures-block_item">
-                                                        <div class="futures-img"><img src="img/dogovor.svg" alt=""></div>
-                                                        <!--<div class="futures-img"><i class="fas fa-file-contract"></i></div>-->
-                                                        <p>Без справки о доходах и бумажной волокиты.</p>
-                                                    </div>
-                                                    <div class="futures-block_item">
-                                                        <div class="futures-img"><img src="img/pay.svg" alt=""></div>
-                                                        <!--<div class="futures-img"><i class="fas fa-search"></i></div>-->
-                                                        <p>Без страховок или скрытых комиссий.</p>
-                                                    </div>
-                                                    <div class="futures-block_item">
-                                                        <div class="futures-img"><img src="img/bank.svg" alt=""></div>
-                                                        <!--<div class="futures-img"><i class="fas fa-university"></i></div>-->
-                                                        <p>Без визита в банк или в магазин.</p>
-                                                    </div>
-                                                    <div class="futures-block_item">
-                                                        <div class="futures-img"><img src="img/dollar.svg" alt=""></div>
-                                                        <!--<div class="futures-img"><i class="fas fa-sync"></i></div>-->
-                                                        <p>"Кредитная линия Palladium" является возобновляемой</p>
-                                                    </div>
-                                                </div>
+                                        <div class="account-bonus-zero">
+                                            <p>У Вас еще нет заказов, предлагаем исправить это прямо сейчас.</p>
+                                            <div class="btn-block btn-block-1">
+                                                <a href="https://palladium.ua/akcii.html"> <button type="button" class="soc-btn soc-btn_promo">Все акции</button></a>
+                                                <a href="https://palladium.ua"><button type="button" class="soc-btn soc-btn_promo">В каталог</button></a>
                                             </div>
+                                            <p>Хотите быть в курсе розыгрышей? Ценных призов и последних новинок? Подпишитесь на наши социальные сети.</p>
 
-                                            <h1>Условия оформления:</h1>
-
-                                            <div class="conditions-block">
-                                                <ul>
-                                                    <li>
-                                                        <h3>Документы</h3>
-                                                        <p>Для активации кредитной линии Palladium достаточно иметь паспорт (или вид на жительство) и идентификационный код.</p>
-                                                    </li>
-                                                    <li>
-                                                        <h3>Сумма</h3>
-                                                        <p>Кредит оформляется от 3000 грн до 100 000 грн.</p>
-                                                    </li>
-                                                    <li>
-                                                        <h3>Сроки</h3>
-                                                        <p>Вы можете оформить кредит на 3, 6, или 10 ежемесячных платежей.</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="manual-block">
-                                                <img src="img/icon-book.png" alt="">
-                                                <h1>инструкция по активации кредитной линии palladium</h1>
-                                                <ul>
-                                                    <li>Выберите на сайте товар и нажмите на кнопку «Кредитная линия PALLADIUM»</li>
-                                                    <li>Подберите удобный ежемесячный платеж и заполните анкету.</li>
-                                                    <li>С вами свяжется менеджер для уточнения данных и подтверждения заявки.</li>
-                                                    <li>При получении товара вы оплачиваете первый ежемесячный платеж курьеру и подписываете расходную накладную о получении товара.</li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="credit-line-block">
-                                                <h1>кредитная линия palladium</h1>
-                                                <h3>введите стоимость продукта</h3>
-                                                <input type="text" placeholder="10900">грн
-                                                <button type="button" class="mylist-btn culc-btn">расчитать</button>
-                                                <div class="range">
-                                                    <input type="range" value="0" min="0" max="100" step="1"/>
-                                                </div>
-
-                                                <div class="culc">
-                                                    <a href="#" class="icon i-1"><span>3 633</span><p>3 Месяца - 0%</p></a>
-                                                    <a href="#" class="icon i-2"><span>2 180</span><p>6 Месяцев</p></a>
-                                                    <a href="#" class="icon i-3"><span>1 308</span><p>10 Месяцев</p></a>
-                                                </div>
+                                            <div class="btn-block btn-block-center">
+                                                <button type="button" class="soc-btn soc-btn_insta"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</button>
+                                                <button type="button" class="soc-btn soc-btn_fb"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</button>
+                                                <button type="button" class="soc-btn soc-btn_youtube"><i class="fab fa-youtube" aria-hidden="true"></i>YouTube</button>
                                             </div>
                                         </div>
                                     </div>

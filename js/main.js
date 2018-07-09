@@ -31,11 +31,11 @@ window.onload = function() {
 
 
 $(document).ready(function(){
-    $(".add-phone").click(function(){
-        $(".phone-block_item").append("<input type='tel' placeholder='(+38__)___ __ __'>");
+    $(".add-phone").one('click', function(){
+        $(".phone-block_item").append("<input type='tel' placeholder='(+38___)___ __ __'>");
     });
 
-    $(".add-email").click(function(){
+    $(".add-email").one('click', function(){
         $(".email-block_item").append("<input type='email' placeholder='myemail@gmail.com'>");
     });
 });

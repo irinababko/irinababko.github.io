@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://use.fontawesome.com/520f201fd1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/full.min.css">
+    <link rel="stylesheet" href="css/maxua.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='js/main.js'></script>
+    <script src="js/tab.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="container">
+        <div class="content">
+            <div class="content">
+                <div class="column main-inh panel-search">
+                    <div class="search-result">
+                        <div class="column clearfix second">
+                            <div class="col-left fl-1">
+                                <ul class="page-list">
+                                    <li class="tmenu1"><a href="index.html">мой профиль</a></li>
+                                    <li class="tmenu2"><a href="cart.html">корзина</a></li>
+                                    <li class="tmenu3"><a href="bonus.html">бонусы</a></li>
+                                    <li class="tmenu4"><a href="history.html">история заказов</a></li>
+                                    <li class="tmenu5"><a href="mylist.html">избранное</a></li>
+                                    <li class="tmenu6"><a href="dispatch.html">рассылка</a></li>
+                                    <li class="tmenu7"><a href="credit.html">кредитная линия Palladium</a></li>
+                                    <li class="tmenu8"><a class="active" href="bonus-rules.html">всё о бонусах</a></li>
+                                    <li class="page-list_photo"><img src="img/photo.png" alt=""></li>
+                                    <li class="page-list_progress">
+                                        <div id="myProgress">
+                                            <!--<div id="myBar">30%</div>-->
+                                            <div id="myBar">
+                                                <span>33%</span><i class="fa fa-caret-down" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <button onclick="move()" style="display: none">временная</button>
+                                        <p>Заполните профиль на 100% и получите 100грн на бонусный счет</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-right fl-1">
+                                <div class="content-main second">
+                                    <div class="cab-overly">
+
+                                        <div class="wrap-accord">
+
+                                            <div class="account-bonus bonus-rules">
+                                                <h2>всё о бонусах</h2>
+                                                <div class="panel">
+                                                    <div class="panel-heading">
+                                                        <a href="#">
+                                                           Как накопить бонусы?
+                                                        </a>
+                                                    </div>
+                                                    <div class="panel-collapse">
+                                                        <div class="panel-body panel-body-1">
+                                                            Накопление бонусов происходит за онлайн покупки на сайте palladium.ua.
+                                                            За каждую покупку* онлайн на бонусный счет клиента зачисляется 1% от суммы.<br>
+                                                            Магазином регулярно проводятся акции, розыгрыши, где в качестве приза начисляются бонусы на счета клиентов.
+                                                            Накопленные бонусы можно использовать как оплату за свой заказ. Бонусная программа позволяет участникам экономить на покупках, участвовать в приобретении специальных акционных товаров.<br>
+                                                            *Исключения, когда бонус 1% не начисляется:<br>
+                                                            - при заказе сервиса (например, по подключению техники и др.);<br>
+                                                            - при покупке подарочного сертификата;<br>
+                                                            - при погашении части стоимости товара с помощью сертификата;<br>
+                                                            - в других предварительно оговоренных случаях.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel">
+                                                    <div class="panel-heading">
+                                                        <a href="#">
+                                                            Как потратить бонусы?
+                                                        </a>
+                                                    </div>
+                                                    <div class="panel-collapse">
+                                                        <div class="panel-body panel-body-1">
+                                                            Потратить бонусы можно на новые онлайн покупки в интернет-магазине palladium.ua.<br>
+                                                            Зачисление бонусов в счет покупки возможно до 30/50/100% стоимости нового товара.<br>
+                                                            Использовать свои бонусы можно через 14 дней после их начисления. Количество  бонусов, которыми можно воспользоваться показывается в поле бонусов “Доступно”.<br>
+                                                            Бонусы действуют до 31.12 текущего года, по истечении срока они аннулируются.
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel">
+                                                    <div class="panel-heading">
+                                                        <a href="#">
+                                                            Как узнать остаток бонусов?
+                                                        </a>
+                                                    </div>
+                                                    <div class="panel-collapse">
+                                                        <div class="panel-body panel-body-1">
+                                                            Количество бонусов отображается в личном кабинете. Если бонусы уже можно использовать, они попадают в пункт «Доступно».
+                                                            В пункте «Всего» отображается общее количество бонусов, которое будет доступно по истечении установленного срока.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel">
+                                                    <div class="panel-heading">
+                                                        <a href="#">
+                                                            Когда можно использовать бонусы?
+                                                        </a>
+                                                    </div>
+                                                    <div class="panel-collapse">
+                                                        <div class="panel-body panel-body-1">
+                                                            Бонусы можно использовать через 14 дней после покупки и зачисления их в пункт «Доступно».
+                                                            Если прошло более 14 дней, а бонусы не зачислились в пункт «Доступно», просим связаться с нашим магазином по телефону: 0800 211-233 (номер бесплатный).
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel">
+                                                    <div class="panel-heading">
+                                                        <a href="#">
+                                                            Доступны ли бонусы для офлайн покупок (если заказ происходит без оформления через корзину)?
+                                                        </a>
+                                                    </div>
+                                                    <div class="panel-collapse">
+                                                        <div class="panel-body panel-body-1">
+                                                            На данном этапе зачисление/погашение бонусов возможно только при оформлении заказа онлайн на сайте через корзину.<br>
+                                                            Какой срок действия бонусов?<br>
+                                                            Срок действия бонусов до 31.12 текущего года. По истечении указанного периода (с 01.01 следующего года) бонусы аннулируются.<br>
+                                                            При возврате товара, что происходит с бонусами?<br>
+                                                            Если произошел возврат товара, то бонусы, начисленные за него, снимаются со счета.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

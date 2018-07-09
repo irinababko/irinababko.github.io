@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <link rel="stylesheet" href="css/full.min.css">
+    <link rel="stylesheet" href="css/maxua.css">
     <link rel="stylesheet" href="css/style.css">
     <script src='js/jquery.3.3.1.js'></script>
     <script src='js/LivIconsEvo.defaults.js'></script>
@@ -31,13 +32,13 @@
                                 <div class="col-left fl-1">
                                     <ul class="page-list">
                                         <li class="tmenu1"><a class="active" href="#">мой профиль</a></li>
-                                        <li class="tmenu2"><a href="cart-zero.html">корзина</a></li>
+                                        <li class="tmenu2"><a href="cart.html">корзина</a></li>
                                         <li class="tmenu3"><a href="bonus.html">бонусы</a></li>
                                         <li class="tmenu4"><a href="history.html">история заказов</a></li>
                                         <li class="tmenu5"><a href="mylist.html">избранное</a></li>
                                         <li class="tmenu6"><a href="dispatch.html">рассылка</a></li>
                                         <li class="tmenu7"><a href="credit.html">кредитная линия Palladium</a></li>
-                                        <li class="tmenu8"><a href="#">всё о бонусах</a></li>
+                                        <li class="tmenu8"><a href="bonus-rules.html">всё о бонусах</a></li>
                                         <li class="page-list_photo"><img src="img/photo.png" alt=""></li>
                                         <li class="page-list_progress">
                                             <div id="myProgress">
@@ -62,11 +63,11 @@
                                                             <h1>бонусы</h1>
                                                         </div>
                                                         <div class="bonus-block-r">
-                                                            <h1>Всего: <span>0</span>грн</h1>
+                                                            <h2>Всего: <span>0</span>грн</h2>
                                                             <br>
-                                                            <h1>Доступно: <span>100.50</span>грн</h1>
+                                                            <h2>Доступно: <span>100.50</span>грн</h2>
                                                             <br>
-                                                            <a href="spend.html"><button class="blue">потратить</button>
+                                                            <a href="https://palladium.ua/"><button class="blue">потратить</button>
                                                         </div>
                                                     </div>
                                                     <img src="img/q.png" alt="">
@@ -75,9 +76,13 @@
                                                             <p class="question-11"><a href="#">Как накопить бонусы?</a></p>
                                                             <div class="accumulate-bonus">
                                                                 <p><span>Как происходит накопление бонусов?</span></p>
-                                                                <p>Накопление бонусов происходит за онлайн покупки на сайте  palladium.ua. Также магазин часто проводит акции, розыгрыши, где в качестве приза начисляются бонусы на счета клиентов.
-                                                                    Накопленные бонусы можно использовать в качестве оплаты за покупки. Бонусная программа позволяет участникам экономить на покупках, участвовать в приобретении специальных акционных товаров.</p>
-                                                                <p>За каждую покупку* онлайн на бонусный счет клиента зачисляется 1% от суммы. </p>
+                                                                <p>Накопление бонусов происходит за онлайн покупки на сайте palladium.ua.
+                                                                    За каждую покупку* онлайн на бонусный счет клиента зачисляется 1% от суммы.</p>
+                                                                <p>Магазином регулярно проводяться акции, розыгрыши, где в качестве приза
+                                                                    начисляются бонусы на счета клиентов.
+                                                                    Накопленные бонусы можно использовать как оплату за свой заказ. Бонусная
+                                                                    программа позволяет участникам экономить на покупках, участвовать в
+                                                                    приобретении специальных акционных товаров. </p>
                                                                 <p>*Исключения, когда бонус 1% не начисляется:<br>
                                                                     -     при заказе сервиса (например, по подключению техники и др.);<br>
                                                                     -     при покупке подарочного сертификата;<br>
@@ -92,23 +97,20 @@
                                                                 <p><span>Как потратить накопленные бонусы?</span></p>
                                                                 <p>Потратить бонусы можно на новые онлайн покупки в интернет-магазине palladium.ua.
                                                                     Зачисление бонусов в счет покупки возможно до 30/50/100% стоимости нового товара.</p>
-                                                                    <p>Использовать начисленные бонусы можно через 14 дней после их начисления. Количество  бонусов,
+                                                                    <p>Использовать свои бонусы можно через 14 дней после их начисления. Количество  бонусов,
                                                                         которыми можно воспользоваться показывается в поле бонусов “Доступно”.</p>
                                                                     <p>Бонусы действуют до 31.12 текущего года, по истечении срока они аннулируются.
                                                                 </p>
-
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div class="time-btn">
                                                 <button type="button"><a href="reg.html">РЕГИСТРАЦИЯ</a></button>
                                                 <button type="button"><a href="index.html">профиль ДО заполнения</a></button>
                                                 <button type="button"><a href="profile-finish.html">профиль ПОСЛЕ заполнения</a></button>
                                             </div>
-
                                             <div class="profile-form">
                                                 <h6>Профиль</h6>
                                                 <form class="input-main_1">
@@ -134,12 +136,6 @@
                                                         <label for="profile-birth">Дата рождения </label>
                                                         <input class="placeholder" id="profile-birth" type="date" name="date" placeholder="">
                                                         <img src="img/gift.png" alt="">
-                                                        <div class="livicon-evo" data-options="
-                                                              name: gift.svg;
-                                                              size: 120px
-                                                            "></div>
-                                                        <div class="livicon-evo" data-options=" name: gift.svg; style: original; size: 120px; strokeStyle: original; strokeWidth: original; tryToSharpen: true; rotate: none; flipHorizontal: false; flipVertical: false; strokeColor: #22A7F0; strokeColorAction: #b3421b; strokeColorAlt: #F9B32F; strokeColorAltAction: #ab69c6; fillColor: #91e9ff; fillColorAction: #ff926b; solidColor: #6C7A89; solidColorAction: #4C5A69; solidColorBgAction: #ffffff; solidColorBg: #ffffff; colorsOnHover: none; colorsHoverTime: 0.3; colorsWhenMorph: none; brightness: 0.1; saturation: 0.07; morphState: start; morphImage: none; allowMorphImageTransform: false; strokeWidthFactorOnHover: none; strokeWidthOnHoverTime: 0.3; keepStrokeWidthOnResize: false; animated: true; eventType: hover; eventOn: self; autoPlay: false; delay: 0; duration: default; repeat: default; repeatDelay: default; drawOnViewport: false; viewportShift: oneHalf; drawDelay: 0; drawTime: 1; drawStagger: 0.1; drawStartPoint: middle; drawColor: same; drawColorTime: 1; drawReversed: false; drawEase: Power1.easeOut; eraseDelay: 0; eraseTime: 1; eraseStagger: 0.1; eraseStartPoint: middle; eraseReversed: true; eraseEase: Power1.easeOut; touchEvents: false "></div>
-
                                                     </div>
                                                     <div class="switch-block">
                                                         <label class="switch-item">
@@ -147,29 +143,25 @@
                                                             <span class="slider round"></span>
                                                             <p>Авто</p>
                                                         </label>
-
                                                         <label class="switch-item">
                                                             <input type="checkbox" checked>
                                                             <span class="slider round"></span>
                                                             <p>Дети</p>
                                                         </label>
-
                                                     </div>
                                                     <div class="sex-block">
-                                                        <h6>Пол</h6>
+                                                        <h6>Пол:</h6>
                                                         <div class="switch-block">
                                                             <label class="switch-item">
                                                                 <input type="checkbox">
                                                                 <span class="slider round"></span>
                                                                 <p>Мужчина</p>
                                                             </label>
-
                                                             <label class="switch-item">
                                                                 <input type="checkbox" checked>
                                                                 <span class="slider round"></span>
                                                                 <p>Женщина</p>
                                                             </label>
-
                                                         </div>
                                                     </div>
                                                     <div class="hobby-block">
@@ -180,13 +172,11 @@
                                                                 <span class="slider round"></span>
                                                                 <p>Велоспорт</p>
                                                             </label>
-
                                                             <label class="switch-item">
                                                                 <input type="checkbox" checked>
                                                                 <span class="slider round"></span>
                                                                 <p>Садоводство</p>
                                                             </label>
-
                                                         </div>
                                                         <div class="switch-block">
                                                             <label class="switch-item">
@@ -194,13 +184,11 @@
                                                                 <span class="slider round"></span>
                                                                 <p>Туризм</p>
                                                             </label>
-
                                                             <label class="switch-item">
                                                                 <input type="checkbox" checked>
                                                                 <span class="slider round"></span>
                                                                 <p>Спорт</p>
                                                             </label>
-
                                                         </div>
                                                         <div class="switch-block">
                                                             <label class="switch-item">
@@ -208,7 +196,6 @@
                                                                 <span class="slider round"></span>
                                                                 <p>Рыбалка</p>
                                                             </label>
-
                                                             <label class="switch-item">
                                                                 <input type="checkbox" checked>
                                                                 <span class="slider round"></span>
@@ -216,7 +203,7 @@
                                                             </label>
                                                         </div>
                                                     </div>
-                                                    <input type="submit" id="btn-save" class="btn-more white" value="сохранить">
+                                                    <input type="submit" id="btn-save" class="btn-more white white-form" value="сохранить">
                                                 </form>
                                             </div>
                                         </div>
@@ -229,6 +216,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <script src="https://use.fontawesome.com/520f201fd1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="css/full.min.css">
+    <link rel="stylesheet" href="css/maxua.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='js/jquery.3.3.1.js'></script>
+    <script src='js/LivIconsEvo.defaults.js'></script>
+    <script src='js/main.js'></script>
+
+</head>
+<body>
+<div class="main">
+    <div class="container">
+        <div class="content">
+            <div class="content">
+                <div class="column main-inh panel-search">
+                    <div class="search-result">
+                        <div class="column clearfix second">
+                            <div class="col-left fl-1">
+                                <ul class="page-list">
+                                    <li class="tmenu1"><a href="index.html">мой профиль</a></li>
+                                    <li class="tmenu2"><a class="active" href="cart.html">корзина</a></li>
+                                    <li class="tmenu3"><a href="bonus.html">бонусы</a></li>
+                                    <li class="tmenu4"><a href="history.html">история заказов</a></li>
+                                    <li class="tmenu5"><a href="mylist.html">избранное</a></li>
+                                    <li class="tmenu6"><a href="dispatch.html">рассылка</a></li>
+                                    <li class="tmenu7"><a href="credit.html">кредитная линия Palladium</a></li>
+                                    <li class="tmenu8"><a href="bonus-rules.html">всё о бонусах</a></li>
+                                    <li class="page-list_photo"><img src="img/photo.png" alt=""></li>
+                                    <li class="page-list_progress">
+                                        <div id="myProgress">
+                                            <!--<div id="myBar">30%</div>-->
+                                            <div id="myBar">
+                                                <span>33%</span><i class="fa fa-caret-down" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <button onclick="move()" style="display: none">временная</button>
+                                        <p>Заполните профиль на 100% и получите 100грн на бонусный счет</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-right fl-1">
+                                <div class="content-main second">
+                                    <div class="cab-overly">
+                                        <div class="article-main coID1">
+                                            <div class="bonus-block">
+                                                <div class="bonus-block_item">
+                                                    <div class="bonus-block-l">
+                                                        <h1>бонусы</h1>
+                                                    </div>
+                                                    <div class="bonus-block-r">
+                                                        <h2>Всего: <span>0</span>грн</h2>
+                                                        <br>
+                                                        <h2>Доступно: <span>100.50</span>грн</h2>
+                                                        <br>
+                                                        <a href="https://palladium.ua/"><button class="blue">потратить</button></a>
+                                                    </div>
+                                                </div>
+                                                <img src="img/q.png" alt="">
+                                                <div class="question">
+                                                    <div class="question-1">
+                                                        <p class="question-11"><a href="#">Как накопить бонусы?</a></p>
+                                                        <div class="accumulate-bonus">
+                                                            <p><span>Как происходит накопление бонусов?</span></p>
+                                                            <p>Накопление бонусов происходит за онлайн покупки на сайте palladium.ua.
+                                                                За каждую покупку* онлайн на бонусный счет клиента зачисляется 1% от суммы.</p>
+                                                            <p>Магазином регулярно проводяться акции, розыгрыши, где в качестве приза
+                                                                начисляются бонусы на счета клиентов.
+                                                                Накопленные бонусы можно использовать как оплату за свой заказ. Бонусная
+                                                                программа позволяет участникам экономить на покупках, участвовать в
+                                                                приобретении специальных акционных товаров. </p>
+                                                            <p>*Исключения, когда бонус 1% не начисляется:<br>
+                                                                -     при заказе сервиса (например, по подключению техники и др.);<br>
+                                                                -     при покупке подарочного сертификата;<br>
+                                                                -     при погашении части стоимости товара с помощью сертификата;<br>
+                                                                -     в других предварительно оговоренных случаях.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="question-2">
+                                                        <p class="question-22"><a href="#">Как потратить бонусы?</a></p>
+                                                        <div class="spend-bonus">
+                                                            <p><span>Как потратить накопленные бонусы?</span></p>
+                                                            <p>Потратить бонусы можно на новые онлайн покупки в интернет-магазине palladium.ua.
+                                                                Зачисление бонусов в счет покупки возможно до 30/50/100% стоимости нового товара.</p>
+                                                            <p>Использовать свои бонусы можно через 14 дней после их начисления. Количество  бонусов,
+                                                                которыми можно воспользоваться показывается в поле бонусов “Доступно”.</p>
+                                                            <p>Бонусы действуют до 31.12 текущего года, по истечении срока они аннулируются.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="time-btn">
+                                            <button type="button"><a href="cart-zero.html">Если НЕТ заказов</a></button>
+                                            <button type="button"><a href="cart.html">Если ЕСТЬ заказы</a></button>
+                                        </div>
+
+                                        <ul class="page-list second">
+                                            <li>
+                                                <div>
+                                                    <div class="info-tabs tab-fix">
+                                                        <div class="tabs-main ui-tabs ui-widget ui-widget-content ui-corner-all">
+                                                            <div class="ui-tabs-panel ui-widget-content ui-corner-bottom">
+                                                                <span class="title-main second fl-l">Корзина</span>
+                                                                <div class="clear"></div>
+                                                                <div class="content-main oder">
+                                                                    <div class="basket-cab">
+                                                                        <div class="cart_inner_ajax">
+                                                                            <form id="cart_quantity">
+                                                                                <div class="cart_inner_rel">
+                                                                                    <ul class="back-tovar second">
+                                                                                        <li>
+                                                                                            <div class="prod-on third d-t">
+                                                                                                <div class="t-cell c-1">Товар</div>
+                                                                                                <div class="t-cell c-2">Количество</div>
+                                                                                                <div class="t-cell c-3">Цена</div>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li class="cartProd">
+                                                                                            <a href="https://palladium.ua/ar-card-fancy-zoo.html" class="link-b-m">Игра виртуальной реальности AR Card Fancy Zoo</a>
+                                                                                            <div class="prod-on d-t third">
+                                                                                                <div class="t-cell c-1">
+                                                                                                    <div class="d-t info-bask">
+                                                                                                        <div class="t-cell">
+                                                                                                            <img src="img/zoo.png" width="100" height="100" alt="Игра виртуальной реальности AR Card Fancy Zoo">
+                                                                                                        </div>
+                                                                                                        <div class="t-cell">
+                                                                                                            <a href="https://palladium.ua/ar-card-fancy-zoo.html">Игра виртуальной реальности AR Card Fancy Zoo</a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="t-cell c-2">
+                                                                                                    <div class="count-basket">
+                                                                                                        <a href="#" class="log1 disabled minus"></a>
+                                                                                                        <span>
+                                                                                                            <input type="text" value="1" size="2" class="input-small">
+                                                                                                            <input type="hidden" value="">
+                                                                                                            <input type="hidden" value="1">
+                                                                                                        </span>
+                                                                                                        <a href="#" class="log2 plus"></a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="t-cell c-3">
+                                                                                                    <p class="p-r">350<span> грн.</span><span class="niceCheck"><span class="close-x"></span></span></p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li class="cartProd">
+                                                                                            <a href="https://palladium.ua/huawei_matebook_x_13_wt-w09_53019959_.html" class="link-b-m">HUAWEI MateBook X 13 WT-W09 (53019959)</a>
+                                                                                            <div class="prod-on d-t third">
+                                                                                                <div class="t-cell c-1">
+                                                                                                    <div class="d-t info-bask">
+                                                                                                        <div class="t-cell">
+                                                                                                            <img src="img/book.jpg" width="100" height="100" alt="HUAWEI MateBook X 13 WT-W09 (53019959)">
+                                                                                                        </div>
+                                                                                                        <div class="t-cell">
+                                                                                                            <div class="cartProd-promo_btn">Акция</div>
+                                                                                                            <a href="https://palladium.ua/huawei_matebook_x_13_wt-w09_53019959_.html">HUAWEI MateBook X 13 WT-W09 (53019959)</a>
+                                                                                                            <div class="cartProd-promo_p">Акция! Скидка 20% на ноутбуки HUAWEI MateBook X</div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="t-cell c-2">
+                                                                                                    <div class="count-basket">
+                                                                                                        <a href="#" class="log1 disabled minus"></a>
+                                                                                                        <span>
+                                                                                                            <input type="text" value="1" size="2" class="input-small">
+                                                                                                            <input type="hidden" value="">
+                                                                                                            <input type="hidden" value="1">
+                                                                                                        </span>
+                                                                                                        <a href="#" class="log2 plus"></a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="t-cell c-3">
+                                                                                                    <p class="p-r p-r-new">22 399<span> грн.</span><span class="niceCheck"><span class="close-x close-x-promo"></span></span></p>
+                                                                                                    <p class="p-r p-r-old">27 999<span> грн.</span></p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li class="cartProd">
+                                                                                            <a href="https://palladium.ua/apple_iphone_se_16gb_rose_gold.html" class="link-b-m">Apple iPhone SE 16GB Rose Gold</a>
+                                                                                            <div class="prod-on d-t third">
+                                                                                                <div class="t-cell c-1">
+                                                                                                    <div class="d-t info-bask">
+                                                                                                        <div class="t-cell">
+                                                                                                            <img src="img/phone.jpg" width="100" height="100" alt="Apple iPhone SE 16GB Rose Gold">
+                                                                                                        </div>
+                                                                                                        <div class="t-cell">
+                                                                                                            <div class="cartProd-promo_btn">Акция</div>
+                                                                                                            <a href="https://palladium.ua/apple_iphone_se_16gb_rose_gold.html">Apple iPhone SE 16GB Rose Gold</a>
+                                                                                                            <div class="cartProd-promo_p">Акция! Купи iPhone SE и получи гарнитуру и чехол<br> в подарок</div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="t-cell c-2">
+                                                                                                    <div class="count-basket">
+                                                                                                        <a href="#" class="log1 disabled minus"></a>
+                                                                                                        <span>
+                                                                                                            <input type="text" value="1" size="2" class="input-small">
+                                                                                                            <input type="hidden" value="">
+                                                                                                            <input type="hidden" value="1">
+                                                                                                        </span>
+                                                                                                        <a href="#" class="log2 plus"></a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="t-cell c-3">
+                                                                                                    <p class="p-r">6 950<span> грн.</span><span class="niceCheck"><span class="close-x"></span></span></p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <div class="clearfix">
+                                                                                        <div class="in-total2 fl-r">Стоимость товара:<span>35 299<span> грн.</span></span><br></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="btn-group-more second clearfix">
+                                                                                    <div class="fl-l">
+                                                                                        <a href="#" class="btn-more fs-16 white d-i-b">Продолжить покупки</a>
+                                                                                    </div>
+                                                                                    <div class="fl-r t-a-r">
+                                                                                        <a href="#" class="btn-more fs-16 d-i-b">Оформить заказ</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                        <form id="checkout_quik">
+                                                                            <div class="ban-link">
+                                                                                <div class="d-t sub-form input-main">
+                                                                                    <div class="t-cell">
+                                                                                        <span class="title-ban ban2">Заказать без оформления</span>
+                                                                                        <p>Можно не заполнять никаких форм, просто оставить телефон и консультант решит все вопросы по оформлению заказа.</p>
+                                                                                    </div>
+                                                                                    <div class="t-cell">
+                                                                                        <p>Введите номер телефона</p>
+                                                                                        <div class="log-group cart_phone">
+                                                                                            <label for="telephone"></label>
+                                                                                            <input type="text" class="telephone placeholder valid" id="telephone" name="telephone" placeholder="(0XX) XXX XX XX">
+                                                                                        </div>
+                                                                                        <div class="declaration ic-inf-gray">
+                                                                                            <p>например: +38 (067) 123 45 67</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="t-cell">
+                                                                                        <label for="telephone1"></label>
+                                                                                        <button style="display: block; border: 0; height: 42px; padding: 0 15px" class="btn-more fs-16 fl-r" type="submit">ожидаю звонка</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

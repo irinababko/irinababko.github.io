@@ -241,15 +241,16 @@ li.page-list_progress{
     display: inline-block;
     text-align: center !important;
 }
-.bonus-block-r h1{
+.bonus-block-r h2{
     /*font-family: 'Poiret One', cursive;*/
     font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 36px;
     font-weight: 600;
     color: #7ac943;
     display: inline-block;
     text-transform: none;
 }
-.article-main h1:nth-child(3){
+.article-main h2:nth-child(3){
     margin-top: 10px;
     margin-bottom: 50px;
 }
@@ -423,13 +424,14 @@ button:active {
     /*margin: 40px 0 0 400px;*/
     margin: 40px 0 0 0px;
     width: 80%;
-    padding: 20px;
+    /*padding: 20px;*/
 }
 .profile-form h6{
-    padding: 20px 0;
+    padding: 0px 0 20px;
     color: #666666;
     font-size: 24px;
-    font-weight: bold;
+    /*font-weight: bold;*/
+    /*text-transform: uppercase;*/
 }
 .profile-form input{
     width: 40%;
@@ -440,9 +442,10 @@ button:active {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #fff;
+    border: 1px solid #d2d2d2;
     padding: 12px 15px;
     font-size: 14px;
-    color: #333;
+    color: #666;
     margin: 10px 0;
 }
 input.req:invalid{
@@ -536,6 +539,7 @@ a.profile-info-edit{
 .switch-item p{
     display: inline-block;
     margin-left: 80px;
+    margin-top: 5px;
 }
 .input-main_1 .switch-item label{
     padding: 0px;
@@ -592,7 +596,7 @@ input:checked + .slider:before {
 .hobby-block{
     margin-top: 30px;
 }
-.btn-more.white{
+.btn-more.white.white-form{
     height: auto;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -601,7 +605,7 @@ input:checked + .slider:before {
     cursor: pointer;
     transition: .8s;
 }
-.btn-more.white:hover{
+.btn-more.white.white-form:hover{
     background-color: #0075c0;
     color: white;
     transition: .5s;
@@ -612,7 +616,17 @@ a.btn-more{
 }
 /*BONUS*/
 .account-bonus{
-    margin: 50px 20px 50px 20px;
+    /*margin: 50px 20px 50px 20px;*/
+    margin: 0;
+}
+.account-bonus.bonus-rules{
+    margin: 0;
+    width: 900px;
+}
+.account-bonus.bonus-rules h2{
+    color: #666666;
+    margin: 8px 0 18px;
+    font-size: 24px;
 }
 .account-bonus {
     font-family: Roboto, sans-serif;
@@ -642,6 +656,20 @@ a.btn-more{
 .panel-heading {
     margin-top: 5px;
 }
+.account-bonus.bonus-rules .panel-heading{
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.account-bonus.bonus-rules .panel-heading a{
+    padding: 12px;
+}
+.panel-heading h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 1px;
+}
 .panel-heading .panel-heading-title {
     background-color: white;
     height: 20px;
@@ -669,6 +697,9 @@ a.btn-more{
 }
 .panel-body{
     height: 80px;
+}
+.panel-body.panel-body-1{
+    height: auto;
 }
 .panel-heading-1{
     width: 240px;
@@ -853,7 +884,6 @@ a.btn-more{
     padding: 0 300px;
 }
 .time-btn{
-    margin-top: 30px;
     position: absolute;
     top: 190px;
 }
@@ -877,7 +907,9 @@ a.btn-more{
     margin-bottom: 50px;
     margin-left: 30px;
 }
-.novaposhta h1{
+.novaposhta h2{
+    font-size: 28px;
+    text-transform: uppercase;
     color: #666666;
     letter-spacing: 1px;
     margin: 50px 30px 40px;
@@ -885,8 +917,7 @@ a.btn-more{
 
 /*MYLIST*/
 .mylist-block{
-    margin: 50px 0 0 20px;
-
+    margin: 35px 0 0 0px;
 }
 .mylist-block-btn p{
     font-size: 18px;
@@ -910,6 +941,7 @@ a.btn-more{
     display: flex;
     justify-content: space-between;
     width: 35%;
+    margin-bottom: 90px;
 }
 .mylist-btn{
     padding: 6px 20px;
@@ -935,7 +967,7 @@ a.btn-more{
     background-color: white;
 }
 .btn-delete:hover{
-    color: orange;
+    color: #ff8800;
     box-shadow: none;
 }
 .btn-delete i{
@@ -966,6 +998,7 @@ a.btn-more{
     height: 25px;
     width: 25px;
     background-color: #eee;
+    z-index: 200;
 }
 .container-1:hover input ~ .checkmark {
     background-color: #ccc;
@@ -1027,15 +1060,22 @@ a.btn-more{
     text-align: center;
     margin-top: 50px;
 }
-.cart-block h1{
+.cart-block h2{
     font-size: 24px;
     color: #666666;
     text-align: center;
+    text-transform: uppercase;
+    margin: 25px 0;
 }
-h1.cart-promo a{
-    color: #0075c0 !important;
+h2.cart-promo {
+    font-size: 28px;
+    text-transform: uppercase;
     text-align: left;
+    margin: 25px 0;
     margin-top: 50px;
+}
+h2.cart-promo a{
+    color: #0075c0 !important;
 }
 img.cart-promo{
     text-align: left;
@@ -1049,16 +1089,106 @@ img.cart-promo{
 .b-viewe-more{
     margin: 0;
 }
+/*.count-basket input.input-small{*/
+    /*background-color: #fff;*/
+    /*box-sizing: border-box;*/
+    /*color: #333;*/
+    /*font-size: 14px;*/
+    /*text-align: center;*/
+    /*border: 0;*/
+    /*padding: 0;*/
+    /*width: 10px;*/
+/*}*/
+.count-basket a{
+    background: url('https://palladium.ua/templates/palladium/img/icons/icon-log.png') no-repeat;
+}
+.close-x{
+    background: url("https://palladium.ua/templates/palladium/img/close-comp.png") 0 0 no-repeat;
+    cursor: pointer;
+}
+.ic-inf-gray:after{
+    background: url('https://palladium.ua/templates/palladium/img/icons/icon-info.png') 0 -13px no-repeat;
+}
+li.cartProd{
+    position: relative;
+}
+.cartProd-promo_btn{
+    color: red;
+    border: 1px solid red;
+    padding: 3px 7px;
+    width: 35px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 128px;
+}
+.cartProd-promo_p{
+    color: rgb(122, 201, 67);
+    font-size: 16px;
+    position: absolute;
+    top: 105px;
+    left: 128px;
+}
+.prod-on.d-t.third .t-cell p{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.prod-on.d-t.third .t-cell p span{
+    margin-top: 5px;
+}
+.prod-on.d-t.third .t-cell p span.close-x-promo{
+    margin-top: 20px;
+}
+.p-r {
+    position: relative;
+}
+.p-r-old:before{
+    content: '';
+    display: block;
+    border-top: 2px solid #ff8800;
+    width: 96px;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    transform: rotate(14deg);
+}
+.search-result .title-main.second{
+    font-size: 24px;
+    color: #666666;
+    font-weight: bold;
+}
+.list-over .icon-2{
+    background: url("https://palladium.ua/templates/palladium/img/icons/ic-group-2.png") 90px 0;
+}
+.list-over .icon-3{
+    background: url("https://palladium.ua/templates/palladium/img/icons/ic-group-2.png") 50px 0;
+}
+.btn-add-to-cart{
+    background: transparent url('https://palladium.ua/templates/palladium/img/btn-price.png') no-repeat scroll 0 0;
+}
+.link-group a i{
+    background: url('https://palladium.ua/templates/palladium/img/icons/icon-group-1.png') 0 0 no-repeat;
+}
 /*CREDIT*/
 .credit-block{
-    margin: 0 20px;
+    margin: 0 0px;
     color: #666666;
 }
-.credit-block h1{
+.credit-block h2{
+    display: inline-block;
+    text-transform: uppercase;
     font-size: 24px;
     font-family: "Open Sans";
     color: #666666;
     margin-bottom: 25px;
+    margin-top: 25px;
+}
+.credit-block h2.credit-title{
+    margin-top: 40px;
+}
+.credit-block h2:last-child{
+    display: block;
 }
 .credit-block p{
     padding-right: 200px;
@@ -1202,7 +1332,7 @@ img.cart-promo{
     display: inline-block;
     vertical-align: middle;
 }
-.manual-block h1{
+.manual-block h2{
     display: inline-block;
     margin-left: 15px;
 }
@@ -1318,7 +1448,7 @@ a.i-2:before,
 a.i-3:before{
     content: '\f111';
 }
-a span {
+a.icon span {
     background: #fff;
     border: 1px solid #0075c0;
     border-radius: 5px;
@@ -1336,7 +1466,7 @@ a span {
     -moz-transition: all .4s;
     transition: all .4s;
 }
-a span:before {
+a.icon span:before {
     content: '';
     width: 10px;
     height: 10px;
@@ -1352,16 +1482,16 @@ a span:before {
     bottom: -6px;
     left: 37px;
 }
-a span.active{
+a.icon span.active{
     visibility: visible;
     opacity: 1;
     bottom: 50px;
 }
-a:hover span {
-    bottom: 50px;
-    visibility: visible;
-    opacity: 1;
-}
+/*a:hover span {*/
+    /*bottom: 50px;*/
+    /*visibility: visible;*/
+    /*opacity: 1;*/
+/*}*/
 a.i-1:hover {
     background-color: #f5921d;
     color: #0075c0;
@@ -1385,17 +1515,25 @@ a.i-3:hover {
     margin: 30px 0 0 0px;
     color: #666666;
 }
+.dispath-block-1 label{
+    padding: 0;
+}
 .dispath-block h2{
-    margin-top: 50px;
-    margin-left: 20px;
+    margin-top: 40px;
+    margin-left: 4px;
     font-size: 24px;
-    font-weight: bold;
+    /*font-weight: bold;*/
+    text-transform: uppercase;
 }
 .dispath-block .switch-block{
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 0;
+
+}
+.dispath-block .switch-block:last-child{
+    margin-left: 4px;
 }
 .dispath-block .switch-block .switch-item{
     margin: 40px 0;
@@ -1405,11 +1543,14 @@ a.i-3:hover {
 }
 .dispath-block .switch-block-1 .switch-item{
     margin: 10px 0;
+    padding: 0;
 }
 .dispath-block .switch-block .switch-item p{
     display: block;
     width: 800px;
     line-height: 1.2;
+    margin-left: 0;
+    margin-top: 0;
 }
 .dispath-block .switch-item:nth-child(2){
     margin-left: 0;
@@ -1417,6 +1558,9 @@ a.i-3:hover {
 .dispath-block .switch-block .switch-item .title{
     font-size: 24px;
     padding-bottom: 10px;
+}
+.dispath-block .switch-block .switch-item .title:last-child{
+    margin-left: 80px;
 }
 .dispath-block .switch-block .switch-item .title-color{
     color: #f5921d;

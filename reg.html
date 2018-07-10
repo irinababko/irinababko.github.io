@@ -69,35 +69,53 @@
                     <div class="search-result">
                         <div class="column clearfix second">
                             <div class="col-left fl-1">
-                                <ul class="page-list">
-                                    <!--<li class="tmenu1"><a class="active" href="#">мой профиль</a></li>-->
-                                    <!--<li class="tmenu2"><a href="cart-zero.html">корзина</a></li>-->
-                                    <!--<li class="tmenu3"><a href="bonus.html">бонусы</a></li>-->
-                                    <!--<li class="tmenu4"><a href="history.html">история заказов</a></li>-->
-                                    <!--<li class="tmenu5"><a href="mylist.html">избранное</a></li>-->
-                                    <!--<li class="tmenu6"><a href="dispatch.html">рассылка</a></li>-->
-                                    <!--<li class="tmenu7"><a href="credit.html">кредитная линия Palladium</a></li>-->
-                                    <!--<li class="tmenu8"><a href="#">всё о бонусах</a></li>-->
-                                    <!--<li class="page-list_photo"><img src="img/photo.png" alt=""></li>-->
-                                    <!--<li class="page-list_progress">-->
-                                        <!--<div id="myProgress">-->
-                                            <!--&lt;!&ndash;<div id="myBar">30%</div>&ndash;&gt;-->
-                                            <!--<div id="myBar">-->
-                                                <!--<span>33%</span><i class="fa fa-caret-down" aria-hidden="true"></i>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                        <!--<br>-->
-                                        <!--<button onclick="move()" style="display: none">временная</button>-->
-                                        <!--<p>Заполните профиль на 100% и получите 100грн на бонусный счет</p>-->
-                                    <!--</li>-->
+                                <ul class="page-list second" style="margin-bottom: 40px">
+                                   <li>
+                                       <a href="#" class="icon-7">Личные данные</a>
+                                   </li>
+                                    <li>
+                                        <a href="#" class="icon-8">Корзина</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-10">Избранное</a>
+                                    </li>
                                 </ul>
+                                <div class="in-up">
+                                    <div class="up-head clearfix">
+                                        <span class="title-ban2 second fl-l">Вход в кабинет</span>
+                                    </div>
+                                    <div class="input-main">
+                                        <form id="loginbox" method="post" action="">
+                                            <div class="log-main">
+                                                <div class="log-group">
+                                                    <label for="inputEmail">Почтовый ящик</label>
+                                                    <input type="text" name="email_address" id="inputEmail" placeholder="E-mail" class="placeholder">
+                                                </div>
+                                                <div class="log-group">
+                                                    <label for="inputPassword">Пароль</label>
+                                                    <input type="password" name="password" id="inputPassword" placeholder="Пароль" class="placeholder">
+                                                </div>
+                                                <span class="button">
+                                                    <button type="submit">Войти</button>
+                                                </span>
+                                                <div class="declaration">
+                                                    <p class="t-a-c" style="text-align: justify; padding-right: 20px">
+                                                        <a href="#"><span>Забыли пароль?</span></a>
+                                                        <a href="#" class="fl-r"><span>Регистрация</span></a>
+                                                    </p>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-right fl-1">
                                 <div class="content-main second">
                                     <div class="cab-overly">
                                        <span class="title-main second fl-l">Регистрация</span>
                                         <div class="clear"></div>
-                                        <p class="Requirement"> поля, отмеченные *, обязательны для заполнения </p>
+                                        <p class="Requirement"><span class="red">*</span> обязательны для заполнения </p>
                                         <form class="create_account" id="create_account" action="https://palladium.ua/create_account.php" method="post">
                                             <input type="hidden" name="action" value="process">
                                             <div class="content-main oder">
@@ -201,12 +219,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="btn-group-more second clearfix">
-                                                    <span class="button">
-                                                        <button type="submit">
+                                                    <a href="profile-finish.html"> <span class="button">
+                                                        <button type="button">
                                                             <!--<img src="/images/icons/buttons/submit.png" alt="Продолжить" width="12" height="12">-->
                                                             Зарегистрироваться
                                                         </button>
-                                                    </span>
+                                                    </span></a>
                                                 </div>
                                             </div>
                                         </form>

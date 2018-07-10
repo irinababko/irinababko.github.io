@@ -17,21 +17,43 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/full.min.css">
     <link rel="stylesheet" href="css/maxua.css">
+    <link rel="stylesheet" href="css/style-tablet.css">
     <link rel="stylesheet" href="css/style.css">
     <script src='js/main.js'></script>
     <script src="js/tab.js"></script>
     <script src="js/shop.js"></script>
+
+    <!-- custom scrollbar stylesheet -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 </head>
 <body>
 <div class="main">
     <div class="container">
-        <div class="content">
-            <div class="content">
+
+        <div id="demo">
+            <section id="examples" class="snap-scrolling-example">
+                <div id="content-1" class="content horizontal-images">
+                    <ul>
+                        <li><div class="item1"><a href="index.html"><i class="fas fa-user"></i>Профиль</a></div></li>
+                        <li><div class="item1"><a href="cart.html"><i class="fas fa-shopping-basket"></i>Корзина</a></div></li>
+                        <li><div class="item1"><a href="bonus.html"><i class="fas fa-coins"></i>Бонусы</a></div></li>
+                        <li><div class="item1"><a href="history.html"><i class="fas fa-archive"></i>История заказов</a></div></li>
+                        <li><div class="item1"><a class='active' href="mylist.html"><i class="far fa-heart"></i>Избранное</a></div></li>
+                        <li><div class="item1"><a href="dispath.html"><i class="fas fa-envelope"></i>Рассылка</a></div></li>
+                        <li><div class="item1"><a href="credit.html"><i class="fas fa-hand-holding-usd"></i>Кредит от Palladium</a></div></li>
+                        <li><div class="item1"><a href="bonus-rules.html"><i class="fas fa-question"></i>Все о бонусах</a></div></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="content-1">
+            <div class="content-1">
                 <div class="column main-inh panel-search">
                     <div class="search-result">
                         <div class="column clearfix second">
                             <div class="col-left fl-1">
-                                <ul class="page-list">
+                                <ul class="page-list page-list-1">
                                     <li class="tmenu1"><a href="index.html">мой профиль</a></li>
                                     <li class="tmenu2"><a href="cart.html">корзина</a></li>
                                     <li class="tmenu3"><a href="bonus.html">бонусы</a></li>
@@ -97,7 +119,7 @@
                                                         <div class="spend-bonus">
                                                             <p><span>Как потратить накопленные бонусы?</span></p>
                                                             <p>Потратить бонусы можно на новые онлайн покупки в интернет-магазине palladium.ua.
-                                                                Зачисление бонусов в счет покупки возможно до 30/50/100% стоимости нового товара.</p>
+                                                                Зачисление бонусов в счет покупки возможно до 100% стоимости нового товара.</p>
                                                             <p>Использовать свои бонусы можно через 14 дней после их начисления. Количество  бонусов,
                                                                 которыми можно воспользоваться показывается в поле бонусов “Доступно”.</p>
                                                             <p>Бонусы действуют до 31.12 текущего года, по истечении срока они аннулируются.
@@ -124,43 +146,6 @@
                                                 <button type="button" class="mylist-btn">купить</button>
                                                 <button type="button" class="btn-delete"><i class="fas fa-trash-alt"></i>Удалить</button>
                                             </div>
-
-                                            <!--<div class="mylist-block-checkbox">-->
-                                                <!--<label class="container-1">-->
-                                                    <!--<input type="checkbox" checked="checked" name="checkbox[1]">-->
-                                                    <!--<span class="checkmark"></span>-->
-                                                <!--</label>-->
-                                                <!--<label class="container-1">-->
-                                                    <!--<input type="checkbox" checked="checked" name="checkbox[2]">-->
-                                                    <!--<span class="checkmark"></span>-->
-                                                <!--</label>-->
-                                                <!--<label class="container-1">-->
-                                                    <!--<input type="checkbox" checked="checked" name="checkbox[3]">-->
-                                                    <!--<span class="checkmark"></span>-->
-                                                <!--</label>-->
-                                                <!--<label class="container-1">-->
-                                                    <!--<input type="checkbox" checked="checked" name="checkbox[4]">-->
-                                                    <!--<span class="checkmark"></span>-->
-                                                <!--</label>-->
-                                                <!--<div class="mylist-block-checkbox">-->
-                                                    <!--<label class="container-1">-->
-                                                        <!--<input type="checkbox" checked="checked" name="checkbox[5]">-->
-                                                        <!--<span class="checkmark"></span>-->
-                                                    <!--</label>-->
-                                                    <!--<label class="container-1">-->
-                                                        <!--<input type="checkbox" checked="checked" name="checkbox[6]">-->
-                                                        <!--<span class="checkmark"></span>-->
-                                                    <!--</label>-->
-                                                    <!--<label class="container-1">-->
-                                                        <!--<input type="checkbox" checked="checked" name="checkbox[7]">-->
-                                                        <!--<span class="checkmark"></span>-->
-                                                    <!--</label>-->
-                                                    <!--<label class="container-1">-->
-                                                        <!--<input type="checkbox" checked="checked" name="checkbox[8]">-->
-                                                        <!--<span class="checkmark"></span>-->
-                                                    <!--</label>-->
-                                                <!--</div>-->
-                                            <!--</div>-->
 
                                         <div class="slider-prod second clearfix">
                                             <div class="prod-item hover-prod">
@@ -248,36 +233,131 @@
                                                                                             <i class="fa1 fa-shopping-cart1"></i>
                                                                                         </a>
                                                                                     </div>
-                                                                                    <div class="link-group">
-                                                                                        <div class="d-t">
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-1"></i>
-                                                                                                        <br>
-                                                                                                        <span>Отложить</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-2"></i>
-                                                                                                        <br>
-                                                                                                        <span>Кредит</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-3"></i>
-                                                                                                        <br>
-                                                                                                        <span>Сравнить</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                        </div>
+                                                                                    <!--<div class="link-group">-->
+                                                                                        <!--<div class="d-t">-->
+                                                                                            <!--<div class="t-cell">-->
+                                                                                                <!--<noindex>-->
+                                                                                                    <!--<a href="#" class="addTowishlist1 wl44947">-->
+                                                                                                        <!--<i class="icon-1"></i>-->
+                                                                                                        <!--<br>-->
+                                                                                                        <!--<span>Отложить</span>-->
+                                                                                                    <!--</a>-->
+                                                                                                <!--</noindex>-->
+                                                                                            <!--</div>-->
+                                                                                            <!--<div class="t-cell">-->
+                                                                                                <!--<noindex>-->
+                                                                                                    <!--<a href="#" class="addTowishlist1 wl44947">-->
+                                                                                                        <!--<i class="icon-2"></i>-->
+                                                                                                        <!--<br>-->
+                                                                                                        <!--<span>Кредит</span>-->
+                                                                                                    <!--</a>-->
+                                                                                                <!--</noindex>-->
+                                                                                            <!--</div>-->
+                                                                                            <!--<div class="t-cell">-->
+                                                                                                <!--<noindex>-->
+                                                                                                    <!--<a href="#" class="addTowishlist1 wl44947">-->
+                                                                                                        <!--<i class="icon-3"></i>-->
+                                                                                                        <!--<br>-->
+                                                                                                        <!--<span>Сравнить</span>-->
+                                                                                                    <!--</a>-->
+                                                                                                <!--</noindex>-->
+                                                                                            <!--</div>-->
+                                                                                        <!--</div>-->
+                                                                                    <!--</div>-->
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prod-item hover-prod">
+                                                <div class="in">
+                                                    <div class="hover-item left-long" onmouseover="show_img_list();">
+                                                        <div class="prod-info">
+                                                            <div class="overview-prod clearfix">
+                                                                <ul class="list-over fl-l">
+                                                                    <li>
+                                                                        <noindex>
+                                                                            <a href="http://palladium.ua">
+                                                                                <span class="icon-2"></span>
+                                                                                <br>Обзор
+                                                                            </a>
+                                                                        </noindex>
+                                                                    </li>
+                                                                    <li>
+                                                                        <noindex>
+                                                                            <a href="http://palladium.ua">
+                                                                                <span class="icon-3"></span>
+                                                                                <br>Аксессуары
+                                                                            </a>
+                                                                        </noindex>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="fl-r bl-pr">
+                                                                    <span class="prod-count">44947</span>
+                                                                    <span>код товара</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bl-hor-main">
+                                                                <div class="bl-hor1">
+                                                                    <div class="overview-prod clearfix">
+                                                                        <ul class="list-over fl-l">
+                                                                            <li>
+                                                                                <noindex>
+                                                                                    <a href="http://palladium.ua">
+                                                                                        <span class="icon-2"></span>
+                                                                                        <br>Обзор
+                                                                                    </a>
+                                                                                </noindex>
+                                                                            </li>
+                                                                            <li>
+                                                                                <noindex>
+                                                                                    <a href="http://palladium.ua">
+                                                                                        <span class="icon-3"></span>
+                                                                                        <br>Аксессуары
+                                                                                    </a>
+                                                                                </noindex>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <div class="fl-r bl-pr">
+                                                                            <span class="prod-count">44947</span>
+                                                                            <span>код товара</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="p-r">
+                                                                        <div class="block-product">
+                                                                            <a href="https://palladium.ua/apple_iphone_se_16gb_rose_gold.html">
+                                                                                <label class="container-1">
+                                                                                    <input type="checkbox" checked="checked" name="checkbox[6]">
+                                                                                    <span class="checkmark"></span>
+                                                                                </label>
+                                                                                <img class="img44947" src="img/phone.jpg" alt="zoo">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="second-fit">
+                                                                    <span class="title-prod">
+                                                                        <a href="https://palladium.ua/apple_iphone_se_16gb_rose_gold.html">Apple iPhone SE 16GB ROSE GOLD</a>
+                                                                        <span class="prod-count">код 44947</span>
+                                                                    </span>
+                                                                    <div class="d-t-h table_prod_block">
+                                                                        <div class="cell-it table_desc">
+                                                                            <div class="bl-hor2">
+                                                                                <div class="product-in">
+                                                                                    <span class="title-prod">
+                                                                                        <a href="https://palladium.ua/apple_iphone_se_16gb_rose_gold.html">Apple iPhone SE 16GB ROSE GOLD</a>
+                                                                                        <span class="prod-count">Код 44947</span>
+                                                                                    </span>
+                                                                                    <div class="price-group">
+                                                                                        <b>6 999<span>грн.</span></b>
+                                                                                        <a class="btn btn-add-to-cart" href="#" onclick="doBuyNow('44947', '1'); return false;">
+                                                                                            <i class="fa1 fa-shopping-cart1"></i>
+                                                                                        </a>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -374,37 +454,6 @@
                                                                                             <i class="fa1 fa-shopping-cart1"></i>
                                                                                         </a>
                                                                                     </div>
-                                                                                    <div class="link-group">
-                                                                                        <div class="d-t">
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-1"></i>
-                                                                                                        <br>
-                                                                                                        <span>Отложить</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-2"></i>
-                                                                                                        <br>
-                                                                                                        <span>Кредит</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-3"></i>
-                                                                                                        <br>
-                                                                                                        <span>Сравнить</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -499,163 +548,6 @@
                                                                                         <a class="btn btn-add-to-cart" href="#" onclick="doBuyNow('44947', '1'); return false;">
                                                                                             <i class="fa1 fa-shopping-cart1"></i>
                                                                                         </a>
-                                                                                    </div>
-                                                                                    <div class="link-group">
-                                                                                        <div class="d-t">
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-1"></i>
-                                                                                                        <br>
-                                                                                                        <span>Отложить</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-2"></i>
-                                                                                                        <br>
-                                                                                                        <span>Кредит</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-3"></i>
-                                                                                                        <br>
-                                                                                                        <span>Сравнить</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="prod-item hover-prod">
-                                                <div class="in">
-                                                    <div class="hover-item left-long" onmouseover="show_img_list();">
-                                                        <div class="prod-info">
-                                                            <div class="overview-prod clearfix">
-                                                                <ul class="list-over fl-l">
-                                                                    <li>
-                                                                        <noindex>
-                                                                            <a href="http://palladium.ua">
-                                                                                <span class="icon-2"></span>
-                                                                                <br>Обзор
-                                                                            </a>
-                                                                        </noindex>
-                                                                    </li>
-                                                                    <li>
-                                                                        <noindex>
-                                                                            <a href="http://palladium.ua">
-                                                                                <span class="icon-3"></span>
-                                                                                <br>Аксессуары
-                                                                            </a>
-                                                                        </noindex>
-                                                                    </li>
-                                                                </ul>
-                                                                <div class="fl-r bl-pr">
-                                                                    <span class="prod-count">44947</span>
-                                                                    <span>код товара</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="bl-hor-main">
-                                                                <div class="bl-hor1">
-                                                                    <div class="overview-prod clearfix">
-                                                                        <ul class="list-over fl-l">
-                                                                            <li>
-                                                                                <noindex>
-                                                                                    <a href="http://palladium.ua">
-                                                                                        <span class="icon-2"></span>
-                                                                                        <br>Обзор
-                                                                                    </a>
-                                                                                </noindex>
-                                                                            </li>
-                                                                            <li>
-                                                                                <noindex>
-                                                                                    <a href="http://palladium.ua">
-                                                                                        <span class="icon-3"></span>
-                                                                                        <br>Аксессуары
-                                                                                    </a>
-                                                                                </noindex>
-                                                                            </li>
-                                                                        </ul>
-                                                                        <div class="fl-r bl-pr">
-                                                                            <span class="prod-count">44947</span>
-                                                                            <span>код товара</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="p-r">
-                                                                        <div class="block-product">
-                                                                            <a href="https://palladium.ua/apple_iphone_se_16gb_rose_gold.html">
-                                                                                <label class="container-1">
-                                                                                    <input type="checkbox" checked="checked" name="checkbox[6]">
-                                                                                    <span class="checkmark"></span>
-                                                                                </label>
-                                                                                <img class="img44947" src="img/phone.jpg" alt="zoo">
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="second-fit">
-                                                                    <span class="title-prod">
-                                                                        <a href="https://palladium.ua/apple_iphone_se_16gb_rose_gold.html">Apple iPhone SE 16GB ROSE GOLD</a>
-                                                                        <span class="prod-count">код 44947</span>
-                                                                    </span>
-                                                                    <div class="d-t-h table_prod_block">
-                                                                        <div class="cell-it table_desc">
-                                                                            <div class="bl-hor2">
-                                                                                <div class="product-in">
-                                                                                    <span class="title-prod">
-                                                                                        <a href="https://palladium.ua/apple_iphone_se_16gb_rose_gold.html">Apple iPhone SE 16GB ROSE GOLD</a>
-                                                                                        <span class="prod-count">Код 44947</span>
-                                                                                    </span>
-                                                                                    <div class="price-group">
-                                                                                        <b>6 999<span>грн.</span></b>
-                                                                                        <a class="btn btn-add-to-cart" href="#" onclick="doBuyNow('44947', '1'); return false;">
-                                                                                            <i class="fa1 fa-shopping-cart1"></i>
-                                                                                        </a>
-                                                                                    </div>
-                                                                                    <div class="link-group">
-                                                                                        <div class="d-t">
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-1"></i>
-                                                                                                        <br>
-                                                                                                        <span>Отложить</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-2"></i>
-                                                                                                        <br>
-                                                                                                        <span>Кредит</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-3"></i>
-                                                                                                        <br>
-                                                                                                        <span>Сравнить</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -753,36 +645,100 @@
                                                                                             <i class="fa1 fa-shopping-cart1"></i>
                                                                                         </a>
                                                                                     </div>
-                                                                                    <div class="link-group">
-                                                                                        <div class="d-t">
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-1"></i>
-                                                                                                        <br>
-                                                                                                        <span>Отложить</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-2"></i>
-                                                                                                        <br>
-                                                                                                        <span>Кредит</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-3"></i>
-                                                                                                        <br>
-                                                                                                        <span>Сравнить</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                        </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prod-item hover-prod">
+                                                <div class="in">
+                                                    <div class="hover-item left-long" onmouseover="show_img_list();">
+                                                        <div class="prod-info">
+                                                            <div class="overview-prod clearfix">
+                                                                <ul class="list-over fl-l">
+                                                                    <li>
+                                                                        <noindex>
+                                                                            <a href="http://palladium.ua">
+                                                                                <span class="icon-2"></span>
+                                                                                <br>Обзор
+                                                                            </a>
+                                                                        </noindex>
+                                                                    </li>
+                                                                    <li>
+                                                                        <noindex>
+                                                                            <a href="http://palladium.ua">
+                                                                                <span class="icon-3"></span>
+                                                                                <br>Аксессуары
+                                                                            </a>
+                                                                        </noindex>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="fl-r bl-pr">
+                                                                    <span class="prod-count">44947</span>
+                                                                    <span>код товара</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bl-hor-main">
+                                                                <div class="bl-hor1">
+                                                                    <div class="overview-prod clearfix">
+                                                                        <ul class="list-over fl-l">
+                                                                            <li>
+                                                                                <noindex>
+                                                                                    <a href="http://palladium.ua">
+                                                                                        <span class="icon-2"></span>
+                                                                                        <br>Обзор
+                                                                                    </a>
+                                                                                </noindex>
+                                                                            </li>
+                                                                            <li>
+                                                                                <noindex>
+                                                                                    <a href="http://palladium.ua">
+                                                                                        <span class="icon-3"></span>
+                                                                                        <br>Аксессуары
+                                                                                    </a>
+                                                                                </noindex>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <div class="fl-r bl-pr">
+                                                                            <span class="prod-count">44947</span>
+                                                                            <span>код товара</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="p-r">
+                                                                        <div class="block-product">
+                                                                            <a href="https://palladium.ua/apple_iphone_se_16gb_rose_gold.html">
+                                                                                <label class="container-1">
+                                                                                    <input type="checkbox" checked="checked" name="checkbox[6]">
+                                                                                    <span class="checkmark"></span>
+                                                                                </label>
+                                                                                <img class="img44947" src="img/phone.jpg" alt="zoo">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="second-fit">
+                                                                    <span class="title-prod">
+                                                                        <a href="https://palladium.ua/apple_iphone_se_16gb_rose_gold.html">Apple iPhone SE 16GB ROSE GOLD</a>
+                                                                        <span class="prod-count">код 44947</span>
+                                                                    </span>
+                                                                    <div class="d-t-h table_prod_block">
+                                                                        <div class="cell-it table_desc">
+                                                                            <div class="bl-hor2">
+                                                                                <div class="product-in">
+                                                                                    <span class="title-prod">
+                                                                                        <a href="https://palladium.ua/apple_iphone_se_16gb_rose_gold.html">Apple iPhone SE 16GB ROSE GOLD</a>
+                                                                                        <span class="prod-count">Код 44947</span>
+                                                                                    </span>
+                                                                                    <div class="price-group">
+                                                                                        <b>6 999<span>грн.</span></b>
+                                                                                        <a class="btn btn-add-to-cart" href="#" onclick="doBuyNow('44947', '1'); return false;">
+                                                                                            <i class="fa1 fa-shopping-cart1"></i>
+                                                                                        </a>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -879,37 +835,6 @@
                                                                                             <i class="fa1 fa-shopping-cart1"></i>
                                                                                         </a>
                                                                                     </div>
-                                                                                    <div class="link-group">
-                                                                                        <div class="d-t">
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-1"></i>
-                                                                                                        <br>
-                                                                                                        <span>Отложить</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-2"></i>
-                                                                                                        <br>
-                                                                                                        <span>Кредит</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-3"></i>
-                                                                                                        <br>
-                                                                                                        <span>Сравнить</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -1004,163 +929,6 @@
                                                                                         <a class="btn btn-add-to-cart" href="#" onclick="doBuyNow('44947', '1'); return false;">
                                                                                             <i class="fa1 fa-shopping-cart1"></i>
                                                                                         </a>
-                                                                                    </div>
-                                                                                    <div class="link-group">
-                                                                                        <div class="d-t">
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-1"></i>
-                                                                                                        <br>
-                                                                                                        <span>Отложить</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-2"></i>
-                                                                                                        <br>
-                                                                                                        <span>Кредит</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-3"></i>
-                                                                                                        <br>
-                                                                                                        <span>Сравнить</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="prod-item hover-prod">
-                                                <div class="in">
-                                                    <div class="hover-item left-long" onmouseover="show_img_list();">
-                                                        <div class="prod-info">
-                                                            <div class="overview-prod clearfix">
-                                                                <ul class="list-over fl-l">
-                                                                    <li>
-                                                                        <noindex>
-                                                                            <a href="http://palladium.ua">
-                                                                                <span class="icon-2"></span>
-                                                                                <br>Обзор
-                                                                            </a>
-                                                                        </noindex>
-                                                                    </li>
-                                                                    <li>
-                                                                        <noindex>
-                                                                            <a href="http://palladium.ua">
-                                                                                <span class="icon-3"></span>
-                                                                                <br>Аксессуары
-                                                                            </a>
-                                                                        </noindex>
-                                                                    </li>
-                                                                </ul>
-                                                                <div class="fl-r bl-pr">
-                                                                    <span class="prod-count">44947</span>
-                                                                    <span>код товара</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="bl-hor-main">
-                                                                <div class="bl-hor1">
-                                                                    <div class="overview-prod clearfix">
-                                                                        <ul class="list-over fl-l">
-                                                                            <li>
-                                                                                <noindex>
-                                                                                    <a href="http://palladium.ua">
-                                                                                        <span class="icon-2"></span>
-                                                                                        <br>Обзор
-                                                                                    </a>
-                                                                                </noindex>
-                                                                            </li>
-                                                                            <li>
-                                                                                <noindex>
-                                                                                    <a href="http://palladium.ua">
-                                                                                        <span class="icon-3"></span>
-                                                                                        <br>Аксессуары
-                                                                                    </a>
-                                                                                </noindex>
-                                                                            </li>
-                                                                        </ul>
-                                                                        <div class="fl-r bl-pr">
-                                                                            <span class="prod-count">44947</span>
-                                                                            <span>код товара</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="p-r">
-                                                                        <div class="block-product">
-                                                                            <a href="https://palladium.ua/apple_iphone_se_16gb_rose_gold.html">
-                                                                                <label class="container-1">
-                                                                                    <input type="checkbox" checked="checked" name="checkbox[6]">
-                                                                                    <span class="checkmark"></span>
-                                                                                </label>
-                                                                                <img class="img44947" src="img/phone.jpg" alt="zoo">
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="second-fit">
-                                                                    <span class="title-prod">
-                                                                        <a href="https://palladium.ua/apple_iphone_se_16gb_rose_gold.html">Apple iPhone SE 16GB ROSE GOLD</a>
-                                                                        <span class="prod-count">код 44947</span>
-                                                                    </span>
-                                                                    <div class="d-t-h table_prod_block">
-                                                                        <div class="cell-it table_desc">
-                                                                            <div class="bl-hor2">
-                                                                                <div class="product-in">
-                                                                                    <span class="title-prod">
-                                                                                        <a href="https://palladium.ua/apple_iphone_se_16gb_rose_gold.html">Apple iPhone SE 16GB ROSE GOLD</a>
-                                                                                        <span class="prod-count">Код 44947</span>
-                                                                                    </span>
-                                                                                    <div class="price-group">
-                                                                                        <b>6 999<span>грн.</span></b>
-                                                                                        <a class="btn btn-add-to-cart" href="#" onclick="doBuyNow('44947', '1'); return false;">
-                                                                                            <i class="fa1 fa-shopping-cart1"></i>
-                                                                                        </a>
-                                                                                    </div>
-                                                                                    <div class="link-group">
-                                                                                        <div class="d-t">
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-1"></i>
-                                                                                                        <br>
-                                                                                                        <span>Отложить</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-2"></i>
-                                                                                                        <br>
-                                                                                                        <span>Кредит</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                            <div class="t-cell">
-                                                                                                <noindex>
-                                                                                                    <a href="#" class="addTowishlist1 wl44947">
-                                                                                                        <i class="icon-3"></i>
-                                                                                                        <br>
-                                                                                                        <span>Сравнить</span>
-                                                                                                    </a>
-                                                                                                </noindex>
-                                                                                            </div>
-                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -1210,6 +978,46 @@
         </div>
     </div>
 </div>
+
+<!-- Google CDN jQuery with fallback to local -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!--<script>window.jQuery || document.write('<script src="../js/minified/jquery-1.11.0.min.js"><\/script>')</script>-->
+
+<!-- custom scrollbar plugin -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<script>
+    (function($){
+        $(window).on("load",function(){
+
+            /*
+            get snap amount programmatically or just set it directly (e.g. "273")
+            in this example, the snap amount is list item's (li) outer-width (width+margins)
+            */
+            // var amount=Math.max.apply(Math,$("#content-1 li").map(function(){return $(this).outerWidth(true);}).get());
+
+            var amount='218';
+
+            $("#content-1").mCustomScrollbar({
+                axis:"x",
+                theme:"inset",
+                advanced:{
+                    autoExpandHorizontalScroll:true
+                },
+                scrollButtons:{
+                    enable:true,
+                    scrollType:"stepped"
+                },
+                keyboard:{scrollType:"stepped"},
+                snapAmount:amount,
+                mouseWheel:{scrollAmount:amount}
+            });
+
+            $('.mCSB_container').css('left', '-872px');
+
+        });
+    })(jQuery);
+</script>
 
 </body>
 </html>

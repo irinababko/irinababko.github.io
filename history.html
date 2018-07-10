@@ -17,21 +17,43 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/full.min.css">
     <link rel="stylesheet" href="css/maxua.css">
+    <link rel="stylesheet" href="css/style-tablet.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel='stylesheet' href='https://apimgmtstorelinmtekiynqw.blob.core.windows.net/content/MediaLibrary/Widget/Tracking/styles/tracking.css' />
     <script src='js/main.js'></script>
     <script src="js/tab.js"></script>
+
+    <!-- custom scrollbar stylesheet -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 </head>
 <body>
 <div class="main">
     <div class="container">
-        <div class="content">
-            <div class="content">
+
+        <div id="demo">
+            <section id="examples" class="snap-scrolling-example">
+                <div id="content-1" class="content horizontal-images">
+                    <ul>
+                        <li><div class="item1"><a href="index.html"><i class="fas fa-user"></i>Профиль</a></div></li>
+                        <li><div class="item1"><a href="cart.html"><i class="fas fa-shopping-basket"></i>Корзина</a></div></li>
+                        <li><div class="item1"><a href="bonus.html"><i class="fas fa-coins"></i>Бонусы</a></div></li>
+                        <li><div class="item1"><a class='active' href="history.html"><i class="fas fa-archive"></i>История заказов</a></div></li>
+                        <li><div class="item1"><a href="mylist.html"><i class="far fa-heart"></i>Избранное</a></div></li>
+                        <li><div class="item1"><a href="dispath.html"><i class="fas fa-envelope"></i>Рассылка</a></div></li>
+                        <li><div class="item1"><a href="credit.html"><i class="fas fa-hand-holding-usd"></i>Кредит от Palladium</a></div></li>
+                        <li><div class="item1"><a href="bonus-rules.html"><i class="fas fa-question"></i>Все о бонусах</a></div></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="content-1">
+            <div class="content-1">
                 <div class="column main-inh panel-search">
                     <div class="search-result">
                         <div class="column clearfix second">
                             <div class="col-left fl-1">
-                                <ul class="page-list">
+                                <ul class="page-list page-list-1">
                                     <li class="tmenu1"><a href="index.html">мой профиль</a></li>
                                     <li class="tmenu2"><a href="cart.html">корзина</a></li>
                                     <li class="tmenu3"><a href="bonus.html">бонусы</a></li>
@@ -97,7 +119,7 @@
                                                         <div class="spend-bonus">
                                                             <p><span>Как потратить накопленные бонусы?</span></p>
                                                             <p>Потратить бонусы можно на новые онлайн покупки в интернет-магазине palladium.ua.
-                                                                Зачисление бонусов в счет покупки возможно до 30/50/100% стоимости нового товара.</p>
+                                                                Зачисление бонусов в счет покупки возможно до 100% стоимости нового товара.</p>
                                                             <p>Использовать свои бонусы можно через 14 дней после их начисления. Количество  бонусов,
                                                                 которыми можно воспользоваться показывается в поле бонусов “Доступно”.</p>
                                                             <p>Бонусы действуют до 31.12 текущего года, по истечении срока они аннулируются.
@@ -258,5 +280,46 @@
     </div>
 </div>
 <script type='text/javascript' id='track' charset='utf-8' data-lang='ua' apiKey='40640775aa56f2c418da184522e6da4b' data-town='city-not-default' data-town-name='undefined' data-town-id='undefined' src='https://apimgmtstorelinmtekiynqw.blob.core.windows.net/content/MediaLibrary/Widget/Tracking/dist/track.min.js'></script>
+
+<!-- Google CDN jQuery with fallback to local -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!--<script>window.jQuery || document.write('<script src="../js/minified/jquery-1.11.0.min.js"><\/script>')</script>-->
+
+<!-- custom scrollbar plugin -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<script>
+    (function($){
+        $(window).on("load",function(){
+
+            /*
+            get snap amount programmatically or just set it directly (e.g. "273")
+            in this example, the snap amount is list item's (li) outer-width (width+margins)
+            */
+            // var amount=Math.max.apply(Math,$("#content-1 li").map(function(){return $(this).outerWidth(true);}).get());
+
+            var amount='218';
+
+            $("#content-1").mCustomScrollbar({
+                axis:"x",
+                theme:"inset",
+                advanced:{
+                    autoExpandHorizontalScroll:true
+                },
+                scrollButtons:{
+                    enable:true,
+                    scrollType:"stepped"
+                },
+                keyboard:{scrollType:"stepped"},
+                snapAmount:amount,
+                mouseWheel:{scrollAmount:amount}
+            });
+
+            $('.mCSB_container').css('left', '-654px');
+
+        });
+    })(jQuery);
+</script>
+
 </body>
 </html>

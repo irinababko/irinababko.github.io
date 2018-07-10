@@ -10,7 +10,7 @@ window.onload = function() {
     input.addEventListener('input', function() {
         var min = this.min || 0,
             max = this.max || 100,
-            c_style, u, edge_w, val, str = '';
+            c_style, u, edge_w, val = 0, str = '';
 
         this.setAttribute('value', this.value);
 
@@ -64,6 +64,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.culc-btn').click( function() {
         $('a span').toggleClass('active');
+        $('input[type=range]').setAttribute('value', 50);
     });
 });
 

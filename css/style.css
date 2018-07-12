@@ -119,23 +119,104 @@ li.page-list_progress{
     /*margin: 30px auto;*/
 /*}*/
 .page-list.page-list-1>li>a{
-    text-align: center;
+    text-align: left;
     border: 1px solid transparent;
-    padding: 15px;
+    padding: 15px 20px 15px 60px;
 }
-.page-list.page-list-1>li>a:hover,
-.page-list.page-list-1>li>a.active{
-    background-color: #ffffff;
-    background-repeat: no-repeat;
+.page-list.second.page-list-1>li>a::after{
+    /*background: url("https://palladium.ua/templates/palladium/img/icons/icon-menu-group.png") no-repeat;*/
+}
+.page-list.second.page-list-1>li>a:hover,
+.page-list.second.page-list-1>li>a.active{
+    background-color: #fff;
     border: 1px solid #0075c0;
     color: #0075c0;
 }
-.page-list>li>a:hover, .page-list>li>a.active{
+.page-list.page-list-1.second li a.tmenu1:after{
+    background: url("../img/icon-prifil.png") no-repeat;
+}
+.page-list.page-list-1.second li a.tmenu1.active:after,
+.page-list.page-list-1.second li a.tmenu1:hover:after{
+    background: url("../img/icon-man.png") no-repeat;
+}
+.page-list.page-list-1.second li a.tmenu2:after{
+    background: url("../img/icon-korz.png") no-repeat;
+    width: 33px;
+}
+.page-list.page-list-1.second li a.tmenu2.active:after,
+.page-list.page-list-1.second li a.tmenu2:hover:after{
+    background: url("../img/icon-shop-normal.png") no-repeat;
+    width: 33px;
+}
+.page-list.page-list-1.second li a.tmenu3:after{
+     background: url("../img/icon-coins-norm.png") no-repeat;
+ }
+.page-list.page-list-1.second li a.tmenu3.active:after,
+.page-list.page-list-1.second li a.tmenu3:hover:after{
+    background: url("../img/icon-coins.png") no-repeat;
+}
+.page-list.page-list-1.second li a.tmenu3:after{
+    background: url("../img/icon-coins-norm.png") no-repeat;
+}
+.page-list.page-list-1.second li a.tmenu3.active:after,
+.page-list.page-list-1.second li a.tmenu3:hover:after{
+    background: url("../img/icon-coins.png") no-repeat;
+}
+.page-list.page-list-1.second li a.tmenu4:after{
+    background: url("../img/icon-zakaz.png") no-repeat;
+}
+.page-list.page-list-1.second li a.tmenu4.active:after,
+.page-list.page-list-1.second li a.tmenu4:hover:after{
+    background: url("../img/icon-box.png") no-repeat;
+}
+.page-list.page-list-1.second li a.tmenu5:after{
+    background: url("../img/icon-mylist.png") no-repeat;
+}
+.page-list.page-list-1.second li a.tmenu5.active:after,
+.page-list.page-list-1.second li a.tmenu5:hover:after{
+    background: url("../img/icon-mylist.png") no-repeat;
+}
+.page-list.page-list-1.second li a.tmenu6:after{
+    background: url("../img/icon-mass.png") no-repeat;
+    width: 22px;
+    height: 18px;
+}
+.page-list.page-list-1.second li a.tmenu6.active:after,
+.page-list.page-list-1.second li a.tmenu6:hover:after{
+    background: url("../img/icon-mass-active.png") no-repeat;
+    width: 22px;
+    height: 18px;
+}
+.page-list.page-list-1.second li a.tmenu7:after{
+     background: url("../img/icon-kredit.png") no-repeat;
+ }
+.page-list.page-list-1.second li a.tmenu7.active:after,
+.page-list.page-list-1.second li a.tmenu7:hover:after{
+    background: url("../img/icon-credit-active.png") no-repeat;
+}
+.page-list.page-list-1.second li a.tmenu8:after{
+    background: url("../img/icon-Q.png") no-repeat;
+    height: 26px;
+    width: 16px;
+}
+.page-list.page-list-1.second li a.tmenu8.active:after,
+.page-list.page-list-1.second li a.tmenu8:hover:after{
+    background: url("../img/icon-q-active.png") no-repeat;
+    height: 26px;
+    width: 16px;
+}
+/*.page-list.page-list-1.second>li>a.tmenu1.active:after,*/
+/*.page-list.page-list-1.second>li>a.tmenu1:hover:after{*/
+    /*background-position: -43px 0;*/
+/*}*/
+.page-list>li>a:hover,
+.page-list>li>a.active{
     background-image: url("https://palladium.ua/templates/palladium/img/arr-right-small.png");
 }
 .page-list.second>li>a:after{
     background: url("https://palladium.ua/templates/palladium/img/icons/icon-menu-group.png") no-repeat;
 }
+
 /*.content-main.second {*/
     /*padding: 0 0 1px;*/
     /*border-bottom: 1px solid #d2d2d2;*/

@@ -752,6 +752,8 @@ a.btn-more{
 .panel-heading-1.panel-heading-name{
     text-align: left;
     line-height: 1.5;
+}
+.panel-heading-1.panel-heading-name.panel-heading-name-1{
     width: 48%;
 }
 .panel-heading-1.panel-heading-status{

@@ -568,8 +568,11 @@ a.btn-more{
 }
 /*BONUS*/
 .account-bonus{
-    margin: 50px 0px;
+    margin: 35px 0px;
     /*margin: 0;*/
+}
+.account-bonus h2{
+    margin-bottom: 30px;
 }
 .account-bonus.bonus-rules{
     margin: 0;
@@ -595,7 +598,7 @@ a.btn-more{
 .account-bonus h2 {
     font-weight: 400;
     color: #333333;
-    font-size: 28px;
+    font-size: 26px;
     text-transform: uppercase;
 }
 .account-bonus h5 {
@@ -615,6 +618,10 @@ a.btn-more{
 }
 .account-bonus.bonus-rules .panel-heading a{
     padding: 12px;
+}
+.account-bonus.account-bonus-1{
+    max-width: 900px;
+    margin-left: 140px;
 }
 .panel-heading h3{
     font-size: 16px;
@@ -664,7 +671,12 @@ a.btn-more{
 .panel-heading-1.panel-heading-name{
     text-align: left;
     line-height: 1.5;
-
+    width: 48%;
+}
+.panel-heading-1.panel-heading-status{
+    text-align: left;
+    line-height: 1.5;
+    width: 400px;
 }
 .panel-body .panel-heading-1 img{
     width: 120px;
@@ -675,6 +687,9 @@ a.btn-more{
     height: 100px !important;
     /*line-height: 100px;*/
 }
+.panel-heading-1.panel-heading-2{
+    width: 400px;
+}
 .panel-body .panel-heading-1 a.review-link{
     margin: 0;
     padding: 0;
@@ -682,6 +697,10 @@ a.btn-more{
     text-transform: uppercase;
     color: #0075c0;
 }
+.panel-heading-1.panel-heading-review{
+    text-align: left;
+}
+
 .panel-body .panel-heading-1 a.product-card{
     color: #666666;
 }
@@ -780,7 +799,7 @@ a.btn-more{
 }
 .btn-block .soc-btn i{
     margin-right: 10px;
-    font-size: 40px;
+    font-size: 34px;
 }
 .btn-block .soc-btn.soc-btn_promo{
     color: #0075c0;
@@ -892,11 +911,11 @@ a.btn-more{
 .mylist-block-btn{
     display: flex;
     justify-content: space-between;
-    width: 35%;
+    width: 40%;
     margin-bottom: 90px;
 }
 .mylist-btn{
-    padding: 6px 20px;
+    padding: 0px 35px;
     background-color: white;
     color: #ff8800;
     font-weight: bold;
@@ -1034,6 +1053,17 @@ img.cart-promo{
 }
 .cart-block input{
     margin: 0 auto;
+}
+.promo-code p{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.promo-code input[type=text]{
+    margin-left: 20px;
+    width: 47%;
+}
+.sub-form.sub-form-1{
+    width: 98%;
 }
 .content-fourth{
     max-width: 1600px;
@@ -1470,17 +1500,20 @@ a.i-3:hover {
 .dispath-block{
     margin: 30px 0 0 0px;
     color: #666666;
+    background-color: #f5f5f5;
+    padding-left: 20px;
 }
 .dispath-block-1 label{
     padding: 0;
 }
 .dispath-block h2{
-    margin-top: 40px;
-    margin-left: 4px;
-    font-size: 24px;
+    margin-top: 0px;
+    padding-top: 7px;
+    font-size: 26px;
     /*font-weight: bold;*/
     text-transform: uppercase;
 }
+
 .dispath-block .switch-block{
     flex-flow: column;
     justify-content: flex-start;
@@ -1494,6 +1527,9 @@ a.i-3:hover {
 .dispath-block .switch-block .switch-item{
     margin: 40px 0;
 }
+.dispath-block .switch-block .switch-item:first-child{
+    margin-top: 0;
+}
 .dispath-block .switch-block-1{
     margin: 30px 0 100px 0;
 }
@@ -1503,7 +1539,7 @@ a.i-3:hover {
 }
 .dispath-block .switch-block .switch-item p{
     display: block;
-    width: 800px;
+    width: 900px;
     line-height: 1.2;
     margin-left: 0;
     margin-top: 0;
@@ -1514,6 +1550,7 @@ a.i-3:hover {
 .dispath-block .switch-block .switch-item .title{
     font-size: 24px;
     padding-bottom: 10px;
+    color: rgba(51, 51, 51);
 }
 .dispath-block .switch-block .switch-item .title:last-child{
     margin-left: 80px;
@@ -1522,7 +1559,16 @@ a.i-3:hover {
     color: #f5921d;
 }
 .dispath-block.dispath-block-1{
-    margin-bottom: 100px;
+    margin-bottom: 15px;
+    margin-top: 45px;
+}
+.dispath-block.account-bonus{
+    margin-top: 0;
+    max-width: 1200px;
+}
+.dispath-block.account-bonus h2{
+    margin-bottom: 20px;
+    padding-left: 4px;
 }
 /*Registration*/
 .red{
@@ -1588,7 +1634,7 @@ input[type=password]{
     /*padding: 18px 0 3px 30px;*/
 /*}*/
 div.icon-3{
-    background: transparent url(https://palladium.ua/templates/palladium/img/icons/icon-menu-top-head.png) no-repeat scroll 0 -94px;
+    background: transparent url('https://palladium.ua/templates/palladium/img/icons/icon-menu-top-head.png') no-repeat scroll 0 -94px;
     display: block;
     padding: 3px 0 3px 30px;
     /*position: absolute;*/
@@ -1719,6 +1765,87 @@ div.icon-3:hover .enter-block{
     background: url("../img/gmail.png") 50% 50% no-repeat;
     border: 1px solid #0075c0;
 }
+/*Spend*/
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    /*border: 1px solid #ccc;*/
+    /*background-color: #f1f1f1;*/
+    width: 84%;
+    margin: 40px 0;
+}
+
+/* Style the buttons inside the tab */
+.tab .tablinks {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 50px;
+    transition: 0.3s;
+    font-size: 18px;
+    color: #666666;
+    font-weight: bold;
+    /*border-bottom: 2px solid transparent;*/
+
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+.tablinks:after {
+    background-color: #0075c0;
+    display: block;
+    content: "";
+    margin-top: 10px;
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.tablinks:hover:after,
+.tablinks:focus:after {
+    width: 100%;
+    color: #333333;
+}
+.tab .tablinks:hover,
+.tab .tablinks:focus{
+    color: #333333;
+    /*border-bottom: 2px solid #0075c0;*/
+    box-shadow: none;
+}
+.tab .tablinks.active{
+    color: #333333;
+}
+.tab .tablinks.active:after{
+    width: 100%;
+    color: #333333;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px 12px;
+
+}
+.price-group .price-old {
+    font-size: 16px;
+    position: relative;
+}
+.price-group .price-old:before{
+    content: '';
+    display: block;
+    border-top: 2px solid #ff8800;
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transform: rotate(14deg);
+}
+.price-group .price-old span{
+    font-size: 14px;
+}
+
 @media screen and (max-width: 1558px){
     .column.second .col-right {
         width: 70.4%;

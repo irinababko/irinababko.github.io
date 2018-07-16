@@ -648,15 +648,7 @@ hr + .content:nth-child(odd) h2{
 /*.horizontal-images.content li img{*/
     /*width: 226px;*/
 /*}*/
-.item1 a{
-    color: #0075c0;
-}
-.item1 a:hover{
-    color: #666666;
-}
-.item1 a.active{
-    color: #666666;
-}
+
 .item1 a i{
     display: block;
     margin-bottom: 10px;

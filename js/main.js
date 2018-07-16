@@ -147,6 +147,15 @@ function openTab(evt, tabName) {
 document.getElementById("defaultOpen").click();
 
 
+$(document).ready(function() {
+    // $('.item-5').click(function () {
+    //     this.toggleClass('active');
+    // })
+    if ($('#item5').hasClass('item1-5>.active')){
+        $('#item1').removeClass('active');
+    }
+
+});
 
 
 

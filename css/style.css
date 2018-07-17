@@ -2699,9 +2699,9 @@ div.icon-3:hover .enter-block{
         margin: 0 10px 0 20px;
     }
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 376px){
     .panel-mob .panel-heading.panel-heading-2{
-        padding-right: 151px;
+        padding-right: 134px;
     }
 }
 @media screen and (max-width: 350px){

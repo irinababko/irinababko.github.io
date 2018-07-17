@@ -2513,10 +2513,6 @@ div.icon-3:hover .enter-block{
         display: inline-block;
         vertical-align: middle;
     }
-    .panel-mob .panel-body{
-        padding-top: 0;
-        margin-top: 0;
-    }
     .panel-mob .panel-body .item1 a:before{
         margin: 0 10px 0 57px;
         display: inline-block;
@@ -2547,7 +2543,7 @@ div.icon-3:hover .enter-block{
         right: -40px;
     }
     .panel-mob .panel-heading.panel-heading-2{
-        padding-right: 93px;
+        padding-right: 104px;
       }
     .panel-mob .panel-heading.panel-heading-2.in a{
         border: none;
@@ -2555,6 +2551,17 @@ div.icon-3:hover .enter-block{
     .panel-mob .panel-heading a,
     .panel-mob .panel-body{
         border: none;
+    }
+    .panel-mob .panel-body{
+        padding: 0;
+        margin: 0;
+    }
+    .wrap-item1{
+        border-bottom: 1px solid #eeeeee;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
     .panel-mob .panel-heading.panel-heading-2.in a:hover{
         border: none;
@@ -2672,7 +2679,7 @@ div.icon-3:hover .enter-block{
         width: 340px;
     }
     .panel-mob .panel-heading a:after{
-        right: -20px;
+        right: -50px;
     }
 }
 @media screen and (max-width: 400px){
@@ -2684,6 +2691,17 @@ div.icon-3:hover .enter-block{
     }
     input[type='range']{
         width: 320px;
+    }
+    .panel-mob .panel-heading.panel-heading-2{
+        padding-right: 137px;
+    }
+    .panel-mob .panel-body .item1 a:before{
+        margin: 0 10px 0 20px;
+    }
+}
+@media screen and (max-width: 375px){
+    .panel-mob .panel-heading.panel-heading-2{
+        padding-right: 151px;
     }
 }
 @media screen and (max-width: 350px){
@@ -2715,6 +2733,9 @@ div.icon-3:hover .enter-block{
     }
     .panel-mob .panel-heading a:after{
         right: -40px;
+    }
+    .panel-mob .panel-heading.panel-heading-2{
+        padding-right: 97px;
     }
 }
 /*.scroller {*/

@@ -2559,9 +2559,9 @@ div.icon-3:hover .enter-block{
         right: -30px;
         color: #666666;
     }
-    /*.panel-mob .panel-heading.panel-heading-2.item1.item1-1{*/
-        /*padding-right: 133px;*/
-      /*}*/
+    .panel-mob .panel-heading.panel-heading-2.item1{
+        padding-right: 40px;
+      }
     .panel-mob .panel-heading.panel-heading-2.in a{
         border: none;
     }

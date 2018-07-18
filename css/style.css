@@ -2558,15 +2558,15 @@ div.icon-3:hover .enter-block{
     .panel-mob .panel-heading a:after{
         right: -40px;
     }
-    .panel-mob .panel-heading.panel-heading-2.item1.item1-1{
-        padding-right: 133px;
-      }
+    /*.panel-mob .panel-heading.panel-heading-2.item1.item1-1{*/
+        /*padding-right: 133px;*/
+      /*}*/
     .panel-mob .panel-heading.panel-heading-2.in a{
         border: none;
     }
-    .panel-mob .panel-heading.panel-heading-2.item1.item1-3{
-        padding-right: 180px;
-    }
+    /*.panel-mob .panel-heading.panel-heading-2.item1.item1-3{*/
+        /*padding-right: 180px;*/
+    /*}*/
     .panel-mob .panel-heading a,
     .panel-mob .panel-body{
         border: none;
@@ -2745,9 +2745,9 @@ div.icon-3:hover .enter-block{
     input[type='range']{
         width: 320px;
     }
-    .panel-mob .panel-heading.panel-heading-2{
-        padding-right: 137px;
-    }
+    /*.panel-mob .panel-heading.panel-heading-2{*/
+        /*padding-right: 137px;*/
+    /*}*/
     .panel-mob .panel-body .item1 a:before{
         margin: 0 10px 0 20px;
     }
@@ -2770,9 +2770,9 @@ div.icon-3:hover .enter-block{
     }
 }
 @media screen and (max-width: 376px){
-    .panel-mob .panel-heading.panel-heading-2{
-        padding-right: 135px;
-    }
+    /*.panel-mob .panel-heading.panel-heading-2{*/
+        /*padding-right: 135px;*/
+    /*}*/
 }
 @media screen and (max-width: 350px){
     .conditions-block ul li{
@@ -2804,9 +2804,9 @@ div.icon-3:hover .enter-block{
     .panel-mob .panel-heading a:after{
         right: -40px;
     }
-    .panel-mob .panel-heading.panel-heading-2{
-        padding-right: 97px;
-    }
+    /*.panel-mob .panel-heading.panel-heading-2{*/
+        /*padding-right: 97px;*/
+    /*}*/
     .p-r-old:before{
         left: 16px;
     }
@@ -2814,9 +2814,9 @@ div.icon-3:hover .enter-block{
         top: 21px;
         left: 26px;
     }
-    .panel-mob .panel-heading.panel-heading-2.item1.item1-1{
-        padding-right: 126px;
-    }
+    /*.panel-mob .panel-heading.panel-heading-2.item1.item1-1{*/
+        /*padding-right: 126px;*/
+    /*}*/
 }
 /*.scroller {*/
     /*overflow-x: hidden;*/

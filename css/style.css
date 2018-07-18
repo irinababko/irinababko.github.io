@@ -2683,6 +2683,16 @@ div.icon-3:hover .enter-block{
     }
     .widget-block{
         flex-flow: column;
+        margin: 0;
+        width: 100%;
+    }
+    .widget-block img{
+        width: 150px;
+    }
+    .novaposhta h2{
+        font-size: 22px;
+        text-align: center;
+        margin: 30px 30px 20px;
     }
 
 }
@@ -2832,6 +2842,14 @@ div.icon-3:hover .enter-block{
     .price-group .price-old:before{
         top: 21px;
         left: 26px;
+    }
+    #np-tracking.np-widget-hz{
+        width: 310px !important;
+    }
+    #np-tracking.np-widget-hz #np-submit-tracking{
+        min-width: 100px !important;
+        background-image: none !important;
+        padding-right: 11px !important;
     }
     /*.panel-mob .panel-heading.panel-heading-2.item1.item1-1{*/
         /*padding-right: 126px;*/

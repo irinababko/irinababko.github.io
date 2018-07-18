@@ -2797,6 +2797,14 @@ div.icon-3:hover .enter-block{
     .promo-code input[type=text]{
         width: 35%;
     }
+    #np-tracking.np-widget-hz{
+        width: 310px !important;
+    }
+    #np-tracking.np-widget-hz #np-submit-tracking{
+        min-width: 100px !important;
+        background-image: none !important;
+        padding-right: 11px !important;
+    }
 }
 @media screen and (max-width: 376px){
     /*.panel-mob .panel-heading.panel-heading-2{*/
@@ -2843,14 +2851,7 @@ div.icon-3:hover .enter-block{
         top: 21px;
         left: 26px;
     }
-    #np-tracking.np-widget-hz{
-        width: 310px !important;
-    }
-    #np-tracking.np-widget-hz #np-submit-tracking{
-        min-width: 100px !important;
-        background-image: none !important;
-        padding-right: 11px !important;
-    }
+
     /*.panel-mob .panel-heading.panel-heading-2.item1.item1-1{*/
         /*padding-right: 126px;*/
     /*}*/

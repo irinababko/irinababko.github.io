@@ -2556,7 +2556,8 @@ div.icon-3:hover .enter-block{
         width: 400px;
     }
     .panel-mob .panel-heading a:after{
-        right: -40px;
+        right: -30px;
+        color: #666666;
     }
     /*.panel-mob .panel-heading.panel-heading-2.item1.item1-1{*/
         /*padding-right: 133px;*/
@@ -2624,6 +2625,9 @@ div.icon-3:hover .enter-block{
     .item1.item1-1 a.active-mob:before{
         background: url("../img/icon-profile-orange.png") no-repeat;
     }
+    .panel-mob .panel-body .item1.item1-1 a:before{
+        margin-right: 18px;
+    }
     .item1.item1-2 a.active-mob:before{
         background: url("../img/icon-tabs.png") -61px -85px no-repeat;
     }
@@ -2633,17 +2637,32 @@ div.icon-3:hover .enter-block{
     .item1.item1-4 a.active-mob:before{
         background: url("../img/icon-tabs.png") -129px -82px no-repeat;
     }
+    .panel-mob .panel-body .item1.item1-4 a:before{
+        margin-right: 18px;
+    }
     .item1.item1-5 a.active-mob:before{
         background: url("../img/icon-tabs.png") -196px -82px no-repeat;
+    }
+    .panel-mob .panel-body .item1.item1-5 a:before{
+        margin-right: 18px;
     }
     .item1.item1-6 a.active-mob:before{
         background: url("../img/icon-second.png") -31px -61px no-repeat;
     }
+    .panel-mob .panel-body .item1.item1-6 a:before{
+        margin-right: 18px;
+    }
     .item1.item1-7 a.active-mob:before{
         background: url("../img/credit-orang.svg") no-repeat;
     }
+    .panel-mob .panel-body .item1.item1-7 a:before{
+        margin-right: 18px;
+    }
     .item1.item1-8 a.active-mob:before{
         background: url("../img/QA-orang.svg") no-repeat;
+    }
+    .panel-mob .panel-body .item1.item1-8 a:before{
+        margin-right: 18px;
     }
     .panel-mob .panel-heading.panel-heading-2 a:hover{
         background: #ffffff;
@@ -2729,7 +2748,7 @@ div.icon-3:hover .enter-block{
         width: 340px;
     }
     .panel-mob .panel-heading a:after{
-        right: -50px;
+        /*right: -50px;*/
     }
     .p-r-old:before{
         left: 35px;
@@ -2802,7 +2821,7 @@ div.icon-3:hover .enter-block{
         width: 270px;
     }
     .panel-mob .panel-heading a:after{
-        right: -40px;
+        /*right: -40px;*/
     }
     /*.panel-mob .panel-heading.panel-heading-2{*/
         /*padding-right: 97px;*/

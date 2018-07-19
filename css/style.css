@@ -2523,6 +2523,9 @@ div.icon-3:hover .enter-block{
     .mylist-block{
         padding: 0 20px;
     }
+    .credit-block{
+        padding: 0 20px;
+    }
     .mylist-block-btn{
         width: 100%;
         justify-content: space-between;
@@ -2967,7 +2970,7 @@ div.icon-3:hover .enter-block{
 }
 @media screen and (max-width: 350px){
     .conditions-block ul li{
-        width: 71%;
+        width: 78%;
     }
     .culc{
         width: 420px;
@@ -2981,7 +2984,7 @@ div.icon-3:hover .enter-block{
 }
 @media screen and (max-width: 320px){
     .conditions-block ul li{
-        width: 71%;
+        width: 78%;
     }
     .culc{
         width: 375px;

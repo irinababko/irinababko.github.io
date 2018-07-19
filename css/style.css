@@ -2533,6 +2533,15 @@ div.icon-3:hover .enter-block{
     .history-block{
         padding: 0 20px;
     }
+    .account-bonus{
+        margin-bottom: 0;
+    }
+    .bonus-block{
+        padding-top: 0;
+    }
+    .search-result.search-result-mob{
+        margin-top: 0;
+    }
     .account-bonus.account-bonus-mob{
         padding: 0 20px;
     }

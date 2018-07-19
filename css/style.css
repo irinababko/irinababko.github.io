@@ -1139,7 +1139,7 @@ a.btn-more{
 .btn-block.btn-block-1 .soc-btn.soc-btn_promo{
     display: flex;
     justify-content: center;
-    margin: 0px 20px;
+    margin: 5px 20px;
 }
 .account-bonus-zero{
     margin: 50px auto;
@@ -2460,11 +2460,13 @@ div.icon-3:hover .enter-block{
     }
 }
 @media screen and (max-width: 768px){
+    .account-bonus-zero p{
+        padding: 0 100px;
+    }
     .btn-block{
         /*flex-flow: column;*/
-        margin: 0 auto;
+        margin: 20px auto;
         flex-wrap: wrap;
-        margin-top: 10px;
     }
     .btn-block .soc-btn{
         margin: 5px;
@@ -2517,6 +2519,9 @@ div.icon-3:hover .enter-block{
 
 }
 @media screen and (max-width: 640px){
+    .account-bonus-zero p{
+        padding: 0 75px;
+    }
     .container.container-2{
         padding: 0;
     }
@@ -2769,6 +2774,9 @@ div.icon-3:hover .enter-block{
 
 }
 @media screen and (max-width: 600px){
+    .account-bonus-zero p{
+        padding: 0 20px;
+    }
     .cartProd-promo_p a{
         width: 170px;
     }
@@ -2897,8 +2905,6 @@ div.icon-3:hover .enter-block{
     .account-bonus.bonus-rules .panel-heading a{
         padding-bottom: 20px;
     }
-
-
 }
 
 @media screen and (max-width: 540px){

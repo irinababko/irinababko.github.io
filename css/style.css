@@ -896,6 +896,8 @@ a.btn-more{
 }
 .account-bonus.bonus-rules .panel-heading a{
     padding: 12px;
+    font-size: 16px;
+    line-height: 1.2;
 }
 .account-bonus.account-bonus-1{
     max-width: 900px;
@@ -1009,6 +1011,9 @@ a.btn-more{
     color: #0075c0;
     font-size: 20px;
 }
+.panel-heading-2.panel-heading-mob a:after{
+    content: '';
+}
 .panel-heading.in a:after {
     transform: rotate(180deg);
 }
@@ -1048,6 +1053,9 @@ a.btn-more{
 .panel-body a:hover{
     text-decoration: underline;
 }
+.panel-body-1{
+    line-height: 1.3;
+}
 .panel-collapse {
     display: none;
     /*padding-bottom: 20px;*/
@@ -1064,6 +1072,11 @@ a.btn-more{
 }
 .btn-block.btn-block-1{
     justify-content: center;
+}
+.wrap_soc-btn{
+    display: flex;
+    justify-content: space-between;
+    /*margin: 5px auto;*/
 }
 .btn-block .soc-btn{
     background-color: white;
@@ -1310,7 +1323,7 @@ a.btn-more{
     margin-top: 30px;
 }
 .pag-block{
-    margin-right: 15%;
+    /*margin-right: 15%;*/
 }
 .pag-block-cart{
     margin-right: 0;
@@ -2154,28 +2167,25 @@ div.icon-3:hover .enter-block{
     .column.second .col-right {
         width: 70.4%;
     }
-
     .widget-block {
         width: 100%;
     }
-
     .account-bonus-zero p {
         padding: 0 150px;
-
     }
-
+    .account-bonus.account-bonus-1{
+        max-width: 1200px;
+        margin-left: 0;
+    }
     .futures-block p {
         padding: 0;
     }
-
     .conditions-block ul li:first-child h3 {
         width: 50%;
     }
-
     .conditions-block ul li:nth-child(2) h3 {
         width: 33%;
     }
-
     .conditions-block ul li:last-child h3 {
         width: 33%;
     }
@@ -2204,6 +2214,16 @@ div.icon-3:hover .enter-block{
     }
     .article-main div img{
         margin: 0 30px;
+    }
+    .btn-block{
+        /*flex-flow: column;*/
+        /*margin: 0 auto;*/
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 60px 0px 40px;
+    }
+    .btn-block .soc-btn{
+        margin: 5px 10px;
     }
 
 }
@@ -2441,11 +2461,20 @@ div.icon-3:hover .enter-block{
 }
 @media screen and (max-width: 768px){
     .btn-block{
-        flex-flow: column;
+        /*flex-flow: column;*/
         margin: 0 auto;
+        flex-wrap: wrap;
+        margin-top: 10px;
     }
     .btn-block .soc-btn{
-        margin: 5px auto;
+        margin: 5px;
+    }
+    .btn-block .soc-btn:first-child{
+        /*margin-right: 100px;*/
+    }
+    .wrap_soc-btn{
+        /*margin: 0 auto;*/
+        flex-wrap: wrap;
     }
     .snap-scrolling-example .content{
         /*width: 478px;*/
@@ -2546,9 +2575,6 @@ div.icon-3:hover .enter-block{
         margin-top: 0;
     }
     .account-bonus.account-bonus-mob{
-        padding: 0 20px;
-    }
-    .account-bonus.account-bonus-1{
         padding: 0 20px;
     }
     .cart-promo-mob{
@@ -2712,6 +2738,9 @@ div.icon-3:hover .enter-block{
         background-color: white;
         border: none;
     }
+    .account-bonus.bonus-rules .panel-heading a{
+        font-size: 14px;
+    }
     .accumulate-bonus{
         left: -30px;
     }
@@ -2774,7 +2803,7 @@ div.icon-3:hover .enter-block{
     }
     .panel-heading.panel-heading-mob a:after {
         right: 50%;
-        bottom: -5px;
+        bottom: 0px;
     }
     .panel-heading-mob .panel-heading-1{
         line-height: 1.5;
@@ -2904,6 +2933,9 @@ div.icon-3:hover .enter-block{
     .mylist-block-btn p{
         font-size: 14px;
     }
+    .pag-block{
+        margin-top: 75px;
+    }
 }
 @media screen and (max-width: 450px){
     .culc{
@@ -3002,6 +3034,11 @@ div.icon-3:hover .enter-block{
         /*padding-right: 135px;*/
     /*}*/
 }
+@media screen and (max-width: 360px){
+    .wrap_soc-btn{
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 350px){
     .conditions-block ul li{
         width: 78%;
@@ -3015,7 +3052,9 @@ div.icon-3:hover .enter-block{
     input[type='range']{
         width: 300px;
     }
+
 }
+
 @media screen and (max-width: 320px){
     .conditions-block ul li{
         width: 78%;
@@ -3029,12 +3068,6 @@ div.icon-3:hover .enter-block{
     input[type='range']{
         width: 270px;
     }
-    .panel-mob .panel-heading a:after{
-        /*right: -40px;*/
-    }
-    /*.panel-mob .panel-heading.panel-heading-2{*/
-        /*padding-right: 97px;*/
-    /*}*/
     .p-r-old:before{
         left: 16px;
     }
@@ -3049,31 +3082,5 @@ div.icon-3:hover .enter-block{
         height: 150px;
     }
 
-    /*.panel-mob .panel-heading.panel-heading-2.item1.item1-1{*/
-        /*padding-right: 126px;*/
-    /*}*/
+
 }
-/*.scroller {*/
-    /*overflow-x: hidden;*/
-    /*overflow-y: hidden;*/
-    /*white-space: nowrap;*/
-    /*-webkit-overflow-scrolling: touch;*/
-    /*-ms-overflow-style: none;*/
-/*}*/
-
-
-
-/*.swipe {*/
-    /*overflow: hidden;*/
-    /*visibility: hidden;*/
-    /*position: relative;*/
-/*}*/
-/*.swipe-wrap {*/
-    /*overflow: hidden;*/
-    /*position: relative;*/
-/*}*/
-/*.swipe-wrap > div {*/
-    /*float:left;*/
-    /*width:100%;*/
-    /*position: relative;*/
-/*}*/

@@ -435,7 +435,6 @@ li.page-list_progress{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
 }
 .bonus-block_item{
     display: flex;
@@ -563,6 +562,9 @@ button:active {
 }
 .question span{
     font-weight: bold;
+}
+.q-mob{
+    display: none;
 }
 .accumulate-bonus{
     position: absolute;
@@ -2499,6 +2501,16 @@ div.icon-3:hover .enter-block{
     .bonus-block{
         border-top: none;
         flex-flow: column;
+        /*flex-wrap: wrap;*/
+    }
+    .article-main div img{
+        position: absolute;
+        left: 17%;
+        top: 38%;
+    }
+    .q-mob{
+        display: block;
+        position: absolute;
     }
     .dispath-block.account-bonus{
         border-top: none;
@@ -2921,7 +2933,7 @@ div.icon-3:hover .enter-block{
         height: 155px;
     }
     .bonus-block-r{
-        width: 220px;
+        width: 230px;
         height: 155px;
     }
     .bonus-block-l h1{

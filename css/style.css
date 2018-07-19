@@ -2841,6 +2841,9 @@ div.icon-3:hover .enter-block{
         width: 100% !important;
         line-height: 0 !important;
     }
+    .account-bonus.bonus-rules .panel-heading a{
+        padding-bottom: 20px;
+    }
 
 
 }

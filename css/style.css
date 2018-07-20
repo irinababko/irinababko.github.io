@@ -1062,6 +1062,9 @@ a.btn-more{
     /*height: auto;*/
     /*height: 100vh;*/
 }
+.panel-collapse.panel-collapse-mob{
+    height: 100vh;
+}
 .btn-block{
     display: flex;
     justify-content: flex-start;

@@ -1060,7 +1060,7 @@ a.btn-more{
     display: none;
     /*padding-bottom: 20px;*/
     /*height: auto;*/
-    height: 100vh;
+    /*height: 100vh;*/
 }
 .btn-block{
     display: flex;

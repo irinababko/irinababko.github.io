@@ -2469,6 +2469,12 @@ div.icon-3:hover .enter-block{
         left: 9%;
         text-align: center;
     }
+    .tab{
+        width: 100%;
+    }
+    .tab .tablinks{
+        padding: 14px 11px;
+    }
 
 }
 
@@ -2819,7 +2825,7 @@ div.icon-3:hover .enter-block{
         font-family: "FontAwesome";
         position: absolute;
         bottom: 15px;
-        left: 60%;
+        left: 70%;
         transition: 0.3s;
         font-size: 20px;
     }
@@ -2892,7 +2898,7 @@ div.icon-3:hover .enter-block{
         margin-right: 15px;
     }
     .wrap-item1 a .item1.item1-4{
-        padding-right: 49px;
+        padding-right: 48px;
     }
     .wrap-item1 a .item1.item1-4:before{
         background: url("../img/icon-tabs.png") -129px 0px no-repeat;
@@ -3366,6 +3372,15 @@ div.icon-3:hover .enter-block{
     }
     .novaposhta h2{
         font-size: 20px;
+    }
+    .tab {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
+    }
+    .tab .tablinks {
+        padding: 5px 11px;
     }
 }
 @media screen and (max-width: 376px){

@@ -1059,7 +1059,8 @@ a.btn-more{
 .panel-collapse {
     display: none;
     /*padding-bottom: 20px;*/
-    height: auto;
+    /*height: auto;*/
+    height: 100vh;
 }
 .btn-block{
     display: flex;

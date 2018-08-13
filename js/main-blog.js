@@ -53,6 +53,8 @@ $('.owl-carousel-1').owlCarousel({
     margin:15,
     nav:false,
     dots:false,
+    mouseDrag: true,
+    touchDrag: false,
     responsive:{
         0:{
             items:1,
@@ -60,11 +62,15 @@ $('.owl-carousel-1').owlCarousel({
         },
         600:{
             items:2,
-            dots: true
+            dots: true,
+            mouseDrag: false,
+            touchDrag: true
         },
         1025:{
             items:3,
-            dots: true
+            dots: true,
+            mouseDrag: false,
+            touchDrag: true
         },
         1200:{
             items:3,
@@ -80,6 +86,8 @@ $('.owl-carousel-2').owlCarousel({
     margin:15,
     nav:false,
     dots:false,
+    mouseDrag: true,
+    touchDrag: false,
     responsive:{
         0:{
             items:1,
@@ -87,11 +95,15 @@ $('.owl-carousel-2').owlCarousel({
         },
         600:{
             items:2,
-            dots: true
+            dots: true,
+            mouseDrag: false,
+            touchDrag: true
         },
         1025:{
             items:3,
-            dots: true
+            dots: true,
+            mouseDrag: false,
+            touchDrag: true
         },
         1200:{
             items:4,
@@ -108,6 +120,8 @@ $('.article-item').owlCarousel({
     loop:false,
     margin:10,
     nav:true,
+    mouseDrag: true,
+    touchDrag: false,
     responsive:{
         0:{
             items:1,
@@ -116,7 +130,9 @@ $('.article-item').owlCarousel({
         },
         600:{
             items:1,
-            dots: false
+            dots: false,
+            mouseDrag: false,
+            touchDrag: true
         },
         1000:{
             items:1,

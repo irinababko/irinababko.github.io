@@ -58,7 +58,9 @@ $('.owl-carousel-1').owlCarousel({
     responsive:{
         0:{
             items:1,
-            dots: true
+            dots: true,
+            mouseDrag: false,
+            touchDrag: true
         },
         600:{
             items:2,
@@ -91,7 +93,9 @@ $('.owl-carousel-2').owlCarousel({
     responsive:{
         0:{
             items:1,
-            dots: true
+            dots: true,
+            mouseDrag: false,
+            touchDrag: true
         },
         600:{
             items:2,
@@ -126,7 +130,9 @@ $('.article-item').owlCarousel({
         0:{
             items:1,
             dots:true,
-            nav:false
+            nav:false,
+            mouseDrag: false,
+            touchDrag: true
         },
         600:{
             items:1,

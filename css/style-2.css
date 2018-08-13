@@ -1,6 +1,9 @@
 .container .content-right{
     width: 100%;
 }
+.read-more.all-news.results{
+    padding: 20px 6% 200px;
+}
 .results-none{
     display: flex;
     justify-content: space-between;
@@ -89,6 +92,8 @@
         margin-top: 30px;
     }
 }
-@media screen and (max-width: px){
-   
+@media screen and (max-width: 500px){
+    .read-more.all-news.results{
+        padding-top: 90px;
+    }
 }

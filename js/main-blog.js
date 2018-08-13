@@ -48,14 +48,15 @@ $(document).ready(function(){
 //     itemSelector: '.item'
 // });
 
-$('.owl-carousel').owlCarousel({
+$('.owl-carousel-1').owlCarousel({
     loop:true,
     margin:15,
     nav:false,
     dots:false,
     responsive:{
         0:{
-            items:1
+            items:1,
+            dots: true
         },
         600:{
             items:2,
@@ -71,6 +72,55 @@ $('.owl-carousel').owlCarousel({
         },
         1500:{
             items:4
+        }
+    }
+});
+$('.owl-carousel-2').owlCarousel({
+    loop:true,
+    margin:15,
+    nav:false,
+    dots:false,
+    responsive:{
+        0:{
+            items:1,
+            dots: true
+        },
+        600:{
+            items:2,
+            dots: true
+        },
+        1025:{
+            items:3,
+            dots: true
+        },
+        1200:{
+            items:4,
+            dots: true
+        },
+        1500:{
+            items:5
+        }
+    }
+});
+
+$('.article-item').owlCarousel({
+    items:1,
+    loop:false,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1,
+            dots:true,
+            nav:false
+        },
+        600:{
+            items:1,
+            dots: false
+        },
+        1000:{
+            items:1,
+            dots: false
         }
     }
 })

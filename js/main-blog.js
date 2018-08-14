@@ -145,4 +145,13 @@ $('.article-item').owlCarousel({
             dots: false
         }
     }
-})
+});
+
+var lineHeight = 20;
+var numLines = 1;
+
+$('.readmore').readmore({
+  speed: 500,
+  collapsedHeight: lineHeight * numLines,
+  heightMargin: lineHeight * 1
+});

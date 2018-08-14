@@ -191,4 +191,15 @@
     .container header .nav ul li.home a {
         padding: 49px 6px 15.5px;
     }
+    /* .container header .nav-mobile .nav-list-1.menu-charters {
+        left: 131px;
+    } */
+}
+@media screen and (max-width: 400px){
+     .container header .nav ul li.home a {
+        padding: 49px 6px 15.5px;
+    }
+    .container header .nav-mobile .nav-list-1.menu-charters {
+        left: 111px;
+    }
 }

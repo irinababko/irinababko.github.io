@@ -93,11 +93,34 @@
     .item {
       width: calc(50% - 20px);
     }
+    .item .text .wrap-star .star {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+    .item .text .wrap-star .see {
+        padding-top: 0;
+      }
+      .item.item-promo .text {
+        padding-bottom: 0;
+      }
+      .item.item-soc .text {
+        padding: 20px;
+        padding-bottom: 10px;
+      }
+      .read-more .item .wrap-star .star {
+        padding-top: 15px;
+      }
+      .read-more .item .wrap-star .see {
+        padding-top: 15px;
+      }
   }
 @media screen and (max-width: 1200px){
     .results-none{
         padding: 40px 15% 0;
     }
+    /* .masonry{
+        margin-left: 35px;
+    } */
 }
 @media screen and (max-width: 1024px){
     .results-none{

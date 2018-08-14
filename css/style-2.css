@@ -131,6 +131,9 @@
     }
 }
 @media screen and (max-width: 768px){
+    .item {
+        width: 100% !important;
+      }
     .results-none{
         flex-flow: column-reverse;
         padding: 150px 10% 0;

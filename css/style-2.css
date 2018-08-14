@@ -89,6 +89,11 @@
   text-decoration: none;
   color: inherit;
 }
+@media screen and (max-width: 1400px) {
+    .item {
+      width: calc(50% - 20px);
+    }
+  }
 @media screen and (max-width: 1200px){
     .results-none{
         padding: 40px 15% 0;

@@ -25,7 +25,7 @@
 .container .content-left ul.menu-charters li a.item_menu-3:before{
     padding-right: 25px;
 }
-.container header .nav ul li.home.active {
+.container header .nav .nav-mobile ul li.home.active {
     background-image: url(../img/icons/home-h.png);
     background-repeat: no-repeat;
     background-position: 50% 20px;

@@ -658,7 +658,7 @@ input:focus:-ms-input-placeholder {
   font-weight: bold;
 }
 
-.item .text h1 {
+.item .text h2 {
   font-size: 22px;
   padding: 0px 20px 10px;
 }
@@ -893,7 +893,7 @@ input:focus:-ms-input-placeholder {
   padding: 30px;
   color: #666666;
   line-height: 1.2;
-  height: 200px;
+  /* height: 200px; */
   overflow: hidden;
   position: relative;
 }
@@ -1412,7 +1412,7 @@ input:focus:-ms-input-placeholder {
   .item .text {
     padding-bottom: 10px;
   }
-  .item .text h1 {
+  .item .text h2 {
     font-size: 18px;
   }
   .item .text .wrap-star .star {
@@ -1541,7 +1541,7 @@ input:focus:-ms-input-placeholder {
   .item .text {
     padding-bottom: 10px;
   }
-  .item .text h1 {
+  .item .text h2 {
     font-size: 18px;
   }
   .item.item-promo.item-soc .text {
@@ -1634,4 +1634,10 @@ input:focus:-ms-input-placeholder {
   .container .menu-mob__link {
     left: 10px;
   }
+}
+
+
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+  -ms-touch-action: auto;
+      touch-action: auto;
 }

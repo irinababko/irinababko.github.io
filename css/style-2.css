@@ -132,7 +132,7 @@
 }
 @media screen and (max-width: 768px){
     .item {
-        width: 100% !important;
+        width: 84%;
       }
     .results-none{
         flex-flow: column-reverse;

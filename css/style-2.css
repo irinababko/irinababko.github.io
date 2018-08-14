@@ -1,3 +1,6 @@
+.main.fixed{
+    position: fixed;
+}
 .container .content-right .logo-btn{
     right: 0;
 }

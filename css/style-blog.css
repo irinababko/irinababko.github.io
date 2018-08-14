@@ -1529,7 +1529,7 @@ input:focus:-ms-input-placeholder {
     padding-bottom: 10px;
   }
   .item {
-    width: 100%;
+    width: 100% !important;
     margin: 20px auto;
     position: relative !important;
     top: 20px !important;
@@ -1577,6 +1577,9 @@ input:focus:-ms-input-placeholder {
 }
 
 @media screen and (max-width: 650px) {
+  .item{
+    width: 100%;
+  }
   .footer-item {
     width: inherit;
   }

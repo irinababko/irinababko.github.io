@@ -1,5 +1,5 @@
-.main.fixed{
-    position: fixed;
+.item-promo .text .info {
+    padding: 10px 15px 0 30px;
 }
 .container .content-right .logo-btn{
     right: 0;
@@ -121,9 +121,9 @@
     .results-none{
         padding: 40px 15% 0;
     }
-    .container header .nav ul li.home a {
+    /* .container header .nav ul li.home a {
         padding: 49px 15px 15.5px;
-    }
+    } */
     .container header .menu-mob__link {
         display: block;
         position: absolute;
@@ -192,7 +192,7 @@
         padding: 49px 6px 15.5px;
     }
     /* .container header .nav-mobile .nav-list-1.menu-charters {
-        left: 131px;
+        left: 113px;
     } */
 }
 @media screen and (max-width: 400px){
@@ -200,6 +200,6 @@
         padding: 49px 6px 15.5px;
     }
     .container header .nav-mobile .nav-list-1.menu-charters {
-        left: 111px;
+        left: 112px;
     }
 }

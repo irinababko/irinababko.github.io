@@ -1203,7 +1203,7 @@ input:focus:-ms-input-placeholder {
 
 @media screen and (max-width: 1400px) {
   .container header .nav ul li a {
-    padding: 35px 15px 5px;
+    padding: 35px 15px 15.5px;
   }
   .item {
     width: calc(50% - 20px);
@@ -1233,7 +1233,7 @@ input:focus:-ms-input-placeholder {
     background-position: 50% 20px;
   }
   .container header .nav ul li.home a {
-    padding: 49px 15px 14.6px;
+    padding: 49px 15px 15.5px;
   }
   .container header .nav-mobile {
     display: block;
@@ -1595,7 +1595,7 @@ input:focus:-ms-input-placeholder {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .container header .nav ul li.home a {
     padding: 49px 6px 15.5px;
     font-size: 14px;

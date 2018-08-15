@@ -1027,7 +1027,8 @@ input:focus:-ms-input-placeholder {
 
 .footer-item .tel:before {
   content: '';
-  background: url("https://palladium.ua/templates/palladium/img/icons/icon-tel.png");
+  /* background: url("https://palladium.ua/templates/palladium/img/icons/icon-tel.png"); */
+  background: url("../img/icons/icon-tel.png");
   background-position: 0 0;
   width: 21px;
   height: 21px;
@@ -1596,8 +1597,7 @@ input:focus:-ms-input-placeholder {
 
 @media screen and (max-width: 500px) {
   .container header .nav ul li.home a {
-    padding-right: 5px;
-    padding-left: 5px;
+    padding: 49px 6px 15.5px;
     font-size: 14px;
   }
   .container header .nav-mobile .nav-list-1.menu-charters {

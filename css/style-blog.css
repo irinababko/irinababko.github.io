@@ -1517,6 +1517,10 @@ input:focus:-ms-input-placeholder {
   .container header .nav-mobile .nav-list-1.menu-charters li a.item_menu-1:before {
     padding-right: 15px;
   }
+  .container header .nav ul li.home a {
+    padding: 49px 6px 15.5px;
+    font-size: 14px;
+  }
   .container .content-right .logo-btn {
     right: 0px;
   }

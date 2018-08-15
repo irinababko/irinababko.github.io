@@ -180,6 +180,12 @@
     .footer-item .list {
         flex-flow: column;
     }
+    .container header .nav ul li.home a {
+        padding: 49px 6px 15.5px;
+    }
+    .container header .nav-mobile .nav-list-1.menu-charters {
+        left: 112px;
+    }
 }
 @media screen and (max-width: 500px){
     .read-more.all-news.results{

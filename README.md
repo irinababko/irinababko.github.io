@@ -1,4 +1,5 @@
 # irinababko.github.io
 [Личный кабинет](https://irinababko.github.io/profile.html)
-![](http://demo.solwininfotech.com/wordpress/veriyas-pro/wp-content/uploads/2016/05/Blog-designer.jpg)
+![](https://irinababko.github.io/img/cab-1.jpg)
 [BLOG](https://irinababko.github.io/blog.html)
+![](https://irinababko.github.io/img/blog-1.jpg)

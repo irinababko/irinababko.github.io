@@ -929,7 +929,7 @@ a.btn-more{
      /*max-width: 900px;*/
  }
 .account-bonus.bonus-rules h2{
-    margin: 8px 0 18px;
+    margin: 18px 0 18px;
     font-size: 24px;
 }
 .account-bonus {
@@ -961,7 +961,7 @@ a.btn-more{
     margin-top: 5px;
 }
 .account-bonus.bonus-rules .panel-heading{
-    margin-top: 10px;
+    margin-top: 13px;
     text-transform: uppercase;
     font-size: 16px;
 }

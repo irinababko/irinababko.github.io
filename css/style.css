@@ -86,8 +86,8 @@ a {
     line-height: 2.5;
 }
 .owl-theme .owl-nav{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     position: relative;
 }
 .owl-nav .owl-prev,
@@ -2040,7 +2040,8 @@ div.icon-3{
     padding-right: 16%;
     cursor: pointer;
     height: 30px;
-    margin-top: 30px;
+    margin-top: -117px;
+    color: #fff;
 
 }
 .icon-3 .enter-block{
@@ -2057,6 +2058,7 @@ div.icon-3{
     /*opacity: 0;*/
     /*transition: 0.8s;*/
     text-align: center;
+    z-index: 100;
 }
 .enter-block form{
     height: 0;

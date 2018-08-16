@@ -1,5 +1,5 @@
 # irinababko.github.io
-[Личный кабинет](https://irinababko.github.io/profile.html)
+[**Личный кабинет**](https://irinababko.github.io/profile.html)
 ***
 ![](https://irinababko.github.io/img/cab-1.jpg)
 ***

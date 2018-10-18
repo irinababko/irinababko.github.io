@@ -1,0 +1,39 @@
+
+html, body {
+    position: relative;
+}
+canvas {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%!important;
+    z-index: -1;
+    margin: 0 auto!important;
+    text-align: center!important;
+}
+#text-container {
+    width: calc((3*90vw)/4.5);
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    border-left: 2px solid var(--fps-color);
+    border-right: 2px solid var(--fps-color);
+    padding: 0 2rem;
+}
+#text {
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*overflow-x: hidden;*/
+    /*overflow-y: scroll;*/
+    color: black;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    padding-right: 2.75rem;
+}
+.footer h3{
+    color: #ffffff;
+}

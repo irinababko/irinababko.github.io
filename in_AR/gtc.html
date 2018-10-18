@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.00">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inAR</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="css/weglot.min.css">
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="dist/style-media.css">
+</head>
+<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.setup({
+        api_key: 'wg_2954eb92fc66a063129204af399d27ab4',
+        originalLanguage: 'en',
+        destinationLanguages : 'de',
+        styleOpt : { fullname: false , withname: true , is_dropdown: true , classF: "wg-flags flag-3" },
+        exceptions: "#not-this-element,.not-this-class.p",
+        excludePaths: "",
+        dynamic: ".a-container-of-dynamic-content",
+        autoSwitch: true,
+        translateSearch: false,
+        switchers: [
+            {
+                containerCss: "",
+                target: "#weglot-menu",
+                sibling: null
+            }
+        ]
+    });
+</script>
+<body>
+    <header class="header">
+        <!--start mobile-menu-->
+        <div class="wrap-mob_menu">
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="index.html#about">About us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="header__nav-menu"></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--end mobile-menu-->
+        <div class="header wrap-width">
+            <a href="index.html" class="logo-main">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 74" fill="none">
+                    <path d="M72.9156 35.916H55.4624V33.4497H60.1714C60.77 33.4497 61.2553 32.9644 61.2553 32.3658C61.2553 31.7671 60.77 31.2818 60.1714 31.2818H55.4624V28.8154H58.7317C59.9497 28.8154 61.0948 28.3412 61.9559 27.4799L69.085 20.3508C69.5496 20.5822 70.0645 20.7054 70.5987 20.7054C71.5073 20.7054 72.3613 20.3516 73.0037 19.7093C73.6461 19.0669 74 18.2129 74 17.3043C74 16.3958 73.6461 15.5417 73.0037 14.8993C72.3614 14.2569 71.5073 13.903 70.5987 13.903C69.6902 13.903 68.8362 14.2569 68.1937 14.8991C67.5513 15.5416 67.1975 16.3956 67.1975 17.3041C67.1975 17.8383 67.3206 18.3533 67.552 18.8178L60.423 25.947C59.9713 26.3986 59.3706 26.6475 58.7317 26.6475H55.4622V24.2558C55.4622 21.1027 52.897 18.5376 49.7441 18.5376H47.3524V8.9413C48.6978 8.48762 49.6695 7.21473 49.6695 5.71828C49.6695 3.84288 48.1438 2.3172 46.2685 2.3172C44.3932 2.3172 42.8674 3.84307 42.8674 5.71828C42.8674 7.21473 43.8393 8.48753 45.1845 8.9413V18.5373H42.7182V13.8283C42.7182 13.2296 42.2329 12.7444 41.6343 12.7444C41.0356 12.7444 40.5503 13.2296 40.5503 13.8283V18.5373H38.0839V1.08396C38.0837 0.485294 37.5985 0 36.9998 0C36.4011 0 35.9158 0.485294 35.9158 1.08396V18.5373H33.4495V13.8283C33.4495 13.2296 32.9642 12.7444 32.3656 12.7444C31.7669 12.7444 31.2816 13.2296 31.2816 13.8283V18.5373H28.8153V15.2681C28.8153 14.0501 28.341 12.9051 27.4797 12.0439L20.3481 4.91232C20.9781 3.64034 20.767 2.05419 19.7092 0.996259C18.3829 -0.329803 16.2253 -0.329711 14.8992 0.996259C13.5731 2.32232 13.5731 4.48001 14.8992 5.80626C15.5623 6.46924 16.4333 6.80078 17.3042 6.80078C17.8227 6.80078 18.3405 6.68037 18.8152 6.44522L25.9468 13.577C26.3986 14.0287 26.6473 14.6293 26.6473 15.2681V18.5373H24.2557C23.7722 18.5373 23.2914 18.5979 22.8266 18.7175C22.2468 18.8667 21.8978 19.4577 22.047 20.0376C22.1962 20.6174 22.7873 20.9665 23.367 20.8171C23.6554 20.7429 23.9543 20.7052 24.2556 20.7052H49.7442C51.7019 20.7052 53.2944 22.2979 53.2944 24.2555V49.7443C53.2944 50.0453 53.2569 50.344 53.1829 50.6321C53.0339 51.2119 53.383 51.8027 53.9628 51.9517C54.0532 51.975 54.144 51.9862 54.2335 51.9862C54.7164 51.9862 55.1567 51.6611 55.2825 51.1717C55.4019 50.7075 55.4624 50.2271 55.4624 49.7441V47.3523H65.0584C65.512 48.6977 66.7849 49.6694 68.2814 49.6694C70.1567 49.6694 71.6824 48.1438 71.6824 46.2684C71.6824 44.393 70.1567 42.8673 68.2814 42.8673C66.7849 42.8673 65.5121 43.8392 65.0584 45.1844H55.4622V42.7181H60.1712C60.7698 42.7181 61.2551 42.2328 61.2551 41.6341C61.2551 41.0355 60.7698 40.5502 60.1712 40.5502H55.4622V38.0841H72.9156C73.5143 38.0841 73.9996 37.5988 73.9996 37.0001C73.9996 36.4014 73.5143 35.916 72.9156 35.916ZM69.7265 16.4322C69.9595 16.1992 70.2691 16.0711 70.5985 16.0711C70.9278 16.0711 71.2374 16.1992 71.4704 16.4322C71.7033 16.6652 71.8315 16.9748 71.8315 17.3041C71.8315 17.6335 71.7033 17.9431 71.4704 18.176C71.2374 18.409 70.9278 18.5372 70.5985 18.5372C70.2691 18.5372 69.9595 18.409 69.7265 18.176C69.4936 17.9431 69.3654 17.6335 69.3654 17.3041C69.3654 16.9748 69.4936 16.6651 69.7265 16.4322ZM46.2684 4.48513C46.9484 4.48513 47.5015 5.0384 47.5015 5.71828C47.5015 6.39817 46.9483 6.95143 46.2684 6.95143C45.5885 6.95143 45.0352 6.39817 45.0352 5.71828C45.0352 5.0384 45.5884 4.48513 46.2684 4.48513ZM16.4319 4.27318C15.9511 3.79236 15.9511 3.00997 16.4319 2.52925C16.6724 2.28879 16.9881 2.16866 17.304 2.16866C17.6198 2.16866 17.9356 2.28888 18.1759 2.52925C18.6567 3.01006 18.6567 3.79245 18.1759 4.27327C17.6953 4.75391 16.9129 4.75409 16.4319 4.27318ZM68.2814 45.0355C68.9614 45.0355 69.5146 45.5888 69.5146 46.2686C69.5146 46.9486 68.9613 47.5018 68.2814 47.5018C67.6016 47.5018 67.0483 46.9485 67.0483 46.2686C67.0481 45.5887 67.6014 45.0355 68.2814 45.0355Z" fill="url(#paint0_linear)"/>
+                    <path d="M55.1845 67.5551L48.053 60.4234C47.6012 59.9717 47.3525 59.371 47.3525 58.7322V55.4631H49.7442C50.2277 55.4631 50.7084 55.4024 51.173 55.2828C51.7528 55.1336 52.1018 54.5426 51.9527 53.9628C51.8035 53.383 51.2129 53.034 50.6326 53.1831C50.3444 53.2573 50.0456 53.2949 49.7442 53.2949H24.2555C22.2978 53.2949 20.7053 51.7021 20.7053 49.7446V24.256C20.7053 23.9546 20.7428 23.6558 20.817 23.3677C20.9663 22.788 20.6173 22.1971 20.0375 22.0477C19.4577 21.8984 18.8667 22.2474 18.7175 22.8272C18.5978 23.2917 18.5373 23.7723 18.5373 24.256V26.6477H8.94126C8.48758 25.3023 7.21469 24.3305 5.71825 24.3305C3.84286 24.3305 2.31719 25.8562 2.31719 27.7316C2.31719 29.607 3.84305 31.1327 5.71825 31.1327C7.21469 31.1327 8.48748 30.1608 8.94126 28.8156H18.5372V31.282H13.8282C13.2296 31.282 12.7443 31.7673 12.7443 32.3659C12.7443 32.9646 13.2296 33.4499 13.8282 33.4499H18.5372V35.9162H1.08396C0.485291 35.9164 0 36.4017 0 37.0003C0 37.599 0.485291 38.0843 1.08396 38.0843H18.5372V40.5506H13.8282C13.2296 40.5506 12.7443 41.0359 12.7443 41.6346C12.7443 42.2332 13.2296 42.7185 13.8282 42.7185H18.5372V45.1849H15.2679C14.0499 45.1849 12.9048 45.6592 12.0437 46.5204L4.91458 53.6495C4.45003 53.4181 3.93514 53.295 3.40088 53.295C2.49233 53.295 1.63832 53.6488 0.995889 54.291C0.353828 54.9336 0 55.7878 0 56.6962C0 57.6046 0.353828 58.4588 0.996254 59.1012C1.63859 59.7436 2.49269 60.0973 3.40124 60.0973C4.30979 60.0973 5.1638 59.7435 5.80623 59.1012C6.44866 58.4588 6.80248 57.6048 6.80248 56.6962C6.80248 56.1621 6.67934 55.6471 6.44793 55.1825L13.577 48.0534C14.0287 47.6017 14.6294 47.3528 15.2683 47.3528H18.5376V49.7445C18.5376 52.8976 21.1029 55.4627 24.2558 55.4627H26.6475V65.0587C25.3021 65.5124 24.3303 66.7853 24.3303 68.2817C24.3303 70.1572 25.8562 71.6828 27.7314 71.6828C29.6067 71.6828 31.1325 70.1569 31.1325 68.2817C31.1325 66.7853 30.1606 65.5125 28.8154 65.0587V55.4628H31.2817V60.1718C31.2817 60.7704 31.7669 61.2557 32.3656 61.2557C32.9643 61.2557 33.4496 60.7703 33.4496 60.1718V55.4628H35.9157V72.9164C35.9157 73.515 36.401 74.0003 36.9996 74.0003C37.5983 74.0003 38.0836 73.515 38.0836 72.9164V55.4631H40.5499V60.172C40.5499 60.7707 41.0352 61.256 41.6338 61.256C42.2325 61.256 42.7178 60.7707 42.7178 60.172V55.4631H45.1841V58.7322C45.1841 59.9502 45.6584 61.0953 46.5197 61.9564L53.6513 69.088C53.0213 70.36 53.2324 71.9462 54.2904 73.0041C54.9534 73.6672 55.8245 73.9986 56.6954 73.9986C57.5663 73.9986 58.4374 73.6672 59.1004 73.0041C60.4265 71.678 60.4265 69.5203 59.1004 68.1943C58.0428 67.1362 56.4565 66.9251 55.1845 67.5551ZM5.71816 28.9649C5.03819 28.9649 4.48502 28.4116 4.48502 27.7317C4.48502 27.0517 5.03828 26.4986 5.71816 26.4986C6.39805 26.4986 6.95131 27.0518 6.95131 27.7317C6.95149 28.4117 6.39823 28.9649 5.71816 28.9649ZM4.27307 57.5681C4.04011 57.8011 3.7305 57.9293 3.40115 57.9293C3.07181 57.9293 2.7622 57.8011 2.52923 57.5681C2.29627 57.3352 2.1681 57.0256 2.1681 56.6962C2.1681 56.3669 2.29627 56.0573 2.52923 55.8243C2.7622 55.5913 3.07181 55.4632 3.40115 55.4632C3.7305 55.4632 4.04011 55.5913 4.27307 55.8243C4.50603 56.0573 4.6342 56.3669 4.6342 56.6962C4.6342 57.0256 4.50603 57.3354 4.27307 57.5681ZM27.7312 69.5152C27.0513 69.5152 26.4981 68.9619 26.4981 68.2821C26.4981 67.6022 27.0513 67.0489 27.7312 67.0489C28.4111 67.0489 28.9644 67.6022 28.9644 68.2821C28.9644 68.9619 28.4112 69.5152 27.7312 69.5152ZM57.5677 71.4712C57.0869 71.952 56.3045 71.9519 55.8237 71.4712C55.3429 70.9904 55.3429 70.208 55.8237 69.7273C56.0642 69.4869 56.38 69.3667 56.6958 69.3667C57.0116 69.3667 57.3273 69.4869 57.5677 69.7273C58.0484 70.208 58.0484 70.9904 57.5677 71.4712Z" fill="url(#paint1_linear)"/>
+                    <path d="M36.0184 50.2879L34.8969 45.5886H29.7171L28.6224 50.2879H26.1125L30.6249 31.918H34.0959L38.5816 50.2879H36.0184ZM32.3872 34.6414H32.227L30.2246 43.4259H34.3898L32.3872 34.6414Z" fill="white"/>
+                    <path d="M47.6329 50.2869L45.4969 43.1846H45.3367H42.2662V50.2869H39.7563V31.917H45.5503C46.814 31.917 47.7664 32.1439 48.4072 32.5979C49.0481 33.0518 49.466 33.6705 49.6621 34.4536C49.8578 35.2371 49.9558 36.2693 49.9558 37.5509C49.9558 38.8859 49.8176 39.9852 49.5419 40.8484C49.2658 41.712 48.7097 42.3303 47.8732 42.7042L50.2762 50.2871H47.6329V50.2869ZM46.565 40.6748C46.9209 40.4436 47.1524 40.0919 47.2592 39.62C47.366 39.1486 47.4194 38.4586 47.4194 37.5508C47.4194 36.6255 47.3702 35.9313 47.2726 35.4682C47.1746 35.0055 46.9522 34.663 46.6051 34.4402C46.2579 34.2178 45.7014 34.1065 44.9362 34.1065H42.2662V41.0218H44.9096C45.6571 41.0218 46.2087 40.9063 46.565 40.6748Z" fill="white"/>
+                    <path d="M24.3073 24.5074V23.519H25.2645V24.5074H24.3073ZM24.3281 31.2495V25.9432H25.2541V31.2495H24.3281Z" fill="white"/>
+                    <path d="M28.6873 28.2118C28.6873 27.7332 28.6681 27.3917 28.6301 27.187C28.5919 26.9825 28.5209 26.8488 28.4169 26.7864C28.3128 26.724 28.136 26.6928 27.8863 26.6928C27.6158 26.6928 27.4197 26.7552 27.2984 26.8801C27.177 27.005 27.1007 27.1836 27.0695 27.4159C27.0383 27.6483 27.0227 28.0038 27.0227 28.4823V31.2498H26.0967V25.9436H26.929L26.9707 26.6511H27.0331C27.1232 26.3876 27.2689 26.19 27.4701 26.0581C27.6711 25.9264 27.9451 25.8604 28.292 25.8604C28.6666 25.8604 28.9475 25.9298 29.1348 26.0684C29.3221 26.2072 29.4486 26.4153 29.5145 26.6926C29.5804 26.9702 29.6134 27.3621 29.6134 27.8683V31.2497H28.6874V28.2118H28.6873Z" fill="white"/>
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="43.8682" y1="-1.55589" x2="44.4441" y2="80.0266" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#52EAFF"/>
+                            <stop offset="0.2405" stop-color="#48C4FF"/>
+                            <stop offset="0.7741" stop-color="#2E66FF"/>
+                            <stop offset="1" stop-color="#223CFF"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear" x1="29.588" y1="-1.45474" x2="30.1639" y2="80.1278" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#52EAFF"/>
+                            <stop offset="0.2405" stop-color="#48C4FF"/>
+                            <stop offset="0.7741" stop-color="#2E66FF"/>
+                            <stop offset="1" stop-color="#223CFF"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </a>
+            <ul class="header__nav">
+                <li class="header__nav-menu menu-home"><a href="index.html">home</a></li>
+                <li class="header__nav-menu menu-product"><a href="product.html">product</a></li>
+                <li class="header__nav-menu menu-about"><a href="index.html#about">about us</a></li>
+                <li class="header__nav-menu contacts"><a href="contact.html">contact</a></li>
+                <li class="header__nav-menu menu-weglot" id="weglot-menu"></li>
+                <li class="header__nav-menu menu-login"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" id="icon_hdr">
+                        <path d="M10 0C4.47581 0 0 4.47581 0 10C0 15.5242 4.47581 20 10 20C15.5242 20 20 15.5242 20 10C20 4.47581 15.5242 0 10 0ZM15.7661 15.5242C15.7661 15.2823 15.7661 15.121 15.7661 15.121C15.7661 13.75 14.1935 13.2661 13.3468 12.9032C13.0242 12.7823 12.4597 12.5 11.8548 12.2177C11.6532 12.1371 11.4919 11.8548 11.4516 11.6532L11.371 11.0081C11.8145 10.6048 12.2177 10 12.2984 9.35484H12.4194C12.5806 9.35484 12.7419 9.23387 12.7419 9.07258L12.9032 8.06452C12.9435 7.8629 12.7419 7.74194 12.5806 7.74194C12.5806 7.70161 12.5806 7.70161 12.5806 7.70161C12.621 7.58065 12.621 7.45968 12.621 7.33871C12.621 7.25806 12.621 7.1371 12.6613 7.05645C12.6613 6.57258 12.5806 6.16935 12.4597 5.96774C12.3387 5.64516 12.1371 5.32258 11.8548 5.08065C11.0887 4.35484 10.1613 4.03226 9.39516 4.6371C8.87097 4.55645 8.22581 4.79839 7.78226 5.32258C7.54032 5.60484 7.37903 5.92742 7.29839 6.25C7.25806 6.45161 7.21774 6.69355 7.17742 6.97581C7.17742 7.25806 7.17742 7.54032 7.25806 7.74194C7.09677 7.74194 6.93548 7.8629 6.93548 8.06452L7.09677 9.07258C7.1371 9.23387 7.25806 9.35484 7.41935 9.35484H7.5C7.66129 10.0806 8.02419 10.6452 8.42742 11.0484L8.46774 11.6532C8.42742 11.8548 8.26613 12.1371 8.06452 12.2177C7.5 12.5 6.93548 12.7823 6.57258 12.9032C5.76613 13.2258 4.15323 13.75 4.15323 15.121V15.4435C2.82258 14.0323 2.01613 12.0968 2.01613 10C2.01613 5.60484 5.60484 2.01613 10 2.01613C14.3952 2.01613 17.9839 5.60484 17.9839 10C18.0242 12.1371 17.1371 14.0726 15.7661 15.5242Z"/>
+                    </svg>
+                    <span>log in</span>
+                </a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="has-animations">
+        <a href="#" class="scrollToTop"><i class="fas fa-angle-up"></i></a>
+        <div class="wrap-privacy" id="polygon">
+            <section class="privacy-policy">
+                <h3><span>g.t.c.</span></h3>
+                <p><b>Terms and Conditions</b></p>
+                <p>Welcome to vogtinterior.com!</p>
+                <p>These terms and conditions outline the rules and regulations for the use of Vogt Interior ‘s Website, located at https://www.vogtinterior.com.</p>
+                <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use vogtinterior.com if you do not agree to take all of the terms and conditions stated on this page.</p>
+                <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: “Client”, “You” and “Your” refers to you, the person log on this website and compliant to the Company’s terms and conditions. “The Company”, “Ourselves”, “We”, “Our” and “Us”, refers to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of Netherlands.
+                    Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
+                <p><b>Cookies</b></p>
+                <p>We employ the use of cookies. By accessing vogtinterior.com, you agreed to use cookies in agreement with the Vogt Interior ‘s Privacy Policy.</p>
+                <p>Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
+                <p><b>License</b></p>
+                <p>Unless otherwise stated, Vogt Interior and/or its licensors own the intellectual property rights for all material on vogtinterior.com. All intellectual property rights are reserved. You may access this from vogtinterior.com for your own personal use subjected to restrictions set in these terms and conditions.</p>
+                <p>You must not:</p>
+                <ul>
+                    <li>Republish material from vogtinterior.com</li>
+                    <li>Sell, rent or sub-license material from vogtinterior.com</li>
+                    <li>Reproduce, duplicate or copy material from vogtinterior.com</li>
+                    <li>Redistribute content from vogtinterior.com</li>
+                    <li>This Agreement shall begin on the date hereof.</li>
+                </ul>
+                <p>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website.
+                Vogt Interior does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of Vogt Interior ,its agents and/or affiliates.
+                Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws,
+                Vogt Interior shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.</p>
+                <p>Vogt Interior reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.</p>
+                <p>You warrant and represent that:</p>
+                <p>You are entitled to post the Comments on our website and have all necessary licenses and consents to do so;
+                The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party;
+                The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy
+                The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.
+                You hereby grant Vogt Interior a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.
+                <p><b>Hyperlinking to our Content</b></p>
+                <p>The following organizations may link to our Website without prior written approval:</p>
+                <ul>
+                    <li>Government agencies;</li>
+                    <li>Search engines;</li>
+                    <li>News organizations;</li>
+                    <li>Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses;</li>
+                    <li>System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.</li>
+                </ul>
+                <p>These organizations may link to our home page, to publications or to other Website information so long as the link:
+                (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services;
+                and (c) fits within the context of the linking party’s site.</p>
+                <p>We may consider and approve other link requests from the following types of organizations:</p>
+                <ul>
+                    <li>commonly-known consumer and/or business information sources;</li>
+                    <li>our partners and affiliates;</li>
+                    <li>associations or other groups representing charities;</li>
+                    <li>online directory distributors;</li>
+                    <li>internet portals;</li>
+                    <li>accounting, law and consulting firms;</li>
+                    <li>educational institutions and trade associations.</li>
+                </ul>
+                <p>We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses;
+                    (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Vogt Interior;
+                    and (d) the link is in the context of general resource information.</p>
+                <p>These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party’s site.
+                <p>If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to Vogt Interior.
+                Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website,
+                and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.</p>
+                <p>Approved organizations may hyperlink to our Website as follows:</p>
+                <ul>
+                    <li>By use of our corporate name; or</li>
+                    <li>By use of the uniform resource locator being linked to; or</li>
+                    <li>By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party’s site.</li>
+                </ul>
+                <p>No use of Vogt Interior ‘s logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
+                <p><b>iFrames</b></p>
+                <p>Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.</p>
+                <p><b>Content Liability</b></p>
+                <p>We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website.
+                    No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of,
+                    any third party rights.</p>
+                <p><b>Reservation of Rights</b></p>
+                <p>We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request.
+                    We also reserve the right to amen these terms and conditions and it’s linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.</p>
+                <p><b>Removal of links from our website</b></p>
+                <p>If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment.
+                    We will consider requests to remove links but we are not obligated to or so or to respond to you directly.</p>
+                <p>We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy;
+                    nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.</p>
+                <p><b>Disclaimer</b></p>
+                <p>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:</p>
+                <ul>
+                    <li>limit or exclude our or your liability for death or personal injury;</li>
+                    <li>limit or exclude our or your liability for fraud or fraudulent misrepresentation;</li>
+                    <li>limit any of our or your liabilities in any way that is not permitted under applicable law; or</li>
+                    <li>exclude any of our or your liabilities that may not be excluded under applicable law.</li>
+                </ul>
+                <p>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph;
+                    and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.</p>
+                <p>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
+            </section>
+            <section class="contact">
+                <div class="wrap-width wrap-form-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 97" fill="none">
+                        <path d="M123.807 96.0019C126.868 96.0019 129.509 95.0925 131.755 93.2959L93.2501 58.6719C92.3369 59.2708 91.4236 59.8474 90.5844 60.402C87.6966 62.3095 85.3518 63.7956 83.5746 64.8603C81.7728 65.925 79.3786 67.0118 76.4167 68.143C73.4302 69.2521 70.6411 69.8066 68.0741 69.8066H68H67.926C65.3343 69.8066 62.5699 69.2521 59.5833 68.143C56.5968 67.034 54.2026 65.9471 52.4254 64.8603C50.6236 63.7956 48.2788 62.3095 45.4157 60.402C44.6011 59.8696 43.7126 59.2929 42.75 58.6719L4.17137 93.2959C6.41747 95.0925 9.08317 96.0019 12.1191 96.0019H123.807Z" fill="url(#paint0_linear)"/>
+                        <path d="M7.65154 36.8872C4.7637 35.1571 2.22142 33.183 0 30.9648V83.6227L33.9383 53.1237C27.1506 48.8428 18.4131 43.4528 7.65154 36.8872Z" fill="url(#paint1_linear)"/>
+                        <path d="M128.373 36.8899C118.031 43.1671 109.269 48.5793 102.012 53.1265L135.951 83.6255V30.9453C133.779 33.1412 131.236 35.1154 128.373 36.8899Z" fill="url(#paint2_linear)"/>
+                        <path d="M123.807 0H12.1437C8.24392 0 5.25735 1.1756 3.15935 3.54897C1.06134 5.90016 0 8.87242 0 12.3992C0 15.2606 1.38221 18.3659 4.17132 21.7152C6.96044 25.0646 9.92232 27.6819 13.057 29.5895C14.7848 30.6764 19.9681 33.9148 28.6069 39.3048C33.2719 42.2105 37.3445 44.7392 40.8247 46.9351C43.8112 48.7983 46.3535 50.4175 48.4762 51.7484C48.723 51.9036 49.0933 52.1476 49.6116 52.4803C50.1546 52.8352 50.8457 53.2789 51.7096 53.8334C53.3633 54.8981 54.7209 55.7631 55.8069 56.4286C56.8929 57.094 58.2011 57.826 59.7561 58.6467C61.2864 59.4674 62.7426 60.0884 64.1249 60.4877C65.4824 60.887 66.7659 61.1088 67.926 61.1088H68H68.074C69.2341 61.1088 70.4929 60.9091 71.8751 60.4877C73.2327 60.0884 74.6889 59.4674 76.2439 58.6467C77.7742 57.826 79.1071 57.094 80.1931 56.4286C81.2791 55.7631 82.6367 54.8981 84.2904 53.8334C85.1543 53.2789 85.8454 52.8352 86.3884 52.4803C86.9067 52.1476 87.2769 51.9036 87.5238 51.7484C89.1775 50.7059 91.7445 49.1088 95.2 46.9573C101.494 43.0312 110.75 37.242 123.017 29.5895C126.719 27.2827 129.805 24.4657 132.273 21.2051C134.741 17.9445 136 14.5064 136 10.9131C136 7.91863 134.791 5.34563 132.396 3.21625C129.953 1.06469 127.09 0 123.807 0Z" fill="url(#paint3_linear)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="67.963" y1="58.6719" x2="67.963" y2="96.0019" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2E66FF"/>
+                                <stop offset="0.972376" stop-color="#52EAFF"/>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear" x1="16.9691" y1="30.9648" x2="16.9691" y2="83.6227" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2E66FF"/>
+                                <stop offset="0.972376" stop-color="#52EAFF"/>
+                            </linearGradient>
+                            <linearGradient id="paint2_linear" x1="118.982" y1="30.9453" x2="118.982" y2="83.6255" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2E66FF"/>
+                                <stop offset="0.972376" stop-color="#52EAFF"/>
+                            </linearGradient>
+                            <linearGradient id="paint3_linear" x1="68" y1="0" x2="68" y2="61.1088" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2E66FF"/>
+                                <stop offset="0.972376" stop-color="#52EAFF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="wrap-form">
+                        <h3><span>contact</span> form</h3>
+                        <div class="form">
+                            <form action="send.php" method="post">
+                                <input type="text" name='name' id="name" placeholder="Name" required>
+                                <input type="email" name='email' id="email" placeholder="E-mail" required>
+                                <input type="tel" name='phone' id="tel" pattern="[0-9]" placeholder="Phone number" required>
+                                <input type="text" name='company' id="company" placeholder="Company name" required>
+                                <textarea name="message" id="comments" cols="30" rows="10" placeholder="Comments" required></textarea>
+                                <button class="btn" type="submit">send a message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrap-width">
+            <div class="footer__nav">
+                <!--<div class="footer__nav-logo">-->
+                <div class="wrap-nav wrap-nav__load">
+                    <div class="wrap-dwnld">
+                        <div class="dwnld">
+                            <a href="#">
+                                <i class="fab fa-apple"></i>
+                                <div class="btn-text">
+                                    <p>Download in</p><br>
+                                    <p>App Store</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dwnld">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
+                                    <path d="M13.4259 12.4999L0.927261 24.537C0.344449 24.1343 -0.00523804 23.4721 6.0254e-05 22.7621V2.23772C-0.00523804 1.52779 0.339151 0.86024 0.927261 0.462891L13.4259 12.4999Z" fill="#2196F3"/>
+                                    <path d="M17.5926 8.27671L13.2702 12.5L0.925903 0.415219C0.972999 0.377986 1.02009 0.346072 1.07242 0.314158C1.7213 -0.0900862 2.53762 -0.106043 3.2022 0.276925L17.5926 8.27671Z" fill="#4CAF50"/>
+                                    <path d="M23.1479 12.5033C23.1586 13.2962 22.7169 14.0313 22.0145 14.4094L17.8213 16.6673L13.4259 12.5033L17.8213 8.33398L22.0092 10.5972C22.7169 10.9752 23.1533 11.7104 23.1479 12.5033Z" fill="#FFC107"/>
+                                    <path d="M17.5926 16.7209L3.2022 24.7263C2.53762 25.1042 1.72653 25.0882 1.07242 24.6943C1.02009 24.6624 0.972999 24.6305 0.925903 24.5932L13.2702 12.5L17.5926 16.7209Z" fill="#F44336"/>
+                                </svg>
+                                <div class="btn-text">
+                                    <p>Download in</p><br>
+                                    <p>Google Play</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-nav">
+                    <a class="logo" href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126 126" fill="none">
+                            <path d="M124.142 61.488H94.2277V57.2657H102.299C103.325 57.2657 104.156 56.4349 104.156 55.41C104.156 54.3851 103.325 53.5542 102.299 53.5542H94.2277V49.3318H99.8311C101.919 49.3318 103.881 48.5199 105.357 47.0455L117.576 34.8405C118.372 35.2366 119.255 35.4475 120.17 35.4475C121.728 35.4475 123.191 34.8417 124.292 33.7422C125.394 32.6424 126 31.1803 126 29.6249C126 28.0694 125.394 26.6073 124.292 25.5075C123.192 24.4077 121.728 23.8019 120.17 23.8019C118.613 23.8019 117.15 24.4077 116.048 25.5072C114.947 26.607 114.341 28.0691 114.341 29.6245C114.341 30.539 114.552 31.4207 114.949 32.216L102.73 44.421C101.956 45.1943 100.926 45.6203 99.831 45.6203H94.2274V41.5258C94.2274 36.1277 89.8307 31.7363 84.4268 31.7363H80.3276V15.3074C82.6334 14.5307 84.299 12.3516 84.299 9.78966C84.299 6.57899 81.6839 3.96704 78.4698 3.96704C75.2556 3.96704 72.6405 6.5793 72.6405 9.78966C72.6405 12.3516 74.3062 14.5306 76.6119 15.3074V31.7357H72.3848V23.674C72.3848 22.6491 71.5531 21.8182 70.527 21.8182C69.5009 21.8182 68.6691 22.6491 68.6691 23.674V31.7357H64.4419V1.85574C64.4416 0.83082 63.6098 0 62.5838 0C61.5577 0 60.7259 0.83082 60.7259 1.85574V31.7357H56.4988V23.674C56.4988 22.6491 55.6671 21.8182 54.641 21.8182C53.6149 21.8182 52.7831 22.6491 52.7831 23.674V31.7357H48.5561V26.1389C48.5561 24.0537 47.7431 22.0934 46.2668 20.6191L34.0438 8.40986C35.1235 6.23224 34.7617 3.51675 32.9486 1.70559C30.6755 -0.56462 26.9774 -0.564463 24.7046 1.70559C22.4318 3.9758 22.4318 7.66975 24.7046 9.94028C25.8411 11.0753 27.3339 11.6429 28.8266 11.6429C29.7154 11.6429 30.6027 11.4368 31.4165 11.0342L43.6396 23.2437C44.4138 24.017 44.8402 25.0453 44.8402 26.1389V31.7357H40.7411C39.9124 31.7357 39.0883 31.8395 38.2917 32.0443C37.298 32.2997 36.6998 33.3115 36.9555 34.3042C37.2112 35.2969 38.2243 35.8945 39.218 35.6388C39.7122 35.5118 40.2245 35.4472 40.7409 35.4472H84.4269C87.7823 35.4472 90.5118 38.1739 90.5118 41.5252V85.1618C90.5118 85.6772 90.4475 86.1886 90.3206 86.6818C90.0653 87.6745 90.6637 88.6859 91.6574 88.941C91.8124 88.9809 91.968 89 92.1213 89C92.949 89 93.7038 88.4435 93.9192 87.6057C94.1239 86.811 94.2277 85.9884 94.2277 85.1615V81.0669H110.675C111.452 83.3701 113.634 85.0337 116.199 85.0337C119.413 85.0337 122.028 82.4218 122.028 79.2111C122.028 76.0005 119.413 73.3885 116.199 73.3885C113.634 73.3885 111.452 75.0523 110.675 77.3554H94.2274V73.1331H102.298C103.324 73.1331 104.156 72.3023 104.156 71.2774C104.156 70.2524 103.324 69.4216 102.298 69.4216H94.2274V65.1996H124.142C125.168 65.1996 125.999 64.3688 125.999 63.3439C125.999 62.319 125.168 61.488 124.142 61.488ZM118.676 28.1318C119.075 27.733 119.606 27.5136 120.17 27.5136C120.734 27.5136 121.265 27.733 121.664 28.1318C122.064 28.5306 122.283 29.0607 122.283 29.6245C122.283 30.1884 122.064 30.7184 121.664 31.1173C121.265 31.5161 120.734 31.7355 120.17 31.7355C119.606 31.7355 119.075 31.5161 118.676 31.1173C118.276 30.7184 118.057 30.1884 118.057 29.6245C118.057 29.0607 118.276 28.5305 118.676 28.1318ZM78.4696 7.67851C79.635 7.67851 80.5831 8.6257 80.5831 9.78966C80.5831 10.9536 79.6349 11.9008 78.4696 11.9008C77.3043 11.9008 76.3561 10.9536 76.3561 9.78966C76.3561 8.6257 77.3042 7.67851 78.4696 7.67851ZM27.3316 7.31566C26.5075 6.4925 26.5075 5.15305 27.3316 4.33005C27.7437 3.9184 28.2848 3.71273 28.8263 3.71273C29.3676 3.71273 29.9087 3.91855 30.3207 4.33005C31.1448 5.15321 31.1448 6.49266 30.3207 7.31581C29.4969 8.13866 28.156 8.13897 27.3316 7.31566ZM116.199 77.1004C117.364 77.1004 118.312 78.0476 118.312 79.2116C118.312 80.3757 117.364 81.3227 116.199 81.3227C115.033 81.3227 114.085 80.3756 114.085 79.2116C114.085 78.0475 115.033 77.1004 116.199 77.1004Z"
+                                  fill="url(#paint0_linear)"/>
+                            <path d="M94.5838 114.966L82.3606 102.757C81.5863 101.983 81.16 100.955 81.16 99.8616V94.2649H85.2593C86.0879 94.2649 86.9119 94.1611 87.7083 93.9563C88.7019 93.7009 89.3001 92.6892 89.0445 91.6965C88.7888 90.704 87.7765 90.1065 86.7821 90.3618C86.288 90.4888 85.7759 90.553 85.2593 90.553H41.5729C38.2175 90.553 35.4879 87.8263 35.4879 84.4751V40.8396C35.4879 40.3236 35.5523 39.812 35.6794 39.3189C35.9353 38.3264 35.3371 37.3148 34.3434 37.0591C33.3496 36.8035 32.3367 37.401 32.081 38.3935C31.8759 39.1888 31.772 40.0116 31.772 40.8396V44.934H15.3249C14.5473 42.6309 12.3657 40.9672 9.80083 40.9672C6.5865 40.9672 3.97156 43.5791 3.97156 46.7897C3.97156 50.0003 6.58681 52.6122 9.80083 52.6122C12.3657 52.6122 14.5472 50.9484 15.3249 48.6454H31.7719V52.8678H23.701C22.6749 52.8678 21.8431 53.6986 21.8431 54.7235C21.8431 55.7484 22.6749 56.5792 23.701 56.5792H31.7719V60.8014H1.85785C0.831767 60.8017 0 61.6325 0 62.6574C0 63.6823 0.831767 64.5131 1.85785 64.5131H31.7719V68.7353H23.701C22.6749 68.7353 21.8431 69.5662 21.8431 70.5911C21.8431 71.616 22.6749 72.4468 23.701 72.4468H31.7719V76.6691H26.1684C24.0809 76.6691 22.1182 77.481 20.6423 78.9554L8.42337 91.1602C7.62714 90.764 6.74464 90.5532 5.82895 90.5532C4.27173 90.5532 2.808 91.1589 1.70691 92.2584C0.606445 93.3586 0 94.8209 0 96.376C0 97.9311 0.606445 99.3935 1.70753 100.493C2.80847 101.593 4.27236 102.199 5.82958 102.199C7.38679 102.199 8.85053 101.593 9.95162 100.493C11.0527 99.3935 11.6592 97.9314 11.6592 96.376C11.6592 95.4615 11.4481 94.5799 11.0515 93.7846L23.2704 81.5798C24.0445 80.8066 25.0741 80.3805 26.1692 80.3805H31.7727V84.475C31.7727 89.873 36.1694 94.2643 41.5733 94.2643H45.6725V110.692C43.3667 111.469 41.7011 113.648 41.7011 116.21C41.7011 119.421 44.3164 122.032 47.5304 122.032C50.7445 122.032 53.3596 119.42 53.3596 116.21C53.3596 113.648 51.6939 111.469 49.3882 110.692V94.2644H53.6153V102.326C53.6153 103.351 54.4471 104.182 55.4732 104.182C56.4993 104.182 57.331 103.351 57.331 102.326V94.2644H61.5578V124.144C61.5578 125.169 62.3896 126 63.4157 126C64.4418 126 65.2735 125.169 65.2735 124.144V94.2649H69.5007V102.326C69.5007 103.351 70.3324 104.182 71.3585 104.182C72.3846 104.182 73.2164 103.351 73.2164 102.326V94.2649H77.4435V99.8616C77.4435 101.947 78.2564 103.907 79.7327 105.381L91.9559 117.59C90.8761 119.768 91.2379 122.483 93.0513 124.294C94.1876 125.43 95.6807 125.997 97.1734 125.997C98.6661 125.997 100.159 125.43 101.295 124.294C103.568 122.024 103.568 118.33 101.295 116.06C99.4827 114.249 96.7639 113.887 94.5838 114.966ZM9.80067 48.901C8.63522 48.901 7.68712 47.9538 7.68712 46.7899C7.68712 45.6258 8.63538 44.6788 9.80067 44.6788C10.966 44.6788 11.9142 45.6259 11.9142 46.7899C11.9145 47.954 10.9663 48.901 9.80067 48.901ZM7.32384 97.8687C6.92456 98.2675 6.3939 98.487 5.82942 98.487C5.26494 98.487 4.73428 98.2675 4.33499 97.8687C3.93571 97.4699 3.71602 96.9398 3.71602 96.376C3.71602 95.8122 3.93571 95.2821 4.33499 94.8833C4.73428 94.4845 5.26494 94.2651 5.82942 94.2651C6.3939 94.2651 6.92456 94.4845 7.32384 94.8833C7.72313 95.2821 7.94282 95.8122 7.94282 96.376C7.94282 96.9398 7.72313 97.4702 7.32384 97.8687ZM47.5301 118.322C46.3646 118.322 45.4165 117.374 45.4165 116.211C45.4165 115.047 46.3648 114.099 47.5301 114.099C48.6953 114.099 49.6436 115.047 49.6436 116.211C49.6436 117.374 48.6955 118.322 47.5301 118.322ZM98.6684 121.67C97.8443 122.493 96.5033 122.493 95.6793 121.67C94.8552 120.847 94.8552 119.508 95.6793 118.685C96.0915 118.273 96.6327 118.067 97.174 118.067C97.7153 118.067 98.2564 118.273 98.6684 118.685C99.4923 119.508 99.4923 120.847 98.6684 121.67Z"
+                                  fill="url(#paint1_linear)"/>
+                            <path d="M61.6831 86L59.7945 77.814H51.0707L49.2271 86H45L52.5996 54H58.4454L66 86H61.6831ZM55.5676 58.7442H55.2979L51.9254 74.0466H58.9404L55.5676 58.7442Z"
+                                  fill="white"/>
+                            <path d="M81.4773 85.9997L77.8224 73.6278H77.5482H72.2945V85.9997H68V54H77.9139C80.076 54 81.7057 54.3953 82.8021 55.1861C83.8986 55.9769 84.6138 57.0546 84.9493 58.4187C85.2841 59.7835 85.4518 61.5815 85.4518 63.814C85.4518 66.1395 85.2155 68.0545 84.7437 69.5582C84.2713 71.0626 83.3196 72.1397 81.8884 72.7909L86 86H81.4773V85.9997ZM79.6499 69.2557C80.2589 68.8531 80.655 68.2404 80.8378 67.4184C81.0205 66.5972 81.112 65.3952 81.112 63.8138C81.112 62.202 81.0277 60.9927 80.8608 60.186C80.693 59.3801 80.3126 58.7835 79.7186 58.3954C79.1245 58.008 78.1723 57.814 76.8631 57.814H72.2945V69.8603H76.8175C78.0966 69.8603 79.0403 69.6591 79.6499 69.2557Z"
+                                  fill="white"/>
+                            <path d="M41 41.5343V40H42V41.5343H41ZM41.0218 52V43.7631H41.9891V52H41.0218Z" fill="white"/>
+                            <path d="M48.6833 46.9268C48.6833 46.1275 48.656 45.5572 48.602 45.2153C48.5477 44.8739 48.4466 44.6507 48.2988 44.5465C48.1509 44.4422 47.8994 44.3901 47.5444 44.3901C47.1598 44.3901 46.8811 44.4943 46.7086 44.7029C46.536 44.9114 46.4275 45.2097 46.3832 45.5976C46.3388 45.9858 46.3166 46.5794 46.3166 47.3785V52H45V43.139H46.1834L46.2427 44.3206H46.3314C46.4594 43.8804 46.6666 43.5504 46.9526 43.3301C47.2385 43.1103 47.6281 43 48.1213 43C48.6538 43 49.0532 43.1159 49.3195 43.3474C49.5858 43.5793 49.7657 43.9267 49.8595 44.3898C49.9531 44.8533 50 45.5078 50 46.3531V51.9999H48.6834V46.9268H48.6833Z"
+                                  fill="white"/>
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="74.3558" y1="-2.66368" x2="75.3406" y2="137.005"
+                                                gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#52EAFF"/>
+                                    <stop offset="0.2405" stop-color="#48C4FF"/>
+                                    <stop offset="0.7741" stop-color="#2E66FF"/>
+                                    <stop offset="1" stop-color="#223CFF"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear" x1="50.7125" y1="-3.17618" x2="51.6972" y2="136.49"
+                                                gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#52EAFF"/>
+                                    <stop offset="0.2405" stop-color="#48C4FF"/>
+                                    <stop offset="0.7741" stop-color="#2E66FF"/>
+                                    <stop offset="1" stop-color="#223CFF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <!--</div>-->
+                <div class="wrap-nav">
+                    <h3><span>site</span> map</h3>
+                    <ul class="footer__nav-1">
+                        <li class="footer__nav-menu"><a href="index.html">home</a></li>
+                        <li class="footer__nav-menu"><a href="product.html">product</a></li>
+                        <li class="footer__nav-menu"><a href="index.html#about">about us</a></li>
+                        <li class="footer__nav-menu"><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+                <div class="wrap-nav">
+                    <h3><span>for</span> client</h3>
+                    <ul class="footer__nav-1 footer__nav-2">
+                        <li class="footer__nav-menu"><a href="gtc.html">G.T.C.</a></li>
+                        <li class="footer__nav-menu"><a href="privacy.html">privacy policy</a></li>
+                    </ul>
+                    <h3 class="support"><span>support</span> is:</h3>
+                    <ul class="footer__nav-1 footer__nav-2">
+                        <li class="footer__nav-menu"><a href="mailto:support@theinar.com">support@theinar.com</a></li>
+                    </ul>
+                </div>
+                <div class="wrap-nav">
+                    <h3 class="footer__contact"><span>contact</span></h3>
+                    <ul class="footer__nav-1 footer__nav-2">
+                        <li class="footer__nav-menu contact"><span>inAR</span> <span>GmbH</span><br>
+                            Augmented and Mixed Reality Software<br>
+                            Solutions & CMS for Retailers<br>
+                            CHE-281.791.079<br>
+                            5426 Lengnau AG<br>
+                            Switzerland<br>
+                            +41799557458<br>
+                            info@theinar.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__nav-soc">
+                    <a class="soc-1" href="https://www.youtube.com/channel/UCG14C2oOZHtoydOaFQ3BOEw"><i class="fab fa-youtube"></i></a>
+                    <a class="soc-1 soc-2" href="https://www.instagram.com/the_in_ar/"><i class="fab fa-instagram"></i></a>
+                    <a class="soc-1 soc-3" href="https://www.facebook.com/theinar/"><i class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="rights">
+                <script>
+                    document.write(" &copy; "+ new Date().getFullYear()+ "  inAR. All rights reserved.");
+                </script>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/jquery.3.3.1.min.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/weglot.js"></script>
+<script src="https://use.fontawesome.com/1caac91b71.js"></script>
+<script src="js/polygonizr.min.js"></script>
+<script src="js/main.js"></script>
+<!--<script>-->
+<!--var typed = new Typed('.text', {-->
+<!--strings: ["open the door into the future of your business"],-->
+<!--typeSpeed: 50-->
+<!--});-->
+<!--</script>-->
+<script async src='https://www.googletagmanager.com/gtag/js?id=UA-125021779-1'></script>
+<script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-125021779-1', { 'anonymize_ip': true });
+</script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script>
+    $(document).ready(function () {
+        $('#polygon').polygonizr();
+    });
+
+    $( document ).ready(function() {
+        $('#toggle').click(function () {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open');
+        });
+    });
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollToTop').fadeIn();
+            } else {
+                $('.scrollToTop').fadeOut();
+            }
+        });
+        $('.scrollToTop').click(function(){
+            $('html, body').animate({scrollTop : 0},800);
+            return false;
+        });
+    });
+</script>
+</body>
+</html>

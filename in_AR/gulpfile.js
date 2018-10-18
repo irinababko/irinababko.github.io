@@ -11,6 +11,19 @@ const server = require('gulp-server-livereload');
 //         }))
 //         .pipe(gulp.dest('./dist/'))
 // );
+
+// gulp.task('autoprefixer', function () {
+//     const postcss      = require('gulp-postcss');
+//     const sourcemaps   = require('gulp-sourcemaps');
+//     const autoprefixer = require('autoprefixer');
+//
+//     return gulp.src('./src/*.css')
+//         .pipe(sourcemaps.init())
+//         .pipe(postcss([ autoprefixer() ]))
+//         .pipe(sourcemaps.write('.'))
+//         .pipe(gulp.dest('./dest'));
+// });
+
 gulp.task('webserver', function() {
     gulp.src('./')
       .pipe(server({

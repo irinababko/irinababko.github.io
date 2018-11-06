@@ -55,6 +55,42 @@ body {
   margin: 0 auto;
 }
 
+h2 {
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #354A9E;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px;
+  position: relative;
+}
+
+h2:before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 70px;
+  color: #354A9E;
+  background-color: #354A9E;
+  position: absolute;
+  left: calc(50% - 170px);
+  margin-bottom: 20px;
+  top: 20px;
+}
+
+h2:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 70px;
+  color: #354A9E;
+  background-color: #354A9E;
+  position: absolute;
+  right: calc(50% - 170px);
+  margin-top: 20px;
+  bottom: 20px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -177,4 +213,8 @@ main .home .icon-scroll:hover {
     -webkit-transform: translateY(23px);
     transform: translateY(23px);
   }
+}
+
+main .services {
+  padding-top: 60px;
 }

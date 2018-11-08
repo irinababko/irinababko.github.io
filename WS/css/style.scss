@@ -90,7 +90,8 @@ h2{
   transition: top 0.5s;
   z-index: 100;
   @include media((
-          height: (md: 60px)
+          height: (md: 60px),
+          top: (md: 0!important)
   ));
   &-1{
     display: flex;
@@ -124,13 +125,32 @@ h2{
       margin: 0 15px;
       padding: 12px 0;
       color: #8a8a8a;
-      &.active {
-        color: #354A9E;
-      }
+      //&.active {
+      //  color: #354A9E;
+      //}
       a {
+        position: relative;
+        &:before{
+          display: block;
+          content: '';
+          position: absolute;
+          top: 20px;
+          width: 0%;
+          height: 2px;
+          background-color: #354A9E;
+        }
         &:hover {
           color: #354A9E;
+          &:before{
+            display: block;
+            content: '';
+            width: 100%;
+            transition: .5s;
+          }
 
+        }
+        &.current{
+          color: #354A9E;
         }
       }
     }
@@ -186,7 +206,7 @@ h2{
   }
   .overlay {
     position: fixed;
-    background: #354A9E;
+    background: #1f2a50;
     top: 0;
     left: -200px;
     width: 200px;
@@ -244,16 +264,21 @@ main{
     background: url('../images/banner-1.jpg') center center no-repeat;
     background-size: cover;
     //background-size: 100%;
+    margin-top: 90px;
     color: #ffffff;
     position: relative;
     @include media((
-            height: (sm: 100vh)
+            height: (sm: 100vh),
+            margin-top: (md: 60px)
     ));
     &__text{
       display: flex;
       flex-flow: column;
       margin: auto;
       padding-top: 220px;
+      @include media((
+              padding-top: (lg: 160px, md: 120px)
+      ));
 
       h1{
         font-size: 55px;
@@ -337,7 +362,7 @@ main{
     padding-top: 60px;
     padding-bottom: 30px;
     @include media((
-            padding-top: (sm: 20px)
+            padding-top: (sm: 40px)
     ));
     p{
       text-align: center;
@@ -665,6 +690,12 @@ main{
 input.req:invalid {
   border: 1px solid red !important;
 }
+textarea.req:invalid {
+  border: 1px solid red !important;
+}
 
-
-
+#result{
+  font-size: 14px;
+  padding-bottom: 20px;
+  font-style: italic;
+}

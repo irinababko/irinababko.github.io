@@ -189,12 +189,6 @@ h2:after {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .header {
-    top: 0 !important;
-  }
-}
-
 .header-1 {
   display: flex;
   justify-content: space-between;
@@ -959,4 +953,20 @@ textarea.req:invalid {
   font-size: 14px;
   padding-bottom: 20px;
   font-style: italic;
+}
+
+.scrollToTop {
+  color: #444;
+  font-size: 40px;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  display: none;
+  z-index: 10000;
+}
+
+.scrollToTop:hover {
+  text-decoration: none;
+  opacity: 1;
 }

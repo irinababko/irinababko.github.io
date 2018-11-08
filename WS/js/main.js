@@ -1,14 +1,24 @@
+// show-hide header
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+}
 
+// scroll animate for id
 $(document).ready(function(){
     $(".header__nav-menu").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
-
         $('body,html').animate({scrollTop: top}, 1000);
     });
 });
-
 $(document).ready(function(){
     $(".header__nav-menu.icon-scroll").on("click","a", function (event) {
         event.preventDefault();
@@ -18,7 +28,7 @@ $(document).ready(function(){
     });
 });
 
-// (function() {
+(function() {
 var navLinks = $('ul li a'),
     navH = $('nav').height(),
     section = $('section'),
@@ -34,9 +44,9 @@ var navLinks = $('ul li a'),
         }
     });
 });
-// })();
+})();
 
-
+// send message
 $(document).ready(function() {
     $("form").submit(function() {
         var th = $(this);
@@ -56,6 +66,7 @@ $(document).ready(function() {
     });
 });
 
+// mobile menu open/close
 $( document ).ready(function() {
     $('#toggle').click(function () {
         $(this).toggleClass('active');
@@ -68,13 +79,13 @@ $( document ).ready(function() {
 
 });
 
+//validate form
 $("#validate").bind("click", validate);
 
 function validateEmail(email) {
     var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     return re.test(email);
 }
-
 function validate() {
     var $result = $("#result");
     var email = $("#email").val();
@@ -88,7 +99,6 @@ function validate() {
     }
     return false;
 }
-
 $(document).ready(function() {
     $('#validate').click( function() {
         $('input[required]').addClass('req');
@@ -153,10 +163,9 @@ $(document).ready(function() {
 //
 // });
 
-
+//scroll TOP
 $(document).ready(function(){
 
-    //Check to see if the window is top if not then display button
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
             $('.scrollToTop').fadeIn();

@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WebServices</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="dist/style.css">
-
 </head>
 <body>
-
     <header class="header" id="navbar">
         <!--start mobile-menu-->
         <div class="wrap-mob_menu">
@@ -46,8 +45,8 @@
             </ul>
         </div>
     </header>
-
     <main>
+        <a href="#" class="scrollToTop"><i class="fas fa-angle-up"></i></a>
         <section class="home" id="home">
             <div class="home__text wrap-width-1">
                 <h1>Solutions for your business</h1>
@@ -129,24 +128,21 @@
         </div>
     </footer>
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/jquery.3.3.1.min.js"></script>
     <script src="js/main.js"></script>
-
     <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-100px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
+        // var prevScrollpos = window.pageYOffset;
+        // window.onscroll = function() {
+        //     var currentScrollPos = window.pageYOffset;
+        //     if (prevScrollpos > currentScrollPos) {
+        //         document.getElementById("navbar").style.top = "0";
+        //     } else {
+        //         document.getElementById("navbar").style.top = "-100px";
+        //     }
+        //     prevScrollpos = currentScrollPos;
+        // }
     </script>
-
 
 </body>
 </html>

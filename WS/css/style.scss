@@ -12,7 +12,7 @@ a {text-decoration: none;color: inherit;}
 
 body {
   font-size: 16px;
-  font-family: 'Montserrat';
+  font-family: $font_main;
 }
 .wrap-width{
   max-width: 1920px;
@@ -77,7 +77,6 @@ h2{
     }
   }
 }
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -125,7 +124,7 @@ h2{
     &-menu {
       margin: 0 15px;
       padding: 12px 0;
-      color: #8a8a8a;
+      color: $menu_color;
       //&.active {
       //  color: #354A9E;
       //}
@@ -247,11 +246,11 @@ h2{
         a {
           display: block;
           position: relative;
-          color: #FFF;
+          color: #ffffff;
           text-decoration: none;
           overflow: hidden;
           &:hover{
-            color: #8a8a8a;
+            color: $menu_color;
           }
         }
       }
@@ -463,7 +462,7 @@ main{
   }
   .contact{
     padding-top: 40px;
-    background-color: #f9f9f9;
+    background-color: $contact_bg;
     h2{
       &:before{
         left: calc(50% - 118px);
@@ -533,15 +532,14 @@ main{
             &:focus {
               //border-image: linear-gradient(to right, #52EAFF 0%, #2E66FF 100%);
               //border-image-slice: 1;
-              border: 1px solid rgba(53, 74, 158, 0.5);
+              border: 1px solid $input_focus;
             }
           }
-
           input::-webkit-input-placeholder {
-            color: #c4c4c4;
+            color: $placeholder_color;
           }
           input:-moz-placeholder {
-            color: #c4c4c4;
+            color: $placeholder_color;
           }
           input::-webkit-input-placeholder {
             opacity: 1;
@@ -583,14 +581,14 @@ main{
             border-radius: 5px;
             resize: none;
             &:focus {
-              border: 1px solid rgba(53, 74, 158, 0.5);
+              border: 1px solid $input_focus;
             }
           }
           textarea::-webkit-input-placeholder {
-            color: #c4c4c4;
+            color: $placeholder_color;
           }
           textarea:-moz-placeholder {
-            color: #c4c4c4;
+            color: $placeholder_color;
           }
           textarea::-webkit-input-placeholder {
             opacity: 1;
@@ -675,7 +673,7 @@ main{
               padding: (lg: 0 10px)
       ));
       &:hover{
-        color: #8a8a8a;
+        color: $menu_color;
       }
       @include media((
               padding: (md: 3px 15px)
@@ -687,21 +685,19 @@ main{
     font-size: 14px;
   }
 }
-
 input.req:invalid {
-  border: 1px solid red !important;
+  border: 1px solid $invalid_color !important;
 }
 textarea.req:invalid {
-  border: 1px solid red !important;
+  border: 1px solid $invalid_color !important;
 }
-
 #result{
   font-size: 14px;
   padding-bottom: 20px;
   font-style: italic;
 }
 .scrollToTop{
-  color: #444444;
+  color: $scroll_color;
   font-size: 40px;
   opacity: 0.5;
   position: fixed;

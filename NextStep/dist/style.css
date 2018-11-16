@@ -953,7 +953,7 @@ textarea.req:invalid {
   bottom: 50px;
   right: 40px;
   display: none;
-  z-index: 10000;
+  z-index: 10;
 }
 
 .scrollToTop:hover {
@@ -1173,7 +1173,7 @@ textarea.req:invalid {
   }
 
   main .about__icon-item:nth-child(3) svg {
-    width: 43px;
+    width: 65px;
   }
 
   main .about__icon-item:nth-child(4) svg {

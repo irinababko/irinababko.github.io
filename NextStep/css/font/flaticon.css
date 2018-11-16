@@ -1,0 +1,131 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 22/06/2016 15:14
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-abacus:before { content: "\f100"; }
+.flaticon-agenda:before { content: "\f101"; }
+.flaticon-alarm-clock:before { content: "\f102"; }
+.flaticon-attach:before { content: "\f103"; }
+.flaticon-audio-sign:before { content: "\f104"; }
+.flaticon-bitcoin-symbol:before { content: "\f105"; }
+.flaticon-blackboard-with-chart:before { content: "\f106"; }
+.flaticon-blank-document:before { content: "\f107"; }
+.flaticon-book:before { content: "\f108"; }
+.flaticon-briefcase:before { content: "\f109"; }
+.flaticon-calculator:before { content: "\f10a"; }
+.flaticon-camera:before { content: "\f10b"; }
+.flaticon-cancel-credit-card:before { content: "\f10c"; }
+.flaticon-change-purse:before { content: "\f10d"; }
+.flaticon-chat-bubbles:before { content: "\f10e"; }
+.flaticon-clipboard:before { content: "\f10f"; }
+.flaticon-clipboard-with-notes:before { content: "\f110"; }
+.flaticon-cloud:before { content: "\f111"; }
+.flaticon-compact-disc:before { content: "\f112"; }
+.flaticon-compass:before { content: "\f113"; }
+.flaticon-computer-screen:before { content: "\f114"; }
+.flaticon-connection-between-computer-and-smartphone:before { content: "\f115"; }
+.flaticon-credit-card:before { content: "\f116"; }
+.flaticon-cup:before { content: "\f117"; }
+.flaticon-dartboard:before { content: "\f118"; }
+.flaticon-day-15-on-calendar:before { content: "\f119"; }
+.flaticon-dollar-sing:before { content: "\f11a"; }
+.flaticon-dustbin:before { content: "\f11b"; }
+.flaticon-e-lab-instrument:before { content: "\f11c"; }
+.flaticon-equalizing-bars:before { content: "\f11d"; }
+.flaticon-euro-sign:before { content: "\f11e"; }
+.flaticon-exam:before { content: "\f11f"; }
+.flaticon-folder-with-documents:before { content: "\f120"; }
+.flaticon-gift-box-with-a-ribbon:before { content: "\f121"; }
+.flaticon-globe:before { content: "\f122"; }
+.flaticon-gold-bars:before { content: "\f123"; }
+.flaticon-groceries-store:before { content: "\f124"; }
+.flaticon-id-card:before { content: "\f125"; }
+.flaticon-justice-balance:before { content: "\f126"; }
+.flaticon-landscape-picture:before { content: "\f127"; }
+.flaticon-laptop:before { content: "\f128"; }
+.flaticon-lifeguard-float:before { content: "\f129"; }
+.flaticon-light-bulb:before { content: "\f12a"; }
+.flaticon-lock:before { content: "\f12b"; }
+.flaticon-lot-of-money:before { content: "\f12c"; }
+.flaticon-map:before { content: "\f12d"; }
+.flaticon-mathematical-operators:before { content: "\f12e"; }
+.flaticon-megaphone:before { content: "\f12f"; }
+.flaticon-men-avatar:before { content: "\f130"; }
+.flaticon-money-bag:before { content: "\f131"; }
+.flaticon-money-exchange:before { content: "\f132"; }
+.flaticon-musseum:before { content: "\f133"; }
+.flaticon-necktie:before { content: "\f134"; }
+.flaticon-online-shopping:before { content: "\f135"; }
+.flaticon-open-mail:before { content: "\f136"; }
+.flaticon-paper-airplane:before { content: "\f137"; }
+.flaticon-percentage-symbol:before { content: "\f138"; }
+.flaticon-phone:before { content: "\f139"; }
+.flaticon-phone-reciever:before { content: "\f13a"; }
+.flaticon-pie-chart:before { content: "\f13b"; }
+.flaticon-piggy-bank:before { content: "\f13c"; }
+.flaticon-pound-symbol:before { content: "\f13d"; }
+.flaticon-power-button:before { content: "\f13e"; }
+.flaticon-price-ticket:before { content: "\f13f"; }
+.flaticon-printer:before { content: "\f140"; }
+.flaticon-projection-screen-with-bar-chart:before { content: "\f141"; }
+.flaticon-refreshment:before { content: "\f142"; }
+.flaticon-rouble-symbol:before { content: "\f143"; }
+.flaticon-sand-clock:before { content: "\f144"; }
+.flaticon-science-test:before { content: "\f145"; }
+.flaticon-scientist-avatar:before { content: "\f146"; }
+.flaticon-searching-tool:before { content: "\f147"; }
+.flaticon-sell-icon:before { content: "\f148"; }
+.flaticon-sheet-of-newspaper:before { content: "\f149"; }
+.flaticon-sheet-of-torn-paper:before { content: "\f14a"; }
+.flaticon-shiny-diamond:before { content: "\f14b"; }
+.flaticon-shopping-basket:before { content: "\f14c"; }
+.flaticon-shopping-cart:before { content: "\f14d"; }
+.flaticon-smartphone:before { content: "\f14e"; }
+.flaticon-smartphone-1:before { content: "\f14f"; }
+.flaticon-smartphone-chat:before { content: "\f150"; }
+.flaticon-stack-of-bills:before { content: "\f151"; }
+.flaticon-storm-cloud:before { content: "\f152"; }
+.flaticon-taking-notes:before { content: "\f153"; }
+.flaticon-telemarketer:before { content: "\f154"; }
+.flaticon-telephone:before { content: "\f155"; }
+.flaticon-text-and-image-document:before { content: "\f156"; }
+.flaticon-text-document:before { content: "\f157"; }
+.flaticon-text-document-with-title:before { content: "\f158"; }
+.flaticon-thinking-head:before { content: "\f159"; }
+.flaticon-thinking-head-1:before { content: "\f15a"; }
+.flaticon-thumb-down:before { content: "\f15b"; }
+.flaticon-thumb-up:before { content: "\f15c"; }
+.flaticon-tool:before { content: "\f15d"; }
+.flaticon-user-network:before { content: "\f15e"; }
+.flaticon-wall-clock:before { content: "\f15f"; }
+.flaticon-weekly-calendar:before { content: "\f160"; }
+.flaticon-withdrawing-money-from-atm:before { content: "\f161"; }
+.flaticon-womans-avatar:before { content: "\f162"; }
+.flaticon-yen-symbol:before { content: "\f163"; }

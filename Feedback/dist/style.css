@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+.clear {
+  display: block;
+}
+
+.clear::after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 1px;
+  visibility: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Montserrat";
+  background-color: #2f4e68;
+}
+
+.wrap-width {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #181818;
+}
+
+.wrap-width-1 {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+form {
+  width: 100%;
+}
+
+textarea {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #181818;
+  padding: 10px;
+  width: 100%;
+}
+
+header {
+  padding: 50px;
+}
+
+header .menu {
+  display: flex;
+  justify-content: flex-start;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 20px;
+}
+
+header .menu li {
+  padding: 0 100px 0 50px;
+}
+
+main {
+  padding: 85px 30% 50px 85px;
+}
+
+main .feedback {
+  display: flex;
+}
+
+main .feedbacks {
+  display: flex;
+  align-items: flex-start;
+}
+
+main .feedbacks__photo {
+  width: 50px;
+  height: 50px;
+  background-color: #D8D8D8;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 50px;
+}
+
+main .feedbacks__photo:after {
+  display: block;
+  content: '';
+  background-color: #7ED321;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+main .feedbacks__text {
+  color: #ffffff;
+  width: calc(100% - 50px);
+}
+
+main .feedbacks__text-head {
+  display: flex;
+  padding: 10px 0;
+}
+
+main .feedbacks__text-head .name {
+  padding-right: 30px;
+}
+
+main .feedbacks__text-head .icon {
+  color: #7ED321;
+}
+
+main .feedbacks__text-foot {
+  padding-top: 20px;
+}
+
+main .feedbacks__text-foot ul {
+  display: flex;
+}
+
+main .feedbacks__text-foot ul li {
+  padding-right: 20px;
+}
+
+main .feedbacks__text-foot ul li:hover {
+  cursor: pointer;
+  color: #7ED321;
+}
+
+main .feedbacks__text-reply {
+  display: flex;
+  align-items: center;
+  transform: translateX(0px);
+  margin-bottom: 0;
+  opacity: 0;
+  transition: ease-out .5s;
+}
+
+main .feedbacks__text-reply .feedbacks__photo {
+  width: 35px;
+  height: 35px;
+  margin: 0 20px;
+}
+
+main .feedbacks__text-reply .feedbacks__photo:after {
+  display: block;
+  content: '';
+  height: 10px;
+  width: 10px;
+}
+
+main .feedbacks__text-reply form {
+  width: 10%;
+  transition: ease-out .5s;
+}
+
+main .feedbacks__text-replys {
+  display: flex;
+  margin: 20px 0;
+}
+
+main .feedbacks__text-replys .feedbacks__photo {
+  margin: 0 5px;
+}
+
+main .feedbacks__text-replys .feedbacks__photo.feedbacks__photo-plus {
+  background-color: #494949;
+  text-align: center;
+  line-height: 50px;
+  font-size: 32px;
+}
+
+main .feedbacks__text-replys .feedbacks__photo.feedbacks__photo-plus:after {
+  display: block;
+  content: '';
+  height: 0px;
+  width: 0px;
+  border: 0;
+}
+
+main .feedbacks__text .open {
+  opacity: 1;
+  transition: ease-out .5s;
+  transform: translateY(20px);
+  margin-bottom: 30px;
+}
+
+main .feedbacks__text .open form {
+  width: 92%;
+  transition: ease-out .5s;
+}
+
+@media only screen and (max-width: 1200px) {
+  .wrap-width-1 {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrap-width-1 {
+    max-width: 700px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrap-width-1 {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .wrap-width-1 {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .wrap-width-1 {
+    padding: 0 10px;
+  }
+}

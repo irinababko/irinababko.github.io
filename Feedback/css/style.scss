@@ -1,0 +1,185 @@
+@import 'mixin';
+@import 'var';
+
+* {margin: 0;padding: 0;outline: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+*:after, *:before { -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {display: block;}
+.clear {display: block;	}
+.clear::after {clear: both;content: ".";display: block;height: 1px;visibility: hidden;}
+ul {list-style-type: none;margin: 0;padding: 0;}
+a {text-decoration: none;color: inherit;}
+
+
+body {
+  font-size: 16px;
+  font-family: $font_main;
+  background-color: #2f4e68;
+}
+.wrap-width{
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #181818;
+
+  &-1{
+    max-width: 1140px;
+    margin: 0 auto;
+    @include media((
+            max-width: (xlg: 800px, lg: 700px, md: 600px),
+            padding: (sm: 0 10px, xs: 0 10px)
+    ));
+  }
+}
+form{
+  width: 100%;
+}
+textarea{
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #181818;
+  padding: 10px;
+  width: 100%;
+}
+header{
+  padding: 50px;
+  .menu{
+    display: flex;
+    justify-content: flex-start;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 20px;
+    li{
+      padding: 0 100px 0 50px;
+    }
+  }
+}
+main{
+  //background-color: #181818;
+  padding: 85px 30% 50px 85px;
+  .feedback{
+    display: flex;
+    //&.feedbacks{
+    //  textarea{
+    //    width: 100%;
+    //  }
+    //}
+  }
+  .feedbacks{
+    display: flex;
+    align-items: flex-start;
+    &__photo{
+      width: 50px;
+      height: 50px;
+      background-color: #D8D8D8;
+      border-radius: 50%;
+      position: relative;
+      margin-right: 50px;
+      &:after{
+        display: block;
+        content: '';
+        background-color: #7ED321;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        border: 3px solid #000000;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    &__text{
+      color: #ffffff;
+      width: calc(100% - 50px);
+      &-head{
+        display: flex;
+        padding: 10px 0;
+        .name{
+          padding-right: 30px;
+        }
+        .icon{
+          color: #7ED321;
+        }
+      }
+      &-foot{
+        padding-top: 20px;
+        ul{
+          display: flex;
+          li{
+            padding-right: 20px;
+            &:hover{
+              cursor: pointer;
+              color: #7ED321;
+            }
+          }
+        }
+      }
+      &-reply{
+        display: flex;
+        align-items: center;
+        transform: translateX(0px);
+        margin-bottom: 0;
+        //width: 0;
+        opacity: 0;
+        transition: ease-out .5s;
+        .feedbacks__photo{
+          width: 35px;
+          height: 35px;
+          margin: 0 20px;
+          &:after{
+            display: block;
+            content: '';
+            height: 10px;
+            width: 10px;
+          }
+          //&.feedbacks__photo-plus{
+          //  background-color: #494949;
+          //  &:after{
+          //    display: block;
+          //    content: '';
+          //    height: 0px;
+          //    width: 0px;
+          //  }
+          //}
+        }
+        form{
+          width: 10%;
+          transition: ease-out .5s;
+        }
+      }
+      &-replys{
+        display: flex;
+        margin: 20px 0;
+        .feedbacks__photo{
+          margin: 0 5px;
+          &.feedbacks__photo-plus{
+            background-color: #494949;
+            text-align: center;
+            line-height: 50px;
+            font-size: 32px;
+            &:after{
+              display: block;
+              content: '';
+              height: 0px;
+              width: 0px;
+              border: 0;
+            }
+          }
+        }
+      }
+      .open{
+        opacity: 1;
+        //width: 200px;
+        transition: ease-out .5s;
+        transform: translateY(20px);
+        margin-bottom: 30px;
+        form{
+          width: 92%;
+          transition: ease-out .5s;
+        }
+      }
+    }
+  }
+}
+
+

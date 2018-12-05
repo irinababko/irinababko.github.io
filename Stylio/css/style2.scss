@@ -1,0 +1,111 @@
+@import 'variables';
+
+.container {
+    background: $color-main2 no-repeat;
+}
+.howto {
+    background-color: $color-main-hvr2;
+    &__block {
+        .icon {
+            color: $color-main; 
+        }
+        p {
+            color: $arrow-hvr;
+        }
+        &:hover .icon,
+        &:hover p {
+            color: #fff;
+        }
+    }
+}
+.features,
+.info,
+.number,
+.prices,
+.price,
+.screenshots,
+.screen,
+.blog1,
+.colored-bg {
+    background-color: $color-main2;
+}
+.newsletter {
+    background-color: #131619;
+}
+.head__title {
+    h1 {
+        color: #fff;
+    }
+    p {
+        color: $arrow-hvr;
+    }
+}
+.head__title-top {
+    background-color: $color-main2;
+}
+.prices__block {
+    background-color: $color-main-hvr2;
+    li {
+        color: $arrow-hvr;
+    }
+    li:nth-child(2n+1) {
+        background-color: $color-main-hvr2;
+    }
+}
+.review {
+    background-color: $color-main-hvr2;
+}
+
+.info__carousel-item1 .unhover:before,
+.info__carousel-item2 .unhover:before,
+.info__carousel-item3 .unhover:before,
+.info__carousel-item4 .unhover:before, 
+.info__carousel-item5 .unhover:before, 
+.info__carousel-item6 .unhover:before, 
+.info__carousel-item7 .unhover:before, 
+.info__carousel-item8 .unhover:before {
+    color: #fff;
+    font-family: 'source_sans_prolight';
+}
+#stage__text1, 
+#stage__text2, 
+#stage__text3, 
+#stage__text4, 
+#stage__text5, 
+#stage__text6, 
+#stage__text7, 
+#stage__text8 {
+    h4 {
+        color: #fff;
+    }
+}
+.screenshots {
+    #slider-left,
+    #slider-right {
+        color: #fff;
+    } 
+} 
+.review {
+    &__container {
+        .rewiev-block {
+            color: $text-color;
+            &:hover {
+                background-color: rgb(78, 79, 83);
+                color: #fff;
+            }
+        }
+    }
+}
+.blog {
+    color: $text-color;
+}
+.footer {
+    input[type="text"]::-webkit-input-placeholder,
+    input[type="email"]::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+        color: $color-main; 
+    }
+}
+.footer .fa {
+    color: $color-main;
+}

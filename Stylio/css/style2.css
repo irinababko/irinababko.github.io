@@ -1,0 +1,115 @@
+.container {
+  background: #191c20 no-repeat;
+}
+
+.howto {
+  background-color: #20242a;
+}
+
+.howto__block .icon {
+  color: #ff5f9b;
+}
+
+.howto__block p {
+  color: #c2c2c2;
+}
+
+.howto__block:hover .icon,
+.howto__block:hover p {
+  color: #fff;
+}
+
+.features,
+.info,
+.number,
+.prices,
+.price,
+.screenshots,
+.screen,
+.blog1,
+.colored-bg {
+  background-color: #191c20;
+}
+
+.newsletter {
+  background-color: #131619;
+}
+
+.head__title h1 {
+  color: #fff;
+}
+
+.head__title p {
+  color: #c2c2c2;
+}
+
+.head__title-top {
+  background-color: #191c20;
+}
+
+.prices__block {
+  background-color: #20242a;
+}
+
+.prices__block li {
+  color: #c2c2c2;
+}
+
+.prices__block li:nth-child(2n+1) {
+  background-color: #20242a;
+}
+
+.review {
+  background-color: #20242a;
+}
+
+.info__carousel-item1 .unhover:before,
+.info__carousel-item2 .unhover:before,
+.info__carousel-item3 .unhover:before,
+.info__carousel-item4 .unhover:before,
+.info__carousel-item5 .unhover:before,
+.info__carousel-item6 .unhover:before,
+.info__carousel-item7 .unhover:before,
+.info__carousel-item8 .unhover:before {
+  color: #fff;
+  font-family: 'source_sans_prolight';
+}
+
+#stage__text1 h4,
+#stage__text2 h4,
+#stage__text3 h4,
+#stage__text4 h4,
+#stage__text5 h4,
+#stage__text6 h4,
+#stage__text7 h4,
+#stage__text8 h4 {
+  color: #fff;
+}
+
+.screenshots #slider-left,
+.screenshots #slider-right {
+  color: #fff;
+}
+
+.review__container .rewiev-block {
+  color: #7b7b7b;
+}
+
+.review__container .rewiev-block:hover {
+  background-color: #4e4f53;
+  color: #fff;
+}
+
+.blog {
+  color: #7b7b7b;
+}
+
+.footer input[type="text"]::-webkit-input-placeholder,
+.footer input[type="email"]::-webkit-input-placeholder,
+.footer textarea::-webkit-input-placeholder {
+  color: #ff5f9b;
+}
+
+.footer .fa {
+  color: #ff5f9b;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <img class="main-img" src="img/stylio-main-header.png" alt="">
+        <p class="main-p">Responsive HTML5 App Landing Page</p>
+        <div class="web">
+            <div class="web__block web__block-1">
+                <a href="index1.html">
+                    <img src="img/web1.png" alt=""></a>
+                <h3>Light layout</h3>
+            </div>
+            <div class="web__block web__block-2">
+                <a href="index2.html">
+                    <img src="img/web2.png" alt=""></a>
+                <h3>Dark layout</h3>
+            </div>
+            <div class="web__block web__block-3">
+                <a href="index3.html">
+                    <img src="img/video.gif" alt=""></a>
+                <h3>Video version</h3>
+            </div>
+        </div>
+
+        <div class="reg">
+            <button type="submit" class="btn btn-reg" id="btn-reg" onclick="document.getElementById('modal').style.display='block'">Registration</button>
+            
+
+            <div id="modal" class="modal">
+  
+            <form class="modal-content animate" action="mail.php">
+                <div class="imgcontainer">
+                <span onclick="document.getElementById('modal').style.display='none'" class="close" id="close" title="Close Modal"><i class="far fa-times-circle"></i></span> 
+                </div>
+
+            <div class="form_container">
+                <div class="form__group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter name" name="name" class="form__control" required>
+                </div>
+
+                <div class="form__group">
+                    <label>Phone</label>
+                    <input type="text" placeholder="Enter phone" name="phone" class="form__control" required>
+                </div>
+
+                <div class="form__group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter email" name="email" class="form__control" required>
+                </div>
+
+                <div class="form__group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter password" name="pwrd1" class="form__control" required>
+                </div>
+
+                <div class="form__group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter password" name="pwrd2" class="form__control" required>
+                </div>
+
+            </div>
+
+            <div class="form__container">
+                <button type="submit" class="btn btn-start">Get started</button>
+                <button type="button" onclick="document.getElementById('modal').style.display='none'"           class="btn btn-cancel">Cancel</button>
+            </div>
+            </form>
+            <p class="form__agree">By clicking you agree to our Terms of Service, Privacy Policy & Refund Policy. Stylio v 2.3© All rights reserved.</p>
+        </div>
+        </div>
+
+
+    </div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>    
+</body>
+</html>

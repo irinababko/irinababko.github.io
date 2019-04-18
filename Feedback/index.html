@@ -2,333 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.00">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Feedback</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
-    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" id='stylesheet' href="dist/style.css">
 </head>
 <body>
-    <div class="wrap-width">
-    <header>
-        <ul class="menu wrap-width">
-            <li>store</li>
-            <li>followers</li>
-            <li>following</li>
-            <li class="active">seller feedback</li>
-        </ul>
-    </header>
     <main>
-        <div class="wrap-width-1">
-            <h4>Your feedback</h4>
-            <div class="feedback feedbacks">
-                <div class="feedbacks__photo"></div>
-                <div class="feedbacks__text">
-                    <div class="feedbacks__text-head">
-                        <p class="name">Arn*****old</p>
-                        <div class="icon">
-                            <i class="fas fa-thumbs-up"></i>
-                            <i class="fas fa-thumbs-up"></i>
-                            <i class="fas fa-thumbs-up"></i>
+        <div class="container-fluid">
+            <header class="header">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-offset-md-1 col-md-4 col-lg-3">
+                        <div class="header__logo">
+                            <img src="img/logo.png" alt="">
                         </div>
                     </div>
-                    <form action="">
-                        <textarea name="feedback" id="feedback" cols="15" rows="5" placeholder="Your comment"></textarea>
-                    </form>
-                </div>
-            </div>
-            <h4>All feedbacks</h4>
-            <div class="feedbacks">
-                <div class="feedbacks__photo"></div>
-                <div class="feedbacks__text">
-                    <div class="feedbacks__text-head">
-                        <p class="name">Arn*****old</p>
-                        <div class="icon">
-                            <i class="fas fa-thumbs-up"></i>
-                            <i class="fas fa-thumbs-up"></i>
-                            <i class="fas fa-thumbs-up"></i>
-                        </div>
-                    </div>
-                    <div class="feedbacks__text-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores culpa esse et eveniet fugit inventore, iusto mollitia quas quidem.
-                    </div>
-                    <div class="feedbacks__text-foot">
-                        <ul>
-                            <li>Like</li>
-                            <li class="reply reply0">Reply</li>
-                            <li>2 days ago</li>
-                        </ul>
-                    </div>
-                    <div class="feedbacks__text-reply reply-open0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                            <path d="M7.36437 12.3403H17.0165L13.4318 15.8768L14.5338 16.964L20 11.5715L14.5339 6.17896L13.4318 7.26619L17.0165 10.8027H7.36433C4.18452 10.8027 1.59754 8.25054 1.59754 5.11353C1.59754 3.63815 2.3538 2.38438 2.98823 1.59246L3.47138 0.989305L2.24854 0.0359192L1.76538 0.639074C0.977779 1.62227 0.038908 3.19665 0.038908 5.11353C0.0389862 9.09842 3.32515 12.3403 7.36437 12.3403Z" fill="white"/>
-                        </svg>
-                        <div class="feedbacks__photo"></div>
-                        <form action="">
-                            <textarea name="reply" id="reply0" cols="20" rows="1" placeholder="Your comment"></textarea>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <div class="feedbacks">
-                <div class="feedbacks__photo"></div>
-                <div class="feedbacks__text">
-                    <div class="feedbacks__text-head wrap-name">
-                        <div class="wrap-name">
-                            <p class="name">My******Name</p>
-                            <div class="icon">
-                                <i class="fas fa-thumbs-up"></i>
-                                <i class="fas fa-thumbs-up"></i>
-                                <i class="fas fa-thumbs-up"></i>
-                                <i class="fas fa-thumbs-up grey"></i>
-                                <i class="fas fa-thumbs-up grey"></i>
-                            </div>
-                        </div>
-                        <div class="edit">
-                            <p>Edit</p>
-                            <p>Delete</p>
-                        </div>
-                    </div>
-                    <div class="feedbacks__text-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores culpa esse et eveniet fugit inventore, iusto mollitia quas quidem.
-                    </div>
-                    <div class="feedbacks__text-foot">
-                        <ul>
-                            <li>Like</li>
-                            <li class="reply reply1">Reply</li>
-                            <li>2 days ago</li>
-                        </ul>
-                    </div>
-                    <div class="feedbacks__text-reply reply-open1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                            <path d="M7.36437 12.3403H17.0165L13.4318 15.8768L14.5338 16.964L20 11.5715L14.5339 6.17896L13.4318 7.26619L17.0165 10.8027H7.36433C4.18452 10.8027 1.59754 8.25054 1.59754 5.11353C1.59754 3.63815 2.3538 2.38438 2.98823 1.59246L3.47138 0.989305L2.24854 0.0359192L1.76538 0.639074C0.977779 1.62227 0.038908 3.19665 0.038908 5.11353C0.0389862 9.09842 3.32515 12.3403 7.36437 12.3403Z" fill="white"/>
-                        </svg>
-                        <div class="feedbacks__photo"></div>
-                        <form action="">
-                            <textarea name="reply" id="reply1" cols="20" rows="1" placeholder="Your comment"></textarea>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <div class="feedbacks">
-                <div class="feedbacks__photo"></div>
-                <div class="feedbacks__text">
-                    <div class="feedbacks__text-head">
-                        <p class="name">My******Name</p>
-                        <div class="icon">
-                            <i class="fas fa-thumbs-up"></i>
-                            <i class="fas fa-thumbs-up"></i>
-                            <i class="fas fa-thumbs-up"></i>
-                        </div>
-                    </div>
-                    <div class="feedbacks__text-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores culpa esse et eveniet fugit inventore, iusto mollitia quas quidem.
-                    </div>
-                    <div class="feedbacks__text-foot">
-                        <ul>
-                            <li>Like</li>
-                            <li class="reply reply2">Reply</li>
-                            <li>2 days ago</li>
-                        </ul>
-                    </div>
-                    <div class="feedbacks__text-replys">
-                        <div class="wrap-reply">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                <path d="M7.36437 12.3403H17.0165L13.4318 15.8768L14.5338 16.964L20 11.5715L14.5339 6.17896L13.4318 7.26619L17.0165 10.8027H7.36433C4.18452 10.8027 1.59754 8.25054 1.59754 5.11353C1.59754 3.63815 2.3538 2.38438 2.98823 1.59246L3.47138 0.989305L2.24854 0.0359192L1.76538 0.639074C0.977779 1.62227 0.038908 3.19665 0.038908 5.11353C0.0389862 9.09842 3.32515 12.3403 7.36437 12.3403Z" fill="white"/>
-                            </svg>
-                            <div class="feedbacks__photo feedbacks__photo-1"></div>
-                            <div class="feedbacks__photo feedbacks__photo-1"></div>
-                            <div class="feedbacks__photo feedbacks__photo-1"></div>
-                            <div class="feedbacks__photo feedbacks__photo-1"></div>
-                            <div class="feedbacks__photo feedbacks__photo-1 feedbacks__photo-plus">+</div>
-                            <div class="reply-count">
-                                <p>6 replies</p>               
-                            </div>
-                            <div class="time">
-                                <p>Last reply 23 hours ago</p>
-                            </div>
-                            <div class="view">
-                                <p>View thread</p>
-                            </div>
-                        </div>
-                        <div class="view">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none" class="arrow">
-                                <path opacity="0.5" d="M0.43789 12C0.325818 12 0.213746 11.9548 0.128379 11.8648C-0.042793 11.6843 -0.042793 11.3926 0.128379 11.2122L5.07223 6.00006L0.128379 0.787954C-0.042793 0.607494 -0.042793 0.315805 0.128379 0.135345C0.299551 -0.0451149 0.576229 -0.0451149 0.747401 0.135345L5.781 5.44206C6.073 5.74991 6.073 6.25021 5.781 6.55805L0.747401 11.8648C0.662033 11.9548 0.549962 12 0.43789 12Z" fill="white"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="feedbacks__text-reply reply-open2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                            <path d="M7.36437 12.3403H17.0165L13.4318 15.8768L14.5338 16.964L20 11.5715L14.5339 6.17896L13.4318 7.26619L17.0165 10.8027H7.36433C4.18452 10.8027 1.59754 8.25054 1.59754 5.11353C1.59754 3.63815 2.3538 2.38438 2.98823 1.59246L3.47138 0.989305L2.24854 0.0359192L1.76538 0.639074C0.977779 1.62227 0.038908 3.19665 0.038908 5.11353C0.0389862 9.09842 3.32515 12.3403 7.36437 12.3403Z" fill="white"/>
-                        </svg>
-                        <div class="feedbacks__photo"></div>
-                        <form action="">
-                            <textarea name="reply" id="reply2" cols="20" rows="1" placeholder="Your comment"></textarea>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <div class="feedbacks">
-                    <div class="feedbacks__photo"></div>
-                    <div class="feedbacks__text">
-                        <div class="feedbacks__text-head">
-                            <p class="name">My******Name</p>
-                            <div class="icon">
-                                <i class="fas fa-thumbs-up"></i>
-                                <i class="fas fa-thumbs-up"></i>
-                                <i class="fas fa-thumbs-up"></i>
-                            </div>
-                        </div>
-                        <div class="feedbacks__text-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores culpa esse et eveniet fugit inventore, iusto mollitia quas quidem.
-                        </div>
-                        <div class="feedbacks__text-foot">
+                    <div class="col-sm-5 col-md-5 col-lg-4 text-center">
+                        <div class="header__soc">
                             <ul>
-                                <li>Like</li>
-                                <li class="reply reply3">Reply</li>
-                                <li>2 days ago</li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                             </ul>
                         </div>
-                        <div class="feedbacks__text-replys list">
-                            <div class="wrap-reply">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path d="M7.36437 12.3403H17.0165L13.4318 15.8768L14.5338 16.964L20 11.5715L14.5339 6.17896L13.4318 7.26619L17.0165 10.8027H7.36433C4.18452 10.8027 1.59754 8.25054 1.59754 5.11353C1.59754 3.63815 2.3538 2.38438 2.98823 1.59246L3.47138 0.989305L2.24854 0.0359192L1.76538 0.639074C0.977779 1.62227 0.038908 3.19665 0.038908 5.11353C0.0389862 9.09842 3.32515 12.3403 7.36437 12.3403Z" fill="white"/>
-                                </svg>
-                                <div class="reply-count">
-                                    <p>6 replies</p> 
-                                    <div class="line"></div>              
-                                </div>
-                            </div>
-                            <div class="feedbacks">
-                                    <div class="feedbacks__photo"></div>
-                                    <div class="feedbacks__text">
-                                        <div class="feedbacks__text-head wrap-name">
-                                            <div class="wrap-name">
-                                                <p class="name">My******Name</p>
-                                            </div>
-                                            <div class="edit">
-                                                <p>Edit</p>
-                                                <p>Delete</p>
-                                            </div>
-                                        </div>
-                                        <div class="feedbacks__text-body">
-                                            <span>My comment </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores culpa esse et eveniet fugit inventore, iusto mollitia quas quidem.
-                                        </div>
-                                        <div class="feedbacks__text-foot">
-                                            <ul>
-                                                <li class="like">Like</li>
-                                                <li>5 hrs</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="feedbacks">
-                                        <div class="feedbacks__photo"></div>
-                                        <div class="feedbacks__text">
-                                            <div class="feedbacks__text-head wrap-name">
-                                                <div class="wrap-name">
-                                                    <p class="name">My******Name</p>
-                                                </div>
-                                                <div class="edit">
-                                                    <p>Edit</p>
-                                                    <p>Delete</p>
-                                                </div>
-                                            </div>
-                                            <div class="feedbacks__text-body">
-                                                <span>My comment </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores culpa esse et eveniet fugit inventore, iusto mollitia quas quidem.
-                                            </div>
-                                            <div class="feedbacks__text-foot">
-                                                <ul>
-                                                    <li class="like">Like</li>
-                                                    <li>5 hrs</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="feedbacks">
-                                            <div class="feedbacks__photo"></div>
-                                            <div class="feedbacks__text">
-                                                <div class="feedbacks__text-head wrap-name">
-                                                    <div class="wrap-name">
-                                                        <p class="name">My******Name</p>
-                                                    </div>
-                                                    <div class="edit">
-                                                        <p>Edit</p>
-                                                        <p>Delete</p>
-                                                    </div>
-                                                </div>
-                                                <div class="feedbacks__text-body">
-                                                    <span>My comment </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores culpa esse et eveniet fugit inventore, iusto mollitia quas quidem.
-                                                </div>
-                                                <div class="feedbacks__text-foot">
-                                                    <ul>
-                                                        <li class="like">Like</li>
-                                                        <li>5 hrs</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="feedbacks">
-                                                <div class="feedbacks__photo"></div>
-                                                <div class="feedbacks__text">
-                                                    <div class="feedbacks__text-head wrap-name">
-                                                        <div class="wrap-name">
-                                                            <p class="name">My******Name</p>
-                                                        </div>
-                                                        <div class="edit">
-                                                            <p>Edit</p>
-                                                            <p>Delete</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="feedbacks__text-body">
-                                                        <span>My comment </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores culpa esse et eveniet fugit inventore, iusto mollitia quas quidem.
-                                                    </div>
-                                                    <div class="feedbacks__text-foot">
-                                                        <ul>
-                                                            <li class="like">Like</li>
-                                                            <li>5 hrs</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
+                    </div>
+                    <div class="col-sm-2 col-md-3 col-lg-1 text-center">
+                        <div class="header__lang">
+                            <span class="active">Pус</span>
+                            <span>Eng</span>
                         </div>
-                        <div class="feedbacks__text-reply reply-open3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path d="M7.36437 12.3403H17.0165L13.4318 15.8768L14.5338 16.964L20 11.5715L14.5339 6.17896L13.4318 7.26619L17.0165 10.8027H7.36433C4.18452 10.8027 1.59754 8.25054 1.59754 5.11353C1.59754 3.63815 2.3538 2.38438 2.98823 1.59246L3.47138 0.989305L2.24854 0.0359192L1.76538 0.639074C0.977779 1.62227 0.038908 3.19665 0.038908 5.11353C0.0389862 9.09842 3.32515 12.3403 7.36437 12.3403Z" fill="white"/>
-                                </svg>
-                                <div class="feedbacks__photo"></div>
-                                <form action="">
-                                    <textarea name="reply" id="reply3" cols="20" rows="1" placeholder="Your comment"></textarea>
-                                </form>
-                            </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 text-right main-date">
+                        <div class="header__date">
+                            <div class="date">15-16.04.2016</div>
+                        </div>
+                        <div class="header__point">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Азербайджан, Баку</span>
+                        </div>
                     </div>
                 </div>
-
-
+            </header>
+            <section class="content">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-offset-lg-1 col-lg-8">
+                        <div class="content__text">
+                            <h1>Первый азербайджанский форум инновационных технологий
+                            InnoTech Azerbaijan 2016</h1>
+                            <p>Второй ежегодный форум инновационных технологий InnoTech Ukraine
+                                , который пройдет 11-12 марта в Киеве на НСК «Олимпийский», покажет
+                                наиболее актуальные тренды инноваций, которые уже доступны в Украине.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 text-right">
+                        <div class="content__form">
+                            <p class="text-center">Следите за новостями:</p>
+                            <p class="text-center">Укажите адрес своей почты - мы будем сообщать Вам подробности</p>
+                            <form action="/action_page.php">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Имя*">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="pwd" placeholder="Пароль*">
+                                </div>
+                                <button type="submit" class="btn btn-default pull-right">Подписаться</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="footer__left">
+                            <h4>По всем вопросам звоните или пишите:</h4>
+                            <div class="wrap-info">
+                                <img src="img/photo.png" alt="photo">
+                                <div class="footer__left-info">
+                                    <p>Марес Шамчжи</p>
+                                    <p>Куратор проекта</p>
+                                    <ul>
+                                        <li><i class="fas fa-phone"></i>+7(495) 212 11 28</li>
+                                        <li><i class="fas fa-envelope"></i>client@smile-expo.com</li>
+                                        <li><i class="fab fa-skype"></i>mares_sh</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pull-center">
+                        <div class="footer__right">
+                            <p>Организатор:</p>
+                            <img src="img/logo-footer.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </main>
+        
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/jquery.3.3.1.min.js"></script>
-    <script src="js/main.js"></script>
-
-    <script>
-        // $( document ).ready(function() {
-        //     $('.reply').toogle(function () {
-        //         $('feedback__text-reply').toggleClass('open');
-        //     });
-        // });
-    </script>
-
-</div>
 </body>
 </html>

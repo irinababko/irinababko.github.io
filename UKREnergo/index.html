@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Energo</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+    <button class="tablinks-0">Назад</button>
+    <div class="tab">
+        <button class="tablinks tablinks-1" onclick="openTab(event, 'tab-1')">
+            <i class="fas fa-clipboard-list"></i>
+            <p>Всі компанії</p>
+        </button>
+        <button class="tablinks tablinks-2" onclick="openTab(event, 'tab-2')">
+            <i class="fab fa-searchengin"></i>
+            <p>Пошук</p>
+        </button>
+        <button class="tablinks tablinks-3" onclick="openTab(event, 'tab-3')">
+            <i class="fab fa-medrt"></i>
+            <p> Додати компанію</p>
+        </button>
+    </div>
+    <div id="tab-1" class="tabcontent">
+            <div class="main">
+                    <ul class="menu">
+                            <li tabindex="1">
+                              <span class="title">Данні</span> 
+                              <div class="content">
+                                <div class="content__title"><span>1</span>Індифікаційні данні:</div>
+                                <div class="content__item">
+                                  <label for="number_claim">Номер заяви в системі OTRS</label>
+                                  <input type="text">
+                                </div>
+                                <div class="content__item">
+                                    <label for="select">Тип участника</label>
+                                    <select name="select" id="select" class="select">
+                                        <option selected="selected" value="1">Юридична особа</option>
+                                        <option value="2">Фізична особа</option>
+                                    </select>
+                                </div>
+                                <div class="content__item">
+                                    <label for="number_claim">Реєстраційний код (ЄДРПОУ) </label>
+                                    <input type="number">
+                                </div>
+                                <div class="content__item">
+                                    <label for="number_claim">Реєстраційний номер платника ПДВ</label>
+                                    <input type="text">
+                                </div>
+                                <div class="content__item">
+                                    <label for="number_claim">Код ЕІС типу Х</label>
+                                    <input type="text">
+                                </div>
+                                <div class="content__item">
+                                    <label for="number_claim">Повне найменування</label>
+                                    <input type="text">
+                                </div>
+                                <div class="content__item">
+                                    <label for="number_claim">Коротке найменування</label>
+                                    <input type="text">
+                                </div>
+                                <div class="content__item">
+                                    <label for="number_claim">Найменування для відображення в системі</label>
+                                    <input type="text">
+                                </div>
+                                <div class="content__item">
+                                    <label for="number_claim">Електронная адреса (для нотифікації/повідомлень)</label>
+                                    <input type="mail">
+                                </div>
+                                </div>
+                            </li>
+                            <li tabindex="1">
+                              <span class="title">Адреса</span> 
+                            
+                              <div class="content content-1">
+                                <div class="wrap-content">
+                                <div class="content__title"><span>3</span>Юридична адреса</div>
+                                <div class="content__item">
+                                    <label for="number_claim">Країна</label>
+                                    <input type="text">
+                                </div>
+                                <div class="content__item">
+                                    <label for="number_claim">Область</label>
+                                    <input type="text">
+                                </div>
+                                <div class="content__item">
+                                    <label for="number_claim">Місто</label>
+                                    <input type="text">
+                                </div>
+                                <div class="content__item">
+                                    <label for="number_claim">Індекс</label>
+                                    <input type="text">
+                                </div>
+                                <div class="content__item">
+                                    <label for="number_claim">Вулиця</label>
+                                    <input type="text">
+                                </div>
+                                <div class="content__item">
+                                    <label for="number_claim">№ будівлі</label>
+                                    <input type="text">
+                                </div>
+                                <div class="content__item">
+                                    <label for="number_claim">№ офісу</label>
+                                    <input type="text">
+                                </div>
+                                </div>
+                                <div class="wrap-content wrap-content-1">
+                                <div class="content__title"><span>4</span>Фактична адреса</div>
+                                    <div class="content__item">
+                                        <label for="number_claim">Країна</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="content__item">
+                                        <label for="number_claim">Область</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="content__item">
+                                        <label for="number_claim">Місто</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="content__item">
+                                            <label for="number_claim">Індекс</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="content__item">
+                                            <label for="number_claim">Вулиця</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="content__item">
+                                            <label for="number_claim">№ будівлі</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="content__item">
+                                            <label for="number_claim">№ офісу</label>
+                                            <input type="text">
+                                        </div>
+                              </div>
+                            </div>
+                            
+                            </li>
+                            <li tabindex="1">
+                              <span class="title">Ліцензії</span> 
+                              <div class="content content-2">
+                                    <div class="content__title"><span>5</span>Наявні ліцензії</div>
+                                    <div class="title-check"><span>#№ ліцензії</span><span>Дата початку</span><span>Дата кінця</span></div>
+                                      <div class="wrap__check">
+                                    <div class="wrap__check-item">
+                                      <label class="container-item">Виробництво електричної енергії
+                                          <!-- <input type="checkbox">
+                                          <span class="checkmark"></span> -->
+                                      </label>
+                                  </div>
+                                  <div class="wrap__check-item wrap__check-item-2">
+                                      <div class="content__item content__item-1">
+                                          <input type="text" name="select2" placeholder="200" />
+                                      </div>
+                                      <div class="content__item content__item-1">
+                                          <input type="text" class="datepicker" name="select2" placeholder="04/01/2019" />
+                                      </div>
+                                      <div class="content__item content__item-1">
+                                          <input type="text" class="datepicker" name="select2" placeholder="04/01/2019" />
+                                      </div>
+                                  </div>
+                              </div>
+                                </div>
+                            </li>
+                            <li tabindex="1">
+                              <span class="title">Діяльність</span> 
+                              <div class="content content-2">
+                                <div class="content__title"><span>6</span>Види діяльності (функції) на ринку електроенергії</div>
+                                <div class="content__item">
+                                    <input type="text">
+                                </div>
+                            </li>
+                            <li tabindex="1">
+                              <span class="title">Договори</span> 
+                              <div class="content">
+                                    <div class="content__title"><span>7</span>Декларація щодо приєднання до договорів</div>
+                                    <div class="content__title content__title-sub">Перелік договорів, до яких має намір приєднатись Заявник:</div>
+                                    <label class="container-item">Типовий договір про врегулювання небалансів електричної енергії
+                                        <input type="checkbox" checked>
+                                        <span class="checkmark"></span>
+                                    </label>
+                              </div>
+                            </li>
+                            <li tabindex="1">
+                              <span class="title">Небаланс</span> 
+                              <div class="content">
+                                <div class="content__title"><span>8</span>Інформація щоодо відповідальності за небаланси на ринку електричної енергії</div>
+                                <div class="content__title content__title-sub">Рішення щодо прийняття відповідальності за небаланс електричної енергії:</div>
+                                <label class="container-item__radio">Заявник відповідальний за небаланс самостійно
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container-item__radio">Заявник делегує відповідальність за небаланс іншому учаснику ринку електричної енергії 
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <div class="content__item content__item-1 content__item-2">
+                                    <label for="select2">Реєстраційний код особи, якій делеговано відповідальність за небаланс:</label>
+                                    <input type="number" name="select2" placeholder="" />
+                                </div>
+                                <div class="content__item content__item-1 content__item-2">
+                                    <label for="select2">Код ЕІС тип Х особи, якій делеговано відповідальність за небаланс:</label>
+                                    <input type="number" name="select2" placeholder="" />
+                                </div>
+                                <div class="content__item content__item-1 content__item-2">
+                                    <label for="select2">Найменування особи, якій делеговано відповідальність за небаланс:</label>
+                                    <input type="text" name="select2" placeholder="" />
+                                </div>
+                                <div class="content__item content__item-1 content__item-2">
+                                    <label for="select2">Номер договору щодо делегування відповідальності за небаланс:</label>
+                                    <input type="number" name="select2" placeholder="" />
+                                </div>
+                                <div class="content__item content__item-1 content__item-2">
+                                    <label for="select2">Дата укладання договору про делегування відповідальності за небаланс:</label>
+                                    <input type="text" class="datepicker" name="select2" placeholder="04/01/2019" />
+                                </div>
+                              </div>
+                            </li>
+                            <li tabindex="1"> 
+                              <span class="title">Рахунок</span>
+                              <div class="content">
+                                    <div class="content__title"><span>9</span>Відомості про поточний рахунок (для розрахунків по операціях на ринку електричної енергії)</div>
+                                    <div class="content__item content__item-1">
+                                        <label for="select2">МФО обслуговуючого банку</label>
+                                        <input type="number" name="select2" placeholder="" />
+                                    </div>
+                                    <div class="content__item content__item-1">
+                                        <label for="select2">Найменування банку</label>
+                                        <input type="text" name="select2" placeholder="" />
+                                    </div>
+                                    <div class="content__item content__item-1">
+                                        <label for="select2">Номер поточного рахунку</label>
+                                        <input type="number" name="select2" placeholder="" />
+                                    </div>
+                                    <div class="content__title"><span class="num">10</span>Відомості про фінансову гарантію, що надається</div>
+                                    <div class="content__title">Фінансова гарантія:</div>
+                                    <div class="content__item">
+                                      <label for="select">Вид фінансової гарантії</label>
+                                      <select name="select" id="select" class="select">
+                                          <option selected="selected">Грошове забезбечення</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                      </select>
+                                    </div>
+                                    <div class="content__item">
+                                      <label for="select2">Сумма фінансової гарантії</label>
+                                      <input type="number" name="select2" placeholder="" />
+                                    </div>
+                                    <div class="content__item">
+                                      <label for="select2">Номер договору Банківської гарантії</label>
+                                      <input type="number" name="select2" placeholder="" />
+                                    </div>
+                                    <div class="content__item content__item-1 content__item-2">
+                                      <label for="select2">Дата договору фінансової гарантії</label>
+                                      <input type="number" class="datepicker" name="select2" placeholder="04/01/2019" />
+                                      </div>
+                              </div>
+                            </li>
+                            <li tabindex="1"> 
+                              <span class="title">Гарантія</span>
+                              <div class="content">
+                                <div class="content__title"><span class="num">11</span>Інформація щодо належних ресурсних об'єктів</div>
+                                <div class="content__title">Ресурсний об'єкт №1:</div>
+                                <div class="content__item">
+                                    <label for="select">Тип ресурсного об'єкту</label>
+                                    <select name="select" id="select" class="select">
+                                        <option selected="selected">Генерація електроенергії</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="content__item">
+                                    <label for="select2">Код ЕІС типу W об'єкту</label>
+                                    <input type="number" name="select2" placeholder="" />
+                                    </div>
+                                    <div class="content__item">
+                                    <label for="select2">Найменування об'єкту відповідно до коду ЕІС код типу W</label>
+                                    <input type="number" name="select2" placeholder="" />
+                                    </div>
+                                    <div class="content__item">
+                                        <label for="select2">Мінімальна встановлена потужність (МВт)</label>
+                                        <input type="number" name="select2" placeholder="" />
+                                    </div>
+                                    <div class="content__item">
+                                        <label for="select2">Максимальна встановлена потужність (МВт)</label>
+                                        <input type="number" name="select2" placeholder="" />
+                                    </div>
+                                    <button type="button" class="add action-button action-button-2" value="Додати ще фактичну адресу">
+                                        <i class="fas fa-plus-circle"></i>Додати ще об'єкт</button>
+                              </div>
+                            </li>
+                            <li tabindex="1"> 
+                              <span class="title">Облік</span>
+                              <div class="content">
+                                    <div class="content__title"><span class="num">12</span>Інформація щодо точок комерційного обліку</div>
+                                    <div class="content__item">
+                                        <label for="select2">Найменування</label>
+                                        <input type="text" name="select2" placeholder="" />
+                                    </div>
+                                    <div class="content__item">
+                                        <label for="select2">ЕІС код типу Z</label>
+                                        <input type="number" name="select2" placeholder="" />
+                                    </div>
+                                    <button type="button" class="add action-button action-button-2" value="Додати ще фактичну адресу">
+                                        <i class="fas fa-plus-circle"></i>Додати ще точку</button>
+                              </div>
+                            </li>
+                            <li tabindex="1"> 
+                                <span class="title">Особи</span>
+                                <div class="content">
+                                        <div class="content__title"><span class="num">13</span>Відомості про Уповноважених осіб</div>
+                                        <div class="content__title">Уповноважена особа:</div>
+                                        <div class="content__item">
+                                            <label for="select2">ПІБ</label>
+                                            <input type="text" name="select2" placeholder="" />
+                                        </div>
+                                        <div class="content__item">
+                                            <label for="select2">Посада</label>
+                                            <input type="text" name="select2" placeholder="" />
+                                        </div>
+                                        <div class="content__item">
+                                            <label for="select">Вид документу, що засвідчує повноваження</label>
+                                            <select name="select" id="select" class="select">
+                                                <option selected="selected">Статут або положення про підприємство</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="content__item">
+                                            <label for="select2">Дата закінчення повноважень</label>
+                                            <input type="text" class="datepicker" name="select2" placeholder="04/01/2019" />
+                                        </div>
+                                        <div class="content__item">
+                                            <label for="select2">Номер телефону (мобільний)</label>
+                                            <input type="number" name="select2" placeholder="+380ХХ ХХХ ХХ ХХ" />
+                                        </div>
+                                        <div class="content__item">
+                                            <label for="select2">Номер телефону (міський)</label>
+                                            <input type="number" name="select2" placeholder="+380ХХ ХХХ ХХ ХХ" />
+                                        </div>
+                                        <div class="content__item">
+                                            <label for="select2">Адреса електронної пошти</label>
+                                            <input type="email" name="select2" placeholder="" />
+                                        </div>
+                                        <div class="content__item content__item-4">
+                                        <label for="select2">Реєстрація в системі </label>
+                                        <label class="container-item__radio">Так
+                                            <input type="radio" checked="checked" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container-item__radio">Ні
+                                            <input type="radio" checked="checked" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        </div>
+                                        <button type="button" class="add action-button action-button-2" value="Додати ще фактичну адресу">
+                                            <i class="fas fa-plus-circle"></i>Додати ще Уповноважену особу</button>
+                                </div>
+                            </li>
+                            <li tabindex="1"> 
+                                <span class="title">Контакти</span>
+                                <div class="content">
+                                        <div class="content__title"><span class="num">14</span>Інформація щодо контактів</div>
+                                        <div class="content__title content__title-sub">Контактна особа №1</div>
+                                        <div class="content__item">
+                                            <label for="select2">ПІБ</label>
+                                            <input type="text" name="select2" placeholder="" />
+                                        </div>
+                                        <div class="content__item">
+                                            <label for="select2">Номер телефону (мобільний)</label>
+                                            <input type="number" name="select2" placeholder="+380ХХ ХХХ ХХ ХХ" />
+                                        </div>
+                                        <div class="content__item">
+                                            <label for="select2">Номер телефону (міський)</label>
+                                            <input type="number" name="select2" placeholder="+380ХХ ХХХ ХХ ХХ" />
+                                        </div>
+                                        <div class="content__item">
+                                            <label for="select2">Адреса електронної пошти</label>
+                                            <input type="email" name="select2" placeholder="" />
+                                        </div>
+                                        <h3 class="fs-subtitle fs-subtitle-1">Компетенція контакту</h3>
+                                        <div class="wrap-checkbox">
+                                        <div class="wrap-checkbox__item">
+                                            <label class="container-item">Контакт з спірних питань
+                                                <input type="checkbox">
+                                                <span class="checkmark checkmark-1"></span>
+                                            </label>
+                                            <label class="container-item">Контакт з надзвичайних ситуацій
+                                                <input type="checkbox">
+                                                <span class="checkmark checkmark-1"></span>
+                                            </label>
+                                            <label class="container-item">Контакт з IT-безпеки
+                                                <input type="checkbox">
+                                                <span class="checkmark checkmark-1"></span>
+                                            </label>
+                                            <label class="container-item">Цілодобовий екстренний IT-контакт
+                                                <input type="checkbox">
+                                                <span class="checkmark checkmark-1"></span>
+                                            </label>
+                                            
+                                            
+                                        </div>
+                                        <div class="wrap-checkbox__item">
+                                            <label class="container-item">Технічний контакт з IT-мережі
+                                                <input type="checkbox">
+                                                <span class="checkmark checkmark-1"></span>
+                                            </label>
+                                            <label class="container-item">Контакт з комерційного обліку
+                                                <input type="checkbox">
+                                                <span class="checkmark checkmark-1"></span>
+                                                </label>
+                                            <label class="container-item">Пріоритетний контакт з комунікацій щодо ринку електроенергії
+                                                <input type="checkbox">
+                                                <span class="checkmark checkmark-1"></span>
+                                            </label>
+                                            <label class="container-item">Контакт другої черги 
+                                                <input type="checkbox">
+                                                <span class="checkmark checkmark-1"></span>
+                                            </label>
+                                            
+                                            
+                                        </div>
+                                        <div class="wrap-checkbox__item">
+                                            <label class="container-item">Операційний контакт з трейдингу
+                                                <input type="checkbox">
+                                                <span class="checkmark checkmark-1"></span>
+                                            </label>
+                                            <label class="container-item">Операційний контакт з біддінгу
+                                                <input type="checkbox">
+                                                <span class="checkmark checkmark-1"></span>
+                                            </label>
+                                            <label class="container-item">Контакт з операційного управління
+                                                <input type="checkbox">
+                                                <span class="checkmark checkmark-1"></span>
+                                            </label>
+                                            <label class="container-item">Операційний контакт - начальник зміни
+                                                <input type="checkbox">
+                                                <span class="checkmark checkmark-1"></span>
+                                            </label>
+                                        </div>
+                                        <div class="wrap-checkbox__item">
+                                          
+                                            <label class="container-item">Контакт диспетчерського пункту електростанції
+                                                <input type="checkbox">
+                                                <span class="checkmark checkmark-1"></span>
+                                            </label>
+                                            <label class="container-item">Контакт з реєстрації
+                                                <input type="checkbox">
+                                                <span class="checkmark checkmark-1"></span>
+                                            </label>
+                                            <label class="container-item">Контакт з розрахунків
+                                                <input type="checkbox">
+                                                <span class="checkmark checkmark-1"></span>
+                                            </label>
+                                            <label class="container-item">Інше
+                                                <input type="checkbox">
+                                                <span class="checkmark checkmark-1"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li tabindex="1"> 
+                                <span class="title">Зберегти/Редагувати</span>
+                                <div class="content">
+                                    <button type="button" class="add action-button action-button-2" value="Зберегти">
+                                        <i class="far fa-save"></i>Зберегти</button>
+                                    <button type="button" class="add action-button action-button-2" value="Редагувати">
+                                        <i class="fas fa-pencil-alt"></i>Редагувати</button>
+                                </div>
+                            </li>      
+                          </ul>
+                        </div>
+    </div>
+          
+<div id="tab-2" class="tabcontent">
+    <div class="search-wrapper">
+        <div class="input-holder">
+            <input type="text" class="search-input" placeholder="Type to search" />
+            <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+        </div>
+        <span class="close" onclick="searchToggle(this, event);"></span>
+    </div>
+</div>
+              
+<div id="tab-3" class="tabcontent">
+  <!-- multistep form -->
+<form id="msform">
+        <!-- progressbar -->
+        <ul id="progressbar">
+          <li class="progressbar active">Заява</li>
+          <li class="progressbar">Данні</li>
+          <li class="progressbar">Юридична адреса</li>
+          <li class="progressbar">Фактична адреса</li>
+          <li class="progressbar">Ліцензії</li>
+          <li class="progressbar">Діяльність</li>
+          <li class="progressbar">Договори</li>
+          <li class="progressbar">Небаланс</li>
+          <li class="progressbar">Рахунок</li>
+          <li>Фінансова гарантія</li>
+          <li>Об'єкти</li>
+          <li>Облік</li>
+          <li>Особи</li>
+          <li>Контакти</li>
+        </ul>
+        <!-- fieldsets -->
+        <fieldset>
+          <h2 class="fs-title">1. Відомості щодо заяви</h2>
+          <div class="content__item">
+            <label for="select">Тип заявки участника</label>
+            <select name="select" id="select" class="select">
+                <option selected="selected">Мультифункціональна</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+          </div>
+         
+          <div class="content__item">
+            <label for="select1">Тип заяви</label>
+            <select name="select1" id="select1" class="select">
+                <option selected="selected">Заява щодо реєстрації</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+          </div>
+         
+          <div class="content__item">
+            <label for="select2">Номер заяви в системі OTRS</label>
+            <input type="select2" name="select2" placeholder="" />
+          </div>
+          <input type="button" name="next" class="next action-button" value="Далі" /> 
+        </fieldset>
+        <fieldset>
+          <h2 class="fs-title">2. Ідентифікаційні данні</h2>
+          <div class="content__item content__item-1">
+                <label for="select3">Країна реєстрації</label>
+                <select name="select3" id="select3" class="select">
+                    <option selected="selected">Україна</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+              </div>
+             
+              <div class="content__item content__item-1">
+                <label for="select4">Тип участника</label>
+                <select name="select4" id="select4" class="select">
+                    <option selected="selected">Фізична особа</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+              </div>
+              
+              <div class="content__item content__item-1">
+                <label for="select2">Реєстраційний код / код ЄДРПОУ</label>
+                <input type="number" name="select2" placeholder="" />
+             </div>
+              <div class="content__item content__item-1">
+                <label for="select2">Реєстраційний номер платника ПДВ</label>
+                <input type="number" name="select2" placeholder="" />
+             </div>
+              <div class="content__item content__item-1">
+                <label for="select2">Код ЕІС типу Х</label>
+                <input type="number" name="select2" placeholder="" />
+             </div>
+             <div class="content__item content__item-1">
+                <label for="select2">Повне найменування</label>
+                <input type="text" name="select2" placeholder="" />
+             </div>
+             <div class="content__item content__item-1">
+                <label for="select2">Коротке найменування</label>
+                <input type="text" name="select2" placeholder="" />
+             </div>
+             <div class="content__item content__item-1">
+                <label for="select2">Найменування для відображення в системі
+                     (латинею відповідно до коду ЕІС типу Х) </label>
+                <input type="text" name="select2" placeholder="" />
+             </div>
+          <input type="button" name="previous" class="previous action-button" value="Назад" />
+          <input type="button" name="next" class="next action-button" value="Далі" />
+        </fieldset>
+        <fieldset>
+          <h2 class="fs-title">3. Юридична адреса</h2>
+          <div class="content__item content__item-1">
+                <label for="select5">Країна</label>
+                <select name="select5" class="select">
+                    <option selected="selected">Україна</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+              </div>
+             
+              <div class="content__item content__item-1">
+                <label for="select6">Область</label>
+                <select name="select6" class="select">
+                    <option selected="selected">Київська область</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+              </div>
+              
+              <div class="content__item content__item-1">
+                <label for="select5">Країна</label>
+                <select name="select5" class="select">
+                    <option selected="selected">Україна</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            
+            <div class="content__item content__item-1">
+                <label for="select6">Місто</label>
+                 <select name="select6" class="select">
+                    <option selected="selected">Київ</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div class="content__item content__item-1">
+                <label for="select6">Індекс</label>
+                <select name="select6" class="select">
+                    <option selected="selected">04111</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div class="content__item content__item-1">
+                <label for="select6">Вулиця</label>
+                <select name="select6" class="select">
+                    <option selected="selected">Володимирська</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div class="content__item content__item-1">
+                <label for="select2">Номер будівлі</label>
+                <input type="text" name="select2" placeholder="" />
+            </div>
+            <div class="content__item content__item-1">
+                <label for="select2">Номер офісу</label>
+                <input type="text" name="select2" placeholder="" />
+            </div>
+            <br>
+          <input type="button" name="previous" class="previous action-button" value="Назад" />
+          <input type="button" name="next" class="next action-button" value="Далі" />
+        </fieldset>
+        <fieldset>
+          <h2 class="fs-title">4. Фактична адреса</h2>
+          <div class="content__item content__item-1">
+                <label for="select5">Країна</label>
+                <select name="select5" class="select">
+                    <option selected="selected">Україна</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+              </div>
+             
+              <div class="content__item content__item-1">
+                <label for="select6">Область</label>
+                <select name="select6" class="select">
+                    <option selected="selected">Київська область</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+              </div>
+            
+            <div class="content__item content__item-1">
+                <label for="select6">Місто</label>
+                 <select name="select6" class="select">
+                    <option selected="selected">Київ</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div class="content__item content__item-1">
+                <label for="select6">Індекс</label>
+                <select name="select6" class="select">
+                    <option selected="selected">04111</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div class="content__item content__item-1">
+                <label for="select6">Вулиця</label>
+                <select name="select6" class="select">
+                    <option selected="selected">Володимирська</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div class="content__item content__item-1">
+                <label for="select2">Номер будівлі</label>
+                <input type="text" name="select2" placeholder="101а" />
+            </div>
+            <div class="content__item content__item-1">
+                <label for="select2">Номер офісу</label>
+                <input type="text" name="select2" placeholder="200" />
+            </div>
+            <button type="button" class="add action-button" value="Додати ще фактичну адресу">
+                <i class="fas fa-plus-circle"></i>Додати ще фактичну адресу</button>
+            <br>
+            <div class="content__item content__item-1">
+                <label for="select2">Контакт для нотифікації (офіційних повідомлень електронною поштою)</label>
+                <input type="email" name="select2" placeholder="myemail@gmail.com" />
+            </div>
+          <input type="button" name="previous" class="previous action-button" value="Назад" />
+          <input type="button" name="next" class="next action-button" value="Далі" />
+          
+        </fieldset>
+        <fieldset class="fieldset-1">
+          <h2 class="fs-title">5. Наявні ліцензії</h2>
+          <div class="title-check"><span>#№ ліцензії</span><span>Дата початку</span><span>Дата кінця</span></div>
+            <div class="wrap__check">
+          <div class="wrap__check-item">
+            <label class="container-item">Виробництво електричної енергії
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            
+            <label class="container-item">Постачання електричної енергії споживачу
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            
+            <label class="container-item">Розподіл електричної енергії
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="wrap__check-item wrap__check-item-2">
+            <div class="content__item content__item-1">
+                <input type="text" name="select2" placeholder="200" />
+            </div>
+            <div class="content__item content__item-1">
+                <input type="text" class="datepicker" name="select2" placeholder="04/01/2019" />
+            </div>
+            <div class="content__item content__item-1">
+                <input type="text" class="datepicker" name="select2" placeholder="04/01/2019" />
+            </div>
+            <br>
+            <div class="content__item content__item-1">
+                <input type="text" name="select2" placeholder="200" />
+            </div>
+            <div class="content__item content__item-1">
+                <input type="text" class="datepicker" name="select2" placeholder="04/01/2019" />
+            </div>
+            <div class="content__item content__item-1">
+                <input type="text" class="datepicker" name="select2" placeholder="04/01/2019" />
+            </div>
+            <br>
+            <div class="content__item content__item-1">
+                <input type="text" name="select2" placeholder="200" />
+            </div>
+            <div class="content__item content__item-1">
+                <input type="text" class="datepicker" name="select2" placeholder="04/01/2019" />
+            </div>
+            <div class="content__item content__item-1">
+                <input type="text" class="datepicker" name="select2" placeholder="04/01/2019" />
+            </div>
+        </div>
+    </div>
+
+          <input type="button" name="previous" class="previous action-button" value="Назад" />
+          <input type="button" name="next" class="next action-button" value="Далі" />
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">6. Види діяльності (функції) на ринку електроенергії</h2>
+            <label class="container-item">Виробник електроенергії
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-item">Оператор системи передачі електричної енергії
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-item">Оператор системи розподілу електричної енергії
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-item">Трейдер
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-item">Непобутовий споживач
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-item">Постачальник електричної енергії
+                 <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-item">Оператор ринку електричної енергії
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-item">Гарантований покупець електричної енергії
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <input type="button" name="previous" class="previous action-button" value="Назад" />
+            <input type="button" name="next" class="next action-button" value="Далі" />
+        </fieldset>
+        <fieldset>
+          <h2 class="fs-title">7. Декларація щодо приєднання до договорів</h2>
+          <h3 class="fs-subtitle">Перелік договорів, до яких має намір приєднатись Заявник:</h3>
+          <label class="container-item">Типовий договір про врегулювання небалансів електричної енергії
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-item">Типовий договір про надання допоміжних послуг з регулювання частоти та активної потужності
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-item">Типовий договір про надання допоміжних послуг із забезпечення відновлення функціонування ОЕС України
+                після системних аварій
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-item">Типовий договір про надання послуги з регулювання напруги та реактивної потужності в режимі
+                синхронного компенсатора 
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-item">Типовий договір про участь у балансуючому ринку
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+          <input type="button" name="previous" class="previous action-button" value="Назад" />
+          <input type="button" name="next" class="next action-button" value="Далі" />
+        </fieldset>
+        <fieldset class="fieldset-1">
+                <h2 class="fs-title">8. Інформація щоодо відповідальності за небаланси на ринку електричної енергії </h2>
+                <h3 class="fs-subtitle">Рішення щодо прийняття відповідальності за небаланс електричної енергії</h3>
+                <label class="container-item__radio">Заявник відповідальний за небаланс самостійно
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container-item__radio">Заявник делегує відповідальність за небаланс іншому учаснику ринку електричної енергії 
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <div class="content__item content__item-1 content__item-2">
+                    <label for="select2">Реєстраційний код особи, якій делеговано відповідальність за небаланс:</label>
+                    <input type="number" name="select2" placeholder="" />
+                </div>
+                <div class="content__item content__item-1 content__item-2">
+                    <label for="select2">Код ЕІС тип Х особи, якій делеговано відповідальність за небаланс:</label>
+                    <input type="number" name="select2" placeholder="" />
+                </div>
+                <div class="content__item content__item-1 content__item-2">
+                    <label for="select2">Найменування особи, якій делеговано відповідальність за небаланс:</label>
+                    <input type="text" name="select2" placeholder="" />
+                </div>
+                <div class="content__item content__item-1 content__item-2">
+                    <label for="select2">Номер договору щодо делегування відповідальності за небаланс:</label>
+                    <input type="number" name="select2" placeholder="" />
+                </div>
+                <div class="content__item content__item-1 content__item-2">
+                    <label for="select2">Дата укладання договору про делегування відповідальності за небаланс:</label>
+                    <input type="text" class="datepicker" name="select2" placeholder="04/01/2019" />
+                </div>
+               
+                <input type="button" name="previous" class="previous action-button" value="Назад" />
+                <input type="button" name="next" class="next action-button" value="Далі" />
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">9. Відомості про поточний рахунок (для розрахунків по операціях на ринку електричної енергії) </h2>
+            <div class="content__item content__item-1">
+                <label for="select2">МФО обслуговуючого банку</label>
+                <input type="number" name="select2" placeholder="" />
+            </div>
+            <div class="content__item content__item-1">
+                <label for="select2">Найменування банку</label>
+                <input type="text" name="select2" placeholder="" />
+            </div>
+            <div class="content__item content__item-1">
+                <label for="select2">Номер поточного рахунку</label>
+                <input type="number" name="select2" placeholder="" />
+            </div>
+            <input type="button" name="previous" class="previous action-button" value="Назад" />
+            <input type="button" name="next" class="next action-button" value="Далі" />
+        </fieldset>
+         <fieldset>
+          <h2 class="fs-title">10. Відомості про фінансову гарантію, що надається</h2>
+          <h3 class="fs-subtitle">Фінансова гарантія:</h3>
+          <div class="content__item">
+            <label for="select">Вид фінансової гарантії</label>
+            <select name="select" id="select" class="select">
+                <option selected="selected">Грошове забезбечення</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+          </div>
+          <div class="content__item">
+            <label for="select2">Сумма фінансової гарантії</label>
+            <input type="number" name="select2" placeholder="" />
+          </div>
+          <div class="content__item">
+            <label for="select2">Номер договору Банківської гарантії</label>
+            <input type="number" name="select2" placeholder="" />
+          </div>
+          <div class="content__item content__item-1 content__item-2">
+            <label for="select2">Дата договору фінансової гарантії</label>
+            <input type="number" class="datepicker" name="select2" placeholder="04/01/2019" />
+            </div>
+            <button type="button" class="add action-button" value="Додати ще фактичну адресу">
+                <i class="fas fa-plus-circle"></i>Додати ще відомість</button>
+            <br>
+            <input type="button" name="previous" class="previous action-button" value="Назад" />
+            <input type="button" name="next" class="next action-button" value="Далі" />
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">11. Інформація щодо належних ресурсних об'єктів</h2>
+            <h3 class="fs-subtitle">Ресурсний об'єкт №1:</h3>
+            <div class="content__item">
+                <label for="select">Тип ресурсного об'єкту</label>
+                <select name="select" id="select" class="select">
+                    <option selected="selected">Генерація електроенергії</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </div>
+                <div class="content__item">
+                  <label for="select2">Код ЕІС типу W об'єкту</label>
+                  <input type="number" name="select2" placeholder="" />
+                </div>
+                <div class="content__item">
+                  <label for="select2">Найменування об'єкту відповідно до коду ЕІС код типу W</label>
+                  <input type="number" name="select2" placeholder="" />
+                </div>
+                <div class="content__item">
+                    <label for="select2">Мінімальна встановлена потужність (МВт)</label>
+                    <input type="number" name="select2" placeholder="" />
+                </div>
+                <div class="content__item">
+                    <label for="select2">Максимальна встановлена потужність (МВт)</label>
+                    <input type="number" name="select2" placeholder="" />
+                </div>
+                  <button type="button" class="add action-button" value="Додати ще фактичну адресу">
+                      <i class="fas fa-plus-circle"></i>Додати ще об'єкт</button>
+                  <br>
+                <input type="button" name="previous" class="previous action-button" value="Назад" />
+                <input type="button" name="next" class="next action-button" value="Далі" />
+              </fieldset>
+              <fieldset>
+                    <h2 class="fs-title">12. Інформація щодо точок комерційного обліку</h2>
+                    <div class="content__item">
+                        <label for="select2">Найменування</label>
+                        <input type="text" name="select2" placeholder="" />
+                    </div>
+                    <div class="content__item">
+                        <label for="select2">ЕІС код типу Z</label>
+                        <input type="number" name="select2" placeholder="" />
+                    </div>
+                    <button type="button" class="add action-button" value="Додати ще фактичну адресу">
+                        <i class="fas fa-plus-circle"></i>Додати ще точку</button>
+                    <br>
+                    <input type="button" name="previous" class="previous action-button" value="Назад" />
+                    <input type="button" name="next" class="next action-button" value="Далі" />
+              </fieldset>
+              <fieldset>
+                    <h2 class="fs-title">13. Відомості про Уповноважених осіб</h2>
+                    <h3 class="fs-subtitle">Уповноважена особа:</h3>
+                    <div class="content__item">
+                        <label for="select2">ПІБ</label>
+                        <input type="text" name="select2" placeholder="" />
+                    </div>
+                    <div class="content__item">
+                        <label for="select2">Посада</label>
+                        <input type="text" name="select2" placeholder="" />
+                    </div>
+                    <div class="content__item">
+                        <label for="select">Вид документу, що засвідчує повноваження</label>
+                        <select name="select" id="select" class="select">
+                            <option selected="selected">Статут або положення про підприємство</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="content__item">
+                        <label for="select2">Дата закінчення повноважень</label>
+                        <input type="text" class="datepicker" name="select2" placeholder="04/01/2019" />
+                    </div>
+                    <div class="content__item">
+                        <label for="select2">Номер телефону (мобільний)</label>
+                        <input type="number" name="select2" placeholder="+380ХХ ХХХ ХХ ХХ" />
+                    </div>
+                    <div class="content__item">
+                        <label for="select2">Номер телефону (міський)</label>
+                        <input type="number" name="select2" placeholder="+380ХХ ХХХ ХХ ХХ" />
+                    </div>
+                    <div class="content__item">
+                        <label for="select2">Адреса електронної пошти</label>
+                        <input type="email" name="select2" placeholder="" />
+                    </div>
+                    <div class="content__item content__item-4">
+                    <label for="select2">Реєстрація в системі </label>
+                    <label class="container-item__radio">Так
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container-item__radio">Ні
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    </div>
+                    <button type="button" class="add action-button" value="Додати ще фактичну адресу">
+                        <i class="fas fa-plus-circle"></i>Додати ще Уповноважену особу</button>
+                    <br>
+                    <input type="button" name="previous" class="previous action-button" value="Назад" />
+                    <input type="button" name="next" class="next action-button" value="Далі" />
+              </fieldset>
+              <fieldset class="fieldset-1">
+                    <h2 class="fs-title">14. Інформація щодо контактів</h2>
+                    <h3 class="fs-subtitle fs-subtitle-1">Контактна особа:</h3>
+                    <div class="content__item">
+                        <label for="select2">ПІБ</label>
+                        <input type="text" name="select2" placeholder="" />
+                        <!-- <input type="text" name="select2" placeholder="" />
+                        <input type="text" name="select2" placeholder="" /> -->
+                    </div>
+                    <div class="content__item">
+                        <label for="select2">Номер телефону (мобільний)</label>
+                        <input type="number" name="select2" placeholder="+380ХХ ХХХ ХХ ХХ" />
+                    </div>
+                    <div class="content__item">
+                        <label for="select2">Номер телефону (міський)</label>
+                        <input type="number" name="select2" placeholder="+380ХХ ХХХ ХХ ХХ" />
+                    </div>
+                    <div class="content__item">
+                        <label for="select2">Адреса електронної пошти</label>
+                        <input type="email" name="select2" placeholder="" />
+                    </div>
+                    <h3 class="fs-subtitle fs-subtitle-1">Компетенція контакту</h3>
+                    <div class="wrap-checkbox">
+                    <div class="wrap-checkbox__item">
+                        <label class="container-item">Контакт з спірних питань
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-item">Контакт з надзвичайних ситуацій
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-item">Контакт з IT-безпеки
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-item">Цілодобовий екстренний IT-контакт
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                       
+                    </div>
+                    <div class="wrap-checkbox__item">
+                        <label class="container-item">Технічний контакт з IT-мережі
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-item">Контакт з комерційного обліку
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-item">Пріоритетний контакт з комунікацій щодо ринку електроенергії
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-item">Контакт другої черги з комунікацій щодо ринку електроенергії
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="wrap-checkbox__item">
+                        <label class="container-item">Операційний контакт з трейдингу
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-item">Операційний контакт з біддінгу
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-item">Контакт з операційного управління
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-item">Операційний контакт - начальник зміни
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                    </div>
+                    <div class="wrap-checkbox__item">
+                        
+                        <label class="container-item">Контакт диспетчерського пункту електростанції
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-item">Контакт з реєстрації
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-item">Контакт з розрахунків
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-item">Інше
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                    
+                    <button type="button" class="add action-button" value="Додати ще фактичну адресу">
+                        <i class="fas fa-plus-circle"></i>Додати ще контакт</button>
+                    <br>
+                    <input type="button" name="previous" class="previous action-button" value="Назад" />
+                    <input type="submit" name="submit" class="submit action-button action-button-1" value="Зареєструвати заявку" />
+              </fieldset>
+      </form>
+</div>
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+<script src='js/jquery-ui.min.js'></script>
+<script src="js/main.js"></script>
+<!-- <script  src="js/index-1.js"></script> -->
+<script  src="js/index.js"></script>
+
+</body>
+</html>

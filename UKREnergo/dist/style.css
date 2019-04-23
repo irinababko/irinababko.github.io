@@ -31,7 +31,7 @@ body {
 .tab {
   overflow: hidden;
   position: absolute;
-  left: calc(50% - 490px);
+  left: calc(50% - 515px);
   top: 50px;
   text-align: center;
   z-index: 100;

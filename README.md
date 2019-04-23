@@ -1,6 +1,6 @@
 # irinababko.github.io
 ## UKR Energo
-[![N|Solid](https://irinababko.github.io/img/NextStep.png)](https://irinababko.github.io/UKREnergo/index.html)
+[![N|Solid](https://irinababko.github.io/img/Background.jpg)](https://irinababko.github.io/UKREnergo/index.html)
 ## NextStep
 [![N|Solid](https://irinababko.github.io/img/NextStep.png)](https://irinababko.github.io/NextStep/index.html)
 ## WebServices

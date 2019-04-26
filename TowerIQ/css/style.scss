@@ -15,6 +15,9 @@ a{
     min-width: 1180px;
     margin: 0 auto;
     padding: 100px 93px 25px;
+    @include r(1400){
+      min-width: auto;
+    }
     @include r(1280){
       min-width: auto;
       padding: 100px 30px 25px;

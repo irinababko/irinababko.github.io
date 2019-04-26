@@ -2,6 +2,13 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const server = require('gulp-server-livereload');
 const autoprefixer = require('gulp-autoprefixer');
+const gcmq = require('gulp-group-css-media-queries');
+ 
+gulp.task('default', function () {
+    gulp.src('./css')
+        .pipe(gcmq())
+        .pipe(gulp.dest('./dist/'));
+});
 
 gulp.task('autoprefixer', () =>
     gulp.src('./css/style.css')
@@ -11,6 +18,7 @@ gulp.task('autoprefixer', () =>
         }))
         .pipe(gulp.dest('./dist/'))
 );
+
 gulp.task('webserver', function() {
     gulp.src('./')
       .pipe(server({
@@ -18,13 +26,16 @@ gulp.task('webserver', function() {
         open: true
       }));
   });  
+
 gulp.task('sass', function () {
     return gulp.src(['./css/**/*.sass','./css/**/*.scss'])
         .pipe(sass({outputStyle:'expanded'}).on('error',sass.logError))
         .pipe(gulp.dest('./dist/'))    
 });
+
 gulp.task('sass:watch', function () {
     gulp.watch(['./css/**/*.sass','./css/**/*.scss'],['sass']);
 
-});  
+}); 
+
 gulp.task('default', ['sass:watch', 'webserver']);

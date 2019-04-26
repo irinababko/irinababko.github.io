@@ -15,22 +15,30 @@ a{
     min-width: 1180px;
     margin: 0 auto;
     padding: 100px 93px 25px;
-    @include desctop{
+    @include r(1280){
       min-width: auto;
       padding: 100px 30px 25px;
+    }
+    @include r(1024){
+      min-width: auto;
+      padding: 30px 30px 25px;
     }
   }
   &__block{
     display: flex;
     justify-content: space-between;
-    @include laptop{
-      // flex-flow: column;
+    @include r(1024){
+      flex-flow: column;
     }
 
     &-info{
       width: 380px;
       // min-width: 300px;
       padding-right: 70px;
+      @include r(768){
+        padding-right: 0;
+        width: 100%;
+      }
       img{
         width: 200px;
         height: 57px;
@@ -40,18 +48,22 @@ a{
         line-height: 2;
         padding-top: 30px;
       }
+      @include r(1024){
+        margin-bottom: 30px;
+      }
     }
     &-main{
       max-width: 730px;
       width: 100%;
+      @include r(1024){
+        max-width: none;
+      }
       
       .footer__nav{
         display: flex;
         justify-content: space-between;
         padding-right: 70px;
-        @include laptop{
-          margin-top: 30px;
-        }
+        
         &-item{
           max-width: calc(100% / 3);
 
@@ -78,6 +90,9 @@ a{
               }
             }
           }
+        }
+        @include r(768){
+          padding-right: 0;
         }
       }
       .footer__contacts{
@@ -114,6 +129,9 @@ a{
               color: #fff;
             }
           }
+          // @include r(1024){
+          //   padding: 25px 10px;
+          // }
         }
         .line{
           &:after{
@@ -126,6 +144,9 @@ a{
             // right: -10px;
             // right: calc(50% - 44px);
             top: calc(50% - 20px);
+            @include r(768){
+              width: 0;
+            }
           }
         }
         &-phone{
@@ -139,7 +160,7 @@ a{
             display: flex;
             align-items: center;
             &:before{
-              content: url('../img/phone.png');
+              content: url('../img/phone.svg');
               display: inline-block;
               width: 30px;
               height: 40px;
@@ -156,13 +177,16 @@ a{
             display: flex;
             align-items: center;
             &:before{
-              content: url('../img/mail.png');
+              content: url('../img/mail.svg');
               display: inline-block;
               width: 43px;
               height: 30px;
               margin-right: 20px;
             }
           }
+          // @include r(1024){
+          //   padding: 25px 0px 25px 10px;
+          // }
         }
         &:after{
           content: '';
@@ -173,10 +197,18 @@ a{
           right: -93px;
           top: 0;
           background-color: #5c7087;
-          @include lt-lg{
+         
+          @include r(1280){
             width: 30px;
             right: -30px;
           }
+          @include r(768){
+            width: 0;
+          }
+        }
+        @include r(768){
+          flex-flow: column;
+          align-items: flex-start;
         }
       }
     }

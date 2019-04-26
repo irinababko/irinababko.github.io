@@ -1,28 +1,76 @@
-$phone-width: 600px;
-$tablet-width: 768px;
-$laptop-width: 1024px;
-$desktop-width: 1400px;
+// $phone-width: 600px;
+// $tablet-width: 768px;
+// $laptop-width: 1024px;
+// $desktop-width: 1400px;
 
-@mixin phone {
-    @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
-      @content;
-    }
-  }
+// @mixin phone {
+//     @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
+//       @content;
+//     }
+//   }
 
-@mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$laptop-width - 1px}) {
-    @content;
-  }
-}
+// @mixin tablet {
+//   @media (min-width: #{$tablet-width}) and (max-width: #{$laptop-width - 1px}) {
+//     @content;
+//   }
+// }
 
-@mixin laptop {
-    @media (min-width: #{$laptop-width}) and (max-width: #{$desktop-width - 1px}) {
-      @content;
-    }
-  }
+// @mixin laptop {
+//     @media (min-width: #{$laptop-width}) and (max-width: #{$desktop-width - 1px}) {
+//       @content;
+//     }
+//   }
 
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
+// @mixin desktop {
+//   @media (min-width: #{$desktop-width}) {
+//     @content;
+//   }
+// }
+
+@mixin r( $point ) {
+	@if $point==240 {
+		@media ( max-width: 240px ) {
+			@content;
+		}
+	}
+	@if $point==320 {
+		@media ( max-width: 320px ) {
+			@content;
+		}
+	}
+	@if $point==480 {
+		@media ( max-width: 480px ) {
+			@content;
+		}
+	}
+	@if $point==600 {
+		@media ( max-width: 600px ) {
+			@content;
+		}
+	}
+	@if $point==768 {
+		@media ( max-width: 768px ) {
+			@content;
+		}
+	}
+	@if $point==1024 {
+		@media ( max-width: 1024px ) {
+			@content;
+		}
+	}
+	@if $point==1140 {
+		@media ( max-width: 1140px ) {
+			@content;
+		}
+	}
+	@if $point==1280 {
+		@media ( max-width: 1280px ) {
+			@content;
+		}
+	}
+	@if $point==1400 {
+		@media ( max-width: 1400px ) {
+			@content;
+		}
+	}
 }

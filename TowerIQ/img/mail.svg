@@ -1,31 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="30" viewBox="0 0 42 30">
-  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <rdf:Description rdf:about=""/>
-   </rdf:RDF>
-</x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
-<?xpacket end="w"?></metadata>
-<image id="Векторный_смарт-объект14" data-name="Векторный смарт-объект14" width="42" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAeCAMAAABt9nzSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAhFBMVEU5P02AgIA5P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P005P00AAACs2JRHAAAAKnRSTlMAAF/cYepNCt5O3xE1ZRAn63gtKuR+fySIiQEcl8EC/N0GKfcoJfIjltbvosPVAAAAAWJLR0QrJLnkCAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MEGgIMG7N0gDkAAADuSURBVDjLldRtH0IwEADwW9RGSmUhDwklfP8PGJnfFl3Wvd3/xe2eAFZGqxHGioC53lBQgnwNulmbwCyAZUqIZUO7dXbLdOdsW2j37uG4RI8Hd99TOKn2uzyRgYLHz7+ozz0yUgh4iNOQB0RSxSJSUmkRqVAI7Es0p9GFDVKlEBtJNKVRYsRkToVF5CcdLCInFGKWXqW8pkzKOc1u+fiWswynXQJFaQub22WBJvBO9S5sJ+/ot0SxOku7Ue4lVqyAiRY8qjJNy+qJtkBpLK2bpqZoY/XHRX8IPe5rjrb+wuivof5y/3Ey/jhE+uftBauJKhajzRj2AAAAAElFTkSuQmCC"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 30" width="42" height="30">
+	<defs>
+		<filter id="flt1"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1   0 0 0 1 0" /> </filter>
+		<filter id="flt2"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.224   0 0 0 0 0.247   0 0 0 0 0.302   0 0 0 1 0" /> </filter>
+		<image width="41" height="30" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MSAzMCIgd2lkdGg9IjQxIiBoZWlnaHQ9IjMwIj4KCTxzdHlsZT4KCQl0c3BhbiB7IHdoaXRlLXNwYWNlOnByZSB9CgkJLnNocDAgeyBmaWxsOiBub25lO3N0cm9rZTogIzVmNWY1ZiB9IAoJCS5zaHAxIHsgZmlsbDogbm9uZTtzdHJva2U6ICM1ZjVmNWY7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kIH0gCgk8L3N0eWxlPgoJPGcgaWQ9IlBhZ2UgMSI+CgkJPHBhdGggaWQ9IlBhdGggMSIgY2xhc3M9InNocDAiIGQ9Ik00MC44LDI2LjYxdi0yMy4xYzAsLTEuNjYgLTEuMzUsLTMuMDEgLTMuMDEsLTMuMDFoLTM0LjI4Yy0xLjY2LDAgLTMuMDEsMS4zNSAtMy4wMSwzLjAxdjIzLjFjMCwxLjY2IDEuMzUsMy4wMSAzLjAxLDMuMDFoMzQuMjhjMS42NiwwIDMuMDEsLTEuMzUgMy4wMSwtMy4wMXoiIC8+CgkJPHBhdGggaWQ9IlBhdGggMiIgY2xhc3M9InNocDEiIGQ9Ik0zOC4yNiAzLjkyTDIyLjkyIDE5LjM3QzIxLjYyIDIwLjQ4IDE5LjY4IDIwLjQ4IDE4LjM4IDE5LjM3TDMuMDQgMy45Mk0zOC4yNiAyNi4yTDI3LjIgMTUuMDZMMjIuOTIgMTkuMzZDMjEuNjIgMjAuNDcgMTkuNjggMjAuNDcgMTguMzggMTkuMzZMMTQuMSAxNS4wNkwzLjA0IDI2LjIiIC8+Cgk8L2c+Cjwvc3ZnPg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Группа 3" style="filter: url(#flt1)">
+		<use id="Векторный смарт-объект14" style="filter: url(#flt2)" href="#img1" transform="matrix(1.017,0,0,0.996,0,0)"/>
+	</g>
 </svg>

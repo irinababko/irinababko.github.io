@@ -1,14 +1,16 @@
 $(document).ready(function () {
 
+	//accordion
     $('.panel__heading').click(function () {
-        $(this).toggleClass('in').next().slideToggle();
-        $('.panel__heading').not(this).removeClass('in').next().slideUp();
+        $(this).toggleClass('active').next().slideToggle();
+        $('.panel__heading').not(this).removeClass('active').next().slideUp();
     });
 
-    $('ul.tabs li').click(function(){
+	//tabs
+    $('.tab-link').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
-		$('ul.tabs li').removeClass('current');
+		$('.tab-link').removeClass('current');
 		$('.tab-content').removeClass('current');
 
 		$(this).addClass('current');;

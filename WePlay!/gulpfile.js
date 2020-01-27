@@ -7,20 +7,25 @@ const svgSprite = require('gulp-svg-sprite');
 
 var config = {
     shape: {
-        dimension: {    
-            maxWidth: 500,
-            maxHeight: 500
-        },
-        spacing: {       
-            padding: 0
-        }
+      dimension: { 
+        maxWidth: 32,
+        maxHeight: 32
+      },
+      spacing: { 
+        padding: 10
+      },
+      dest: 'out/intermediate-svg' 
     },
     mode: {
-        symbol: {
-            dest : '.'
+      view: { 
+        bust: false,
+        render: {
+          scss: true 
         }
+      },
+      symbol: true 
     }
-};
+  };
 
 gulp.task('svg-sprite', function (cb) {
     return gulp.src('svg-separate/*.svg')
@@ -62,4 +67,4 @@ gulp.task('sass:watch', function () {
 
 }); 
 
-gulp.task('default', ['sass:watch', 'webserver', 'autoprefixer']);
+gulp.task('default', ['sass:watch', 'webserver', 'autoprefixer', 'svg-sprite']);

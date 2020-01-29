@@ -2,93 +2,93 @@
 	background: url("svg/sprite.view.svg") no-repeat;
 }
 
-.svg-amex {
+%svg-amex {
 	@extend %svg-common;
-	background-position: 38.23529411764706% 0;
+	background-position: 66.66666666666667% 0;
 }
 
-.svg-amex-dims {
-	width: 44px;
-	height: 44px;
+%svg-amex-dims {
+	width: 24px;
+	height: 24px;
 }
 
-.svg-icon-1 {
+%svg-icon-1 {
+	@extend %svg-common;
+	background-position: 94.73684210526316% 46.15384615384615%;
+}
+
+%svg-icon-1-dims {
+	width: 20px;
+	height: 12px;
+}
+
+%svg-icon-2 {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+%svg-icon-2-dims {
+	width: 24px;
+	height: 24px;
+}
+
+%svg-icon-3 {
+	@extend %svg-common;
+	background-position: 33.333333333333336% 100%;
+}
+
+%svg-icon-3-dims {
+	width: 24px;
+	height: 24px;
+}
+
+%svg-icon-4 {
+	@extend %svg-common;
+	background-position: 66.66666666666667% 100%;
+}
+
+%svg-icon-4-dims {
+	width: 24px;
+	height: 24px;
+}
+
+%svg-lock-blue {
+	@extend %svg-common;
+	background-position: 90% 81.81818181818181%;
+}
+
+%svg-lock-blue-dims {
+	width: 16px;
+	height: 20px;
+}
+
+%svg-lock-grey {
 	@extend %svg-common;
 	background-position: 100% 0;
 }
 
-.svg-icon-1-dims {
-	width: 40px;
-	height: 32px;
+%svg-lock-grey-dims {
+	width: 24px;
+	height: 24px;
 }
 
-.svg-icon-2 {
+%svg-master {
 	@extend %svg-common;
-	background-position: 70.58823529411765% 0;
+	background-position: 0 40%;
 }
 
-.svg-icon-2-dims {
-	width: 44px;
-	height: 44px;
+%svg-master-dims {
+	width: 31px;
+	height: 24px;
 }
 
-.svg-icon-3 {
-	@extend %svg-common;
-	background-position: 0 99.56%;
-}
-
-.svg-icon-3-dims {
-	width: 44px;
-	height: 44px;
-}
-
-.svg-icon-4 {
-	@extend %svg-common;
-	background-position: 32.35294117647059% 99.56%;
-}
-
-.svg-icon-4-dims {
-	width: 44px;
-	height: 44px;
-}
-
-.svg-lock-blue {
-	@extend %svg-common;
-	background-position: 97.22222222222223% 40.50632911392405%;
-}
-
-.svg-lock-blue-dims {
-	width: 36px;
-	height: 40px;
-}
-
-.svg-lock-grey {
-	@extend %svg-common;
-	background-position: 64.70588235294117% 99.56%;
-}
-
-.svg-lock-grey-dims {
-	width: 44px;
-	height: 44px;
-}
-
-.svg-master {
-	@extend %svg-common;
-	background-position: 0 40.89333333333333%;
-}
-
-.svg-master-dims {
-	width: 51px;
-	height: 44px;
-}
-
-.svg-visa {
+%svg-visa {
 	@extend %svg-common;
 	background-position: 0 0;
 }
 
-.svg-visa-dims {
-	width: 52px;
-	height: 30.67px;
+%svg-visa-dims {
+	width: 48px;
+	height: 16px;
 }
 

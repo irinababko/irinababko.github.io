@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="dist/style.css">
-
 </head>
 <body>
   <section class="payment">
@@ -75,20 +74,12 @@
       <div id="tab-1" class="tab-content current">
         <div class="tab-top">
           <div class="tab-top__icons">
-            <svg class='master' width="30" height="20">
-              <use xlink:href='sprites/svg/sprite.symbol.svg#master'></use>
-            </svg>
-            <svg class='visa' width="50" height="20">
-              <use xlink:href='sprites/svg/sprite.symbol.svg#visa'></use>
-            </svg>
-            <svg class='amex' width="30" height="20">
-              <use xlink:href='sprites/svg/sprite.symbol.svg#amex'></use>
-            </svg>
+            <div class="master"></div>
+            <div class="visa"></div>
+            <div class="amex"></div>
           </div>
           <div class="tab-top__lock">
-            <svg class='lock-blue' width="30" height="20">
-              <use xlink:href='sprites/svg/sprite.symbol.svg#lock-blue'></use>
-            </svg>
+            <!-- <img src="svg-separate/lock-blue.svg" alt="lock"> -->
             <span>Платежная информация защищена</span>
           </div>
         </div>
@@ -96,24 +87,15 @@
           <div class="input-group">
             <label for="num">Card number</label>
             <input type="tel" name="num" placeholder="5167 9855 6160 0974">
-            <svg class='lock-grey' width="24" height="24">
-              <use xlink:href='sprites/svg/sprite.symbol.svg#lock-grey'></use>
-            </svg>
           </div>
           <div class="input-group__row">
             <div class="input-group">
               <label for="thru">Valid thru</label>
               <input type="tel" name="thru" placeholder="MM/YY">
-              <svg class='lock-grey' width="24" height="24">
-                <use xlink:href='sprites/svg/sprite.symbol.svg#lock-grey'></use>
-              </svg>
             </div>
             <div class="input-group">
               <label for="code">Security code</label>
               <input type="password" name="code">
-              <svg class='lock-grey' width="24" height="24">
-                <use xlink:href='sprites/svg/sprite.symbol.svg#lock-grey'></use>
-              </svg>
             </div>
           </div>
         </form>

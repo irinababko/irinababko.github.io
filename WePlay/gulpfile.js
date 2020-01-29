@@ -2,51 +2,37 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const server = require('gulp-server-livereload');
 const autoprefixer = require('gulp-autoprefixer');
-const gcmq = require('gulp-group-css-media-queries');
 const svgSprite = require('gulp-svg-sprite');
+const replace = require('gulp-replace');
 
-var config = {
+
+config = {
     shape: {
-      dimension: { 
-        maxWidth: 32,
-        maxHeight: 32
-      },
-      spacing: { 
-        padding: 10
-      },
-      dest: 'out/intermediate-svg' 
+        dimension: {
+            maxWidth: 500,
+            maxHeight: 500
+        },
+        spacing: {
+            padding: 0
+        }
     },
     mode: {
-      view: { 
-        bust: false,
-        render: {
-          scss: true 
-        }
-      },
-      symbol: true 
+        view: {
+            bust: false,
+            render: {
+                scss: true
+            },
+            prefix: "%%svg-%s"
+        },
+        symbol: false
     }
-  };
+};
 
-gulp.task('svg-sprite', function (cb) {
+gulp.task('svg-sprite', function () {
     return gulp.src('svg-separate/*.svg')
         .pipe(svgSprite(config))
         .pipe(gulp.dest('sprites'));
 });
- 
-gulp.task('default', function () {
-    gulp.src('./css')
-        .pipe(gcmq())
-        .pipe(gulp.dest('./dist/'));
-});
-
-gulp.task('autoprefixer', () =>
-    gulp.src('./css/style.css')
-        .pipe(autoprefixer({
-            browsers: ['last 40 versions'],
-            cascade: false
-        }))
-        .pipe(gulp.dest('./dist/'))
-);
 
 gulp.task('webserver', function() {
     gulp.src('./')
@@ -54,17 +40,21 @@ gulp.task('webserver', function() {
         livereload: true,
         open: true
       }));
-  });  
+  });
 
-gulp.task('sass', function () {
+gulp.task('sass', ['svg-sprite'], function () {
     return gulp.src(['./css/**/*.sass','./css/**/*.scss'])
-        .pipe(sass({outputStyle:'expanded'}).on('error',sass.logError))
-        .pipe(gulp.dest('./dist/'))    
+        .pipe(autoprefixer({
+          cascade: false
+        }))
+        .pipe(sass({outputStyle:'expanded'}).on('error', sass.logError))
+        .pipe(replace('svg/sprite.view.svg', '../sprites/view/svg/sprite.view.svg'))
+        .pipe(gulp.dest('./dist/'))
 });
 
 gulp.task('sass:watch', function () {
     gulp.watch(['./css/**/*.sass','./css/**/*.scss'],['sass']);
 
-}); 
+});
 
-gulp.task('default', ['sass:watch', 'webserver', 'autoprefixer', 'svg-sprite']);
+gulp.task('default', ['sass:watch', 'webserver', 'svg-sprite', 'sass']);

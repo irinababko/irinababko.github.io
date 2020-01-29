@@ -1,14 +1,19 @@
 {
-  "name": "",
+  "name": "we-play",
   "version": "",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.1.0",
-    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-server-livereload": "^1.9.2",
-    "gulp-svg-sprite": "^1.5.0",
-    "gulp-svg-sprites": "^4.1.2"
+    "gulp-svg-sprite": "^1.5.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "postcss-sass": "^0.4.2",
+    "postcss-scss": "^2.0.0"
+  },
+  "browserslist": [
+    "last 3 versions"
+  ]
 }

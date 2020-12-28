@@ -1,0 +1,10 @@
+mixin nav(mod)
+  nav(class=(`nav ${mod ? `nav--${mod}` : ''}`))
+    ul.nav__list
+      each nav in navs
+        li.nav__item
+          a.nav__link(href=nav.path)
+            .nav__text
+              +icon(nav.icon, modClass = 'u-mr-10')
+              span= nav.text
+            +icon('arrow_right', modClass='nav__icon')

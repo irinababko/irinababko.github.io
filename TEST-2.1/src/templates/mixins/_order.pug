@@ -1,0 +1,20 @@
+mixin order
+    ul.order__list
+        each order in orders
+            li.order__item
+                .order__grid
+                    a.order__link(href=order.path)
+                        span.u-text-bold=order.title
+                        +icon(order.icon, modClass = 'u-ml-10')
+                        +icon(order.icon2, modClass = 'u-ml-10')
+                        +icon(order.icon3, modClass = 'u-ml-10')
+                    span.order__subtitle=order.subtitle
+                .order__grid.order__date
+                    span.order__time.time.u-text-bold=order.time
+                    span.date.u-text-sm.u-color-gray-secondary=order.date
+                .order__grid.order__total    
+                    span.order__newTotal.u-text-bold=order.total
+                    span.order__oldTotal.u-text-sm.u-color-gray-secondary=order.oldTotal
+                .order__grid.order__num.u-text-center
+                    .product.u-text-bold=order.productNum
+                    .product.u-text-sm.u-color-gray-secondary=order.product

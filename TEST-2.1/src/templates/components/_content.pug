@@ -1,0 +1,40 @@
+.content
+  .content__wrapper
+    .content__head
+      .content__block
+        .content__title
+          |Заказы
+        .content__search
+          +icon('search', modClass='input__icon')
+          input(type=inputType, id=inputId, class='input', name=inputName, placeholder='Номер заказа')
+        .content__text 
+          span Найдено 
+          span.u-text-bold 25 заказов
+          span 
+            | по фильтру 
+      .content__button.button экспорт
+        +icon('export', modClass='u-ml-5')  
+    .content__filter
+      span.content__filter__title Фильтры
+      +filter
+    .content__block
+      .content__search--mobile
+        +icon('search', modClass='input__icon input__icon--mobile')
+        input(type=inputType, class='input input--mobile', name=inputNameMobile, placeholder='Поиск')
+      .content__filter--mobile
+        +icon('filter', modClass='u-mr-10') 
+        |Фильтр
+      .content__sort
+        +icon('round-swap', modClass='u-mr-10') 
+        p.sort Сортировка
+      .content__buttons
+        .button.button--circle.u-mr-10 Сбросить
+        .button.button--circle.button--gray Новый заказ
+          +icon('cancel', modClass='icon--button')
+    .content__text--mobile 
+      span Найдено 
+      span.u-text-bold 25 заказов
+      span 
+        | по фильтру
+  .content__table
+    include ../components/_table

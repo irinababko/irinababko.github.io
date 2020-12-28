@@ -1,0 +1,13 @@
+header.header
+  .header__container
+    .header__hamburger
+      button(class="header__icon hamburger", type="button", id="hamburger")
+        +icon('hamburger', modClass='open')
+
+    .header__controls
+      button(class="header__icon notification", type="button", id="notification")
+        +icon('notification', modClass='icon--notification')
+      button(class="header__icon auth", type="button", id="auth")
+        +icon('auth', modClass='icon--auth')
+        span.header__user Мистер Фокс
+        +icon('arrow_right', modClass='icon--arrow')

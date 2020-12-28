@@ -1,0 +1,7 @@
+mixin filter
+  ul.filter__list
+    each filter in filters
+      li.filter__item
+        a.filter__link(href=filter.path)
+          +icon(filter.icon, modClass = 'u-mr-10 u-color-gray-secondary')
+          span= filter.text

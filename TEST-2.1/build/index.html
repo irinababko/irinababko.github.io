@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#100d14">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:title" content="title">
+    <meta property="og:description" content="description">
+    <meta property="og:image" content="/img/og-image.jpg">
+    <meta name="twitter:card" content="/img/og-image.jpg">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&amp;family=Roboto:wght@400;700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="/css/app.css">
+    <link rel="apple-touch-icon" href="/img/apple-icon-180x180.png" sizes="180x180" type="image/png">
+    <link rel="apple-touch-icon" href="/img/apple-icon-152x152.png" sizes="152x152" type="image/png">
+    <link rel="apple-touch-icon" href="/img/apple-icon-144x144.png" sizes="144x144" type="image/png">
+    <link rel="apple-touch-icon" href="/img/apple-icon-120x120.png" sizes="120x120" type="image/png">
+    <link rel="apple-touch-icon" href="/img/apple-icon-114x114.png" sizes="114x114" type="image/png">
+    <link rel="apple-touch-icon" href="/img/apple-icon-76x76.png" sizes="76x76" type="image/png">
+    <link rel="apple-touch-icon" href="/img/apple-icon-72x72.png" sizes="72x72" type="image/png">
+    <link rel="apple-touch-icon" href="/img/apple-icon-60x60.png" sizes="60x60" type="image/png">
+    <link rel="apple-touch-icon" href="/img/apple-icon-57x57.png" sizes="57x57" type="image/png">
+    <link rel="icon" href="/img/android-icon-192x192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="/img/android-icon-144x144.png" sizes="144x144" type="image/png">
+    <link rel="icon" href="/img/android-icon-96x96.png" sizes="96x96" type="image/png">
+    <link rel="icon" href="/img/android-icon-72x72.png" sizes="72x72" type="image/png">
+    <link rel="icon" href="/img/android-icon-48x48.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/img/favicon-96x96.png" sizes="96x96" type="image/png">
+    <link rel="icon" href="/img/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/img/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <meta name="msapplication-TileColor" content="#3bbbe9">
+    <meta name="msapplication-TileImage" content="ms-icon-70x70.png">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="ms-icon-150x150.png">
+    <meta name="msapplication-TileImage" content="ms-icon-310x310.png">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__hamburger"><button class="header__icon hamburger" type="button" id="hamburger"><svg class="icon hamburger open">
+              <use xlink:href="/img/sprite.svg#icon-hamburger"></use>
+            </svg></button></div>
+        <div class="header__controls"><button class="header__icon notification" type="button" id="notification"><svg class="icon notification icon--notification">
+              <use xlink:href="/img/sprite.svg#icon-notification"></use>
+            </svg></button><button class="header__icon auth" type="button" id="auth"><svg class="icon auth icon--auth">
+              <use xlink:href="/img/sprite.svg#icon-auth"></use>
+            </svg><span class="header__user">Мистер Фокс</span><svg class="icon arrow_right icon--arrow">
+              <use xlink:href="/img/sprite.svg#icon-arrow_right"></use>
+            </svg></button></div>
+      </div>
+    </header>
+    <div class="sidenav">
+      <div class="sidenav__head">
+        <div class="sidenav__logo">Company Logo</div><a class="sidenav__close"><svg class="icon arrow_back ">
+            <use xlink:href="/img/sprite.svg#icon-arrow_back"></use>
+          </svg></a>
+      </div>
+      <div class="sidenav__menu">
+        <div class="sidenav__name">WELLSHINA</div>
+        <nav class="nav ">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="/">
+                <div class="nav__text"><svg class="icon dashboard u-mr-10">
+                    <use xlink:href="/img/sprite.svg#icon-dashboard"></use>
+                  </svg><span>Панель управления</span></div><svg class="icon arrow_right nav__icon">
+                  <use xlink:href="/img/sprite.svg#icon-arrow_right"></use>
+                </svg>
+              </a></li>
+            <li class="nav__item"><a class="nav__link" href="/">
+                <div class="nav__text"><svg class="icon goods u-mr-10">
+                    <use xlink:href="/img/sprite.svg#icon-goods"></use>
+                  </svg><span>Товары</span></div><svg class="icon arrow_right nav__icon">
+                  <use xlink:href="/img/sprite.svg#icon-arrow_right"></use>
+                </svg>
+              </a></li>
+            <li class="nav__item"><a class="nav__link" href="/">
+                <div class="nav__text"><svg class="icon orders u-mr-10">
+                    <use xlink:href="/img/sprite.svg#icon-orders"></use>
+                  </svg><span>Заказы</span></div><svg class="icon arrow_right nav__icon">
+                  <use xlink:href="/img/sprite.svg#icon-arrow_right"></use>
+                </svg>
+              </a></li>
+            <li class="nav__item"><a class="nav__link" href="/">
+                <div class="nav__text"><svg class="icon finances u-mr-10">
+                    <use xlink:href="/img/sprite.svg#icon-finances"></use>
+                  </svg><span>Финансы</span></div><svg class="icon arrow_right nav__icon">
+                  <use xlink:href="/img/sprite.svg#icon-arrow_right"></use>
+                </svg>
+              </a></li>
+            <li class="nav__item"><a class="nav__link" href="/">
+                <div class="nav__text"><svg class="icon person u-mr-10">
+                    <use xlink:href="/img/sprite.svg#icon-person"></use>
+                  </svg><span>Клиенты</span></div><svg class="icon arrow_right nav__icon">
+                  <use xlink:href="/img/sprite.svg#icon-arrow_right"></use>
+                </svg>
+              </a></li>
+            <li class="nav__item"><a class="nav__link" href="/">
+                <div class="nav__text"><svg class="icon ads u-mr-10">
+                    <use xlink:href="/img/sprite.svg#icon-ads"></use>
+                  </svg><span>Реклама</span></div><svg class="icon arrow_right nav__icon">
+                  <use xlink:href="/img/sprite.svg#icon-arrow_right"></use>
+                </svg>
+              </a></li>
+            <li class="nav__item"><a class="nav__link" href="/">
+                <div class="nav__text"><svg class="icon settings u-mr-10">
+                    <use xlink:href="/img/sprite.svg#icon-settings"></use>
+                  </svg><span>Настройки</span></div><svg class="icon arrow_right nav__icon">
+                  <use xlink:href="/img/sprite.svg#icon-arrow_right"></use>
+                </svg>
+              </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="main main-container">
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="content__head">
+            <div class="content__block">
+              <div class="content__title">Заказы</div>
+              <div class="content__search"><svg class="icon search input__icon">
+                  <use xlink:href="/img/sprite.svg#icon-search"></use>
+                </svg><input class="input" placeholder="Номер заказа"></div>
+              <div class="content__text"> <span>Найдено </span><span class="u-text-bold">25 заказов</span><span> по фильтру </span></div>
+            </div>
+            <div class="content__button button">экспорт<svg class="icon export u-ml-5">
+                <use xlink:href="/img/sprite.svg#icon-export"></use>
+              </svg></div>
+          </div>
+          <div class="content__filter"><span class="content__filter__title">Фильтры</span>
+            <ul class="filter__list">
+              <li class="filter__item"><a class="filter__link" href="/"><svg class="icon time u-mr-10 u-color-gray-secondary">
+                    <use xlink:href="/img/sprite.svg#icon-time"></use>
+                  </svg><span>Статус</span></a></li>
+              <li class="filter__item"><a class="filter__link" href="/"><svg class="icon shipping u-mr-10 u-color-gray-secondary">
+                    <use xlink:href="/img/sprite.svg#icon-shipping"></use>
+                  </svg><span>Доставка и оплата</span></a></li>
+              <li class="filter__item"><a class="filter__link" href="/"><svg class="icon range u-mr-10 u-color-gray-secondary">
+                    <use xlink:href="/img/sprite.svg#icon-range"></use>
+                  </svg><span>Дата</span></a></li>
+              <li class="filter__item"><a class="filter__link" href="/"><svg class="icon person u-mr-10 u-color-gray-secondary">
+                    <use xlink:href="/img/sprite.svg#icon-person"></use>
+                  </svg><span>Покупатель</span></a></li>
+              <li class="filter__item"><a class="filter__link" href="/"><svg class="icon money u-mr-10 u-color-gray-secondary">
+                    <use xlink:href="/img/sprite.svg#icon-money"></use>
+                  </svg><span>Сумма</span></a></li>
+              <li class="filter__item"><a class="filter__link" href="/"><svg class="icon goods u-mr-10 u-color-gray-secondary">
+                    <use xlink:href="/img/sprite.svg#icon-goods"></use>
+                  </svg><span>Товар</span></a></li>
+            </ul>
+          </div>
+          <div class="content__block">
+            <div class="content__search--mobile"><svg class="icon search input__icon input__icon--mobile">
+                <use xlink:href="/img/sprite.svg#icon-search"></use>
+              </svg><input class="input input--mobile" placeholder="Поиск"></div>
+            <div class="content__filter--mobile"><svg class="icon filter u-mr-10">
+                <use xlink:href="/img/sprite.svg#icon-filter"></use>
+              </svg>Фильтр</div>
+            <div class="content__sort"><svg class="icon round-swap u-mr-10">
+                <use xlink:href="/img/sprite.svg#icon-round-swap"></use>
+              </svg>
+              <p class="sort">Сортировка</p>
+            </div>
+            <div class="content__buttons">
+              <div class="button button--circle u-mr-10">Сбросить</div>
+              <div class="button button--circle button--gray">Новый заказ<svg class="icon cancel icon--button">
+                  <use xlink:href="/img/sprite.svg#icon-cancel"></use>
+                </svg></div>
+            </div>
+          </div>
+          <div class="content__text--mobile"> <span>Найдено </span><span class="u-text-bold">25 заказов</span><span> по фильтру</span></div>
+        </div>
+        <div class="content__table">
+          <div class="table">
+            <div class="table__head"><span>Заказ</span><span>Дата<svg class="icon arrow_small icon--table">
+                  <use xlink:href="/img/sprite.svg#icon-arrow_small"></use>
+                </svg></span><span>Сумма<svg class="icon arrow_small icon--table">
+                  <use xlink:href="/img/sprite.svg#icon-arrow_small"></use>
+                </svg></span><span class="u-text-center">Товары<svg class="icon arrow_small icon--table">
+                  <use xlink:href="/img/sprite.svg#icon-arrow_small"></use>
+                </svg></span></div>
+            <div class="table__content">
+              <ul class="order__list">
+                <li class="order__item">
+                  <div class="order__grid"><a class="order__link" href="/"><span class="u-text-bold">110086382</span><svg class="icon card u-ml-10">
+                        <use xlink:href="/img/sprite.svg#icon-card"></use>
+                      </svg><svg class="icon meest u-ml-10">
+                        <use xlink:href="/img/sprite.svg#icon-meest"></use>
+                      </svg><svg class="icon chat u-ml-10">
+                        <use xlink:href="/img/sprite.svg#icon-chat"></use>
+                      </svg></a><span class="order__subtitle">Данные подтверждены. Ожидает отправки</span></div>
+                  <div class="order__grid order__date"><span class="order__time time u-text-bold">13:20</span><span class="date u-text-sm u-color-gray-secondary">20/07/18</span></div>
+                  <div class="order__grid order__total"> <span class="order__newTotal u-text-bold">400000 грн</span><span class="order__oldTotal u-text-sm u-color-gray-secondary">500000 грн</span></div>
+                  <div class="order__grid order__num u-text-center">
+                    <div class="product u-text-bold">2</div>
+                    <div class="product u-text-sm u-color-gray-secondary">товара</div>
+                  </div>
+                </li>
+                <li class="order__item">
+                  <div class="order__grid"><a class="order__link" href="/"><span class="u-text-bold">110086382</span><svg class="icon card u-ml-10">
+                        <use xlink:href="/img/sprite.svg#icon-card"></use>
+                      </svg><svg class="icon meest u-ml-10">
+                        <use xlink:href="/img/sprite.svg#icon-meest"></use>
+                      </svg><svg class="icon chat u-ml-10">
+                        <use xlink:href="/img/sprite.svg#icon-chat"></use>
+                      </svg></a><span class="order__subtitle">Данные подтверждены. Ожидает отправки</span></div>
+                  <div class="order__grid order__date"><span class="order__time time u-text-bold">13:20</span><span class="date u-text-sm u-color-gray-secondary">20/07/18</span></div>
+                  <div class="order__grid order__total"> <span class="order__newTotal u-text-bold">40000 грн</span><span class="order__oldTotal u-text-sm u-color-gray-secondary">50000 грн</span></div>
+                  <div class="order__grid order__num u-text-center">
+                    <div class="product u-text-bold">2</div>
+                    <div class="product u-text-sm u-color-gray-secondary">товара</div>
+                  </div>
+                </li>
+                <li class="order__item">
+                  <div class="order__grid"><a class="order__link" href="/"><span class="u-text-bold">110086382</span><svg class="icon card u-ml-10">
+                        <use xlink:href="/img/sprite.svg#icon-card"></use>
+                      </svg><svg class="icon meest u-ml-10">
+                        <use xlink:href="/img/sprite.svg#icon-meest"></use>
+                      </svg><svg class="icon chat u-ml-10">
+                        <use xlink:href="/img/sprite.svg#icon-chat"></use>
+                      </svg></a><span class="order__subtitle">Данные подтверждены. Ожидает отправки</span></div>
+                  <div class="order__grid order__date"><span class="order__time time u-text-bold">13:20</span><span class="date u-text-sm u-color-gray-secondary">20/07/18</span></div>
+                  <div class="order__grid order__total"> <span class="order__newTotal u-text-bold">4000 грн</span><span class="order__oldTotal u-text-sm u-color-gray-secondary">5000 грн</span></div>
+                  <div class="order__grid order__num u-text-center">
+                    <div class="product u-text-bold">2</div>
+                    <div class="product u-text-sm u-color-gray-secondary">товара</div>
+                  </div>
+                </li>
+                <li class="order__item">
+                  <div class="order__grid"><a class="order__link" href="/"><span class="u-text-bold">110086382</span><svg class="icon card u-ml-10">
+                        <use xlink:href="/img/sprite.svg#icon-card"></use>
+                      </svg><svg class="icon meest u-ml-10">
+                        <use xlink:href="/img/sprite.svg#icon-meest"></use>
+                      </svg><svg class="icon chat u-ml-10">
+                        <use xlink:href="/img/sprite.svg#icon-chat"></use>
+                      </svg></a><span class="order__subtitle">Данные подтверждены. Ожидает отправки</span></div>
+                  <div class="order__grid order__date"><span class="order__time time u-text-bold">13:20</span><span class="date u-text-sm u-color-gray-secondary">20/07/18</span></div>
+                  <div class="order__grid order__total"> <span class="order__newTotal u-text-bold">400 грн</span><span class="order__oldTotal u-text-sm u-color-gray-secondary">500 грн</span></div>
+                  <div class="order__grid order__num u-text-center">
+                    <div class="product u-text-bold">2</div>
+                    <div class="product u-text-sm u-color-gray-secondary">товара</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

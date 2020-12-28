@@ -1,0 +1,29 @@
+.table {
+    box-shadow: none;
+
+    @include media-breakpoint-up(sm) {
+        box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.12), 0px 7px 10px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    &__head {
+        @include make-spacer(p, 5);
+        @include font-size(12px, 14px);
+
+        display: none;
+        color: var(--gray-text-secondary);
+        border-bottom: 1px solid var(--gray-alpha-12);
+
+        @include media-breakpoint-up(sm) {
+            display: grid;
+            grid-template-columns: minmax(350px,1fr) 100px 100px 100px;
+        }
+
+        @include media-breakpoint-up(md) {
+            grid-template-columns: minmax(350px,1fr) 200px 200px 200px;
+        }
+      
+        @include media-breakpoint-up(lg) {
+            grid-template-columns: minmax(350px,1fr) 200px 200px 400px;
+        }
+    }
+}

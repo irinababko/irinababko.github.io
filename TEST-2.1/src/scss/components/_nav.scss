@@ -1,0 +1,46 @@
+.nav {
+
+    &__list {
+        @include flex($direction: column);
+    }
+
+    &__item {
+        @include size(100%, auto);
+        @include make-spacer(px, 6);
+        @include make-spacer(py, 3);
+        @include transition;
+
+        position: relative;
+
+        &.is-active {
+            background-color: var(--black-secondary);
+        }
+
+        &:hover {
+            background-color: var(--black-secondary);
+        }
+        
+        &:first-child {
+
+            .nav__icon {
+                display: none;
+
+            }    
+        }
+    }
+
+    &__text {
+        @include flex;
+    }
+
+    &__link {
+        @include flex(space-between, center);
+        @include font-size(14px, 24px);
+
+        color: var(--white);
+    }
+
+    &__icon {
+        @include size(16px);
+    }
+}

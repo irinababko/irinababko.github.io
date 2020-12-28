@@ -1,0 +1,138 @@
+.order {
+    &__item {
+        @include make-spacer(p, 0);
+        @include make-spacer(py, 4);
+        @include make-spacer(py, 5, sm);
+        @include make-spacer(px, 5, sm);
+        @include flex($direction: column);
+
+        position: relative;
+        border-bottom: 1px solid var(--gray-alpha-12);
+
+        @include media-breakpoint-up(sm) {
+            display: grid;
+            grid-template-columns: minmax(350px,1fr) 100px 100px 100px;
+        }
+      
+        @include media-breakpoint-up(md) {
+            grid-template-columns: minmax(350px,1fr) 200px 200px 200px;
+        }
+      
+        @include media-breakpoint-up(lg) {
+            grid-template-columns: minmax(350px,1fr) 200px 200px 400px;
+        }
+
+        &:before {
+            @include size(10px, 100%);
+            @include make-spacer(my, 0);
+            @include make-spacer(my, 2, sm);
+
+            content: '';
+            position: absolute;
+            display: block;
+            background-color: var(--gray-blue);
+            height: calc(100% - 28px);
+            border-radius: 0 4px 4px 0;
+
+            @include media-breakpoint-up(sm) {
+                height: calc(100% - 16px);
+            }
+
+        }
+
+        &:first-child {
+            border-top: 1px solid var(--gray-alpha-12);
+
+            @include media-breakpoint-up(sm) {
+                border-top: 0;
+            }
+        }
+
+        .oldTotal {
+            text-decoration: line-through;
+        }
+    }
+
+    &__subtitle {
+        @include font-size(12px);
+        @include make-spacer(mb, 3);
+        @include make-spacer(mb, 0, sm);
+
+        color: var(--gray-blue);
+
+        @include media-breakpoint-up(sm) {
+            @include font-size(14px);
+        }
+    }
+
+    &__link {
+        @include make-spacer(mb, 2);
+        @include make-spacer(mt, 2);
+        @include make-spacer(mt, 0, sm);
+        @include flex($align-items: center);
+
+        color: var(--black-primary);
+
+        .icon {
+            color: var(--gray-text-secondary);
+        }
+
+        .chat {
+            display: none;
+
+            @include media-breakpoint-up(sm) {
+                display: block;
+            }
+        }
+    }
+
+    &__grid {
+        @include make-spacer(pl, 6);
+        @include make-spacer(pr, 4);
+        @include make-spacer(px, 0, sm);
+
+        display: grid;
+    }
+
+    &__date {
+        @include font-size(12px);
+
+        display: block;
+        position: absolute;
+        top: 28px;
+        right: 0;
+
+        @include media-breakpoint-up(sm) {
+            @include font-size(16px);
+
+            display: grid;
+            position: initial;
+        }
+    }
+
+    &__time {
+        @include make-spacer(mr, 1);
+        @include make-spacer(mr, 0, sm);
+    }
+
+    &__total {
+        display: block;
+
+        @include media-breakpoint-up(sm) {
+            display: grid
+        }
+    }
+
+    &__num {
+        display: none;
+
+        @include media-breakpoint-up(sm) {
+            display: grid
+        }
+    }
+
+    &__newTotal {
+        @include make-spacer(mr, 3);
+        @include make-spacer(mr, 0, sm);
+    }
+}

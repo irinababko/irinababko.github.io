@@ -1,0 +1,33 @@
+.filter {
+    &__list {
+        @include flex;
+    }
+
+    &__item {
+        
+        @include make-spacer(px, 4);
+
+        border-left: 1px solid var(--gray-300);
+
+        &:first-child {
+            @include make-spacer(pl, 0);
+
+            border-left: 0;
+        }
+
+        @include media-breakpoint-up(lg) {
+            &:first-child {
+                @include make-spacer(pl, 4);
+
+                border-left: 1px solid var(--gray-300);
+            }
+        }
+    }
+
+    &__link {
+        @include flex(center, center);
+        @include font-size(14px);
+
+        color: var(--black-primary);
+    }
+}

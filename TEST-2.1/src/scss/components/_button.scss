@@ -1,0 +1,56 @@
+.button {
+  @include flex(center, center, $display: inline-flex);
+  @include make-spacer(m, 0);
+  @include make-spacer(py, 2);
+  @include make-spacer(px, 4);
+  @include font-size(12px, 18px);
+  @include transition(#{background-color, box-shadow, color});
+  @include size(100%, 36px);
+
+  position: relative;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  user-select: none;
+  -webkit-appearance: none; // stylelint-disable-line
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  font-weight: var(--bold);
+
+  &:hover {
+    background-color: var(--green);
+    color: var(--white);
+  }
+
+  &:focus {
+    background-color: var(--yellow-focus);
+  }
+
+  &--circle {
+    border-radius: 20px;
+  }
+
+  &--gray {
+    background-color: var(--gray-200);
+    color: var(--black-primary);
+    border-color: var(--gray-200);
+    text-transform: none;
+
+    &:hover {
+      background-color: var(--gray);
+    }
+  }
+
+  &__icon {
+    @include flex;
+    @include size(16px);
+    @include make-spacer(ml, 2);
+  }
+}

@@ -1,0 +1,61 @@
+.input {
+  @include font-size(16px, 24px);
+  @include make-spacer(pr, 3);
+  @include make-spacer(py, 2);
+  @include make-spacer(py, 3, md);
+  @include make-spacer(pl, 10);
+  @include transition(border-color);
+  @include size(100%, 40px);
+
+  border: 1px solid var(--gray-200);
+  background-color: var(--white);
+  border-radius: rem(4px);
+
+  &::placeholder {
+    @include transition(#{opacity, text-indent});
+    @include font-size(16px, 24px);
+
+    color: var(--gray-text-secondary);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--green);
+
+    &::placeholder {
+      opacity: 0;
+      text-indent: 10px;
+    }
+  }
+
+  &--mobile {
+    @include make-spacer(pl, 7);
+    @include font-size(14px);
+    @include size(100%, 24px);
+    @include make-spacer(pr, 0);
+    @include make-spacer(py, 3);
+
+    border: none;
+    background-color: transparent;
+
+    &::placeholder {
+      @include font-size(14px);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 11px;
+    transform: translateY(-50%);
+    color: var(--grey);
+
+    @include media-breakpoint-up(md) {
+      @include size(24px);
+    }
+
+    &--mobile {
+      left: 0;
+    }
+  }
+}

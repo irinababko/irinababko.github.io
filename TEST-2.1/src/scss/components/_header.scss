@@ -1,0 +1,47 @@
+.header {
+  @include size(100%, var(--header-height));
+
+  z-index: map-get($z-indexes, header);
+  background-color: var(--black-primary);
+
+  &__container {
+    @include flex(space-between, center);
+    @include size(100%);
+  }
+
+  &__hamburger {
+    @include make-spacer(px, 4);
+
+    background-color: var(--black-secondary);
+    border-right: 1px solid var(--white-alpha-2);
+  }
+
+  &__controls {
+    @include flex(center, center);
+    @include make-spacer(pr, 2);
+    @include make-spacer(pr, 4, sm);
+  }
+
+  &__icon {
+    @include size(auto, 64px);
+
+    color: var(--white);
+
+    &.auth {
+      @include flex(center, center);
+
+      border-left: 1px solid var(--white-alpha-2);
+    }
+  }
+
+  &__user {
+    display: none;
+
+    @include media-breakpoint-up(sm) {
+      @include font-size(14px);
+      @include make-spacer(mr, 3);
+
+      display: block;
+    }
+  }
+}

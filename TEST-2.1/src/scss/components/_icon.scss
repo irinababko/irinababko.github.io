@@ -1,0 +1,37 @@
+.icon {
+  @include size(24px);
+
+  display: inline-block;
+  flex-shrink: 0;
+  user-select: none;
+  fill: currentColor;
+
+  &--button {
+    @include size(16px);
+    @include make-spacer(ml, 2);
+
+    color: var(--gray-text-secondary);
+  }
+
+  &--table {
+    @include size(8px);
+    @include make-spacer(ml, 2);
+  }
+
+  &--auth {
+    @include make-spacer(ml, 4);
+    @include make-spacer(mr, 2);
+  }
+
+  &--notification {
+    @include make-spacer(mr, 4);
+  }
+
+  &--arrow {
+    display: none;
+
+    @include media-breakpoint-up(sm) {
+      display: block;
+    }
+  }
+}

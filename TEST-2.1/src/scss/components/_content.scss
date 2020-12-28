@@ -1,0 +1,183 @@
+
+.content {
+    @include make-spacer(p, 0);
+    @include make-spacer(p, 5, sm);
+
+    background-color: var(--gray-100);
+
+    &__wrapper {
+        @include flex(center, flex-start, column);
+        @include make-spacer(px, 4);
+        @include make-spacer(px, 0, sm);
+        @include make-spacer(pb, 4);
+        @include make-spacer(pb, 0, sm);
+        
+        background-color: var(--white);
+
+        @include media-breakpoint-up(sm) {
+            background-color: var(--gray-100);
+        }
+    }
+
+    &__head {
+        @include flex(space-between, center);
+        @include size(100%);
+        @include make-spacer(mb, 0);
+        @include make-spacer(mb, 5, sm);
+    }
+
+    &__title {
+        @include font-size(24px);
+        @include make-spacer(mr, 4);
+
+        color: var(--black-text);
+    }
+
+    &__search {
+        display: none;
+
+        @include media-breakpoint-up(sm) {
+            @include make-spacer(mr, 5);
+            @include size(160px, auto);
+
+            display: block;
+            position: relative;
+            color: var(--gray-text-secondary);
+        }
+
+        &--mobile {
+            @include size(84px, auto);
+            @include make-spacer(pr, 3);
+            @include make-spacer(py, 3);
+
+            position: relative;
+            border-right: 1px solid var(--gray-300);
+
+            @include media-breakpoint-up(sm) {
+                display: none;
+            }
+        }
+    }
+
+    &__sort {
+        @include flex(center, center);
+        @include font-size(14px);
+        @include make-spacer(px, 3);
+
+        cursor: pointer;
+
+        @include media-breakpoint-up(sm) {
+            display: none;
+        }
+
+        @media screen and (max-width: 348px) {
+            @include size(120px, auto);
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .sort {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    &__text {
+        display: none;
+
+        @include media-breakpoint-up(sm) {
+            @include font-size(12px);
+
+            display: block;
+            color: var(--gray-text-secondary);
+        }
+
+        &--mobile {
+            @include font-size(12px);
+
+            @include media-breakpoint-up(sm) {
+                display: none;
+            }
+        }
+    }
+
+    &__block {
+        @include flex($align-items: center);
+        @include make-spacer(mb, 4);
+        @include make-spacer(mb, 0, sm);
+        @include make-spacer(mt, 4);
+        @include make-spacer(mt, 0, sm);
+    }
+
+    &__button {
+        display: none;
+        width: rem(120px);
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+        }
+    }
+
+    &__filter {
+        @include flex(center, center);
+        @include font-size(14px);
+        @include make-spacer(mb, 4);
+
+        display: none;
+        color: var(--gray-text-secondary);
+
+        &__title {
+            display: none;
+
+            @include media-breakpoint-up(lg) {
+                @include make-spacer(mr, 4);
+
+                display: block;
+                columns: var(--gray-text-secondary);
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+        }
+
+        &--mobile {
+            @include flex(center, center);
+            @include font-size(14px);
+            @include make-spacer(p, 3);
+            @include make-spacer(pl, 3);
+            @include make-spacer(pl, 0, sm);
+            @include make-spacer(py, 0, sm);
+            @include make-spacer(mb, 0);
+            @include make-spacer(mb, 3, sm);
+
+            border-right: 1px solid var(--gray-300);
+            cursor: pointer;
+
+            @include media-breakpoint-up(sm) {
+                border-right: 0;
+            }
+
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
+        }
+    }
+
+    &__buttons {
+        @include make-spacer(mb, 4);
+
+        display: none;
+
+        @include media-breakpoint-up(sm) {
+            @include flex;
+        }
+    }
+
+    &__table {
+        background-color: white;
+    }
+}

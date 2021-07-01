@@ -1,0 +1,44 @@
+.card
+  .card__item
+    .card__header.profile
+      .user__avatar
+        img(src='https://picsum.photos/50/50')
+      .user__name
+        span.name James Smith
+        .profile__data
+          .location
+            //+icon('location')
+            img(src='img/icons/location.png', class='icon')
+            span location
+      .user__creds
+        .creds
+          span.count 385
+          //+icon('level')
+          img(src='img/icons/level.png', class='icon')
+          span.title level
+        .creds
+          span.count 355
+          //+icon('proworkers')
+          img(src='img/icons/proworkers.png', class='icon')
+          span.title proworkers
+    .card__main
+      .card__img
+        img(src='https://picsum.photos/500/300')
+      .card__content
+        .card__title
+          span Title
+          .card__edit
+            .time 5h
+            button
+              //+icon('dots')
+              img(src='img/icons/dots.png', class='dots')
+        .card__text
+          span Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto beatae, enim fugiat obcaecati repellat sit? Atque dolores et quos. Alias aut dignissimos iure minus omnis, placeat quod ratione sapiente ut voluptatibus. Ducimus enim expedita impedit labore perferendis temporibus vitae?
+          a(href='/') Read more
+    .card__share
+    .card__comments
+      .avatar
+        img(src='https://picsum.photos/30/30')
+      .text
+        span.name Name
+        span.comment This is some awesome!

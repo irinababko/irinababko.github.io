@@ -1,0 +1,25 @@
+header.header
+
+  .header__notification
+    //+icon('notif')
+    img(src='img/icons/notif.png')
+    .badge 1
+  .header__menu
+    button(class="hamburger hamburger--slider header__hamburger js-menu-toggle", type="button", id="hamburger")
+      span(class="hamburger-box")
+        span(class="hamburger-inner")
+
+  a(href="/" class="header__logo" id="logo")
+    //+icon('logo-main')
+    img(src='img/logo-main.png')
+
+  .header__container
+    .header__controls
+      +history
+      button(id="btn-search")
+        //+icon('search')
+        img(src='img/icons/search.png', class='icon')
+      include _modal-search
+      +controls
+
+

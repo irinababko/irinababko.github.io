@@ -1,0 +1,50 @@
+mixin nav(mod)
+  nav(class=(`nav ${mod ? `nav--${mod}` : ''}`))
+    ul.nav__list
+      if mod !== 'mobile'
+
+      else
+        li.nav__item
+          .nav__block
+            a.nav__link.js-pages(href="/")
+              //+icon('mail')
+              img(src='img/icons/mail.png')
+              span Mail
+              .badge 50
+        li.nav__item
+          .nav__block
+            a.nav__link.js-pages(href="/")
+              //+icon('posts')
+              img(src='img/icons/posts.png')
+              span Posts
+        li.nav__item
+          .nav__block
+            a.nav__link.js-pages(href="/")
+              //+icon('blog')
+              img(src='img/icons/blog.png')
+              span Blog
+        li.nav__item
+          .nav__block
+            a.nav__link.js-pages(href="/")
+              //+icon('feeds')
+              img(src='img/icons/feeds.png')
+              span Feeds
+        li.nav__item
+          .nav__block
+            a.nav__link.js-pages(href="/")
+              //+icon('groups')
+              img(src='img/icons/groups.png')
+              span Groups
+        li.nav__item
+          .nav__block
+            a.nav__link.js-pages(href="/")
+              //+icon('settings')
+              img(src='img/icons/settings.png')
+              span Settings
+
+        .nav__btn
+          button(class="button button--link nav__link u-pl-0" type="button")
+            //+icon('close')
+            img(src='img/icons/close.png', class='close')
+            span Log out
+

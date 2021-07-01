@@ -1,0 +1,26 @@
+.modal#modal-search
+
+  .modal__content
+    .modal__header
+      img(src='img/title_search.png', class='search__img')
+      //+icon('search', modClass='search__icon')
+      img(src='img/search.png', class='search__icon')
+      input(type='search')
+      span.btn-close &times;
+    .modal__body
+      img(src='img/location.png')
+      .category
+        .category__block
+          span.category__text Where do you want to search
+          ul
+            li.category__item
+              a(href='/') Global
+            li.category__item
+              a(href='/') Industry
+            li.category__item
+              a(href='/') Sector
+            li.category__item
+              a(href='/')
+                span Proworkers
+                sup TM
+

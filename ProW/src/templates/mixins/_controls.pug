@@ -1,0 +1,12 @@
+mixin controls()
+  .dropdown.js-button-wrapper.controls
+    button(class="dropdown__trigger js-dropdown-button" type="button")
+      //+icon('dots')
+      img(src='img/icons/dots.png', class='icon')
+    ul.dropdown__list.js-dropdown-menu
+      li.dropdown__item
+        a(href="/" class="dropdown__button") Home
+      li.dropdown__item
+        a(href="/" class="dropdown__button") Back
+      li.dropdown__item
+        a(href="/" class="dropdown__button") Contact Us

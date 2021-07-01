@@ -1,0 +1,36 @@
+section.section.hero
+  .hero__profile
+    .profile
+      .profile__block
+        .profile__bg(style=`background-image: url(https://picsum.photos/1900/600`)
+          .profile__tagline Personal Tag Line
+        .profile__user.industry.industry--health
+          .container.content.user
+            .user__block
+              .user__img
+                img(src='https://picsum.photos/100/100')
+              .user__industry
+                .industry__icon
+                  //+icon('health')
+                  img(src='img/icons/health.png')
+                .industry__title Healthcare and social assistance
+                .user__creds
+                  .creds
+                    span.count 1.2K
+                    //+icon('level')
+                    img(src='img/icons/level.png', class='icon')
+                    span.title level
+                  .creds
+                    span.count 786
+                    //+icon('proworkers')
+                    img(src='img/icons/proworkers.png', class='icon')
+                    span.title proworkers
+        .container.content.user-name
+          .profile__data
+            span.name Tina Peterson
+            .location
+              //+icon('location')
+              img(src='img/icons/location.png', class='icon')
+              span location
+
+

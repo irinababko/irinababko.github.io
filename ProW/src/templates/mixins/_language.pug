@@ -1,0 +1,15 @@
+mixin languages()
+  .dropdown.js-button-wrapper.languages
+    button(class="dropdown__trigger js-dropdown-button" type="button")
+      img(src="/img/ENG.png" alt="ENG" class="u-mr-8")
+      span.dropdown__label English
+      +icon('expand', "dropdown__arrow")
+    ul.dropdown__list.js-dropdown-menu
+      li.dropdown__item
+        a(href="/" class="dropdown__button")
+          img(src="/img/ENG.png" alt="ENG" class="u-mr-8")
+          span Ukrainian
+      li.dropdown__item
+        a(href="/" class="dropdown__button")
+          img(src="/img/ENG.png" alt="ENG" class="u-mr-8")
+          span Spanish

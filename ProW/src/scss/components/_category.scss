@@ -1,0 +1,37 @@
+.category {
+
+  &__block {
+    @include size(316px, auto);
+
+    border: 1px solid var(--gray-text);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &__text {
+    @include flex(flex-start, center);
+    @include size(100%, 28px);
+    @include make-spacer(px, 4);
+  }
+
+  &__item {
+    @include size(100%, 28px);
+    @include make-spacer(px, 4);
+
+    background-color: var(--blue-light);
+    font-family: 'DM Mono', monospace;
+    font-weight: var(--bold);
+
+    a {
+      @include size(100%, auto);
+      @include make-spacer(px, 4);
+
+      display: inline-block;
+      border-top: 1px solid var(--gray-text);
+    }
+
+    &:hover {
+      background-color: var(--main);
+    }
+  }
+}

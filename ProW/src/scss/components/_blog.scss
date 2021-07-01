@@ -1,0 +1,126 @@
+.section-blog {
+  min-height: 500px;
+  background-color: var(--gray-300);
+}
+
+.blog {
+
+  &__list {
+    @include make-spacer(my, 10);
+    @include make-spacer(pl, 18);
+    @include make-spacer(pr, 4);
+    @include make-spacer(py, 6);
+
+    box-shadow: 1px 0 5px var(--gray);
+    border-radius: 15px;
+
+    //display: grid;
+    //grid-template-columns: 1fr 1fr;
+    //grid-column-gap: 15px;
+    //
+    //@include media-breakpoint-up(sm) {
+    //  grid-template-rows: 1fr;
+    //}
+  }
+
+  &__item {
+    background-color: var(--white);
+
+    &--invert {
+      background-color: var(--blue);
+
+      .blog__comments {
+        background-color: var(--white);
+      }
+    }
+  }
+
+  &__header {
+    @include flex($align-items: center);
+    //@include make-spacer(mb, 4);
+    @include make-spacer(p, 4);
+
+    .user__creds {
+      @include make-spacer(mb, 4);
+
+      .creds {
+        border: none !important;
+      }
+    }
+
+    .user__name {
+      @include make-spacer(ml, 4);
+    }
+  }
+
+  &__main {
+    @include flex;
+    @include make-spacer(p, 4);
+  }
+
+  &__img {
+    @include make-spacer(mr, 4);
+  }
+
+  &__text {
+    span {
+      @include make-spacer(mr, 2);
+    }
+  }
+
+  &__title {
+    @include flex(space-between, center);
+
+    span {
+      @include font-size(18px);
+
+      font-weight: var(--bold);
+    }
+  }
+
+  &__edit {
+    @include flex;
+
+    .time {
+      @include font-size(10px, 16px);
+      @include make-spacer(mr, 2);
+    }
+
+    .dots {
+      @include font-size(18px);
+    }
+  }
+
+  &__comments {
+    @include flex(flex-start, flex-start);
+    @include make-spacer(py, 4);
+
+    background-color: var(--blue);
+
+    .avatar {
+      @include size(30px);
+      @include make-spacer(ml, 4);
+
+      border: 1px solid var(--orange);
+      border-radius: 5px;
+
+      img {
+        @include size(100%);
+
+        border-radius: 5px;
+      }
+    }
+
+    .text {
+      @include flex(flex-start, flex-start, column);
+      @include font-size(12px);
+      @include make-spacer(ml, 4);
+
+      .name {
+        @include make-spacer(mb, 1);
+
+        font-weight: var(--bold);
+      }
+    }
+  }
+}

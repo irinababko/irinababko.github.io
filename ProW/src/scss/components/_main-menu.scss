@@ -1,0 +1,37 @@
+.main-menu {
+  @include size(100%, calc(100% - var(--header-height)));
+
+  display: block;
+  position: fixed;
+  top: var(--header-height);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  //background-color: var(--black-primary-alpha-04);
+  z-index: map-get($z-indexes, main-nav);
+
+  &__wrapper {
+    @include size(100%, auto);
+    @include flex($direction: column);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: rem(100px);
+    transform: translateX(-100%);
+    background-color: var(--blue-light);
+  }
+
+  &__top {
+    @include flex(space-between);
+    @include make-spacer(px, 3);
+    @include make-spacer(py, 2);
+    @include make-spacer(m, 4);
+    @include font-size(12px);
+
+    background-color: var(--white);
+    color: var(--black-primary);
+  }
+}

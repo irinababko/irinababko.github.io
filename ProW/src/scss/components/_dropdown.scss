@@ -1,0 +1,110 @@
+.dropdown {
+  position: relative;
+  color: var(--white);
+  width: 100%;
+  z-index: map-get($z-indexes, dropdown);
+
+  &__trigger {
+    @include flex($align-items: center);
+    @include size(auto, 30px);
+
+    color: var(--black-primary);
+    font-family: var(--headings-font-family);
+
+    &.is-open {
+
+      + .dropdown__list {
+        transform: translateY(0) translateX(-50%);
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .dropdown__arrow {
+        transform: rotateZ(-180deg);
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      color: var(--white);
+    }
+  }
+
+  &__arrow {
+    @include transition(transform);
+
+    transform: rotateZ(0deg);
+    transform-origin: center;
+    pointer-events: none;
+  }
+
+  &__label {
+    @include make-spacer(mr, 2);
+
+    font-family: var(--headings-font-family);
+    pointer-events: none;
+  }
+
+  &__list {
+    @include transition(#{visibility, transform, opacity});
+
+    position: absolute;
+    top: rem(40px);
+    left: 45%;
+    transform: translateY(-15px) translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+    background-color: var(--blue-light);
+    border: 1px solid var(--gray-text);
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+
+    @include media-breakpoint-up(md) {
+      top: rem(40px);
+      width: auto;
+    }
+  }
+
+  &__item {
+    @include make-spacer(px, 2);
+
+    &:last-child {
+
+      .dropdown__button {
+        border: none;
+      }
+    }
+
+    &:hover {
+      background-color: var(--main);
+    }
+  }
+
+  &__button {
+    @include flex(flex-start, center);
+    @include font-size(14px);
+    @include make-spacer(px, 2);
+    @include make-spacer(py, 2);
+    @include transition(color);
+
+    text-align: left;
+    text-decoration: none;
+    color: var(--gray-text);
+    font-family: var(--headings-font-family);
+    white-space: nowrap;
+
+    border-bottom: 1px solid var(--gray-text);
+
+    .item__img {
+      @include make-spacer(mr, 1);
+
+      border: 1px solid var(--orange);
+      border-radius: 5px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    width: auto;
+  }
+}

@@ -1,0 +1,41 @@
+.content {
+
+  &__block {
+    @include make-spacer(my, 10);
+
+    //box-shadow: 1px 0 5px var(--gray);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 15px;
+  }
+
+  &__header {
+    @include flex(space-between, center);
+    @include size(100%, 80px);
+    @include make-spacer(pr, 5);
+    @include make-spacer(pl, 17);
+
+    background-color: var(--blue-light);
+    position: relative;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid var(--gray-30);
+
+    .icon-lg {
+      @include size(75px, 65px);
+
+      position: absolute;
+      top: -20px;
+      left: -15px;
+    }
+
+    .dots {
+      @include size(28px);
+    }
+  }
+
+  &__list {
+    @include make-spacer(my, 10);
+    @include make-spacer(pl, 13);
+    @include make-spacer(pr, 4);
+    @include make-spacer(py, 6);
+  }
+}

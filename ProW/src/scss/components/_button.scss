@@ -1,0 +1,55 @@
+.button {
+  @include flex(center, center, $display: inline-flex);
+  @include make-spacer(m, 0);
+  @include make-spacer(py, 4);
+  @include make-spacer(px, 2);
+  @include make-spacer(px, 4, sm);
+  @include font-size(16px, 18px);
+  @include transition(#{background-color, box-shadow, color});
+  @include size(300px, 48px);
+
+  position: relative;
+  outline: none;
+  background-color: var(--yellow);
+  cursor: pointer;
+  vertical-align: middle;
+  text-decoration: none;
+  white-space: nowrap;
+  color: var(--black-primary);
+  user-select: none;
+  -webkit-appearance: none; // stylelint-disable-line
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  font-family: var(--headings-font-family);
+
+  &--fluid {
+    width: 100%;
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+
+    &:hover {
+      background-color: var(--yellow);
+      color: var(--white);
+    }
+  }
+
+  &--link {
+    @include size(auto);
+
+    background: transparent;
+    border: none;
+    color: var(--white);
+
+    &:hover {
+      color: var(--yellow);
+    }
+  }
+
+  &--md {
+    @include size(124px, 40px);
+  }
+}

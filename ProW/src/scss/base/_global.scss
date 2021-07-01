@@ -1,0 +1,125 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include smooth-font;
+  @include make-spacer(mx, auto);
+  @include make-spacer(my, 0);
+  @include flex($direction: column);
+
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  line-height: var(--line-height);
+  color: var(--gray-text);
+  font-family: var(--font-family);
+  font-weight: var(--regular);
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  &.is-overflow-hidden { // stylelint-disable-line
+    //overflow: hidden;
+
+    &.is-desktop {
+      padding: 0 !important;
+
+      //&::after {
+      //  @include size(15px, 100vh);
+      //
+      //  display: block;
+      //  position: fixed;
+      //  top: 0;
+      //  right: 0;
+      //  background-color: var(--black-primary);
+      //  animation: fade-in 0.3s ease-in-out;
+      //  content: "";
+      //}
+    }
+  }
+
+  .is-overflow-hidden.is-desktop {
+    padding: 0 !important;
+  }
+}
+
+.main-container {
+  @include flex($direction: column);
+
+  flex-grow: 1;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//
+// Headings
+//
+
+@include make-all-type($tag-types);
+
+@for $i from 1 through 6 {
+
+  h#{$i},
+  .h#{$i} {
+    @include make-spacer(mx, 0);
+    @include make-spacer(mt, 0);
+    @include make-spacer(mb, 3);
+
+    line-height: var(--headings-line-height);
+    color: var(--black);
+    font-family: var(--headings-font-family);
+    font-weight: var(--extra-bold);
+    text-transform: uppercase;
+  }
+}
+
+p {
+  @include make-spacer(mx, 0);
+  @include make-spacer(mt, 0);
+  @include make-spacer(mb, 3);
+
+  &:last-child {
+    @include make-spacer(mb, 0);
+  }
+}
+
+button {
+  @include reset-button;
+}
+
+a {
+  @include transition(color);
+
+  text-decoration: none;
+  line-height: var(--line-height);
+  font-size: var(--font-size);
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  @include reset-list;
+}
+
+.badge {
+  @include font-size(9px, 11px);
+  //@include make-spacer(py, 1);
+  //@include make-spacer(px, 2);
+
+  position: absolute;
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 20px;
+  padding: 2px 5px;
+}

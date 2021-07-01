@@ -1,0 +1,104 @@
+.modal {
+  @include size(100%);
+
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  padding-top: 200px;
+  overflow: auto;
+  background-color: rgba($blue-light, .9);
+
+  &__content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    border: 1px solid var(--gray-30);
+    border-radius: 25px 5px 25px 25px;
+    background-color: var(--white);
+    width: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  &__header {
+    @include flex(flex-start, center);
+    @include make-spacer(pl, 6);
+    @include make-spacer(pr, 12);
+    @include make-spacer(py, 3);
+
+    position: relative;
+    color: var(--gray-text);
+    border-bottom: 1px solid var(--gray-30);
+
+    input {
+      @include size(100%, 28px);
+      @include make-spacer(px, 3);
+
+      background-color: var(--blue-light);
+      border: 1px solid var(--gray-30);
+      border-radius: 5px;
+      color: var(--gray-30);
+      font-weight: normal;
+
+      &:focus {
+        border: 1px solid var(--gray-30);;
+        outline: none;
+      }
+    }
+
+    .search__img {
+      @include make-spacer(mr, 4);
+    }
+
+    .search__icon {
+      @include make-spacer(mr, 4);
+    }
+  }
+
+  &__body {
+    @include flex(flex-start, flex-start);
+    @include make-spacer(pt, 4);
+    @include make-spacer(pb, 14);
+    @include make-spacer(px, 6);
+
+    img {
+      @include make-spacer(mr, 4);
+    }
+
+  }
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.btn-close {
+  @include font-size(26px);
+  @include make-spacer(px, 1);
+
+
+  position: absolute;
+  right: 10px;
+  color: var(--gray-30);
+  font-weight: bold;
+  border: 1px solid var(--gray-30);
+  border-radius: 5px;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

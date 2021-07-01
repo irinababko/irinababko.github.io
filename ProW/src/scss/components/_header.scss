@@ -1,0 +1,74 @@
+.header {
+  @include size(100%, var(--header-height));
+  @include font-size(16px);
+
+  display: grid;
+  grid-template-columns: rem(100px) 1fr rem(250px);
+  align-items: center;
+  z-index: map-get($z-indexes, header);
+  background-color: var(--black-secondary);
+  font-family: var(--headings-font-family);
+  position: fixed;
+
+  &__logo {
+    @include font-size(24px);
+    @include make-spacer(ml, 20);
+
+    color: var(--yellow);
+
+    .icon {
+      @include size(230px, 55px);
+    }
+  }
+
+  &__controls {
+    @include flex(center, center);
+
+    .icon {
+      @include size(auto);
+      @include make-spacer(mr, 10);
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+
+  &__container {
+    @include flex(space-between, center);
+  }
+
+  &__menu {
+    @include flex(center, flex-end);
+    @include make-spacer(pt, 10);
+
+    border-left: 1px solid var(--grey-500);
+
+    &.is-disabled {
+      pointer-events: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__notification {
+    position: absolute;
+    top: 10px;
+    left: 27px;
+
+    .icon {
+      @include size(45px);
+    }
+
+    .badge {
+      top: 0;
+      right: -3px;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.nav {
+  @include flex(center, center);
+
+  &__list {
+    @include flex(space-between, center);
+    @include size(440px, auto);
+  }
+
+  &__block {
+    @include flex($align-items: center);
+
+    height: 80px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__item {
+    position: relative;
+    height: 100%;
+  }
+
+  &__link {
+    @include transition(color);
+    @include font-size(16px);
+
+    position: relative;
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--headings-font-family);
+  }
+
+  &--mobile {
+    $top-menu-height: 75px;
+    $bottom-menu-height: 75px;
+
+    @include flex(flex-start, center, column);
+
+    box-shadow: 1px 0 5px var(--gray);
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .nav {
+
+      &__list {
+        @include make-spacer(py, 0);
+        @include size(100%, auto);
+
+        display: block;
+      }
+
+      &__block {
+        @include transition;
+
+        height: rem(88px);
+        border-bottom: 1px solid var(--gray-200);
+      }
+
+      &__link {
+        @include flex(center, center, column);
+        @include size(100%, auto);
+        @include font-size(8px);
+
+        position: relative;
+        text-transform: uppercase;
+        color: var(--black-primary);
+
+        .icon {
+          @include size(45px);
+        }
+
+        span {
+          @include make-spacer(mt, 2);
+        }
+
+        .badge {
+          top: -4px;
+          right: 12px;
+        }
+      }
+
+      &__item {
+        @include make-spacer(m, 0);
+        @include make-spacer(px, 1);
+
+        height: auto;
+
+        &:last-child {
+          @include make-spacer(mb, 0);
+        }
+
+        &:hover {
+          background-color: var(--main);
+        }
+      }
+
+      &__btn {
+
+        .nav__link {
+          @include flex(center, center, row);
+        }
+
+        .close {
+          @include size(15px);
+          @include make-spacer(mr, 1);
+        }
+
+        span {
+          @include make-spacer(m, 0);
+        }
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      max-height: calc(100% - #{$top-menu-height});
+    }
+  }
+}

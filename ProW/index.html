@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#100d14">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:title" content="title">
+    <meta property="og:description" content="description">
+    <meta property="og:image" content="/img/og-image.jpg">
+    <meta name="twitter:card" content="/img/og-image.jpg">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&amp;family=Roboto:wght@400;700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="./css/app.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__menu"><button class="hamburger hamburger--slider header__hamburger js-menu-toggle" type="button" id="hamburger"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button></div><a class="header__logo" href="/" id="logo"><svg class="icon logo-main ">
+          <use xlink:href="/img/sprite.svg#icon-logo-main"></use>
+        </svg></a>
+      <div class="header__container">
+        <!--.header__nav-->
+        <!--  +nav-->
+        <div class="header__controls">
+          <!--button(class="button button--link", type="button") Sign in-->
+          <!--button(class="button button--secondary button--md", type="button") Registration-->
+          <div class="dropdown js-button-wrapper history"><button class="dropdown__trigger js-dropdown-button" type="button"><svg class="icon history ">
+                <use xlink:href="/img/sprite.svg#icon-history"></use>
+              </svg></button>
+            <ul class="dropdown__list js-dropdown-menu">
+              <li class="dropdown__item"><a class="dropdown__button" href="/"><img class="item__img" src="https://picsum.photos/25/25" /><span>James Smith</span></a></li>
+              <li class="dropdown__item"><a class="dropdown__button" href="/"><img class="item__img" src="https://picsum.photos/25/25" /><span>James Smith</span></a></li>
+              <li class="dropdown__item"><a class="dropdown__button" href="/"><img class="item__img" src="https://picsum.photos/25/25" /><span>James Smithhhhhhhh</span></a></li>
+            </ul>
+          </div><button id="btn-search"><svg class="icon search ">
+              <use xlink:href="/img/sprite.svg#icon-search"></use>
+            </svg></button>
+          <div class="modal" id="modal-search">
+            <div class="modal__content">
+              <div class="modal__header"><img class="search__img" src="img/title_search.png">
+                <!--+icon('search', modClass='search__icon')--><img class="search__icon" src="img/search.png"><input type="search"><span class="btn-close">&times;</span></div>
+              <div class="modal__body"><img src="img/location.png">
+                <div class="category">
+                  <div class="category__block"><span class="category__text">Where do you want to search</span>
+                    <ul>
+                      <li class="category__item"><a href="/">Global</a></li>
+                      <li class="category__item"><a href="/">Industry</a></li>
+                      <li class="category__item"><a href="/">Sector</a></li>
+                      <li class="category__item"><a href="/"><span>Proworkers</span><sup>TM</sup></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown js-button-wrapper controls"><button class="dropdown__trigger js-dropdown-button" type="button"><svg class="icon dots ">
+                <use xlink:href="/img/sprite.svg#icon-dots"></use>
+              </svg></button>
+            <ul class="dropdown__list js-dropdown-menu">
+              <li class="dropdown__item"><a class="dropdown__button" href="/">Home</a></li>
+              <li class="dropdown__item"><a class="dropdown__button" href="/">Back</a></li>
+              <li class="dropdown__item"><a class="dropdown__button" href="/">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--.header__language-->
+      <!--  +languages-->
+    </header>
+    <main class="main-container">
+      <!--include components/_feature-->
+      <section class="section hero">
+        <div class="hero__profile">
+          <div class="profile">
+            <div class="profile__block">
+              <div class="profile__bg" style="background-image: url(https://picsum.photos/1900/600">
+                <div class="profile__tagline">Personal Tag Line</div>
+              </div>
+              <div class="profile__user">
+                <div class="container content user">
+                  <div class="user__block">
+                    <div class="user__img"><img src="https://picsum.photos/100/100"></div>
+                    <div class="user__industry industry">
+                      <div class="industry__icon"><svg class="icon health ">
+                          <use xlink:href="/img/sprite.svg#icon-health"></use>
+                        </svg></div>
+                      <div class="industry__title">Healthcare and social assistance</div>
+                      <div class="user__creds">
+                        <div class="creds"><span class="count">1.2K</span><svg class="icon level ">
+                            <use xlink:href="/img/sprite.svg#icon-level"></use>
+                          </svg><span class="title">level</span></div>
+                        <div class="creds"><span class="count">786</span><svg class="icon proworkers ">
+                            <use xlink:href="/img/sprite.svg#icon-proworkers"></use>
+                          </svg><span class="title">proworkers</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container content user-name">
+                <div class="profile__data"><span class="name">Tina Peterson</span>
+                  <div class="location"><svg class="icon location ">
+                      <use xlink:href="/img/sprite.svg#icon-location"></use>
+                    </svg><span>location</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--.feature-->
+        <!--  .section__title Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.-->
+        <!--  .feature__wrapper-->
+        <!--    each item in featureSection-->
+        <!--      .feature__item-->
+        <!--        .feature__info=item.info-->
+        <!--        .feature__title=item.title-->
+        <!--        .feature__block(style=`background-image: url(/img/bg-feature.png);`)-->
+        <!--          +icon(item.icon, modClass = 'u-ml-10 u-color-yellow feature__icon')-->
+        <!--          .feature__title=item.subtitle-->
+        <!--          .feature__text=item.text-->
+      </section>
+      <!--include components/_blog-->
+      <section class="section section-feeds">
+        <div class="container content main">
+          <div class="content__block">
+            <div class="content__header"><svg class="icon feeds icon-lg">
+                <use xlink:href="/img/sprite.svg#icon-feeds"></use>
+              </svg><img src="img/title_feeds.png"><button><svg class="icon dots ">
+                  <use xlink:href="/img/sprite.svg#icon-dots"></use>
+                </svg></button></div>
+            <div class="content__list">
+              <div class="card">
+                <div class="card__item">
+                  <div class="card__header profile">
+                    <div class="user__avatar"><img src="https://picsum.photos/50/50"></div>
+                    <div class="user__name"><span class="name">James Smith</span>
+                      <div class="profile__data">
+                        <div class="location"><svg class="icon location ">
+                            <use xlink:href="/img/sprite.svg#icon-location"></use>
+                          </svg><span>location</span></div>
+                      </div>
+                    </div>
+                    <div class="user__creds">
+                      <div class="creds"><span class="count">385</span><svg class="icon level ">
+                          <use xlink:href="/img/sprite.svg#icon-level"></use>
+                        </svg><span class="title">level</span></div>
+                      <div class="creds"><span class="count">355</span><svg class="icon proworkers ">
+                          <use xlink:href="/img/sprite.svg#icon-proworkers"></use>
+                        </svg><span class="title">proworkers</span></div>
+                    </div>
+                  </div>
+                  <div class="card__main">
+                    <div class="card__img"><img src="https://picsum.photos/500/300"></div>
+                    <div class="card__content">
+                      <div class="card__title"><span>Title</span>
+                        <div class="card__edit">
+                          <div class="time">5h</div><button><svg class="icon dots ">
+                              <use xlink:href="/img/sprite.svg#icon-dots"></use>
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="card__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto beatae, enim fugiat obcaecati repellat sit? Atque dolores et quos. Alias aut dignissimos iure minus omnis, placeat quod ratione sapiente ut voluptatibus. Ducimus enim expedita impedit labore perferendis temporibus vitae?</span><a href="/">Read more</a></div>
+                    </div>
+                  </div>
+                  <div class="card__share"></div>
+                  <div class="card__comments">
+                    <div class="avatar"><img src="https://picsum.photos/30/30"></div>
+                    <div class="text"><span class="name">Name</span><span class="comment">This is some awesome!</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__item">
+                  <div class="card__header profile">
+                    <div class="user__avatar"><img src="https://picsum.photos/50/50"></div>
+                    <div class="user__name"><span class="name">James Smith</span>
+                      <div class="profile__data">
+                        <div class="location"><svg class="icon location ">
+                            <use xlink:href="/img/sprite.svg#icon-location"></use>
+                          </svg><span>location</span></div>
+                      </div>
+                    </div>
+                    <div class="user__creds">
+                      <div class="creds"><span class="count">385</span><svg class="icon level ">
+                          <use xlink:href="/img/sprite.svg#icon-level"></use>
+                        </svg><span class="title">level</span></div>
+                      <div class="creds"><span class="count">355</span><svg class="icon proworkers ">
+                          <use xlink:href="/img/sprite.svg#icon-proworkers"></use>
+                        </svg><span class="title">proworkers</span></div>
+                    </div>
+                  </div>
+                  <div class="card__main">
+                    <div class="card__img"><img src="https://picsum.photos/500/300"></div>
+                    <div class="card__content">
+                      <div class="card__title"><span>Title</span>
+                        <div class="card__edit">
+                          <div class="time">5h</div><button><svg class="icon dots ">
+                              <use xlink:href="/img/sprite.svg#icon-dots"></use>
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="card__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto beatae, enim fugiat obcaecati repellat sit? Atque dolores et quos. Alias aut dignissimos iure minus omnis, placeat quod ratione sapiente ut voluptatibus. Ducimus enim expedita impedit labore perferendis temporibus vitae?</span><a href="/">Read more</a></div>
+                    </div>
+                  </div>
+                  <div class="card__share"></div>
+                  <div class="card__comments">
+                    <div class="avatar"><img src="https://picsum.photos/30/30"></div>
+                    <div class="text"><span class="name">Name</span><span class="comment">This is some awesome!</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-feeds">
+        <div class="container content main">
+          <div class="content__block">
+            <div class="content__header"><svg class="icon blog icon-lg">
+                <use xlink:href="/img/sprite.svg#icon-blog"></use>
+              </svg><img src="img/title_blogs.png"><button><svg class="icon dots ">
+                  <use xlink:href="/img/sprite.svg#icon-dots"></use>
+                </svg></button></div>
+            <div class="content__list">
+              <div class="card">
+                <div class="card__item">
+                  <div class="card__header profile">
+                    <div class="user__avatar"><img src="https://picsum.photos/50/50"></div>
+                    <div class="user__name"><span class="name">James Smith</span>
+                      <div class="profile__data">
+                        <div class="location"><svg class="icon location ">
+                            <use xlink:href="/img/sprite.svg#icon-location"></use>
+                          </svg><span>location</span></div>
+                      </div>
+                    </div>
+                    <div class="user__creds">
+                      <div class="creds"><span class="count">385</span><svg class="icon level ">
+                          <use xlink:href="/img/sprite.svg#icon-level"></use>
+                        </svg><span class="title">level</span></div>
+                      <div class="creds"><span class="count">355</span><svg class="icon proworkers ">
+                          <use xlink:href="/img/sprite.svg#icon-proworkers"></use>
+                        </svg><span class="title">proworkers</span></div>
+                    </div>
+                  </div>
+                  <div class="card__main">
+                    <div class="card__img"><img src="https://picsum.photos/500/300"></div>
+                    <div class="card__content">
+                      <div class="card__title"><span>Title</span>
+                        <div class="card__edit">
+                          <div class="time">5h</div><button><svg class="icon dots ">
+                              <use xlink:href="/img/sprite.svg#icon-dots"></use>
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="card__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto beatae, enim fugiat obcaecati repellat sit? Atque dolores et quos. Alias aut dignissimos iure minus omnis, placeat quod ratione sapiente ut voluptatibus. Ducimus enim expedita impedit labore perferendis temporibus vitae?</span><a href="/">Read more</a></div>
+                    </div>
+                  </div>
+                  <div class="card__share"></div>
+                  <div class="card__comments">
+                    <div class="avatar"><img src="https://picsum.photos/30/30"></div>
+                    <div class="text"><span class="name">Name</span><span class="comment">This is some awesome!</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__item">
+                  <div class="card__header profile">
+                    <div class="user__avatar"><img src="https://picsum.photos/50/50"></div>
+                    <div class="user__name"><span class="name">James Smith</span>
+                      <div class="profile__data">
+                        <div class="location"><svg class="icon location ">
+                            <use xlink:href="/img/sprite.svg#icon-location"></use>
+                          </svg><span>location</span></div>
+                      </div>
+                    </div>
+                    <div class="user__creds">
+                      <div class="creds"><span class="count">385</span><svg class="icon level ">
+                          <use xlink:href="/img/sprite.svg#icon-level"></use>
+                        </svg><span class="title">level</span></div>
+                      <div class="creds"><span class="count">355</span><svg class="icon proworkers ">
+                          <use xlink:href="/img/sprite.svg#icon-proworkers"></use>
+                        </svg><span class="title">proworkers</span></div>
+                    </div>
+                  </div>
+                  <div class="card__main">
+                    <div class="card__img"><img src="https://picsum.photos/500/300"></div>
+                    <div class="card__content">
+                      <div class="card__title"><span>Title</span>
+                        <div class="card__edit">
+                          <div class="time">5h</div><button><svg class="icon dots ">
+                              <use xlink:href="/img/sprite.svg#icon-dots"></use>
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="card__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto beatae, enim fugiat obcaecati repellat sit? Atque dolores et quos. Alias aut dignissimos iure minus omnis, placeat quod ratione sapiente ut voluptatibus. Ducimus enim expedita impedit labore perferendis temporibus vitae?</span><a href="/">Read more</a></div>
+                    </div>
+                  </div>
+                  <div class="card__share"></div>
+                  <div class="card__comments">
+                    <div class="avatar"><img src="https://picsum.photos/30/30"></div>
+                    <div class="text"><span class="name">Name</span><span class="comment">This is some awesome!</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-feeds">
+        <div class="container content main">
+          <div class="content__block">
+            <div class="content__header"><svg class="icon posts icon-lg">
+                <use xlink:href="/img/sprite.svg#icon-posts"></use>
+              </svg><img src="img/title_posts.png"><button><svg class="icon dots ">
+                  <use xlink:href="/img/sprite.svg#icon-dots"></use>
+                </svg></button></div>
+            <div class="content__list">
+              <div class="card">
+                <div class="card__item">
+                  <div class="card__header profile">
+                    <div class="user__avatar"><img src="https://picsum.photos/50/50"></div>
+                    <div class="user__name"><span class="name">James Smith</span>
+                      <div class="profile__data">
+                        <div class="location"><svg class="icon location ">
+                            <use xlink:href="/img/sprite.svg#icon-location"></use>
+                          </svg><span>location</span></div>
+                      </div>
+                    </div>
+                    <div class="user__creds">
+                      <div class="creds"><span class="count">385</span><svg class="icon level ">
+                          <use xlink:href="/img/sprite.svg#icon-level"></use>
+                        </svg><span class="title">level</span></div>
+                      <div class="creds"><span class="count">355</span><svg class="icon proworkers ">
+                          <use xlink:href="/img/sprite.svg#icon-proworkers"></use>
+                        </svg><span class="title">proworkers</span></div>
+                    </div>
+                  </div>
+                  <div class="card__main">
+                    <div class="card__img"><img src="https://picsum.photos/500/300"></div>
+                    <div class="card__content">
+                      <div class="card__title"><span>Title</span>
+                        <div class="card__edit">
+                          <div class="time">5h</div><button><svg class="icon dots ">
+                              <use xlink:href="/img/sprite.svg#icon-dots"></use>
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="card__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto beatae, enim fugiat obcaecati repellat sit? Atque dolores et quos. Alias aut dignissimos iure minus omnis, placeat quod ratione sapiente ut voluptatibus. Ducimus enim expedita impedit labore perferendis temporibus vitae?</span><a href="/">Read more</a></div>
+                    </div>
+                  </div>
+                  <div class="card__share"></div>
+                  <div class="card__comments">
+                    <div class="avatar"><img src="https://picsum.photos/30/30"></div>
+                    <div class="text"><span class="name">Name</span><span class="comment">This is some awesome!</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__item">
+                  <div class="card__header profile">
+                    <div class="user__avatar"><img src="https://picsum.photos/50/50"></div>
+                    <div class="user__name"><span class="name">James Smith</span>
+                      <div class="profile__data">
+                        <div class="location"><svg class="icon location ">
+                            <use xlink:href="/img/sprite.svg#icon-location"></use>
+                          </svg><span>location</span></div>
+                      </div>
+                    </div>
+                    <div class="user__creds">
+                      <div class="creds"><span class="count">385</span><svg class="icon level ">
+                          <use xlink:href="/img/sprite.svg#icon-level"></use>
+                        </svg><span class="title">level</span></div>
+                      <div class="creds"><span class="count">355</span><svg class="icon proworkers ">
+                          <use xlink:href="/img/sprite.svg#icon-proworkers"></use>
+                        </svg><span class="title">proworkers</span></div>
+                    </div>
+                  </div>
+                  <div class="card__main">
+                    <div class="card__img"><img src="https://picsum.photos/500/300"></div>
+                    <div class="card__content">
+                      <div class="card__title"><span>Title</span>
+                        <div class="card__edit">
+                          <div class="time">5h</div><button><svg class="icon dots ">
+                              <use xlink:href="/img/sprite.svg#icon-dots"></use>
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="card__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto beatae, enim fugiat obcaecati repellat sit? Atque dolores et quos. Alias aut dignissimos iure minus omnis, placeat quod ratione sapiente ut voluptatibus. Ducimus enim expedita impedit labore perferendis temporibus vitae?</span><a href="/">Read more</a></div>
+                    </div>
+                  </div>
+                  <div class="card__share"></div>
+                  <div class="card__comments">
+                    <div class="avatar"><img src="https://picsum.photos/30/30"></div>
+                    <div class="text"><span class="name">Name</span><span class="comment">This is some awesome!</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--include ../components/_footer-->
+    <div class="main-menu" id="main-menu">
+      <div class="main-menu__wrapper" id="main-menu-wrapper">
+        <!--.main-menu__top-->
+        <!--  +languages-->
+        <nav class="nav nav--mobile">
+          <ul class="nav__list">
+            <!--li.nav__item-->
+            <!--  .nav__block-->
+            <!--    button(class="button button--link nav__link u-pl-0" type="button") Sign in-->
+            <!--li.nav__item.nav__submenu-->
+            <!--  .submenu__block-->
+            <!--    button(class="submenu__button nav__link" type="button")-->
+            <!--      span.submenu__label Home-->
+            <!--    .submenu-->
+            <!--      .submenu__block-->
+            <!--        p.submenu__title Submenu 01-->
+            <!--          ul.submenu__list-->
+            <!--            li.submenu__item-->
+            <!--              a.submenu__link.js-pages(href='/') Lorem ipsum-->
+            <!--            li.submenu__item-->
+            <!--              a.submenu__link.js-pages(href='/') Lorem ipsum-->
+            <!--      .submenu__block-->
+            <!--        p.submenu__title Submenu 02-->
+            <!--          ul.submenu__list-->
+            <!--            li.submenu__item-->
+            <!--              a.submenu__link.js-pages(href='/') Lorem ipsum-->
+            <!--            li.submenu__item-->
+            <!--              a.submenu__link.js-pages(href='/') Lorem ipsum-->
+            <!--            li.submenu__item-->
+            <!--              a.submenu__link.js-pages(href='/') Lorem ipsum dolor-->
+            <li class="nav__item">
+              <div class="nav__block"><a class="nav__link js-pages" href="/"><svg class="icon mail ">
+                    <use xlink:href="/img/sprite.svg#icon-mail"></use>
+                  </svg><span>Mail</span></a></div>
+            </li>
+            <li class="nav__item">
+              <div class="nav__block"><a class="nav__link js-pages" href="/"><svg class="icon posts ">
+                    <use xlink:href="/img/sprite.svg#icon-posts"></use>
+                  </svg><span>Posts</span></a></div>
+            </li>
+            <li class="nav__item">
+              <div class="nav__block"><a class="nav__link js-pages" href="/"><svg class="icon blog ">
+                    <use xlink:href="/img/sprite.svg#icon-blog"></use>
+                  </svg><span>Blog</span></a></div>
+            </li>
+            <li class="nav__item">
+              <div class="nav__block"><a class="nav__link js-pages" href="/"><svg class="icon feeds ">
+                    <use xlink:href="/img/sprite.svg#icon-feeds"></use>
+                  </svg><span>Feeds</span></a></div>
+            </li>
+            <li class="nav__item">
+              <div class="nav__block"><a class="nav__link js-pages" href="/"><svg class="icon groups ">
+                    <use xlink:href="/img/sprite.svg#icon-groups"></use>
+                  </svg><span>Groups</span></a></div>
+            </li>
+            <li class="nav__item">
+              <div class="nav__block"><a class="nav__link js-pages" href="/"><svg class="icon settings ">
+                    <use xlink:href="/img/sprite.svg#icon-settings"></use>
+                  </svg><span>Settings</span></a></div>
+            </li>
+            <div class="nav__btn"><button class="button button--link nav__link u-pl-0" type="button"><svg class="icon close ">
+                  <use xlink:href="/img/sprite.svg#icon-close"></use>
+                </svg><span>Log out</span></button></div>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

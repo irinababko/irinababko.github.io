@@ -13,10 +13,11 @@
     <meta name="twitter:card" content="/img/og-image.jpg">
     <meta name="description" content="description">
     <meta name="keywords" content="keywords">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&amp;family=Roboto:wght@400;700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&amp;family=Roboto:wght@400;700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono&amp;display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" media="all" href="./css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" media="all" href="/css/app.css">
   </head>
   <body>
     <header class="header">
@@ -45,7 +46,7 @@
                 <div class="category">
                   <div class="category__block"><span class="category__text">Where do you want to search</span>
                     <ul>
-                      <li class="category__item"><a href="/">Global</a></li>
+                      <li class="category__item active"><a href="/">Global</a></li>
                       <li class="category__item"><a href="/">Industry</a></li>
                       <li class="category__item"><a href="/">Sector</a></li>
                       <li class="category__item"><a href="/"><span>Proworkers</span><sup>TM</sup></a></li>
@@ -67,6 +68,7 @@
       </div>
     </header>
     <main class="main-container">
+      <!--include components/_hero-company-->
       <section class="section hero">
         <div class="hero__profile">
           <div class="profile">
@@ -82,12 +84,9 @@
                       <div class="industry__icon">
                         <!--+icon('health')--><img src="img/icons/health.png"></div>
                       <div class="industry__title">Healthcare and social assistance</div>
-                      <div class="user__creds">
-                        <div class="creds"><span class="count">1.2K</span>
-                          <!--+icon('level')--><img class="icon" src="img/icons/level.png"><span class="title">level</span></div>
-                        <div class="creds"><span class="count">786</span>
-                          <!--+icon('proworkers')--><img class="icon" src="img/icons/proworkers.png"><span class="title">proworkers</span></div>
-                      </div>
+                      <div class="user__creds"><button class="creds"><span class="count">1.2K</span>
+                          <!--+icon('level')--><img class="icon" src="img/icons/level.png"><span class="title">level</span></button><button class="creds"><span class="count">786</span>
+                          <!--+icon('proworkers')--><img class="icon" src="img/icons/proworkers.png"><span class="title">proworkers</span></button></div>
                     </div>
                   </div>
                 </div>
@@ -96,6 +95,277 @@
                 <div class="profile__data"><span class="name">Tina Peterson</span>
                   <div class="location">
                     <!--+icon('location')--><img class="icon" src="img/icons/location.png"><span>location</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--include components/_blog-->
+      <section class="section section-industry_selection">
+        <div class="container content">
+          <div class="content__block">
+            <div class="section__title">industry selection</div>
+            <div class="section__subtitle">Select the Industry(s) you operate in:</div>
+            <div class="industry">
+              <div class="industry__block">
+                <div class="industry__list">
+                  <div class="industry__item industry--health">
+                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="industry1" name="example1"><label class="custom-control-label" for="industry1"></label></div>
+                    <div class="industry__icon"><img src="img/icons/health.png"></div>
+                    <div class="industry__name">Healthcare and social assistance</div>
+                  </div>
+                  <div class="industry__item industry--health">
+                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="industry2" name="example1"><label class="custom-control-label" for="industry2"></label></div>
+                    <div class="industry__icon"><img src="img/icons/health.png"></div>
+                    <div class="industry__name">Healthcare and social assistance</div>
+                  </div>
+                  <div class="industry__item industry--health">
+                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="industry3" name="example1"><label class="custom-control-label" for="industry3"></label></div>
+                    <div class="industry__icon"><img src="img/icons/health.png"></div>
+                    <div class="industry__name">Healthcare and social assistance</div>
+                  </div>
+                  <div class="industry__item industry--health">
+                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="industry4" name="example1"><label class="custom-control-label" for="industry4"></label></div>
+                    <div class="industry__icon"><img src="img/icons/health.png"></div>
+                    <div class="industry__name">Healthcare and social assistance</div>
+                  </div>
+                </div>
+              </div>
+              <div class="section__btn">
+                <div class="section__subtitle">Update for Sector selections</div>
+                <div class="button button--main"><i class="fa fa-upload" aria-hidden="true"></i>submit</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-main-content">
+        <div class="container content main">
+          <div class="content__block"><button class="edit">
+              <!--+icon('dots')--><img src="img/icons/dots.png"></button>
+            <div class="content__list"><img class="icon-lg icon-feed" src="img/icons/proFeed.png">
+              <div class="modal modal--post modal--feed" id="modal-feed">
+                <div class="modal__content">
+                  <div class="modal__header"><img class="header__img" src="img/icons/feeds.png"><img class="search__img" src="img/title_feeds.png">
+                    <!--+icon('search', modClass='search__icon')--><span class="btn-close-feed">&times;</span></div>
+                  <div class="modal__body form">
+                    <div class="user">
+                      <div class="user__img"><img src="https://picsum.photos/50/50"></div>
+                      <div class="user__name"><span>Tina Peterson</span></div>
+                    </div>
+                    <div class="text"><img src="img/location.png"><span>Who can view this post?</span></div>
+                    <div class="btn-radio">
+                      <div class="dropdown js-button-wrapper controls">
+                        <div class="custom-control custom-radio custom-control-inline dropdown__trigger js-dropdown-button"><input class="custom-control-input" type="radio" id="public" name="radio"><label class="custom-control-label" for="public">Public</label></div>
+                        <div class="category dropdown__list js-dropdown-menu">
+                          <div class="category__block">
+                            <ul>
+                              <li class="category__item active"><a href="/">Global</a></li>
+                              <li class="category__item"><a href="/">Industry</a></li>
+                              <li class="category__item"><a href="/">Sector</a></li>
+                              <li class="category__item"><a href="/"><span>Proworkers</span><sup>TM</sup></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline"><input class="custom-control-input" type="radio" id="privat" name="radio"><label class="custom-control-label" for="privat">Privat</label></div>
+                    </div>
+                  </div>
+                  <div class="modal__form"><textarea rows="12" placeholder="What`s on your mind? (Limited to 1300 Characters)"></textarea>
+                    <div class="modal__btn">
+                      <div class="custom-file"><input class="custom-file-input" type="file" id="customFile" name="filename"><label class="custom-file-label" for="customFile"><img class="file-img" src="img/icons/clip.png"><span>+Media</span></label></div>
+                      <div class="btn-right"><img src="img/icons/feeds.png">
+                        <div class="button button--main button--md">Feed</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__item">
+                  <div class="card__header profile industry industry--finance">
+                    <div class="user__avatar user__img"><img src="https://picsum.photos/50/50"></div>
+                    <div class="user__name"><span class="name">James Smith</span>
+                      <div class="profile__data">
+                        <div class="location">
+                          <!--+icon('location')--><img class="icon" src="img/icons/location.png"><span>location</span></div>
+                      </div>
+                    </div>
+                    <div class="user__creds">
+                      <div class="creds"><span class="count">385</span>
+                        <!--+icon('level')--><img class="icon" src="img/icons/level.png"><span class="title">level</span></div>
+                      <div class="creds"><span class="count">355</span>
+                        <!--+icon('proworkers')--><img class="icon" src="img/icons/proworkers.png"><span class="title">proworkers</span></div>
+                    </div>
+                  </div>
+                  <div class="card__main">
+                    <div class="card__img"><img src="https://picsum.photos/500/300"></div>
+                    <div class="card__content">
+                      <div class="card__title"><span>Title</span>
+                        <div class="card__edit">
+                          <div class="time">5h</div><button>
+                            <!--+icon('dots')--><img class="dots" src="img/icons/dots.png"></button>
+                        </div>
+                      </div>
+                      <div class="card__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto beatae, enim fugiat obcaecati repellat sit? Atque dolores et quos. Alias aut dignissimos iure minus omnis, placeat quod ratione sapiente ut voluptatibus. Ducimus enim expedita impedit labore perferendis temporibus vitae?</span><a href="/">Read more</a></div>
+                    </div>
+                  </div>
+                  <div class="card__share"></div>
+                  <div class="card__comments industry industry--finance">
+                    <div class="avatar user__img"><img src="https://picsum.photos/30/30"></div>
+                    <div class="text"><span class="name">Name</span><span class="comment">This is some awesome!</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__item">
+                  <div class="card__header profile industry industry--finance">
+                    <div class="user__avatar user__img"><img src="https://picsum.photos/50/50"></div>
+                    <div class="user__name"><span class="name">James Smith</span>
+                      <div class="profile__data">
+                        <div class="location">
+                          <!--+icon('location')--><img class="icon" src="img/icons/location.png"><span>location</span></div>
+                      </div>
+                    </div>
+                    <div class="user__creds">
+                      <div class="creds"><span class="count">385</span>
+                        <!--+icon('level')--><img class="icon" src="img/icons/level.png"><span class="title">level</span></div>
+                      <div class="creds"><span class="count">355</span>
+                        <!--+icon('proworkers')--><img class="icon" src="img/icons/proworkers.png"><span class="title">proworkers</span></div>
+                    </div>
+                  </div>
+                  <div class="card__main">
+                    <div class="card__img"><img src="https://picsum.photos/500/300"></div>
+                    <div class="card__content">
+                      <div class="card__title"><span>Title</span>
+                        <div class="card__edit">
+                          <div class="time">5h</div><button>
+                            <!--+icon('dots')--><img class="dots" src="img/icons/dots.png"></button>
+                        </div>
+                      </div>
+                      <div class="card__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto beatae, enim fugiat obcaecati repellat sit? Atque dolores et quos. Alias aut dignissimos iure minus omnis, placeat quod ratione sapiente ut voluptatibus. Ducimus enim expedita impedit labore perferendis temporibus vitae?</span><a href="/">Read more</a></div>
+                    </div>
+                  </div>
+                  <div class="card__share"></div>
+                  <div class="card__comments industry industry--finance">
+                    <div class="avatar user__img"><img src="https://picsum.photos/30/30"></div>
+                    <div class="text"><span class="name">Name</span><span class="comment">This is some awesome!</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content__block content__block--invert"><button class="edit">
+              <!--+icon('dots')--><img src="img/icons/dots.png"></button>
+            <div class="content__list"><img class="icon-lg" src="img/icons/proBlog.png">
+              <div class="modal modal--post modal--blog" id="modal-blog">
+                <div class="modal__content">
+                  <div class="modal__header"><img class="header__img" src="img/icons/blog.png"><img class="search__img" src="img/title_blogs.png">
+                    <!--+icon('search', modClass='search__icon')--><span class="btn-close-blog">&times;</span></div>
+                  <div class="modal__body form">
+                    <div class="user">
+                      <div class="user__img"><img src="https://picsum.photos/50/50"></div>
+                      <div class="user__name"><span>Tina Peterson</span></div>
+                    </div>
+                    <div class="text"><img src="img/location.png"><span>Who can view this post?</span></div>
+                    <div class="btn-radio">
+                      <div class="dropdown js-button-wrapper controls">
+                        <div class="custom-control custom-radio custom-control-inline dropdown__trigger js-dropdown-button"><input class="custom-control-input" type="radio" id="public" name="radio"><label class="custom-control-label" for="public">Public</label></div>
+                        <div class="category dropdown__list js-dropdown-menu">
+                          <div class="category__block">
+                            <ul>
+                              <li class="category__item active"><a href="/">Global</a></li>
+                              <li class="category__item"><a href="/">Industry</a></li>
+                              <li class="category__item"><a href="/">Sector</a></li>
+                              <li class="category__item"><a href="/"><span>Proworkers</span><sup>TM</sup></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline"><input class="custom-control-input" type="radio" id="privat" name="radio"><label class="custom-control-label" for="privat">Privat</label></div>
+                    </div>
+                  </div>
+                  <div class="modal__form"><textarea rows="12" placeholder="What`s on your mind? (Limited to 1300 Characters)"></textarea>
+                    <div class="modal__btn">
+                      <div class="custom-file"><input class="custom-file-input" type="file" id="customFile" name="filename"><label class="custom-file-label" for="customFile"><img class="file-img" src="img/icons/clip.png"><span>+Media</span></label></div>
+                      <div class="btn-right"><img src="img/icons/blog.png">
+                        <div class="button button--main button--md">Blog</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__item">
+                  <div class="card__header profile industry industry--finance">
+                    <div class="user__avatar user__img"><img src="https://picsum.photos/50/50"></div>
+                    <div class="user__name"><span class="name">James Smith</span>
+                      <div class="profile__data">
+                        <div class="location">
+                          <!--+icon('location')--><img class="icon" src="img/icons/location.png"><span>location</span></div>
+                      </div>
+                    </div>
+                    <div class="user__creds">
+                      <div class="creds"><span class="count">385</span>
+                        <!--+icon('level')--><img class="icon" src="img/icons/level.png"><span class="title">level</span></div>
+                      <div class="creds"><span class="count">355</span>
+                        <!--+icon('proworkers')--><img class="icon" src="img/icons/proworkers.png"><span class="title">proworkers</span></div>
+                    </div>
+                  </div>
+                  <div class="card__main">
+                    <div class="card__img"><img src="https://picsum.photos/500/300"></div>
+                    <div class="card__content">
+                      <div class="card__title"><span>Title</span>
+                        <div class="card__edit">
+                          <div class="time">5h</div><button>
+                            <!--+icon('dots')--><img class="dots" src="img/icons/dots.png"></button>
+                        </div>
+                      </div>
+                      <div class="card__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto beatae, enim fugiat obcaecati repellat sit? Atque dolores et quos. Alias aut dignissimos iure minus omnis, placeat quod ratione sapiente ut voluptatibus. Ducimus enim expedita impedit labore perferendis temporibus vitae?</span><a href="/">Read more</a></div>
+                    </div>
+                  </div>
+                  <div class="card__share"></div>
+                  <div class="card__comments industry industry--finance">
+                    <div class="avatar user__img"><img src="https://picsum.photos/30/30"></div>
+                    <div class="text"><span class="name">Name</span><span class="comment">This is some awesome!</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__item">
+                  <div class="card__header profile industry industry--finance">
+                    <div class="user__avatar user__img"><img src="https://picsum.photos/50/50"></div>
+                    <div class="user__name"><span class="name">James Smith</span>
+                      <div class="profile__data">
+                        <div class="location">
+                          <!--+icon('location')--><img class="icon" src="img/icons/location.png"><span>location</span></div>
+                      </div>
+                    </div>
+                    <div class="user__creds">
+                      <div class="creds"><span class="count">385</span>
+                        <!--+icon('level')--><img class="icon" src="img/icons/level.png"><span class="title">level</span></div>
+                      <div class="creds"><span class="count">355</span>
+                        <!--+icon('proworkers')--><img class="icon" src="img/icons/proworkers.png"><span class="title">proworkers</span></div>
+                    </div>
+                  </div>
+                  <div class="card__main">
+                    <div class="card__img"><img src="https://picsum.photos/500/300"></div>
+                    <div class="card__content">
+                      <div class="card__title"><span>Title</span>
+                        <div class="card__edit">
+                          <div class="time">5h</div><button>
+                            <!--+icon('dots')--><img class="dots" src="img/icons/dots.png"></button>
+                        </div>
+                      </div>
+                      <div class="card__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto beatae, enim fugiat obcaecati repellat sit? Atque dolores et quos. Alias aut dignissimos iure minus omnis, placeat quod ratione sapiente ut voluptatibus. Ducimus enim expedita impedit labore perferendis temporibus vitae?</span><a href="/">Read more</a></div>
+                    </div>
+                  </div>
+                  <div class="card__share"></div>
+                  <div class="card__comments industry industry--finance">
+                    <div class="avatar user__img"><img src="https://picsum.photos/30/30"></div>
+                    <div class="text"><span class="name">Name</span><span class="comment">This is some awesome!</span></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -194,13 +464,51 @@
         <div class="container content main">
           <div class="content__block">
             <div class="content__header">
-              <!--+icon('feeds', modClass='icon-lg')--><img class="icon-lg" src="img/icons/feeds.png"><img src="img/title_feeds.png"><button>
-                <!--+icon('dots')--><img src="img/icons/dots.png"></button></div>
+              <!--+icon('feeds', modClass='icon-lg')--><img class="icon-lg" src="img/icons/feeds.png"><img src="img/title_feeds.png"><button id="btn-feed">
+                <!--+icon('dots')--><img src="img/icons/dots.png"></button>
+              <div class="modal modal--post modal--feed" id="modal-feed">
+                <div class="modal__content">
+                  <div class="modal__header"><img class="header__img" src="img/icons/feeds.png"><img class="search__img" src="img/title_feeds.png">
+                    <!--+icon('search', modClass='search__icon')--><span class="btn-close-feed">&times;</span></div>
+                  <div class="modal__body form">
+                    <div class="user">
+                      <div class="user__img"><img src="https://picsum.photos/50/50"></div>
+                      <div class="user__name"><span>Tina Peterson</span></div>
+                    </div>
+                    <div class="text"><img src="img/location.png"><span>Who can view this post?</span></div>
+                    <div class="btn-radio">
+                      <div class="dropdown js-button-wrapper controls">
+                        <div class="custom-control custom-radio custom-control-inline dropdown__trigger js-dropdown-button"><input class="custom-control-input" type="radio" id="public" name="radio"><label class="custom-control-label" for="public">Public</label></div>
+                        <div class="category dropdown__list js-dropdown-menu">
+                          <div class="category__block">
+                            <ul>
+                              <li class="category__item active"><a href="/">Global</a></li>
+                              <li class="category__item"><a href="/">Industry</a></li>
+                              <li class="category__item"><a href="/">Sector</a></li>
+                              <li class="category__item"><a href="/"><span>Proworkers</span><sup>TM</sup></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline"><input class="custom-control-input" type="radio" id="privat" name="radio"><label class="custom-control-label" for="privat">Privat</label></div>
+                    </div>
+                  </div>
+                  <div class="modal__form"><textarea rows="12" placeholder="What`s on your mind? (Limited to 1300 Characters)"></textarea>
+                    <div class="modal__btn">
+                      <div class="custom-file"><input class="custom-file-input" type="file" id="customFile" name="filename"><label class="custom-file-label" for="customFile"><img class="file-img" src="img/icons/clip.png"><span>+Media</span></label></div>
+                      <div class="btn-right"><img src="img/icons/feeds.png">
+                        <div class="button button--main button--md">Feed</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="content__list">
               <div class="card">
                 <div class="card__item">
-                  <div class="card__header profile">
-                    <div class="user__avatar"><img src="https://picsum.photos/50/50"></div>
+                  <div class="card__header profile industry industry--finance">
+                    <div class="user__avatar user__img"><img src="https://picsum.photos/50/50"></div>
                     <div class="user__name"><span class="name">James Smith</span>
                       <div class="profile__data">
                         <div class="location">
@@ -227,16 +535,16 @@
                     </div>
                   </div>
                   <div class="card__share"></div>
-                  <div class="card__comments">
-                    <div class="avatar"><img src="https://picsum.photos/30/30"></div>
+                  <div class="card__comments industry industry--finance">
+                    <div class="avatar user__img"><img src="https://picsum.photos/30/30"></div>
                     <div class="text"><span class="name">Name</span><span class="comment">This is some awesome!</span></div>
                   </div>
                 </div>
               </div>
               <div class="card">
                 <div class="card__item">
-                  <div class="card__header profile">
-                    <div class="user__avatar"><img src="https://picsum.photos/50/50"></div>
+                  <div class="card__header profile industry industry--finance">
+                    <div class="user__avatar user__img"><img src="https://picsum.photos/50/50"></div>
                     <div class="user__name"><span class="name">James Smith</span>
                       <div class="profile__data">
                         <div class="location">
@@ -263,8 +571,8 @@
                     </div>
                   </div>
                   <div class="card__share"></div>
-                  <div class="card__comments">
-                    <div class="avatar"><img src="https://picsum.photos/30/30"></div>
+                  <div class="card__comments industry industry--finance">
+                    <div class="avatar user__img"><img src="https://picsum.photos/30/30"></div>
                     <div class="text"><span class="name">Name</span><span class="comment">This is some awesome!</span></div>
                   </div>
                 </div>
@@ -277,13 +585,51 @@
         <div class="container content main">
           <div class="content__block">
             <div class="content__header">
-              <!--+icon('blog', modClass='icon-lg')--><img class="icon-lg" src="img/icons/blog.png"><img src="img/title_blogs.png"><button>
-                <!--+icon('dots')--><img src="img/icons/dots.png"></button></div>
+              <!--+icon('blog', modClass='icon-lg')--><img class="icon-lg" src="img/icons/blog.png"><img src="img/title_blogs.png"><button id="btn-blog">
+                <!--+icon('dots')--><img src="img/icons/dots.png"></button>
+              <div class="modal modal--post modal--blog" id="modal-blog">
+                <div class="modal__content">
+                  <div class="modal__header"><img class="header__img" src="img/icons/blog.png"><img class="search__img" src="img/title_blogs.png">
+                    <!--+icon('search', modClass='search__icon')--><span class="btn-close-blog">&times;</span></div>
+                  <div class="modal__body form">
+                    <div class="user">
+                      <div class="user__img"><img src="https://picsum.photos/50/50"></div>
+                      <div class="user__name"><span>Tina Peterson</span></div>
+                    </div>
+                    <div class="text"><img src="img/location.png"><span>Who can view this post?</span></div>
+                    <div class="btn-radio">
+                      <div class="dropdown js-button-wrapper controls">
+                        <div class="custom-control custom-radio custom-control-inline dropdown__trigger js-dropdown-button"><input class="custom-control-input" type="radio" id="public" name="radio"><label class="custom-control-label" for="public">Public</label></div>
+                        <div class="category dropdown__list js-dropdown-menu">
+                          <div class="category__block">
+                            <ul>
+                              <li class="category__item active"><a href="/">Global</a></li>
+                              <li class="category__item"><a href="/">Industry</a></li>
+                              <li class="category__item"><a href="/">Sector</a></li>
+                              <li class="category__item"><a href="/"><span>Proworkers</span><sup>TM</sup></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline"><input class="custom-control-input" type="radio" id="privat" name="radio"><label class="custom-control-label" for="privat">Privat</label></div>
+                    </div>
+                  </div>
+                  <div class="modal__form"><textarea rows="12" placeholder="What`s on your mind? (Limited to 1300 Characters)"></textarea>
+                    <div class="modal__btn">
+                      <div class="custom-file"><input class="custom-file-input" type="file" id="customFile" name="filename"><label class="custom-file-label" for="customFile"><img class="file-img" src="img/icons/clip.png"><span>+Media</span></label></div>
+                      <div class="btn-right"><img src="img/icons/blog.png">
+                        <div class="button button--main button--md">Blog</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="content__list">
               <div class="card">
                 <div class="card__item">
-                  <div class="card__header profile">
-                    <div class="user__avatar"><img src="https://picsum.photos/50/50"></div>
+                  <div class="card__header profile industry industry--finance">
+                    <div class="user__avatar user__img"><img src="https://picsum.photos/50/50"></div>
                     <div class="user__name"><span class="name">James Smith</span>
                       <div class="profile__data">
                         <div class="location">
@@ -310,8 +656,8 @@
                     </div>
                   </div>
                   <div class="card__share"></div>
-                  <div class="card__comments">
-                    <div class="avatar"><img src="https://picsum.photos/30/30"></div>
+                  <div class="card__comments industry industry--finance">
+                    <div class="avatar user__img"><img src="https://picsum.photos/30/30"></div>
                     <div class="text"><span class="name">Name</span><span class="comment">This is some awesome!</span></div>
                   </div>
                 </div>
@@ -324,13 +670,51 @@
         <div class="container content main">
           <div class="content__block">
             <div class="content__header">
-              <!--+icon('posts', modClass='icon-lg')--><img class="icon-lg" src="img/icons/posts.png"><img src="img/title_posts.png"><button>
-                <!--+icon('dots')--><img src="img/icons/dots.png"></button></div>
+              <!--+icon('posts', modClass='icon-lg')--><img class="icon-lg" src="img/icons/posts.png"><img src="img/title_posts.png"><button id="btn-post">
+                <!--+icon('dots')--><img src="img/icons/dots.png"></button>
+              <div class="modal modal--post" id="modal-post">
+                <div class="modal__content">
+                  <div class="modal__header"><img class="header__img" src="img/icons/posts.png"><img class="search__img" src="img/title_posts.png">
+                    <!--+icon('search', modClass='search__icon')--><span class="btn-close-post">&times;</span></div>
+                  <div class="modal__body form">
+                    <div class="user">
+                      <div class="user__img"><img src="https://picsum.photos/50/50"></div>
+                      <div class="user__name"><span>Tina Peterson</span></div>
+                    </div>
+                    <div class="text"><img src="img/location.png"><span>Who can view this post?</span></div>
+                    <div class="btn-radio">
+                      <div class="dropdown js-button-wrapper controls">
+                        <div class="custom-control custom-radio custom-control-inline dropdown__trigger js-dropdown-button"><input class="custom-control-input" type="radio" id="public" name="radio"><label class="custom-control-label" for="public">Public</label></div>
+                        <div class="category dropdown__list js-dropdown-menu">
+                          <div class="category__block">
+                            <ul>
+                              <li class="category__item active"><a href="/">Global</a></li>
+                              <li class="category__item"><a href="/">Industry</a></li>
+                              <li class="category__item"><a href="/">Sector</a></li>
+                              <li class="category__item"><a href="/"><span>Proworkers</span><sup>TM</sup></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline"><input class="custom-control-input" type="radio" id="privat" name="radio"><label class="custom-control-label" for="privat">Privat</label></div>
+                    </div>
+                  </div>
+                  <div class="modal__form"><textarea rows="12" placeholder="What`s on your mind? (Limited to 1300 Characters)"></textarea>
+                    <div class="modal__btn">
+                      <div class="custom-file"><input class="custom-file-input" type="file" id="customFile" name="filename"><label class="custom-file-label" for="customFile"><img class="file-img" src="img/icons/clip.png"><span>+Media</span></label></div>
+                      <div class="btn-right"><img src="img/icons/posts.png">
+                        <div class="button button--main button--md">Post</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="content__list">
               <div class="card">
                 <div class="card__item">
-                  <div class="card__header profile">
-                    <div class="user__avatar"><img src="https://picsum.photos/50/50"></div>
+                  <div class="card__header profile industry industry--finance">
+                    <div class="user__avatar user__img"><img src="https://picsum.photos/50/50"></div>
                     <div class="user__name"><span class="name">James Smith</span>
                       <div class="profile__data">
                         <div class="location">
@@ -357,8 +741,8 @@
                     </div>
                   </div>
                   <div class="card__share"></div>
-                  <div class="card__comments">
-                    <div class="avatar"><img src="https://picsum.photos/30/30"></div>
+                  <div class="card__comments industry industry--finance">
+                    <div class="avatar user__img"><img src="https://picsum.photos/30/30"></div>
                     <div class="text"><span class="name">Name</span><span class="comment">This is some awesome!</span></div>
                   </div>
                 </div>
@@ -406,6 +790,9 @@
         </nav>
       </div>
     </div>
-    <script src="./js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,21 @@
+mixin nav(mod)
+  nav(class=(`nav ${mod ? `nav--${mod}` : ''}`))
+    ul.nav__list
+      if mod !== 'mobile'
+        li.nav__item.active
+          .nav__block
+            a.nav__link.js-pages(href="/") Home
+        li.nav__item
+          .nav__block
+            a.nav__link.js-pages(href="/") About
+        li.nav__item
+          .nav__block
+            a.nav__link.js-pages(href="/") References
+        li.nav__item
+          .nav__block
+            a.nav__link.js-pages(href="/") Blog
+        li.nav__item
+          .nav__block
+            a.nav__link.js-pages(href="/") Contact
+      else
+

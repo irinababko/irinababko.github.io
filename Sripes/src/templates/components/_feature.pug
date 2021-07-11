@@ -1,0 +1,12 @@
+section.section.section-feature
+  .container.content
+    .feature
+      .feature__wrapper
+        each item in featureSection
+          .feature__item
+            .feature__block
+              +icon(item.icon, modClass = 'u-ml-10 feature__icon')
+              .feature__title=item.title
+                span=item.titleColor
+              .feature__text=item.text
+              +button

@@ -1,0 +1,65 @@
+.section-feature {
+  @include make-spacer(pt, 0);
+  @include make-spacer(pt, 8, md);
+  @include make-spacer(pb, 8);
+  @include make-spacer(pb, 12, md);
+}
+
+.feature {
+
+  &__wrapper {
+    @include make-spacer(pt, 0);
+    @include make-spacer(pt, 6, md);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: rem(20px);
+
+    @include media-breakpoint-up(md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__block {
+    @include make-spacer(py, 2);
+    @include make-spacer(px, 3);
+    @include make-spacer(px, 0, md);
+    @include transition;
+
+    text-align: center;
+  }
+
+  &__item {
+    @include size(auto);
+  }
+
+  &__icon {
+    @include size(24px);
+    @include make-spacer(mb, 0);
+    @include make-spacer(mb, 4, md);
+    @include transition;
+
+    fill: currentColor;
+  }
+
+  &__title {
+    @include font-size(22px);
+    @include make-spacer(mb, 8);
+    @include make-spacer(mb, 2, sm);
+
+    font-family: var(--headings-font-family);
+    text-transform: uppercase;
+    color: var(--black-primary);
+
+    span {
+      color: var(--color-main);
+    }
+  }
+
+  &__text {
+    @include font-size(16px);
+    @include make-spacer(mb, 2);
+
+    color: var(--black-primary);
+  }
+}

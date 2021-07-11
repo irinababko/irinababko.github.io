@@ -1,0 +1,61 @@
+.section-main {
+  @include make-spacer(pt, 6);
+  @include make-spacer(pt, 8, sm);
+
+  background-image: url('./src/img/bg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main {
+
+  &__wrapper {
+    @include flex(center, center, column-reverse);
+
+    @include media-breakpoint-up(md) {
+      @include flex(space-between, flex-end, row);
+    }
+  }
+
+  &__text {
+    @include size(100%, auto);
+
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+      @include size(372px, auto);
+    }
+
+    p {
+      @include font-size(16px, 22px);
+
+      background-color: var(--white);
+    }
+
+    .link {
+      @include make-spacer(px, 1);
+
+      text-decoration: underline;
+      color: var(--color-main);
+    }
+
+    .title {
+      @include font-size(24px, 28px);
+
+      color: var(--color-main);
+      font-family: var(--headings-font-family);
+      background-color: var(--gray-10);
+    }
+
+    .text {
+      @include make-spacer(my, 4);
+      @include make-spacer(p, 1);
+    }
+
+    button {
+      position: absolute;
+      right: -10px;
+      bottom: 7px;
+    }
+  }
+}

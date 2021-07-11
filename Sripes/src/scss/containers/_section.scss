@@ -1,0 +1,11 @@
+.section {
+  @include make-spacer(pt, 8);
+  @include make-spacer(pb, 12);
+
+  &__title {
+    @include font-size(30px);
+    @include make-spacer(mb, 8);
+
+    max-width: 60%;
+  }
+}

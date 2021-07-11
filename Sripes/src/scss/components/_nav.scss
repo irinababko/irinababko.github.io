@@ -1,0 +1,130 @@
+.nav {
+  @include flex(center, center);
+
+  &__list {
+    @include make-spacer(pt, 8);
+    @include make-spacer(pt, 0, sm);
+    @include make-spacer(px, 4);
+    @include make-spacer(px, 4);
+    @include make-spacer(px, 0, sm);
+    @include flex(flex-start, flex-start, column);
+    @include size(100%, auto);
+
+    @include media-breakpoint-up(sm) {
+      @include flex(space-between, center, row);
+      @include size(440px, auto);
+    }
+  }
+
+  &__block {
+    @include flex($align-items: center);
+
+    height: 30px;
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+      height: 70px;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .nav__link {
+        color: var(--color-main);
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid var(--black-primary);
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(sm) {
+      width: auto;
+      border-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+
+      @include media-breakpoint-up(sm) {
+        content: '/';
+        position: absolute;
+        top: 8px;
+        left: -20px;
+      }
+
+      @include media-breakpoint-up(md) {
+        top: 26px;
+      }
+    }
+
+    &:after {
+      border: 0;
+
+      @include media-breakpoint-up(sm) {
+        @include transition;
+
+        content: '';
+        position: absolute;
+        bottom: -23px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 9px solid transparent;
+        border-top: 7px solid var(--color-main);
+        opacity: 0;
+      }
+
+      @include media-breakpoint-up(md) {
+        bottom: -2px;
+      }
+    }
+
+    &:hover {
+      border-color: var(--color-main);
+
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    &.active {
+      border-color: var(--color-main);
+      color: var(--color-main);
+
+      &:after {
+        @include transition;
+
+        opacity: 1;
+      }
+
+      .nav__link {
+        color: var(--color-main);
+      }
+    }
+
+    &:first-child {
+
+      &:before {
+      content: '';
+    }
+    }
+  }
+
+  &__link {
+    @include transition(color);
+    @include font-size(16px);
+
+    position: relative;
+    text-decoration: none;
+    color: var(--black-primary);
+    font-family: var(--headings-font-family);
+
+    &:hover {
+      color: var(--color-main);
+    }
+  }
+}

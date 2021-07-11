@@ -1,0 +1,53 @@
+.header {
+  @include size(100%, var(--header-height));
+  @include font-size(16px);
+  @include make-spacer(px, 0);
+  @include make-spacer(px, 3, sm);
+  @include make-spacer(px, 8, md);
+  @include make-spacer(pt, 0);
+  @include make-spacer(pt, 5, sm);
+  @include make-spacer(pt, 0, md);
+
+
+  z-index: map-get($z-indexes, header);
+  background-color: var(--white);
+  font-family: var(--headings-font-family);
+
+  &__block {
+    @include flex(center, center, column);
+
+    @include media-breakpoint-up(md) {
+      @include flex(space-between, center, row);
+    }
+  }
+
+  &__logo {
+    @include font-size(24px);
+    @include make-spacer(py, 2);
+    @include make-spacer(py, 0, sm);
+
+    text-transform: uppercase;
+
+    color: var(--black-primary);
+  }
+
+  &__nav {
+    @include size(100%, auto);
+
+    background-image: url('../img/bg-mobile.png');
+
+    @include media-breakpoint-up(sm) {
+      @include size(auto);
+
+      background-image: none;
+    }
+  }
+
+  &__container {
+    @include flex(space-between, center);
+  }
+
+  .content {
+    @include make-spacer(p, 0);
+  }
+}

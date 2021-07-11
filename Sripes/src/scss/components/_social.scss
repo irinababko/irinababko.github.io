@@ -1,0 +1,38 @@
+.social {
+  @include make-spacer(pt, 0);
+
+  &__wrapper {
+    @include flex(center);
+    @include make-spacer(py, 2);
+
+    border-top: 1px solid var(--gray);
+
+    @include media-breakpoint-up(md) {
+      @include flex(space-between, flex-start);
+    }
+  }
+
+  &__btns {
+    @include flex(space-between, center);
+
+    //color: var(--gray-100);
+    a {
+      color: inherit;
+    }
+
+    .icon {
+      @include size(25px);
+    }
+  }
+
+  .copyright {
+    @include font-size(10px);
+
+    display: none;
+    color: var(--gray-200);
+
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+}

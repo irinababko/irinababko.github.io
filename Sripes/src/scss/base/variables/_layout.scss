@@ -1,0 +1,14 @@
+:root {
+  --header-height: auto;
+  --container-width: 320px;
+
+  @include media-breakpoint-up(sm) {
+    --header-height: 95px;
+    --container-width: 460px;
+  }
+
+  @include media-breakpoint-up(md) {
+    --header-height: 70px;
+    --container-width: 940px;
+  }
+}

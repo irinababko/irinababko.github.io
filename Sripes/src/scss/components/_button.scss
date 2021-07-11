@@ -1,0 +1,31 @@
+.button {
+  @include flex(center, $display: inline-flex);
+  @include make-spacer(m, 0);
+  @include make-spacer(py, 0);
+  @include make-spacer(px, 0);
+  @include font-size(16px, 18px);
+  @include transition(#{background-color, box-shadow, color});
+  @include size(60px, 20px);
+
+  position: relative;
+  outline: none;
+  background-color: var(--color-main);
+  cursor: pointer;
+  vertical-align: middle;
+  text-decoration: none;
+  white-space: nowrap;
+  color: var(--white);
+  user-select: none;
+  -webkit-appearance: none; // stylelint-disable-line
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  font-family: $regular-font;
+
+  &--fluid {
+    width: 100%;
+  }
+
+  span {
+    @include make-spacer(ml, 1);
+  }
+}

@@ -1,0 +1,24 @@
+.container {
+  @include make-spacer(mx, auto);
+
+  //max-width: var(--container-width);
+
+  width: 100%;
+
+  @include media-breakpoint-up(sm) {
+    max-width: var(--container-width);
+  }
+
+  // Modifier
+
+  &.content {
+    @include make-spacer(px, 3);
+    @include make-spacer(px, 0, sm);
+  }
+
+  &.fluid {
+    @include media-breakpoint-up(md) {
+      max-width: none;
+    }
+  }
+}

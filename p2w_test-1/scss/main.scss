@@ -1,0 +1,19 @@
+@import 'base/variables';
+@import 'base/normalize';
+
+@import 'components/main-content';
+@import 'components/popup';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    font-weight: 500;
+    min-height: 100vh;
+    overflow: hidden; 
+}
+
+html {
+    height: 100%;
+}

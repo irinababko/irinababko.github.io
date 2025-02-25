@@ -1,0 +1,125 @@
+<script>
+    import { onMount } from 'svelte';
+    import { initPopup } from '$lib/script.js';
+    import '../app.scss';
+  
+    onMount(() => {
+      initPopup();
+    });
+  </script>
+  
+  <main>
+    <div class="background"></div>
+    <button class="popup-trigger">
+      <img src="/icons/crown.svg" alt="Crown" />
+    </button>
+  </main>
+  
+  <div class="popup">
+    <div class="popup__content">
+      <button aria-label='1' class="popup__close">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="14"
+          height="14"
+          viewBox="0 0 14 14"
+          fill="none"
+        >
+          <path
+            d="M0.295715 12.2778C-0.0981951 12.6717 -0.0981951 13.3104 0.295715 13.7043C0.689625 14.0982 1.32828 14.0982 1.72219 13.7043L6.99975 8.42672L12.2778 13.7048C12.6717 14.0987 13.3104 14.0987 13.7043 13.7048C14.0982 13.3109 14.0982 12.6722 13.7043 12.2783L8.42623 7.00025L13.7046 1.72191C14.0985 1.328 14.0985 0.689343 13.7046 0.295433C13.3107 -0.0984771 12.672 -0.098478 12.2781 0.295433L6.99975 5.57377L1.72191 0.295925C1.328 -0.0979848 0.689342 -0.0979848 0.295432 0.295925C-0.0984775 0.689835 -0.0984775 1.32849 0.295432 1.7224L5.57328 7.00025L0.295715 12.2778Z"
+            fill="#C1C3D6"
+          />
+        </svg>
+      </button>
+      <div class="popup__header">
+        <div class="coins">
+          <div class="coins__icon icon-circle">
+            <img src="/icons/crown.svg" alt="Coins" />
+          </div>
+          <span>2000</span>
+        </div>
+        <div class="countdown-wrap">
+          <img src="/icons/time.svg" alt="Time" />
+          <span class="countdown" id="countdown">3d 7h 34m 50s</span>
+        </div>
+        <img class="store" src="/images/store.png" alt="Store" />
+        <div class="title-wrap">
+          <img src="/icons/terms.svg" alt="Terms" />
+          <span>test Store</span>
+          <img src="/icons/info.svg" alt="Info" />
+        </div>
+      </div>
+      <div class="popup__tab-content">
+        <div class="popup__tab-panel active" id="free-spin">
+          <div class="popup__games">
+            {#each Array(5) as _, i}
+              <div class="game-item">
+                <img src={`/images/game-${i + 1}.png`} alt={`Game ${i + 1}`} />
+                <div class="game-content">
+                  <div class="game-content__info">
+                    <h4>Book of the Fallen</h4>
+                    <h5>Pragmatic Play</h5>
+                    <p><span>X1</span> Wagering</p>
+                    <p><span>0.5 EUR</span> Bet</p>
+                  </div>
+                  <div class="game-content__btn">
+                    <span>35 FS</span>
+                    <button class="game-btn">
+                      <div class="coins-icon icon-circle">
+                        <img src="/icons/crown-color.svg" alt="Coins" />
+                      </div>
+                      <span>4500</span>
+                    </button>
+                  </div>
+                </div>
+                <span class="game-countdown" id={`game-countdown-${i + 1}`}>
+                  3d 7h 34m 50s
+                </span>
+              </div>
+            {/each}
+          </div>
+        </div>
+        <div class="popup__tab-panel" id="bonus-cash">
+          <div class="popup-games">
+            <h4>Your Bonus Cash may be here ...</h4>
+          </div>
+        </div>
+      </div>
+      <div class="popup__footer">
+        <div class="popup__tabs">
+          <button class="tab-btn active" data-tab="free-spin">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8.5 17C13.1944 17 17 13.1944 17 8.5C17 3.80558 13.1944 0 8.5 0C3.80558 0 0 3.80558 0 8.5C0 13.1944 3.80558 17 8.5 17ZM8.5 5.84175V4.71157C6.43125 4.71157 4.75 6.41 4.75 8.4999C4.75 8.99869 4.84375 9.48486 5.025 9.92052C5.11875 10.1478 5.05 10.4067 4.88125 10.5772C4.5625 10.8992 4.025 10.7855 3.85625 10.3625C3.625 9.78792 3.5 9.15654 3.5 8.4999C3.5 5.70916 5.7375 3.44879 8.5 3.44879V2.31861C8.5 2.03449 8.8375 1.89558 9.03125 2.09131L10.775 3.85288C10.9 3.97916 10.9 4.17489 10.775 4.30117L9.03125 6.06274C8.8375 6.26478 8.5 6.12588 8.5 5.84175ZM11.975 7.07927C11.8812 6.85829 11.95 6.5931 12.1188 6.42263C12.4375 6.10062 12.975 6.21427 13.1438 6.6373C13.375 7.21186 13.5 7.84325 13.5 8.4999C13.5 11.2906 11.2625 13.551 8.5 13.551V14.6875C8.5 14.9653 8.1625 15.1042 7.96875 14.9085L6.225 13.1469C6.1 13.0206 6.1 12.8249 6.225 12.6986L7.96875 10.937C8.1625 10.735 8.5 10.8739 8.5 11.158V12.2882C10.5688 12.2882 12.25 10.5898 12.25 8.4999C12.25 8.0011 12.15 7.52124 11.975 7.07927Z"
+                fill="#E9EAF4"
+              />
+            </svg>
+            Free Spin
+          </button>
+          <button class="tab-btn" data-tab="bonus-cash">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+            >
+              <path
+                d="M6.58663 1.04906C6.93899 0.258573 8.06101 0.25857 8.41337 1.04906L9.75151 4.05105C9.89684 4.37709 10.2049 4.60093 10.5599 4.6384L13.8285 4.98338C14.6892 5.07422 15.0359 6.14132 14.393 6.72071L11.9514 8.92102C11.6863 9.15999 11.5686 9.52217 11.6426 9.87136L12.3246 13.0866C12.5042 13.9332 11.5964 14.5927 10.8467 14.1603L7.99962 12.5182C7.69041 12.3398 7.30959 12.3398 7.00038 12.5182L4.15327 14.1603C3.40357 14.5927 2.49584 13.9332 2.67541 13.0866L3.35736 9.87136C3.43142 9.52217 3.31374 9.15999 3.04857 8.92102L0.607017 6.72071C-0.0358964 6.14132 0.310824 5.07422 1.17151 4.98338L4.44008 4.6384C4.79507 4.60093 5.10316 4.37709 5.24849 4.05105L6.58663 1.04906Z"
+                fill="#9293A3"
+              />
+            </svg>
+            Bonus Cash
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,18 @@
+@import '../static/css/normalize.scss';
+@import '../static/css/main.scss';
+@import '../static/css/popup.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    font-weight: 500;
+    min-height: 100vh;
+    overflow: hidden; 
+}
+
+html {
+    height: 100%;
+}
